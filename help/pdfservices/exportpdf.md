@@ -7,7 +7,7 @@ level: Beginner
 thumbnail: KT-6674.jpg
 kt: 6674
 exl-id: 55f5b04e-0249-47d9-9131-2f9ec01db7e8
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: aa5c88fb5725a3d1c50d5c6b73fce7add629b08d
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 5%
@@ -35,7 +35,9 @@ Adobe PDF Services API使用API将PDF文件转换为MS Office、文本和图像�
 使用下面的快速入门教程创建API凭据、下载示例文件并设置环境。
 
 [开始使用PDF服务API和Java](gettingstartedjava.md)
+
 [开始使用PDF服务API和.Net](gettingstartednet.md)
+
 [开始使用PDF服务API和Node.js](createpdffromhtml.md)
 
 ## 第2步：使用示例文件运行export pdf操作
