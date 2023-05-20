@@ -52,7 +52,7 @@ ht-degree: 2%
 
 单击 **[!UICONTROL 生成密钥对]** 按钮。 您将获得一个要下载的config.zip文件。 解压缩存档文件。 它包含两个文件：certificate_pub.crt和private.key。 确保后者是安全的，因为它包含您的私有凭据，并且可能用于在超出您的控制时生成虚假文档。
 
-单击&#x200B;**[!UICONTROL 下一步]**. 否，启用对PDF生成API的访问。 在 **[!UICONTROL 选择产品配置文件]** 屏幕，检查 **[!UICONTROL 企业PDF服务开发人员]**，然后单击 **[!UICONTROL 保存配置的API]** 按钮。 现在，您就可以开始使用API了。
+单击&#x200B;**[!UICONTROL 下一步]**。否，启用对PDF生成API的访问。 在 **[!UICONTROL 选择产品配置文件]** 屏幕，检查 **[!UICONTROL 企业PDF服务开发人员]**，然后单击 **[!UICONTROL 保存配置的API]** 按钮。 现在，您就可以开始使用API了。
 
 ## 设置项目
 
