@@ -10,7 +10,7 @@ exl-id: d704620f-d06a-4714-9d09-3624ac0fcd3a
 source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
 workflow-type: tm+mt
 source-wordcount: '1623'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ## 相关API和资源
 
-* [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 * [PDF嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 

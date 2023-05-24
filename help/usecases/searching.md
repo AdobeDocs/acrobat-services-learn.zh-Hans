@@ -30,7 +30,7 @@ ht-degree: 1%
 
 ## 相关API和资源
 
-* [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 * [项目代码](https://github.com/agavitalis/AdobeDocumentServicesAPIs.git)
 

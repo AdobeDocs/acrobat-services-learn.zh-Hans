@@ -10,7 +10,7 @@ exl-id: 0e24c8fd-7fda-452c-96f9-1e7ab1e06922
 source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
 workflow-type: tm+mt
 source-wordcount: '1527'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 * [PDF嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
-* [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 ## 创建AdobeAPI凭据
 
@@ -279,6 +279,6 @@ router.get('/job/:id', async function(req, res, next) {
 
 * [PDF嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
-* [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 要开始向网站添加用户友好的文档处理功能， [注册免费试用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)的 Adobe PDF Embed API始终可以免费使用，Adobe PDF Services API可以免费使用6个月，但每个文档交易仅需\$0.05，因此您可以 [即付即用](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) 随着业务的发展。

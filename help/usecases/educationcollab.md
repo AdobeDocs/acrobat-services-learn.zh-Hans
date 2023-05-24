@@ -10,7 +10,7 @@ exl-id: 570a635c-e539-4afc-a475-ecf576415217
 source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
 workflow-type: tm+mt
 source-wordcount: '1485'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -46,7 +46,7 @@ Node.js应用程序有一个正式SDK来访问PDF服务API。 这样，您就可
 
 * [PDF嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
-* [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 * [项目代码](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers)
 

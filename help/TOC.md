@@ -6,7 +6,7 @@ solution: Acrobat Services
 source-git-commit: 264941900ac1e4778923645cef97a796b0213030
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 6%
 # [!DNL Adobe Acrobat Services] API {#tutorials}
 
 + [概述](overview.md)
-+ PDF服务API {#pdfservices}
++ PDF Services API {#pdfservices}
    + [概述](pdfservices/overview-pdfservices.md)
    + [获取Microsoft Power Automate凭据](pdfservices/getting-credentials-power-automate.md)
    + [在Microsoft Power Automate中创建第一个流程](pdfservices/create-workflow-power-automate.md)

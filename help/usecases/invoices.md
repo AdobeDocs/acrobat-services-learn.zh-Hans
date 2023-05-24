@@ -34,7 +34,7 @@ Danielle需要一种快速准确生成发票的方法，即在一个月底分批
 
 ## 相关API和资源
 
-* [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 * [Adobe文档生成API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)
 

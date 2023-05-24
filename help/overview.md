@@ -10,7 +10,7 @@ exl-id: c73feb77-4057-42fd-831c-a5004c7637c1
 source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
 workflow-type: tm+mt
 source-wordcount: '122'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 2%
 <tr>
  <td>
    <a href="pdfservices/overview-pdfservices.md">
-      <img alt="PDF服务API" src="assets/pdfservicescard.png" />
+      <img alt="PDF Services API" src="assets/pdfservicescard.png" />
    </a>
   </td>
   <td>
