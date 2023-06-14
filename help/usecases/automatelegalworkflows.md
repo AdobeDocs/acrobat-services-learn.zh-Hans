@@ -7,9 +7,9 @@ type: Tutorial
 thumbnail: KT-10202.jpg
 kt: 10202
 exl-id: 2a1752b8-9641-40cc-a0af-1dce6cf49346
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 98dc9f98f660b43d2ca0780b51624bf3be71c853
 workflow-type: tm+mt
-source-wordcount: '2893'
+source-wordcount: '2876'
 ht-degree: 1%
 
 ---
@@ -551,7 +551,7 @@ var outputFileName = path.join('output', 'salesOrder_'+Date.now()+".docx");
   }
 ```
 
-通过Webhook可以更有效地获取更新发生时的通知，您可以了解有关 [此处](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html) 以及可用webhook事件的完整列表 [此处](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookevents.html)的
+通过Webhook可以更有效地获取更新发生时的通知，您可以了解有关 [此处](https://opensource.adobe.com/acrobat-sign/developer_guide/webhookapis.html)。
 
 ## 存储已签名的文档
 
