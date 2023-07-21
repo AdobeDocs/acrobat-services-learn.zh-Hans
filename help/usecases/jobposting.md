@@ -5,9 +5,9 @@ role: Developer
 level: Intermediate
 type: Tutorial
 thumbnail: KT-8092.jpg
-kt: 8092
+jira: KT-8092
 exl-id: 0e24c8fd-7fda-452c-96f9-1e7ab1e06922
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 1%
@@ -199,7 +199,7 @@ BYTEA NOT NULL);
   result.writeToStream(writableStream);
 ```
 
-要写入内容，请创建一个WritableStreamBuffer。 使用finish事件时，执行SQL查询的时间到了。 node-postgres包会自动将Buffer参数转换为BYTEA格式。 查询将用户重定向到/job/{id}，之后创建的终结点。
+要写入内容，请创建一个WritableStreamBuffer。 使用finish事件时，执行SQL查询的时间到了。 node-postgres包会自动将Buffer参数转换为BYTEA格式。 查询将用户重定向到/job/{id}，稍后将创建一个端点。
 
 对于PDF嵌入API，您还需要仅返回PDF内容的端点：
 
@@ -220,7 +220,7 @@ BYTEA NOT NULL);
 
 ## 嵌入PDF
 
-现在，创建/job/{id}终结点，该终结点渲染的模板包含请求的作业发布名称和嵌入的PDF。
+现在，创建/job/{id} 端点，呈现包含所请求作业发布名称和嵌入PDF的模板。
 
 ```
 router.get('/job/:id', async function(req, res, next) {

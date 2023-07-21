@@ -3,11 +3,11 @@ title: 在Java中管理财务文档工作流程
 description: '"[!DNL Adobe Acrobat Services] 提供所有必要的工具、服务和功能，以便从PDF财务文档中处理和提取数据”'
 type: Tutorial
 role: Developer
-level: Beginner
+level: Intermediate
 thumbnail: KT-7482.jpg
-kt: 7482
+jria: KT-7482
 exl-id: 3bdc2610-d497-4a54-afc0-8b8baa234960
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 0%

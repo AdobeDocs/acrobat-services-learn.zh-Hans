@@ -3,11 +3,11 @@ title: 使用PDF服务API将PDF导出到Word、PowerPoint等
 description: 了解如何使用Node.js、Java和.Net语言的示例文件运行PDF服务API导出操作
 type: Tutorial
 role: Developer
-level: Beginner
+level: Intermediate
 thumbnail: KT-6674.jpg
 kt: 6674
 exl-id: 55f5b04e-0249-47d9-9131-2f9ec01db7e8
-source-git-commit: aa5c88fb5725a3d1c50d5c6b73fce7add629b08d
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 5%

@@ -3,11 +3,11 @@ title: Java中的HR文档工作流程
 description: '"[!DNL Adobe Acrobat Services] API可以轻松地将PDF功能整合到您的人力资源网络应用程序中”'
 type: Tutorial
 role: Developer
-level: Beginner
+level: Intermediate
 thumbnail: KT-7474.jpg
-kt: 7474
+jira: KT-7474
 exl-id: add4cc5c-06e3-4ceb-930b-e8c9eda5ca1f
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '1899'
 ht-degree: 2%

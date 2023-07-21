@@ -5,9 +5,9 @@ type: Tutorial
 role: Developer
 level: Beginner
 thumbnail: KT-10382.jpg
-kt: 10382
+jira: KT-10382
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-source-git-commit: 799b37e526073893fe7c078db547798d6c31d1b2
+source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 3%
@@ -29,6 +29,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 > 如果您要登录以使用试用版，则必须使用Adobe ID而不是Enterprise ID。 如果您不是Adobe PDF Services API的当前订阅者并尝试使用您的Enterprise ID登录，则可能会收到权限错误，因为您的企业未授权您使用Adobe PDF Services API。 因此，建议使用免费个人Adobe ID。
+>
 
 1. 登录后，系统会提示您为新凭据选择一个名称。 输入您的 *凭据名称*&#x200B;的
 1. 选中该复选框以同意开发人员条款。
