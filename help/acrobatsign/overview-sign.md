@@ -1,12 +1,13 @@
 ---
-title: Acrobat Sign APITutorials
+title: ACROBAT SIGN APITUTORIALS
 description: Acrobat Sign API的“概述”页面
 type: Tutorial
 role: Developer
 level: Beginner, Intermediate, Experienced
+feature: Acrobat Sign API
 thumbnail: KT-11079.jpg
 exl-id: 79603883-26cd-439c-9cfd-6178c4544b93
-source-git-commit: 2d1151c17dfcfa67aca05411976f4ef17adf421b
+source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 11%
@@ -30,30 +31,30 @@ Acrobat Sign API 允许您创建应用程序，并将 Acrobat Sign UI 和功能�
     <div>
     <a href="signapi.md"><strong>开始使用</strong></a>
     </div>
-    <em>了解如何将Sign API包含在您的应用程序中以收集签名和其他信息</em>
+    <em>了解如何在应用程序中包含Sign API以收集签名和其他信息</em>
     <br>
   </td>
   <td>
-    <img alt="间隔条" src="../assets/WhiteBanner_Placeholder.png" />
+    <img alt="间隔物" src="../assets/WhiteBanner_Placeholder.png" />
     <div>
     <br>
   </td>
   <td>
-    <img alt="间隔条" src="../assets/WhiteBanner_Placeholder.png" />
+    <img alt="间隔物" src="../assets/WhiteBanner_Placeholder.png" />
     <div>
     <br>
   </td>
   <td>
-    <img alt="间隔条" src="../assets/WhiteBanner_Placeholder.png" />
+    <img alt="间隔物" src="../assets/WhiteBanner_Placeholder.png" />
     <div>
     <br>
   </td>
 </tr>
 </table>
 
-## Acrobat Sign嵌入快速入门指南
+## Acrobat Sign Embed快速入门指南
 
-了解如何开始将OEM版本的Acrobat Sign嵌入您的应用程序。 本指南专门面向在应用程序中构建和嵌入签名流程的OEM合作伙伴。
+了解如何开始将Acrobat Sign OEM版本嵌入您的应用程序。 本指南专为在其应用程序中构建并嵌入签名流程的OEM合作伙伴而设计。
 
 <table style="table-layout:fixed">
 <tr>
@@ -64,7 +65,7 @@ Acrobat Sign API 允许您创建应用程序，并将 Acrobat Sign UI 和功能�
     <div>
    <a href="sign-up-developer-account.md"><strong>注册开发人员帐户</strong></a>
     </div>
-    <em>了解如何注册Acrobat Sign的开发人员帐户，该帐户已完全启用Sign和API功能</em>
+    <em>了解如何注册Acrobat Sign的开发人员帐户，该帐户已通过Sign和API功能完全启用</em>
     <br>
   </td>
   <td>
@@ -84,7 +85,7 @@ Acrobat Sign API 允许您创建应用程序，并将 Acrobat Sign UI 和功能�
     <div>
    <a href="creating-an-embed-link.md"><strong>创建嵌入链接</strong></a>
     </div>
-    <em>了解如何为OAuth创建嵌入链接，应用程序可通过此方式获取用户权限</em>
+    <em>了解如何为OAuth创建嵌入链接，这是您的应用程序获取用户权限的方法</em>
     <br>
   </td>
   <td>
@@ -94,7 +95,7 @@ Acrobat Sign API 允许您创建应用程序，并将 Acrobat Sign UI 和功能�
     <div>
    <a href="generating-an-access-token.md"><strong>生成访问令牌</strong></a>
     </div>
-    <em>了解如何生成可与Acrobat Sign API一起使用的访问令牌</em>
+    <em>了解如何生成可用于Acrobat Sign API的访问令牌</em>
     <br>
   </td>
 </tr>
@@ -110,17 +111,17 @@ Acrobat Sign API 允许您创建应用程序，并将 Acrobat Sign UI 和功能�
     <br>
   </td>
   <td>
-    <img alt="间隔条" src="../assets/GrayBanner_Placeholder.png" />
+    <img alt="间隔物" src="../assets/GrayBanner_Placeholder.png" />
     <div>
     <br>
   </td>
    <td>
-    <img alt="间隔条" src="../assets/GrayBanner_Placeholder.png" />
+    <img alt="间隔物" src="../assets/GrayBanner_Placeholder.png" />
     <div>
     <br>
   </td>
   <td>
-    <img alt="间隔条" src="../assets/GrayBanner_Placeholder.png" />
+    <img alt="间隔物" src="../assets/GrayBanner_Placeholder.png" />
     <div>
     <br>
   </td>
