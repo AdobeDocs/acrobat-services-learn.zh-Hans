@@ -1,13 +1,14 @@
 ---
 title: 注册开发人员帐户
 description: 了解如何注册Acrobat Sign的开发人员帐户，该帐户已通过Sign和API功能完全启用
-type: Tutorial
+feature: Acrobat Sign API
 role: Developer
 level: Beginner
-feature: Acrobat Sign API
+type: Tutorial
+jira: KT-11072
 thumbnail: KT-11072.jpg
 exl-id: cf5f36bd-f96a-4f38-8da5-82a3a4d12958
-source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
+source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 0%

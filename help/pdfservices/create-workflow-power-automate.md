@@ -1,14 +1,14 @@
 ---
 title: 在Microsoft Power Automate中创建您的第一个工作流
 description: 了解如何在Microsoft Power Automate中使用Adobe PDF Services连接器
-type: Tutorial
+feature: PDF Services API
 role: Developer
 level: Beginner
-feature: PDF Services API
+type: Tutorial
+jira: KT-10379
 thumbnail: KT-10379.jpg
-kt: 10379
 exl-id: 095b705f-c380-42cc-9329-44ef7de655ee
-source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
+source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
 source-wordcount: '1999'
 ht-degree: 2%

@@ -1,14 +1,14 @@
 ---
 title: 审阅和批准
 description: 了解如何为跨团队协作构建文档审阅和批准工作流程
-type: Tutorial
+feature: Use Cases
 role: Developer
 level: Intermediate
-feature: Use Cases
-thumbnail: KT-8094.jpg
+type: Tutorial
 jira: KT-8094
+thumbnail: KT-8094.jpg
 exl-id: d704620f-d06a-4714-9d09-3624ac0fcd3a
-source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
+source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 1%

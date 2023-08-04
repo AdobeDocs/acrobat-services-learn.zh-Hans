@@ -1,13 +1,14 @@
 ---
 title: 控制您的PDF在线体验并收集分析
 description: 在本实践教程中，您将了解如何使用Adobe PDF Embed API控制外观、启用协作以及收集有关用户如何与PDF交互的分析（包括花费在页面和搜索上的时间）
-type: Tutorial
+feature: PDF Embed API
 role: Developer
 level: Intermediate
-thumbnail: KT-7487.jpg
+type: Tutorial
 jira: KT-7487
+thumbnail: KT-7487.jpg
 exl-id: 64ffdacb-d6cb-43e7-ad10-bbd8afc0dbf4
-source-git-commit: b65ffa3efa3978587564eb0be0c0e7381c8c83ab
+source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
 source-wordcount: '1496'
 ht-degree: 0%
