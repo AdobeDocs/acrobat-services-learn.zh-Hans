@@ -8,16 +8,14 @@ type: Tutorial
 jira: KT-8117
 thumbnail: KT-8117.jpg
 exl-id: 2fef89cf-640d-4ff4-9282-070bce8bba78
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
 
 # Adobe PDF Embed API教程
-
-![PDF嵌入API横幅](../assets/pdfembedhero.jpg)
 
 PDFEmbed API是一个免费的JavaScript API，用于嵌入高保真PDF、启用协作和查看分析。
 

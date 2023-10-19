@@ -8,16 +8,14 @@ type: Tutorial
 jira: KT-8089
 thumbnail: KT-8089.jpg
 exl-id: ae1cd9db-9f00-4129-a2a1-ceff1c899a83
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: 2f01f306f5d13bfbaa61442e0e7a89537a62c33c
 workflow-type: tm+mt
-source-wordcount: '2058'
+source-wordcount: '2054'
 ht-degree: 2%
 
 ---
 
 # Adobe Sign API快速入门
-
-![用例主横幅](assets/UseCaseStartedHero.jpg)
 
 [ACROBAT SIGN API](https://www.adobe.io/apis/documentcloud/sign.html) 是增强管理已签名协议的方式的好方法。 开发人员可以轻松地将他们的系统与Sign API集成，从而提供可靠且简单的方法上传文档、发送文档以供签名、发送提醒和收集电子签名。
 
