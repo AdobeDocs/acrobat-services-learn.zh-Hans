@@ -5,12 +5,12 @@ feature: Document Generation API
 role: Developer
 level: Beginner, Intermediate, Experienced
 type: Tutorial
-jira: 7480
+jira: KT-7480
 thumbnail: KT-7480.jpg
 exl-id: 519a41a2-33af-4022-8919-2cb69995c46c
-source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
+source-git-commit: c64f1519438addb4081469afaed811fbf03ac88e
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,37 @@ Document Generation API可从WordPDF和JSON数据中创建模板和Word文档。
 >[!NOTE]
 >
 >Document Generation API包含在PDF服务API中。
+
+<table style="table-layout:fixed">
+<tr>
+ <td>
+   <a href="automate-doc-gen.md">
+      <img alt="自动化文档生成" src="assets/automate-doc-gen.png" />
+   </a>
+    <div>
+   <a href="taggeroverview.md"><strong>自动化文档生成</strong></a>
+    </div>
+    <em>了解如何大规模自动生成文档</em>
+    <br>
+  </td>
+    <td>
+    <img alt="间隔物" src="../assets/WhiteBanner_Placeholder.png" />
+    <div>
+    <br>
+  </td>
+   <td>
+    <img alt="间隔物" src="../assets/WhiteBanner_Placeholder.png" />
+    <div>
+    <br>
+  </td>
+  </td>
+   <td>
+    <img alt="间隔物" src="../assets/WhiteBanner_Placeholder.png" />
+    <div>
+    <br>
+  </td>
+</tr>
+</table>
 
 ## 创建模板
 

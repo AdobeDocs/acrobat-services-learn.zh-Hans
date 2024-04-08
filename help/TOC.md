@@ -1,6 +1,6 @@
 ---
-user-guide-title: "[!DNL Adobe Acrobat Services]"
-breadcrumb-title: "[!DNL Acrobat Services]"
+user-guide-title: ”[!DNL Adobe Acrobat Services]”
+breadcrumb-title: ”[!DNL Acrobat Services]”
 user-guide-description: 详细了解 [!DNL Adobe Acrobat Services]
 solution: Acrobat Services
 feature-set: Acrobat Services
@@ -8,10 +8,10 @@ feature: Acrobat Sign API, PDF Services API, PDF Embed API, Document Generation 
 role: Developer
 level: Beginner, Intermediate, Experienced
 auto-video-transcripts: true
-source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
+source-git-commit: c64f1519438addb4081469afaed811fbf03ac88e
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 7%
+source-wordcount: '213'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 7%
 # [!DNL Adobe Acrobat Services] APITUTORIALS {#tutorials}
 
 + [概述](overview.md)
-+ PDF Services API {#pdfservices}
++ PDF服务API {#pdfservices}
    + [概述](pdfservices/overview-pdfservices.md)
    + [获取Microsoft Power Automate的凭据](pdfservices/getting-credentials-power-automate.md)
    + [在Microsoft Power Automate中创建您的第一个工作流](pdfservices/create-workflow-power-automate.md)
@@ -30,6 +30,7 @@ ht-degree: 7%
    + [使用Adobe PDF Services API对PDF文件执行OCR](pdfservices/ocr.md)
 + Document Generation API {#docgen}
    + [概述](docgen/overview-docgen.md)
+   + [自动化文档生成](docgen/automate-doc-gen.md)
    + 创建模板 {#docgentemplates}
       + [AdobeDocument Generation标记器概述](docgen/taggeroverview.md)
       + [添加文本标记](docgen/taggeraddtexttags.md)
@@ -42,7 +43,7 @@ ht-degree: 7%
 + 嵌入式APIPDF {#pdfembed}
    + [概述](pdfembed/overview-embed.md)
    + [控制您的PDF在线体验并收集分析](pdfembed/controlpdfexperience.md)
-+ Acrobat Sign API {#acrobatsign}
++ ACROBAT SIGN API {#acrobatsign}
    + [概述](acrobatsign/overview-sign.md)
    + [Adobe Sign API快速入门](acrobatsign/signapi.md)
    + OEM/嵌入式合作伙伴 {#oem}
