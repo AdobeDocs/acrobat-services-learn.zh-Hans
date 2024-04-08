@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-7480
 thumbnail: KT-7480.jpg
 exl-id: 519a41a2-33af-4022-8919-2cb69995c46c
-source-git-commit: c64f1519438addb4081469afaed811fbf03ac88e
+source-git-commit: 5354dc45fe27cd4dccbbe62d502277bc44441d9b
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,6 @@ Document Generation API可从WordPDF和JSON数据中创建模板和Word文档。
    <a href="automate-doc-gen.md">
       <img alt="自动化文档生成" src="assets/automate-doc-gen.png" />
    </a>
-    <div>
-   <a href="taggeroverview.md"><strong>自动化文档生成</strong></a>
-    </div>
-    <em>了解如何大规模自动生成文档</em>
-    <br>
   </td>
     <td>
     <img alt="间隔物" src="../assets/WhiteBanner_Placeholder.png" />
