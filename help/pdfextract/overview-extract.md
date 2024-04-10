@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-9247
 thumbnail: KT-9247.jpg
 exl-id: db340959-e7dc-4e46-939d-3b8c29749ebd
-source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
+source-git-commit: e35377fb467aac8581a5f81d2efb74fb442a6dc5
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '99'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,11 @@ ht-degree: 0%
 <table style="table-layout:fixed">
 <tr>
  <td>
+   <a href="automate-content-extraction.md">
+      <img alt="自动内容提取" src="assets/automate-content-extraction.png" />
+   </a>
+  </td>
+  <td>
    <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/parsing-pdf.html">
       <img alt="分析PDF：与使用PDF提取API处理JSON数据一样简单" src="assets/ParsingPDF_1280.png" />
    </a>
@@ -33,11 +38,6 @@ ht-degree: 0%
    <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/parsing-pdf.html"><strong>分析PDF：与使用PDF提取API处理JSON数据一样简单</strong></a>
     </div>
     <em>了解Adobe PDF Services API中的PDF提取服务如何使解析PDF与解析JSON一样简单</em>
-    <br>
-  </td>
-  <td>
-    <img alt="间隔物" src="../assets/WhiteBanner_Placeholder.png" />
-    <div>
     <br>
   </td>
   <td>
