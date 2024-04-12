@@ -8,16 +8,25 @@ jira: KT-7463
 type: Tutorial
 thumbnail: KT-7463.jpg
 exl-id: c73feb77-4057-42fd-831c-a5004c7637c1
-source-git-commit: eee88418f6d94c1f35ba05b23ab7fea6a5f54847
+source-git-commit: cdbefd8bd0d4b65e0d34e5bbf74065f80faf20e1
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '122'
 ht-degree: 2%
 
 ---
 
 # [!DNL Adobe Acrobat Services] API教程
 
-[!DNL Adobe Acrobat Services] 有六个主要API： [!DNL Adobe PDF Services API]，则 [!DNL Adobe PDF Embed API]，则 [!DNL Adobe Document Generation API]，则 [!DNL Adobe PDF Electronic Seal API]，则 [!DNL Adobe PDF Extract API]和 [!DNL Adobe PDF Accessibility Auto-Tag API]. 后两个API及其SDK捆绑在 [!DNL Adobe PDF Services API] 作为有偿产品的一部分。 [!DNL PDF Embed API] 是免费产品。 这些API通过一组现代的基于云的Web服务自动生成、操作和转换文档内容。 它们可帮助您提供更简单、更快和品牌化的体验，以便您控制用户与文档的交互，简化PDF工作流程并提高使用率和保留率。 这些教程可帮助您快速提供更简单、更快的品牌化体验，使用 [!DNL Adobe Acrobat Services] API。
+[!DNL Adobe Acrobat Services] 有六个主要API：
+
+* [!DNL Adobe PDF Services API]
+* [!DNL Adobe PDF Embed API]
+* [!DNL Adobe Document Generation API]
+* [!DNL Adobe PDF Electronic Seal API]
+* [!DNL Adobe PDF Extract API]
+* [!DNL Adobe PDF Accessibility Auto-Tag API]
+
+后两个API及其SDK捆绑在 [!DNL Adobe PDF Services API] 作为有偿产品的一部分。 [!DNL PDF Embed API] 是免费产品。 这些API通过一组现代的基于云的Web服务自动生成、操作和转换文档内容。 它们可帮助您提供更简单、更快和品牌化的体验，以便您控制用户与文档的交互，简化PDF工作流程并提高使用率和保留率。 这些教程可帮助您快速提供更简单、更快的品牌化体验，使用 [!DNL Adobe Acrobat Services] API。
 
 <table style="table-layout:fixed">
 <tr>
