@@ -1,13 +1,13 @@
 ---
 title: Adobe PDF辅助功能自动标记APITutorials
 description: Adobe辅助功能自动标记API教程的“概述”页面
-feature: PDF Services API
+feature: PDF Accessibility Auto-Tag API
 role: Developer
 level: Beginner, Intermediate, Experienced
 type: Tutorial
 jira: KT-15327
 exl-id: dfd018a7-8e1f-4c00-9e1f-6b7b8435fbfa
-source-git-commit: 175259d209d0cd61a7bbcd1f8dc9bd21d2f60130
+source-git-commit: 255a2425fcde4443d8502a92aa0274fac30f7279
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 0%
