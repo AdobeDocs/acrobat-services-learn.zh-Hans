@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-7482
 thumbnail: KT-7482.jpg
 exl-id: 3bdc2610-d497-4a54-afc0-8b8baa234960
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: 558bd677d3b357a98488ada9dda1054bb21b81af
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1204'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 相关的API和资源
 
-* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 * [嵌入式APIPDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
@@ -85,7 +85,7 @@ ExecutionContext executionContext = ExecutionContext.create(credentials);
 
 接下来，在 [!DNL Spring Boot]，您可以使用字符串路径或正在上传文件的流获取文件。 必须初始化您执行的每个操作，并设置输入文件路径。 在本教程中，您将使用来自的公开PDF报告 [贝莱德](https://www.blackrock.com/us/individual/products/investment-funds). 您可以使用任何其他源，包括您自己的报告。
 
-首先捕获 [FileRef](https://opensource.adobe.com/pdfservices-java-sdk-samples/apidocs/latest/com/adobe/pdfservices/operation/io/FileRef.html) 文件中的对象。 为简单起见，请通过字符串路径重点分析文件。 在下面创建一个操作，以将路径中的文件从PDF转换为Excel：
+首先从文件捕获FileRef对象。 为简单起见，请通过字符串路径重点分析文件。 在下面创建一个操作，以将路径中的文件从PDF转换为Excel：
 
 ```
 ExecutionContext executionContext = ExecutionContext.create(credentials);
@@ -143,7 +143,7 @@ try {
 
 此代码从Excel格式的报表生成PDF文档。
 
-在将此PDF提供给客户之前，您可以使用密码保护此文档。 创建另一个操作来处理这种保护， [ProtectPDFOperation](https://opensource.adobe.com/pdfservices-java-sdk-samples/apidocs/latest/com/adobe/pdfservices/operation/pdfops/ProtectPDFOperation.html)，然后使用 [ProtectPDFOptions](https://opensource.adobe.com/pdfservices-java-sdk-samples/apidocs/latest/com/adobe/pdfservices/operation/pdfops/options/protectpdf/package-summary.html) 将密码添加到文档。
+在将此PDF提供给客户之前，您可以使用密码保护此文档。 创建另一个为您处理此保护的操作，ProtectPDFOperation，然后使用ProtectPDFOptions将密码添加到文档。
 
 ```
 ProtectPDFOptions options = ProtectPDFOptions.passwordProtectOptionsBuilder()
