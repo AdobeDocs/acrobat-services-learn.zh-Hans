@@ -1,6 +1,6 @@
 ---
-title: ”[!DNL Adobe Acrobat Services] API用例”
-description: 的“概述”页面 [!DNL Adobe Acrobat Services] API用例
+title: “[!DNL Adobe Acrobat Services] API用例”
+description: ' [!DNL Adobe Acrobat Services] API用例的概述页面'
 feature: Use Cases
 role: Developer
 level: Beginner, Intermediate, Experienced
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # [!DNL Adobe Acrobat Services] API用例
 
-## 您可以 [!DNL Adobe Acrobat Services] API是否适合我？
+## [!DNL Adobe Acrobat Services]个API可以为我做什么？
 
-了解如何 [!DNL Adobe Acrobat Services] API通过这些实际操作用例可以改变您的业务。
+了解[!DNL Adobe Acrobat Services] API如何通过这些实际操作用例改变您的业务。
 
-### [!DNL Acrobat Services] API
+### [!DNL Acrobat Services]个API
 
 <table style="table-layout:fixed">
 <tr>
@@ -30,7 +30,7 @@ ht-degree: 0%
       <img alt="自动化法律工作流程" src="assets/automatelegal_thumb.png" />
     </a>
     <div>
-    <a href="automatelegalworkflows.md"><strong>自动化法律工作流程</strong></a>
+    <a href="automatelegalworkflows.md"><strong>自动执行法律工作流程</strong></a>
     </div>
     <em>了解如何使用条件内容自动执行法律工作流程</em>
     <br>
@@ -42,7 +42,7 @@ ht-degree: 0%
       <div>
       <a href="employeeonboarding.md"><strong>更新员工入职培训</strong></a>
       </div>
-      <em>了解如何实现员工入职培训的现代化</em>
+      <em>了解如何使员工入职培训现代化</em>
       <br>
   </td>
   <td>
@@ -50,7 +50,7 @@ ht-degree: 0%
         <img alt="加快销售过程" src="assets/accsales_thumb.png" />
       </a>
       <div>
-      <a href="acceleratesales.md"><strong>加快销售过程</strong></a>
+      <a href="acceleratesales.md"><strong>加速销售过程</strong></a>
       </div>
       <em>了解如何通过集成文档体验来加快销售速度</em>
       <br>
@@ -74,7 +74,7 @@ ht-degree: 0%
     <div>
     <a href="nda.md"><strong>创建NDA</strong></a>
     </div>
-    <em>了解如何创建用于协作的动态NDAPDF</em>
+    <em>了解如何为协作创建动态NDAPDF</em>
     <br>
   </td>
   <td>
@@ -92,7 +92,7 @@ ht-degree: 0%
       <img alt="管理员工聘用信" src="assets/offer_thumb.png" />
     </a>
     <div>
-    <a href="offer.md"><strong>管理员工聘用信</strong></a>
+    <a href="offer.md"><strong>管理员工优惠函</strong></a>
     </div>
     <em>了解如何生成可发送给新员工以供其签名的聘用信</em>
     <br>
@@ -124,7 +124,7 @@ ht-degree: 0%
       <img alt="创建和编辑报告" src="assets/report_thumb.png" />
     </a>
     <div>
-    <a href="reportcreation.md"><strong>创建和编辑报告</strong></a>
+    <a href="reportcreation.md"><strong>报表创建和编辑</strong></a>
     </div>
     <em>了解如何在您的网站上为客户生成PDF报告</em>
     <br>
@@ -136,7 +136,7 @@ ht-degree: 0%
     <div>
     <a href="jobposting.md"><strong>职位发布</strong></a>
     </div>
-    <em>了解如何为求职者和雇主开发顺畅而一致的Web体验</em>
+    <em>了解如何为求职者和雇主开发流畅一致的Web体验</em>
     <br>
   </td>
   <td>
@@ -144,7 +144,7 @@ ht-degree: 0%
       <img alt="师生合作" src="assets/edu_thumb.png" />
     </a>
     <div>
-    <a href="educationcollab.md"><strong>师生合作</strong></a>
+    <a href="educationcollab.md"><strong>学生 — 教师协作</strong></a>
     </div>
     <em>了解如何创建在线学习平台，让教师和学生能够轻松地在PDF中共享资源</em>
     <br>
@@ -178,7 +178,7 @@ ht-degree: 0%
     <div>
     <a href="FinanceWorkflowsJava.md"><strong>在Java中管理财务文档工作流</strong></a>
     </div>
-    <em>[!DNL Adobe Acrobat Services] 提供所有必要的工具、服务和功能，以处理和提取PDF财务文档中的数据</em>
+    <em>[!DNL Adobe Acrobat Services]提供所有必要的工具、服务和功能，以处理和提取PDF财务文档中的数据</em>
     <br>
   </td>
   <td>
@@ -232,7 +232,7 @@ ht-degree: 0%
     <div>
     <a href="ddppdfembedapi.md"><strong>数字文档发布</strong></a>
     </div>
-    <em>了解如何使用Adobe PDF Embed API在网页中显示嵌入的PDF文档</em>
+    <em>了解如何使用Adobe PDF Embed API在网页内显示嵌入的PDF文档</em>
     <br>
   </td>
   <td>

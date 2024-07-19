@@ -10,14 +10,14 @@ thumbnail: KT-6677.jpg
 exl-id: 61a9a2d1-94c3-41c2-8f90-a56a938ef245
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 4%
+source-wordcount: '567'
+ht-degree: 0%
 
 ---
 
 # 使用Adobe PDF Services API对PDF文件执行OCR
 
-![创建PDF主页横幅](assets/OCR_hero.jpg)
+![创建PDF主图](assets/OCR_hero.jpg)
 
 借助OCR（光学字符识别），您可以解锁扫描的PDF以提取文本并创建可搜索的文件。 使用我们功能强大的基于云的API，将OCR集成到任何文档工作流程中，为归档、复制文本和创建可搜索的文档索引提供了完美的解决方案。 从扫描的PDF存储库创建可搜索的归档文件，以快速搜索功能解锁重要信息并节省时间。 或者，对上传的扫描文档中的PDF应用OCR，以允许对其进行编辑以在入门培训工作流程中使用。
 
@@ -37,7 +37,7 @@ ht-degree: 4%
 
 ## 运行示例文件中提供的OCR示例
 
-我们的OCR操作默认支持英语语言环境，但还支持德语、法语、丹麦语和 [其他语言](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#ocr-with-explicit-language). 默认值是美元语言环境。
+我们的OCR操作默认支持英语语言环境，但也支持德语、法语、丹麦语和[其他语言](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#ocr-with-explicit-language)。 默认值是美元语言环境。
 
 在传递包含特定区域设置的OCR操作选项时，该方法还接受具有两个选项的“type”参数：
 
@@ -53,7 +53,7 @@ ht-degree: 4%
 
    例如，C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-java-samples>。
 
-1. 运行以下命令:
+1. 运行以下命令：
 
    `mvn -f pom.xml exec:java -Dexec.mainClass=com.adobe.platform.operation.samples.ocrpdf.OcrPDF`
 
@@ -69,7 +69,7 @@ ht-degree: 4%
 
 1. 再次将目录更改为OcrPDF目录。
 
-1. 运行以下命令:
+1. 运行以下命令：
 
    `dotnet run OcrPDF.csproj`
 
@@ -83,7 +83,7 @@ ht-degree: 4%
 
    例如，C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples
 
-1. 运行以下命令:
+1. 运行以下命令：
 
    `node src/ocr/ocr-pdf.js`
 
@@ -99,10 +99,10 @@ ht-degree: 4%
 
 ## 资源和后续步骤
 
-* 如需其他帮助和支持，请访问该Adobe [[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) 社区论坛
+* 如需其他帮助和支持，请访问Adobe[[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all)社区论坛
 
 * PDF服务API [文档](https://www.adobe.com/go/pdftoolsapi_doc)
 
-* [常见问题解答](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) 对于PDF服务API问题
+* 有关PDF服务API问题的[常见问题解答](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197)
 
-* [联系我们](https://www.adobe.com/go/pdftoolsapi_requestform) 有关许可和定价的问题
+* 有关许可和定价的问题，请[联系我们](https://www.adobe.com/go/pdftoolsapi_requestform)

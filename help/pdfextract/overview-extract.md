@@ -37,7 +37,7 @@ ht-degree: 0%
     <div>
    <a href="https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/parsing-pdf.html"><strong>分析PDF：与使用PDF提取API处理JSON数据一样简单</strong></a>
     </div>
-    <em>了解Adobe PDF Services API中的PDF提取服务如何使解析PDF与解析JSON一样简单</em>
+    <em>了解Adobe PDF Services API中的PDF提取服务如何能够像解析JSON一样轻松解析PDF</em>
     <br>
   </td>
   <td>

@@ -10,8 +10,8 @@ thumbnail: KT-8097.jpg
 exl-id: e0c32082-4f8f-4d8b-ab12-55d95b5974c5
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '2006'
-ht-degree: 1%
+source-wordcount: '1890'
+ht-degree: 0%
 
 ---
 
@@ -19,21 +19,21 @@ ht-degree: 1%
 
 ![用例主横幅](assets/UseCaseLegalHero.jpg)
 
-数字化带来了挑战。 如今，大多数组织都有多种类型 [法律合同](https://www.adobe.io/apis/documentcloud/dcsdk/legal-contracts.html) 他们必须创建、编辑、批准协议并由各方签名。 这些法律合同通常需要独特的定制和品牌化。 组织还可能需要在签名后以受保护的格式保存这些文档，以确保其安全。 要进行所有这些操作，他们需要强健的文档生成和管理解决方案。
+数字化带来了挑战。 今天，大多数组织具有许多类型的[法律合同](https://www.adobe.io/apis/documentcloud/dcsdk/legal-contracts.html)，他们必须创建、编辑、批准这些法律合同，并且这些合同已由各方签署。 这些法律合同通常需要独特的定制和品牌化。 组织还可能需要在签名后以受保护的格式保存这些文档，以确保其安全。 要进行所有这些操作，他们需要强健的文档生成和管理解决方案。
 
 许多解决方案都提供一些文档生成，但无法自定义数据输入和条件逻辑，例如仅应用于特定场景的子句。 随着文档越来越广泛，手动更新公司的法律模板不仅困难重重，而且容易出错。 实现这些过程自动化是相当大的。
 
 ## 您可以学到的内容
 
-在本实际操作教程中，探索以下各项功能 [[!DNL Adobe Acrobat Services] API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html) 生成文档中的自定义输入字段。 此外，探索如何轻松地将这些生成的文档转换为受保护的便携文档格式(PDF)，以防止数据操作。
+在本实际操作教程中，探索在文档中生成自定义输入字段时[[!DNL Adobe Acrobat Services] API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)的功能。 此外，探索如何轻松地将这些生成的文档转换为受保护的便携文档格式(PDF)，以防止数据操作。
 
-本教程涉及在探索将合同转换为PDF时进行一些编程。 为了有效地跟进， [Microsoft Word](https://www.microsoft.com/en-us/download/office.aspx) 和 [Node.js](https://nodejs.org/) 应该安装在你的电脑上。 对Node.js和 [ES6语法](https://www.w3schools.com/js/js_es6.asp) 也建议使用该选项。
+本教程涉及在探索将合同转换为PDF时进行一些编程。 若要有效跟随，应在你的电脑上安装[Microsoft Word](https://www.microsoft.com/en-us/download/office.aspx)和[Node.js](https://nodejs.org/)。 还建议基本了解Node.js和[ES6语法](https://www.w3schools.com/js/js_es6.asp)。
 
 ## 相关的API和资源
 
-* [Document Generation APIAdobe](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)
+* [Adobe的Document Generation API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)
 
-* [嵌入式APIPDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF的嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html)
 
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 ## 创建模板文档
 
-您可以使用Microsoft Word应用程序或通过下载Adobe的 [示例Word模板](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade). 但是，如果不使用某些辅助工具(如 [AdobeDocument Generation Tagger加载项](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=docgen-addin) 用于Microsoft Word。
+您可以使用Microsoft Word应用程序或通过下载Adobe的[示例Word模板](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade)来创建法律文档。 但是，如果不使用某些辅助工具(如适用于Microsoft Word的[AdobeDocument Generation Tagger加载项](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=docgen-addin))，则自定义输入并以数字方式签署这些文档并不容易。
 
 Document Generation Tagger是一款Microsoft Word插件，可使用标签无缝自定义文档。 它允许在使用JSON数据动态填充的文档模板中创建动态字段。
 
@@ -49,7 +49,7 @@ Document Generation Tagger是一款Microsoft Word插件，可使用标签无缝�
 
 要说明如何使用Document Generation Tagger，请安装此插件，然后创建一个JSON数据模型，该模型用于标记简单法律合同文档。
 
-通过在Word中单击 **插入** 选项卡，然后在“插件”组中，单击 **我的加载项**. 在Office加载项菜单上，搜索“AdobeDocument Generation”，然后单击 **添加** 然后按照流程操作。 您可以在上面的屏幕捕捉中看到这些步骤。
+单击&#x200B;**插入**&#x200B;选项卡，在Word中安装Document Generation Tagger，然后在“加载项”组中，单击&#x200B;**我的加载项**。 在“Office加载项”菜单上，搜索“AdobeDocument Generation”，然后单击“**添加**”并完成此过程。 您可以在上面的屏幕捕捉中看到这些步骤。
 
 安装适用于Word的Document Generation Tagger插件后，请创建一个简单的JSON数据模型来标记法律文档。
 
@@ -71,39 +71,39 @@ Document Generation Tagger是一款Microsoft Word插件，可使用标签无缝�
 }
 ```
 
-保存此JSON文档后，将其导入到Document Generation Tagger加载项。 通过单击导入文档 **Document Generation** 在Word屏幕右上角的Adobe组中，如下面的屏幕截图所示。
+保存此JSON文档后，将其导入到Document Generation Tagger加载项。 单击Word屏幕右上角Adobe组中的&#x200B;**“Document Generation”**，导入文档，如下面屏幕捕捉所示。
 
-![Word中的AdobeDocument Generation Tagger插件的屏幕截图](assets/legal_2.png)
+![Word中的AdobeDocument Generation Tagger加载项的屏幕截图](assets/legal_2.png)
 
-此时会显示引导您的视频。 您可以观看它，或通过单击直接进入标记域 **开始使用**. 单击之后 **开始使用**，此时会显示上传表单。 点击 **上传JSON文件** 然后选择您刚刚创建的JSON文件。 导入完成后，单击 **生成标记** 生成标签。
+此时会显示引导您的视频。 您可以通过单击&#x200B;**开始使用**&#x200B;来观看或直接进入标记字段。 单击&#x200B;**开始使用**&#x200B;后，会显示一个上传表单。 单击&#x200B;**上传JSON文件**，然后选择刚刚创建的JSON文件。 导入完成后，单击“**生成标签**”以生成标签。
 
-导入并生成标签后，您可以将这些标签添加到文档中。 若要添加标签，请将光标放在希望显示标签的确切位置。 然后从Document Generation API中选择一个标签并单击 **插入文本**. 下面的屏幕截图概述了此过程。
+导入并生成标签后，您可以将这些标签添加到文档中。 若要添加标签，请将光标放在希望显示标签的确切位置。 然后从Document Generation API中选择一个标签并单击&#x200B;**插入文本**。 下面的屏幕截图概述了此过程。
 
-![向文档添加标签的屏幕截图](assets/legal_3.png)
+![向文档添加标记的屏幕截图](assets/legal_3.png)
 
-除了使用导入的JSON数据模型创建的基本标签之外，您还可以使用高级功能获得更多选项，例如图像、条件逻辑、计算、重复元素和条件短语。 您可以通过单击 **高级** 在“Document Generation Tagger”面板中。 您可以在下面的屏幕截图中看到这一点。
+除了使用导入的JSON数据模型创建的基本标签之外，您还可以使用高级功能获得更多选项，例如图像、条件逻辑、计算、重复元素和条件短语。 您可以通过在Document Generation Tagger面板中单击&#x200B;**高级**&#x200B;来访问这些功能。 您可以在下面的屏幕截图中看到这一点。
 
 ![AdobeDocument Generation Tagger“高级”选项卡的屏幕截图](assets/legal_4.png)
 
 这些高级功能与基本标签并无区别。 要包含条件逻辑，请选择要填充的文档部分。 然后，配置确定标签插入的规则。
 
-为了进一步说明，例如在协议中，您只想无条件地包括一个部分。 在“选择内容类型”字段中，选择 **部分。** 在“选择记录”字段中，选择用于确定是否显示条件节的选项。 选择所需的条件运算符，并在“值”字段中设置要测试的值。 然后单击 **插入条件。** 以下屏幕截图说明了此过程。
+为了进一步说明，例如在协议中，您只想无条件地包括一个部分。 在“选择内容类型”字段中，选择“**分区”。**&#x200B;在“选择记录”字段中，选择用于确定是否显示条件节的选项。 选择所需的条件运算符，并在“值”字段中设置要测试的值。 然后单击“**插入条件”。**&#x200B;下面的屏幕截图说明了此过程。
 
 ![插入条件内容的屏幕截图](assets/legal_5.png)
 
-对于计算，选择算术或聚合，然后根据可用的模板标签包括相关的第一条记录、运算符和第二条要使用的记录。 然后单击 **插入计算**.
+对于计算，选择算术或聚合，然后根据可用的模板标签包括相关的第一条记录、运算符和第二条要使用的记录。 然后单击&#x200B;**插入计算**。
 
-另外，法律合同通常要求当事各方签字。 您可以使用“数值计算”部分正下方的Adobe Sign文本标记插入电子签名。 要包含电子签名，您必须指定收件人的数量，请选择 **签名者**，并从下拉列表中选取字段类型。 完成后，单击 **插入Adobe Sign文本标记** 以完成该过程。
+另外，法律合同通常要求当事各方签字。 您可以使用“数值计算”部分正下方的Adobe Sign文本标记插入电子签名。 要包含电子签名，您必须指定收件人的数量，选择&#x200B;**签名者**，然后从下拉列表中相应地选择字段类型。 完成后，单击&#x200B;**插入Adobe Sign文本标记**&#x200B;以完成此过程。
 
-为确保数据的完整性，请以受保护的格式保存法律文档。 与 [!DNL Acrobat Services] 在API中，您可以将文档快速转换为PDF格式。 您可以构建一个简单的express Node.js应用程序，将Document Generation API集成到该应用程序中，并使用这个简单的应用程序将已标记文档从Word转换为PDF格式。
+为确保数据的完整性，请以受保护的格式保存法律文档。 借助[!DNL Acrobat Services]个API，您可以快速将文档转换为PDF格式。 您可以构建一个简单的express Node.js应用程序，将Document Generation API集成到该应用程序中，并使用这个简单的应用程序将已标记文档从Word转换为PDF格式。
 
 ## 项目设置
 
-首先，设置Node.js应用程序的文件夹结构。 在本例中，将此简单应用程序命名为AdobeLegalContractAPI。 您可以检索源代码 [此处](https://github.com/agavitalis/adobe_legal_contracts.git).
+首先，设置Node.js应用程序的文件夹结构。 在本例中，将此简单应用程序命名为AdobeLegalContractAPI。 您可以在[此处](https://github.com/agavitalis/adobe_legal_contracts.git)检索源代码。
 
 ### 目录结构
 
-创建一个名为AdobeLegalContractAPI的文件夹，然后在您选择的编辑器中打开它。 使用创建基本Node.js应用程序 ```npm init``` 命令使用以下文件夹结构：
+创建一个名为AdobeLegalContractAPI的文件夹，然后在您选择的编辑器中打开它。 使用以下文件夹结构通过```npm init```命令创建基本Node.js应用程序：
 
 ```
 ###Directory Structure
@@ -175,11 +175,11 @@ npm install express body-parser morgan multer hbs path config mongoose
 
 在这些代码片段中，安装了应用程序依赖项，包括视图的手柄模板引擎。
 
-本教程的主要重点是使用 [[!DNL Acrobat Services] API](https://www.adobe.io/apis/documentcloud/dcsdk/) 将文档转换为PDF。 因此，对于如何构建此Node.js应用程序，没有分步过程。 但是，您可以在以下位置检索完整的工作Node.js应用程序代码 [GitHub](https://github.com/agavitalis/adobe_legal_contracts.git).
+本教程的主要重点是使用[[!DNL Acrobat Services] API](https://www.adobe.io/apis/documentcloud/dcsdk/)将文档转换为PDF。 因此，对于如何构建此Node.js应用程序，没有分步过程。 但是，您可以在[GitHub](https://github.com/agavitalis/adobe_legal_contracts.git)上检索完整的工作的Node.js应用程序代码。
 
-## 集成 [!DNL Adobe Acrobat Services] Node.js应用程序中的API
+## 将[!DNL Adobe Acrobat Services] API集成到Node.js应用程序中
 
-[!DNL Adobe Acrobat Services] API是基于云的可靠服务，旨在实现文档的无缝操作。 它提供三个API：
+[!DNL Adobe Acrobat Services]个API是基于云的可靠服务，旨在实现文档的无缝操作。 它提供三个API：
 
 * Adobe PDF Services API
 
@@ -187,27 +187,27 @@ npm install express body-parser morgan multer hbs path config mongoose
 
 * Document Generation APIAdobe
 
-您需要凭据才能使用 [!DNL Acrobat Services] API(与您的PDFEmbed API凭据不同)。 如果您没有有效的凭据， [注册](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK) 并完成如下面的屏幕截图所示的工作流程。 尽情享受 [免费试用6个月，然后按需付费](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)，每个文档交易只需$0.05。
+您需要凭据才能使用[!DNL Acrobat Services] API(不同于您的PDFEmbed API凭据)。 如果您没有有效的凭据，请[注册](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK)并完成工作流程，如下面的屏幕捕获所示。 享受[免费的6个月试用期，然后即付即用](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)，每次文档交易仅需0.05 USD。
 
 ![创建新凭据的屏幕截图](assets/legal_6.png)
 
-注册过程完成后，代码示例将自动下载到您的PC以帮助您启动。 您可以提取此代码示例并按照说明操作。 不要忘记将解压缩的代码示例中的pdftools-api-credentials.json和private.key文件复制到Node.js项目的根目录中。 您需要凭据才能访问 [!DNL Acrobat Services] API端点。 您还可以下载包含个性化凭据的SDK示例，这样您就不必更新示例代码中的密钥。
+注册过程完成后，代码示例将自动下载到您的PC以帮助您启动。 您可以提取此代码示例并按照说明操作。 不要忘记将解压缩的代码示例中的pdftools-api-credentials.json和private.key文件复制到Node.js项目的根目录中。 需要凭据才能访问[!DNL Acrobat Services] API端点。 您还可以下载包含个性化凭据的SDK示例，这样您就不必更新示例代码中的密钥。
 
-Adobe PDF现在，通过运行 ```npm install \--save @adobe/documentservices-pdftools-node-sdk``` 命令使用应用程序根目录中的终端。 成功安装后，您可以使用 [!DNL Acrobat Services] 用于在应用程序中处理文档的API。
+现在，通过使用应用程序根目录中的终端运行```npm install \--save @adobe/documentservices-pdftools-node-sdk```命令来安装Adobe PDF Services Node SDK。 成功安装后，您可以使用[!DNL Acrobat Services] API来处理应用程序中的文档。
 
 ## 创建PDF文档
 
-[!DNL Acrobat Services] API支持从Microsoft OfficePDF（Word、Excel和PowerPoint）及其他文档创建文档 [支持的文件格式](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf) 例如，.txt、.rtf、.bmp、.jpeg、gif、.tiff和.png。 使用Acrobat Service API，您可以轻松地将法律合同从任何其他文件格式转换为PDF。
+[!DNL Acrobat Services]个API支持从Microsoft OfficePDF（Word、Excel和PowerPoint）和其他[支持的文件格式](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf)（例如.txt、.rtf、.bmp、.jpeg、.gif、.tiff和.png）创建文档。 使用Acrobat Service API，您可以轻松地将法律合同从任何其他文件格式转换为PDF。
 
 利用AdobeDocument Generation API，可以转换为Word文件或PDF。 例如，您可以使用Word模板生成合同，包括为文本添加红线以标记编辑后的文本。 然后，将其转换为PDF，并使用PDF服务API使用密码保护文档，发送以请求签名等。
 
-为了从可用的受支持文件格式实现PDF文档的创建，提供了一个表单来上传要转换的文档 [!DNL Acrobat Services].
+若要从可用的受支持文件格式实现PDF文档的创建，可使用[!DNL Acrobat Services]上传要转换的文档。
 
-设计好的上传表单显示在下面的屏幕捕获中，您可以在以下位置访问HTML和CSS文件： [GitHub](https://github.com/agavitalis/adobe_legal_contracts.git).
+设计的上传表单显示在下面的屏幕捕获中，您可以在[GitHub](https://github.com/agavitalis/adobe_legal_contracts.git)上访问HTML和CSS文件。
 
 ![表单上传的屏幕截图](assets/legal_7.png)
 
-现在，将以下代码片段添加到控制器/createPDFController.js文件中。 此代码检索已上传的文档并将其转换为PDF。 [!DNL Acrobat Services] 将原始上传的文件和转换后的文件保存在不同的文件夹中。
+现在，将以下代码片段添加到控制器/createPDFController.js文件中。 此代码检索已上传的文档并将其转换为PDF。 [!DNL Acrobat Services]将原始上载的文件和转换后的文件保存在不同的文件夹中。
 
 ```
 ###controllers/createPDFController.js
@@ -276,7 +276,7 @@ console.log('Exception encountered while executing operation', err);
 module.exports = { createPDF, createPDFPost };
 ```
 
-上述代码片段需要文档模型和 [!DNL Acrobat Services] 之前安装的节点SDK。 有两个功能：
+上述代码片段需要您之前安装的文档模型和[!DNL Acrobat Services]节点SDK。 有两个功能：
 
 * createPDF显示上传文档表单。
 
@@ -284,7 +284,7 @@ module.exports = { createPDF, createPDFPost };
 
 这些函数将转换后的PDF文档保存在views/output目录中，您可以在其中将这些文档下载到PC。
 
-您也可以使用免费的PDFEmbed API预览经过转换的PDF文件。 使用PDFEmbed API，您可以生成Adobe凭据 [此处](https://www.adobe.com/go/dcsdks_credentials) (不同于您的 [!DNL Acrobat Services] 凭据)和注册允许的域以访问API。 按照以下过程并为您的应用程序生成PDF的嵌入API凭据。 您还可以查看演示 [此处](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf)，从中可轻松生成代码以快速入门。
+您也可以使用免费的PDFEmbed API预览经过转换的PDF文件。 使用PDF的嵌入式API，您可以在[此处](https://www.adobe.com/go/dcsdks_credentials)生成Adobe凭据（不同于您的[!DNL Acrobat Services]凭据）并注册允许的域以访问该API。 按照以下过程并为您的应用程序生成PDF的嵌入API凭据。 你还可以在[此处](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf)查看演示，从中可轻松地生成代码以快速入门。
 
 返回到应用程序，在应用程序的view文件夹中创建list.hbs和preview.hbs文件，并将下面的代码片段分别粘贴到list.hbs和preview.hbs文件中。
 
@@ -415,16 +415,17 @@ res.download(document.url);
 module.exports = {listFiles, previewPDF, downloadPDF };
 ```
 
-在上述控制器文件中，有三个功能：listFiles、previewPDF和downloadPDF。 listFiles函数列出到目前为止生成的所有PDF文件，使用 [!DNL Acrobat Services] API。 previewPDF函数允许您使用PDFEmbed API预览PDF文件，而downloadPDF函数允许您将生成的PDF文件下载到您的电脑。 以下屏幕截图显示了使用PDFEmbed API的PDF预览示例。
+在上述控制器文件中，有三个功能：listFiles、previewPDF和downloadPDF。 listFiles函数列出了到目前为止使用[!DNL Acrobat Services] API生成的所有PDF文件。 previewPDF函数允许您使用PDFEmbed API预览PDF文件，而downloadPDF函数允许您将生成的PDF文件下载到您的电脑。 以下屏幕截图显示了使用PDFEmbed API的PDF预览示例。
 
-![PDF预览的屏幕快照](assets/legal_8.png)
+![PDF预览的屏幕截图](assets/legal_8.png)
 
 ## 摘要
 
-在本实际操作教程中，您使用Document Generation Tagger Microsoft Word插件为文档添加了标签。 然后，集成 [!DNL Acrobat Services] 将API转换为Node.js应用程序，并将标记文档转换为可下载的PDF格式，但您也可以直接为PDF创建法律合同。 最后，您使用Adobe PDF Embed API预览生成的PDF以供验证和签名。
+在本实际操作教程中，您使用Document Generation Tagger Microsoft Word插件为文档添加了标签。 然后，将[!DNL Acrobat Services]个API集成到Node.js应用程序中，并
+将标记文档转换为可下载的PDF格式，但也可以将法律合同直接创建为PDF。 最后，您使用Adobe PDF Embed API预览生成的PDF以供验证和签名。
 
-借助已完成的应用程序，可以更轻松地添加标签 [法律合同模板](https://www.adobe.io/apis/documentcloud/dcsdk/legal-contracts.html) 使用动态字段，将它们转换为PDF，进行预览并使用对它们进行签名 [!DNL Acrobat Services] API。 您的团队可以自动将正确的合同发送给每个客户，而不是花时间创建独特的合同，然后花更多时间发展您的业务。
+借助已完成的应用程序，可以更轻松地用动态字段标记[法律合同模板](https://www.adobe.io/apis/documentcloud/dcsdk/legal-contracts.html)，将它们转换为PDF，预览它们，并使用[!DNL Acrobat Services] API对其进行签名。 您的团队可以自动将正确的合同发送给每个客户，而不是花时间创建独特的合同，然后花更多时间发展您的业务。
 
-组织使用 [!DNL Adobe Acrobat Services] API的完整性和易用性。 最棒的是，您可以享受 [免费试用6个月，然后按需付费](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html). 您只需为使用的内容付费。 此外，PDFEmbed API始终免费。
+组织使用[!DNL Adobe Acrobat Services]个API来保证其完整性和易用性。 最棒的是，您可以享受[6个月的免费试用，然后按需付费](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)。 您只需为使用的内容付费。 此外，PDFEmbed API始终免费。
 
-是否准备好通过改进文档流提高工作效率？ [开始使用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 今天。
+是否准备好通过改进文档流提高工作效率？ 今天[开始使用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)。

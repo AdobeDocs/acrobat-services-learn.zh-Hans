@@ -61,7 +61,7 @@ Document Generation API接受文档模板（带有模板标记）以及输入数
       <img alt="AdobeDocument Generation标记器概述" src="assets/Taggeroverview_thumb.png" />
    </a>
     <div>
-   <a href="taggeroverview.md"><strong>AdobeDocument Generation标记器概述</strong></a>
+   <a href="taggeroverview.md"><strong>AdobeDocument Generation Tagger概述</strong></a>
     </div>
     <em>概要了解专为AdobeDocument Generation API而设计的AdobeDocument Generation Tagger</em>
     <br>
@@ -73,7 +73,7 @@ Document Generation API接受文档模板（带有模板标记）以及输入数
     <div>
    <a href="taggeraddtexttags.md"><strong>添加文本标记</strong></a>
     </div>
-    <em>了解如何使用Document Generation Tagger将文本标记添加到Microsoft WordAdobe Adobe，以便与Document Generation API配合使用</em>
+    <em>了解如何使用AdobeDocument Generation Tagger将文本标记添加到Microsoft Word模板，以便与AdobeDocument Generation API配合使用</em>
     <br>
   </td>
   <td>
@@ -81,9 +81,9 @@ Document Generation API接受文档模板（带有模板标记）以及输入数
       <img alt="添加图像标签" src="assets/Taggerimagetags_thumb.png" />
    </a>
     <div>
-   <a href="taggeraddimagetags.md"><strong>添加图像标签</strong></a>
+   <a href="taggeraddimagetags.md"><strong>添加图像标记</strong></a>
     </div>
-    <em>了解如何使用AdobeDocument Generation Tagger将图像标签添加到Microsoft Word模板，以使用AdobeDocument Generation API将图像动态推送至文档</em>
+    <em>了解如何使用Document Generation Tagger将图像标记添加到Microsoft WordAdobe，以便使用Document Generation API将图像动态推送到Adobe</em>
     <br>
   </td>
   <td>
@@ -91,7 +91,7 @@ Document Generation API接受文档模板（带有模板标记）以及输入数
       <img alt="添加表和列表标签" src="assets/Taggertables_thumb.png" />
    </a>
     <div>
-   <a href="taggertables.md"><strong>添加表和列表标签</strong></a>
+   <a href="taggertables.md"><strong>添加表和列表标记</strong></a>
     </div>
     <em>了解如何使用AdobeDocument Generation Tagger将表和列表标记添加到Microsoft Word模板，以使用AdobeDocument Generation API根据数据动态添加表或列表行</em>
     <br>
@@ -105,7 +105,7 @@ Document Generation API接受文档模板（带有模板标记）以及输入数
     <div>
    <a href="taggercalculations.md"><strong>设置数值计算标签</strong></a>
     </div>
-    <em>了解如何使用AdobeDocument Generation Tagger在Microsoft Word模板中设置数值计算标签，以便使用AdobeDocument Generation API计算数据值的聚合或算法</em>
+    <em>了解如何使用AdobeDocument Generation Tagger在Microsoft Word模板中设置数值计算标记，以便使用AdobeDocument Generation API计算数据值的聚合或算法</em>
     <br>
   </td>
   <td>
@@ -115,7 +115,7 @@ Document Generation API接受文档模板（带有模板标记）以及输入数
     <div>
    <a href="taggerconditional.md"><strong>设置条件内容</strong></a>
     </div>
-    <em>了解如何使用AdobeDocument Generation Tagger在Microsoft Word模板中设置章节，以使用AdobeDocument Generation API根据数据动态包含或排除文档章节</em>
+    <em>了解如何使用AdobeDocument Generation Tagger在Microsoft Word模板中设置章节，以便使用AdobeDocument Generation API根据数据动态包含或排除文档章节</em>
     <br>
   </td>
   <td>

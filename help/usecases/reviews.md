@@ -10,8 +10,8 @@ thumbnail: KT-8094.jpg
 exl-id: d704620f-d06a-4714-9d09-3624ac0fcd3a
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 1%
+source-wordcount: '1540'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 1%
 
 ![用例主横幅](assets/UseCaseReviewsHero.jpg)
 
-在COVID-19疫情期间，许多公司需要远程跨团队协作， [共享和审阅数字文档](https://www.adobe.io/apis/documentcloud/dcsdk/review-and-approval.html) 对团队和跨职能资源提出了一系列挑战。
+在COVID-19疫情期间，许多公司需要远程跨团队协作，[共享和审阅数字文档](https://www.adobe.io/apis/documentcloud/dcsdk/review-and-approval.html)为团队和跨职能资源带来了一系列挑战。
 
-这些挑战包括共享不同文件格式的文档、有效审阅和评论内容以及与最新编辑同步。 [!DNL Adobe Acrobat Services] API旨在使应用程序开发人员能够为其用户解决这些难题。
+这些挑战包括共享不同文件格式的文档、有效审阅和评论内容以及与最新编辑同步。 [!DNL Adobe Acrobat Services]个API旨在使应用程序开发人员能够为其用户解决这些难题。
 
 ## 您可以学到的内容
 
@@ -43,25 +43,25 @@ ht-degree: 1%
 
 ## 相关的API和资源
 
-* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [嵌入式APIPDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF的嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [项目代码](https://github.com/contentlab-io/adobe_reviews_and_approvals)
 
 ## 创建AdobeAPI凭据
 
-在启动代码之前，您必须 [创建凭据](https://www.adobe.com/go/dcsdks_credentials) 用于Adobe PDF Embed API和Adobe PDF Services API。 PDFEmbed API可免费使用。 PDF服务API免费使用六个月，然后您可以切换到 [即付即用计划](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) 只需每个文档事务0.05 USD。
+在启动代码之前，您必须[为Adobe PDF Embed API和Adobe PDF Services API创建凭据](https://www.adobe.com/go/dcsdks_credentials)。 PDFEmbed API可免费使用。 PDF服务API免费使用六个月，然后您就可以切换到[即用即付计划](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)，每个文档交易只需\$0.05。
 
-为PDF服务API创建凭据时，请选择 **创建个性化代码示例** 选项并选择Node.js作为语言。 保存ZIP文件并将pdftools-api-credentials.json和private.key提取到Node.js Express项目的根目录中。
+为PDF服务API创建凭据时，请选择&#x200B;**创建个性化代码示例**&#x200B;选项，然后选择语言的Node.js。 保存ZIP文件并将pdftools-api-credentials.json和private.key提取到Node.js Express项目的根目录中。
 
 ## 设置项目和依赖项
 
-设置Node.js和Express项目以从名为“public”的文件夹提供静态文件。 您可以根据自己的偏好设置项目方式。 要快速启动并运行，您可以使用 [Express应用程序生成器](https://expressjs.com/en/starter/generator.html). 或者，如果你想保持简单，你可以 [从头开始](https://expressjs.com/en/starter/hello-world.html) 并将代码保存在单个JavaScript文件中。 在上面链接的示例项目中，您使用的是单文件方法，并将所有代码保存在index.js中。
+设置Node.js和Express项目以从名为“public”的文件夹提供静态文件。 您可以根据自己的偏好设置项目方式。 若要快速启动并运行，您可以使用[Express应用生成器](https://expressjs.com/en/starter/generator.html)。 或者，如果您想保持简单，您可以[从头开始](https://expressjs.com/en/starter/hello-world.html)，并将代码保存在单个JavaScript文件中。 在上面链接的示例项目中，您使用的是单文件方法，并将所有代码保存在index.js中。
 
-复制 `pdftools-api-credentials.json` 和 `private.key` 从个性化代码示例到项目根目录的文件。 此外，如果您有.gitignore文件，请将其添加到.gitignore文件，这样您的凭据文件就不会意外发送到存储库。
+将`pdftools-api-credentials.json`和`private.key`文件从个性化代码示例复制到项目的根目录中。 此外，如果您有.gitignore文件，请将其添加到.gitignore文件，这样您的凭据文件就不会意外发送到存储库。
 
-下一步，运行 `npm install @adobe/documentservices-pdftools-node-sdk` 安装用于PDF服务的Node.js SDK。 导入此模块，并在您的代码（示例项目中的index.js）内创建API凭据对象，然后导入其余依赖项，如下所示：
+接下来，运行`npm install @adobe/documentservices-pdftools-node-sdk`以安装PDF服务的Node.js SDK。 导入此模块，并在您的代码（示例项目中的index.js）内创建API凭据对象，然后导入其余依赖项，如下所示：
 
 ```
   const PDFToolsSdk = require( "@adobe/documentservices-pdftools-node-sdk" );
@@ -95,13 +95,13 @@ ht-degree: 1%
   } );
 ```
 
-现在，您可以开始使用 [!DNL Acrobat Services] API。
+现在，您已准备好使用[!DNL Acrobat Services] API。
 
 ## 正在将文件转换为PDF
 
 对于文档工作流程的第一部分，最终用户必须上传要共享的文档。 要启用此功能，您可以添加上传功能，并将各种文档文件格式合并到PDF中，为审阅过程做好准备。
 
-PDF首先创建一个函数，用于根据 [PDF服务API的示例片段](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html). 此示例还显示了许多其他重要功能的片段，包括光学字符识别(OCR)、密码保护和移除以及压缩。
+首先根据[PDF服务API示例片段](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html)创建一个将文档转换为PDF的函数。 此示例还显示了许多其他重要功能的片段，包括光学字符识别(OCR)、密码保护和移除以及压缩。
 
 ```
 function fileToPDF( filename, outputFilename, callback ) {
@@ -129,14 +129,14 @@ function fileToPDF( filename, outputFilename, callback ) {
 
 接下来，服务器需要在Web服务器上有一个文件上传端点来接收和处理文档。
 
-首先，在uploads文件夹中创建文件夹，并将其命名为“草稿”。 您可以将上传的文件和转换后的PDF文件存储在此处。 下一步，运行 `npm install express-fileupload` 要在代码中安装Express-FileUpload模块并将中间件添加到Express，请执行以下操作：
+首先，在uploads文件夹中创建文件夹，并将其命名为“草稿”。 您可以将上传的文件和转换后的PDF文件存储在此处。 接下来，运行`npm install express-fileupload`以安装Express-FileUpload模块并在您的代码中将中间件添加到Express：
 
 ```
 const fileUpload = require( "express-fileupload" );
 app.use( fileUpload() );
 ```
 
-现在，添加一个 `/upload `端点并使用相同文件名将上传的文件保存在“草稿”文件夹中。 然后，调用您之前编写的函数以创建同一PDF的PDF文件（如果文档格式尚不是）。 您可以根据原始上传PDF的名称为新的文档文件生成文件名：
+现在，添加一个`/upload `终结点，并使用相同的文件名将上传的文件保存在“草稿”文件夹中。 然后，调用您之前编写的函数以创建同一PDF的PDF文件（如果文档格式尚不是）。 您可以根据原始上传PDF的名称为新的文档文件生成文件名：
 
 ```
 // Create a PDF file from an uploaded file
@@ -166,7 +166,7 @@ app.post( "/upload", ( req, res ) => {
 
 ## 创建上传页面
 
-现在，要从Web应用程序上传文件，请创建 `index.html` uploads文件夹中的网页。 在该页面上，添加一个文件上传表单，用于将文件发送到/upload端点：
+现在，要从Web应用程序上传文件，请在uploads文件夹中创建一个`index.html`网页。 在该页面上，添加一个文件上传表单，用于将文件发送到/upload端点：
 
 ```
 <form ref="uploadForm" 
@@ -210,7 +210,7 @@ return res.json( files.filter( f =\> f.endsWith( ".pdf" ) ) );
 } );
 ```
 
-添加 `/download/:file` 路由，允许您访问上传的PDF文件以嵌入到网页中。
+添加一个`/download/:file`路由，该路由提供对已上传的PDF文件的访问权限，以便嵌入到网页中。
 
 >[!NOTE]
 >
@@ -266,7 +266,7 @@ app.get( "/download/:file", function( req, res ){
   <div id="adobe-dc-view"></div>
 ```
 
-包括 [!DNL Acrobat Services] 库：
+包括[!DNL Acrobat Services]库：
 
 ```
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -330,9 +330,9 @@ app.get( "/download/:file", function( req, res ){
 
 ## 保存文档反馈
 
-用户在文档上添加注释后，单击 **保存。** 默认情况下，单击 **保存** 下载更新后的PDF文件。 更改此操作以更新服务器上的当前PDF文件。
+用户评论文档后，单击“**保存”。**&#x200B;默认情况下，单击&#x200B;**保存**&#x200B;可下载更新的PDF文件。 更改此操作以更新服务器上的当前PDF文件。
 
-添加 `/save` 一个端点，用于覆盖uploads/draft文件夹中的PDF文件：
+将`/save`端点添加到服务器代码，以覆盖uploads/draft文件夹中的PDF文件：
 
 ```
   // Overwrite the PDF file with latest PDF changes and annotations
@@ -383,7 +383,7 @@ app.get( "/download/:file", function( req, res ){
   );
 ```
 
-现在，草稿文档上的注释和批注会保存在服务器上。 您可以 [阅读有关回电方式的更多信息](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows) 适合您的工作流程。 例如， [状态回调](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback) 如果多人同时审阅和评论同一文档，可帮助处理文件冲突。
+现在，草稿文档上的注释和批注会保存在服务器上。 您可以[进一步了解回电](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows)如何适合您的工作流程。 例如，如果多人希望同时审阅和评论同一文档，[状态回调](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback)可帮助处理文件冲突。
 
 最后，使用PDF服务API将所有编辑的文档合并为一个PDF文件。
 
@@ -415,7 +415,7 @@ PDF组合代码类似于PDF创建代码，但使用CombineFiles操作并将每�
 
 ## 下载最终PDF
 
-添加一个名为/finalize的终结点，该终结点调用函数以合并内部的所有PDF文件 `uploads/drafts` 文件夹到 `Final.pdf` 文件，然后下载它。
+添加名为/finalize的终结点，该终结点调用函数将`uploads/drafts`文件夹中的所有PDF文件合并到`Final.pdf`文件中，然后下载该文件。
 
 ```
   app.get( "/finalize", ( req, res ) => {
@@ -443,8 +443,8 @@ PDF组合代码类似于PDF创建代码，但使用CombineFiles操作并将每�
 
 ## 后续步骤
 
-此实际操作教程演示了如何 [!DNL Acrobat Services] API集成 [文档共享和审阅工作流程](https://www.adobe.io/apis/documentcloud/dcsdk/review-and-approval.html) 到Web应用程序中。 该应用程序允许远程员工共享文件并与队友协作，这对在家工作的员工和承包商尤其有帮助。
+此实际操作教程演示了[!DNL Acrobat Services] API如何将[文档共享和审阅工作流程](https://www.adobe.io/apis/documentcloud/dcsdk/review-and-approval.html)集成到Web应用程序中。 该应用程序允许远程员工共享文件并与队友协作，这对在家工作的员工和承包商尤其有帮助。
 
-您可以使用这些技巧在应用程序中启用协作或浏览 [PDF服务节点SDK示例](https://github.com/adobe/pdftools-node-sdk-samples) 和 [PDF嵌入API示例](https://github.com/adobe/pdf-embed-api-samples) 在GitHub上寻找有关如何使用AdobeAPI的灵感。
+您可以使用这些技巧在应用程序中启用协作，或者在GitHub上探索[PDF服务PDFSDK示例](https://github.com/adobe/pdftools-node-sdk-samples)和[节点嵌入API示例](https://github.com/adobe/pdf-embed-api-samples)，以获取有关如何使用AdobeAPI的灵感。
 
-准备好在自己的应用程序中启用文档共享和审阅了吗？ 注册您的 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 开发人员帐户。 免费访问Adobe PDF Embed，并享受其他API的6个月免费试用期。 试用结束后，您可以 [即付即用](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) 随着您的业务增长，每次文档交易只需0.05美元。
+准备好在自己的应用程序中启用文档共享和审阅了吗？ 注册您的[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)开发人员帐户。 免费访问Adobe PDF Embed，并享受其他API的6个月免费试用期。 试用结束后，随着业务增长，您可以[即用即付](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)，而每个文档交易只需\ 0.05 USD。

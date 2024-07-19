@@ -10,32 +10,32 @@ thumbnail: KT-8089.jpg
 exl-id: ae1cd9db-9f00-4129-a2a1-ceff1c899a83
 source-git-commit: 2f01f306f5d13bfbaa61442e0e7a89537a62c33c
 workflow-type: tm+mt
-source-wordcount: '2054'
-ht-degree: 2%
+source-wordcount: '1906'
+ht-degree: 0%
 
 ---
 
 # Adobe Sign API快速入门
 
-[ACROBAT SIGN API](https://www.adobe.io/apis/documentcloud/sign.html) 是增强管理已签名协议的方式的好方法。 开发人员可以轻松地将他们的系统与Sign API集成，从而提供可靠且简单的方法上传文档、发送文档以供签名、发送提醒和收集电子签名。
+[Acrobat Sign API](https://www.adobe.io/apis/documentcloud/sign.html)可以很好地改进您管理已签名协议的方式。 开发人员可以轻松地将他们的系统与Sign API集成，从而提供可靠且简单的方法上传文档、发送文档以供签名、发送提醒和收集电子签名。
 
 ## 您可以学到的内容
 
-本实际操作教程介绍开发人员如何使用Sign API增强用创建的应用程序和工作流 [!DNL Adobe Acrobat Services]. [!DNL Acrobat Services] 包括 [Adobe PDF Services API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html)， [Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/viesdk) （免费）以及 [Document Generation APIAdobe](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html).
+此实际操作教程介绍了开发人员如何使用Sign API增强使用[!DNL Adobe Acrobat Services]创建的应用程序和工作流。 [!DNL Acrobat Services]包括[Adobe PDF Services API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html)、[Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/viesdk)（免费）和[AdobeDocument Generation API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)。
 
-更具体地说，了解如何在应用程序中包含Acrobat Sign API以收集签名和其他信息，例如保险表单上的员工信息。 使用带有简化HTTP请求和响应的常规步骤。 您可以使用自己喜欢的语言实现这些请求。 PDF您可以结合使用 [[!DNL Acrobat Services] API](https://www.adobe.io/apis/documentcloud/dcsdk/)，将其作为上传到Sign API [瞬时](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) 使用协议或协议请求最终用户签名 [小组件](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md) 工作流。
+更具体地说，了解如何在应用程序中包含Acrobat Sign API以收集签名和其他信息，例如保险表单上的员工信息。 使用带有简化HTTP请求和响应的常规步骤。 您可以使用自己喜欢的语言实现这些请求。 您可以使用[[!DNL Acrobat Services] API](https://www.adobe.io/apis/documentcloud/dcsdk/)的组合创建PDF，将其作为[临时](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md)文档上传到Sign API，然后使用协议或[构件](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/overview/terminology.md)工作流请求最终用户签名。
 
 ## 创建PDF文档
 
-首先创建一个Microsoft Word模板，然后将其另存为PDF。 或者，您可以使用Document Generation API自动化您的管道，以上传在Word中创建的模板，然后生成PDF文档。 Document Generation API属于 [!DNL Acrobat Services]， [6个月免费，然后按需付费，每次文档交易额仅为0.05美元](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html).
+首先创建一个Microsoft Word模板，然后将其另存为PDF。 或者，您可以使用Document Generation API自动化您的管道，以上传在Word中创建的模板，然后生成PDF文档。 Document Generation API是[!DNL Acrobat Services]的一部分，[免费试用6个月，然后按需付费，只需为每笔文档交易0.05 USD](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)。
 
 在此示例中，模板只是一个简单的文档，需要填写几个签名者字段。 暂时为字段命名，然后在本教程中插入实际字段。
 
-![包含一些字段的保险表单屏幕截图](assets/GSASAPI_1.png)
+![包含一些字段的保险表单的屏幕截图](assets/GSASAPI_1.png)
 
 ## 正在发现有效的API访问点
 
-在使用Sign API之前， [创建免费的开发人员帐户](https://acrobat.adobe.com/ca/en/sign/developer-form.html) 要访问API，请测试文档交换和执行情况，并测试电子邮件发送功能。
+在使用Sign API之前，[创建免费的开发人员帐户](https://acrobat.adobe.com/ca/en/sign/developer-form.html)以访问API、测试文档交换和执行情况，并测试电子邮件发送功能。
 
 Adobe在全球各地以称为“分片”的许多部署单位分发Acrobat Sign API。 每个分区均为客户帐户提供服务，例如NA1、NA2、NA3、EU1、JP1、AU1、IN1等。 分区名称与地理位置相对应。 这些碎片构成了API端点的基本URI（访问点）。
 
@@ -65,7 +65,7 @@ Adobe在全球各地以称为“分片”的许多部署单位分发Acrobat Sign
 
 Adobe Sign允许您创建不同的流，以便为签名或数据收集准备文档。 无论应用程序采用何种流程，您都必须首先上传文档，该文档仅七天可用。 随后API调用必须引用此临时文档。
 
-文档将使用POST请求上传到 `/transientDocuments` 端点。 多部分请求由文件名、文件流和文档文件的MIME（媒体）类型组成。 终结点响应包含标识文档的ID。
+文档使用POST请求上载到`/transientDocuments`终结点。 多部分请求由文件名、文件流和文档文件的MIME（媒体）类型组成。 终结点响应包含标识文档的ID。
 
 此外，您的应用程序可以为Acrobat Sign指定ping的回调URL，并在签名过程完成后通知应用程序。
 
@@ -91,9 +91,9 @@ Adobe Sign允许您创建不同的流，以便为签名或数据收集准备文�
 
 Web表单（以前称为签名构件）是任何有权访问的人都可以签名的托管文档。 Web表单的示例包括注册表、弃权以及许多人在线访问和签署的其他文档。
 
-要使用Sign API创建新的Web表单，您必须首先上传临时文档。 POST请求 `/widgets` 终结点使用返回的 `transientDocumentId` .
+要使用Sign API创建新的Web表单，您必须首先上传临时文档。 对`/widgets`终结点的POST请求使用返回的`transientDocumentId` 。
 
-在此示例中，Web表单是 `ACTIVE`，但您可以在以下三种不同状态之一创建它：
+在此示例中，Web表单是`ACTIVE`，但您可以在以下三种不同状态之一创建它：
 
 * 草稿 — 以增量方式构建Web表单
 
@@ -101,7 +101,7 @@ Web表单（以前称为签名构件）是任何有权访问的人都可以签�
 
 * ACTIVE — 立即托管Web表单
 
-还必须定义有关表单参与者的信息。 该 `memberInfos` 属性包含参与者的数据，例如电子邮件。 目前，此集不支持多个成员。 但是，由于Web表单签名者的电子邮件在Web表单创建时未知，因此该电子邮件应留空，如下例所示。 该 `role` 属性定义成员在中担任的角色 `memberInfos` （例如签名者和审批者）。
+还必须定义有关表单参与者的信息。 `memberInfos`属性包含参与者的数据，例如电子邮件。 目前，此集不支持多个成员。 但是，由于Web表单签名者的电子邮件在Web表单创建时未知，因此该电子邮件应留空，如下例所示。 `role`属性定义`memberInfos`中的成员承担的角色（例如SIGNER和APPROVER）。
 
 ```
   POST /api/rest/v6/widgets HTTP/1.1
@@ -135,13 +135,13 @@ Web表单（以前称为签名构件）是任何有权访问的人都可以签�
   }
 ```
 
-您可以将Web表单创建为 `DRAFT` 或 `AUTHORING`，然后在表单通过应用程序管道时更改其状态。 要更改Web表单状态，请参阅 [PUT/widgets/{widgetId}/state](https://secure.na4.adobesign.com/public/docs/restapi/v6#!/widgets/updateWidgetState) 端点。
+您可以将Web表单创建为`DRAFT`或`AUTHORING`，然后在表单通过应用程序管道时更改其状态。 要更改Web表单状态，请参阅[PUT/widgets/{widgetId}/state](https://secure.na4.adobesign.com/public/docs/restapi/v6#!/widgets/updateWidgetState)终结点。
 
 ## 读取Web表单托管URL
 
 下一步是发现Web表单的URL。 /widgets端点检索Web表单数据的列表，包括转发给用户的Web表单的托管URL，以收集签名和其他表单数据。
 
-此终结点返回一个列表，因此您可以按ID在 `userWidgetList` 在获取托管Web表单的URL之前：
+此终结点返回一个列表，因此您可以在获取托管Web表单的URL之前，通过`userWidgetList`中特定表单的ID来查找该特定表单：
 
 ```
   GET /api/rest/v6/widgets HTTP/1.1
@@ -184,23 +184,23 @@ Web表单（以前称为签名构件）是任何有权访问的人都可以签�
 
 此表单是供用户填写的PDF文档。 但是，您仍需要告诉表单的编辑者，用户必须填写哪些字段，以及这些字段在文档中的位置：
 
-![包含一些字段的保险表单屏幕截图](assets/GSASAPI_1.png)
+![包含一些字段的保险表单的屏幕截图](assets/GSASAPI_1.png)
 
 上面的文档尚未显示字段。 在定义哪些字段收集签名者信息以及其大小和位置时，会添加这些字段。
 
-现在，转到 [Web表单](https://secure.na4.adobesign.com/public/agreements/#agreement_type=webform) 选项卡，然后找到您创建的表单。
+现在，转到“您的协议”页面上的[ Web表单](https://secure.na4.adobesign.com/public/agreements/#agreement_type=webform)选项卡，并查找您创建的表单。
 
-![Acrobat Sign“管理”选项卡的屏幕截图](assets/GSASAPI_2.png)
+![“Acrobat Sign管理”选项卡的屏幕截图](assets/GSASAPI_2.png)
 
-![已选择Web表单的Acrobat Sign“管理”选项卡的屏幕截图](assets/GSASAPI_3.png)
+![已选择Web表单的“Acrobat Sign管理”选项卡的屏幕截图](assets/GSASAPI_3.png)
 
-点击 **编辑** 以打开文档编辑页面。 右侧面板中提供了可用的预定义字段。
+单击&#x200B;**编辑**&#x200B;以打开文档编辑页面。 右侧面板中提供了可用的预定义字段。
 
 ![Acrobat Sign表单创作环境的屏幕截图](assets/GSASAPI_4.png)
 
-编辑器允许您拖放文本和签名字段。 添加完所有必需的字段后，可以调整字段大小并对齐字段以完善表单。 最后，单击 **保存** 创建表单。
+编辑器允许您拖放文本和签名字段。 添加完所有必需的字段后，可以调整字段大小并对齐字段以完善表单。 最后，单击&#x200B;**保存**&#x200B;以创建表单。
 
-![已添加表单字段的Acrobat Sign表单创作环境的屏幕截图](assets/GSASAPI_5.png)
+![添加了表单字段的Acrobat Sign表单创作环境的屏幕截图](assets/GSASAPI_5.png)
 
 ## 发送Web表单以供签名
 
@@ -238,9 +238,9 @@ overflow: hidden; min-height: 500px; min-width: 600px;"></iframe>
 
 ![签名的屏幕截图](assets/GSASAPI_10.png)
 
-用户单击时 **应用**，Adobe指示他们打开电子邮件并确认签名。 在确认到达之前，签名将一直处于待处理状态。
+当用户单击“**应用**”时，Adobe会指示他们打开电子邮件并确认签名。 在确认到达之前，签名将一直处于待处理状态。
 
-![仅剩一步的屏幕截图](assets/GSASAPI_11.png)
+![仅再执行一个步骤的屏幕截图](assets/GSASAPI_11.png)
 
 此身份验证添加了多重身份验证并增强了签名过程的安全性。
 
@@ -250,7 +250,7 @@ overflow: hidden; min-height: 500px; min-width: 600px;"></iframe>
 
 ## 读取已完成的Web表单
 
-现在该获取用户填写的表单数据了。 该 `/widgets/{widgetId}/formData` 终结点检索用户在签署表单时在交互式表单中输入的数据。
+现在该获取用户填写的表单数据了。 `/widgets/{widgetId}/formData`终结点检索用户在签署表单时在交互式表单中输入的数据。
 
 ```
 GET /api/rest/v6/widgets/{widgetId}/formData HTTP/1.1
@@ -276,7 +276,7 @@ Company Name","","","2021-03-07 19:32:59"
 
 将文档发送给指定的收件人以供签名或审批会创建协议。 您可以使用API跟踪协议的状态和完成情况。
 
-您可以使用 [临时文档](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html)， [库文档](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md)或URL。 在此示例中，协议基于 `transientDocumentId`，就像之前创建的Web表单一样。
+您可以使用[临时文档](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html)、[库文档](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md)或URL创建协议。 在此示例中，协议基于`transientDocumentId`，就像之前创建的Web表单一样。
 
 ```
 POST /api/rest/v6/agreements HTTP/1.1
@@ -317,7 +317,7 @@ Request Body:
 
 * IN_PROCESS — 立即发送协议
 
-要更改协议状态，请使用 `PUT /agreements/{agreementId}/state` 终结点以执行下面允许的状态转换之一：
+要更改协议状态，请使用`PUT /agreements/{agreementId}/state`端点执行以下允许的状态转换之一：
 
 * 草稿以供创作
 
@@ -325,7 +325,7 @@ Request Body:
 
 * IN_PROCESS到CANCELLED
 
-该 `participantSetsInfo` 上述属性可提供希望参与协议的人员及其执行的操作（签名、批准、确认等）的电子邮件。 在上面的示例中，只有一个参与者：签名者。 书面签名限制为每个文档四个签名。
+上述`participantSetsInfo`属性提供预期要参与协议的人员及其执行的操作（签名、批准、确认等）的电子邮件。 在上面的示例中，只有一个参与者：签名者。 书面签名限制为每个文档四个签名。
 
 与Web表单不同，当您创建协议时，Adobe会自动发送协议以请求签名。 该端点返回协议的唯一标识符。
 
@@ -340,7 +340,7 @@ Request Body:
 
 ## 检索有关协议成员的信息
 
-创建协议后，您可以使用 `/agreements/{agreementId}/members` 用于检索有关协议成员信息的终结点。 例如，您可以检查参与者是否已签署协议。
+创建协议后，您可以使用`/agreements/{agreementId}/members`端点检索有关协议成员的信息。 例如，您可以检查参与者是否已签署协议。
 
 ```
 GET /api/rest/v6/agreements/{agreementId}/members HTTP/1.1
@@ -383,9 +383,9 @@ Accept: application/json
 
 根据业务规则，截止日期可能会阻止参与者在特定日期之后签署协议。 如果协议有过期日期，您可以在该日期临近时提醒参与者。
 
-根据您在致电 `/agreements/{agreementId}/members` 终结点位于最后一部分中，您可以向仍未签署协议的所有参与者发送电子邮件提醒。
+根据您在上一节中调用`/agreements/{agreementId}/members`终结点后收到的协议成员信息，您可以向所有仍未签署协议的参与者发送电子邮件提醒。
 
-POST请求 `/agreements/{agreementId}/reminders` 端点为协议中由标识的指定参与者创建提醒 `agreementId` 参数。
+对`/agreements/{agreementId}/reminders`终结点的POST请求为由`agreementId`参数标识的协议的指定参与者创建提醒。
 
 ```
 POST /agreements/{agreementId}/reminders HTTP/1.1
@@ -417,7 +417,7 @@ Accept: application/json
 
 ## 读取已完成的协议
 
-与Web表单一样，您可以阅读有关收件人已签名协议的详细信息。 该 `/agreements/{agreementId}/formData` 终结点检索用户在签署Web表单时输入的数据。
+与Web表单一样，您可以阅读有关收件人已签名协议的详细信息。 `/agreements/{agreementId}/formData`终结点检索用户在签署Web表单时输入的数据。
 
 ```
 GET /api/rest/v6/agreements/{agreementId}/formData HTTP/1.1
@@ -434,10 +434,10 @@ Company Name","CBJCHBCAABAA5Z84zy69q_Ilpuy5DzUAahVfcNZillDt"
 
 通过Acrobat Sign API，您可以管理文档、Web表单和协议。 使用Web表单和协议创建的简化而完整的工作流以通用方式完成，使开发人员可使用任何语言实现它们。
 
-有关Sign API工作方式的概述，您可以在以下位置找到示例 [API使用开发人员指南](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/api_usage.md). 本文档包含有关整篇文章中遵循的许多步骤的简短文章以及其他相关主题。
+有关Sign API工作方式的概述，您可以在[API使用开发人员指南](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/api_usage.md)中找到示例。 本文档包含有关整篇文章中遵循的许多步骤的简短文章以及其他相关主题。
 
-Acrobat Sign API可通过多层提供 [单用户和多用户电子签名计划](https://acrobat.adobe.com/cn/zh-Hans/sign/pricing/plans.html)，以便选择最符合您需求的定价模式。 既然您已经了解将Sign API集成到应用程序中有多么简单，那么您可能会对以下其他功能感兴趣 [Acrobat Sign Webhook](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/webhooks.md)，这是一个基于推送的编程模型。 Webhook并不要求您的应用程序在Acrobat Sign事件中执行频繁检查，而是允许您注册一个HTTP URL，以便在每次事件发生时Sign API都会为其执行POST回调请求。 Webhook可为您的应用程序提供实时和即时更新，从而实现强大的编程。
+Acrobat Sign API可通过多层的[单用户和多用户电子签名计划](https://acrobat.adobe.com/cn/zh-Hans/sign/pricing/plans.html)提供，因此您可以选择最适合您需求的定价模型。 现在，您了解了将Sign API集成到应用程序中的过程有多么简单，接下来您可能感兴趣的是其他功能，例如[Acrobat Sign Webhook](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/webhooks.md)，一种基于推送的编程模型。 Webhook并不要求您的应用程序在Acrobat Sign事件中执行频繁检查，而是允许您注册一个HTTP URL，以便在每次事件发生时Sign API都会为其执行POST回调请求。 Webhook可为您的应用程序提供实时和即时更新，从而实现强大的编程。
 
-查看 [即付即用定价](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)，用于您的六个月的免费Adobe PDF Services API试用和免费的Adobe PDF Embed API到期的情况。
+请查看[即付即用定价](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)(在您的六个月免费Adobe PDF Services API试用结束时)和免费的Adobe PDF Embed API。
 
-要将自动文档创建和文档签名等出色功能添加到您的应用程序，请开始使用 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html).
+若要向应用程序添加自动文档创建和文档签名等新功能，请开始使用[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)。

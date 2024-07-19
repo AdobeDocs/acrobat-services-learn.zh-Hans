@@ -10,7 +10,7 @@ thumbnail: KT-8090.jpg
 exl-id: 3aa9aa40-a23c-409c-bc0b-31645fa01b40
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '1903'
+source-wordcount: '1722'
 ht-degree: 0%
 
 ---
@@ -19,20 +19,20 @@ ht-degree: 0%
 
 ![用例主横幅](assets/UseCaseDigitalHero.jpg)
 
-电子文档无处不在 — 事实上，可能有 [数万亿PDF](https://itextpdf.com/en/blog/technical-notes/do-you-know-how-many-pdf-documents-exist-world) 从全球来看，这个数字每天都在上升。 通过在网页中嵌入PDF查看器，用户可以查看文档，而无需重新设计HTML和CSS或阻止访问您的网站。
+电子文档无处不在 — 事实上，全球大概有[万亿个PDF](https://itextpdf.com/en/blog/technical-notes/do-you-know-how-many-pdf-documents-exist-world)，这个数字每天都在上升。 通过在网页中嵌入PDF查看器，用户可以查看文档，而无需重新设计HTML和CSS或阻止访问您的网站。
 
-让我们来了解一个大众情景。 A公司帖子 [其网站上的白皮书](https://www.adobe.io/apis/documentcloud/dcsdk/digital-content-publishing.html)
-为其应用程序和服务提供上下文。 该网站的营销人员希望更好地了解用户如何与基于PDF的内容进行交互，并将其与网页和品牌相结合。 他们决定把白皮书公布为 [门禁内容](https://whatis.techtarget.com/definition/gated-content-ungated-content#:~:text=Gated%20content%20is%20online%20materials,about%20their%20jobs%20and%20organizations.)，控制谁可以下载它们。
+让我们来了解一个大众情景。 一家公司在其网站上发布了[白皮书](https://www.adobe.io/apis/documentcloud/dcsdk/digital-content-publishing.html)
+为其应用程序和服务提供上下文。 该网站的营销人员希望更好地了解用户如何与基于PDF的内容进行交互，并将其与网页和品牌相结合。 他们已决定将白皮书作为[门禁内容](https://whatis.techtarget.com/definition/gated-content-ungated-content#:~:text=Gated%20content%20is%20online%20materials,about%20their%20jobs%20and%20organizations.)发布，并控制谁可以下载这些白皮书。
 
 ## 您可以学到的内容
 
-在本实际操作教程中，了解如何使用显示网页中的嵌入PDF文档 [Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html)，免费且易于使用。 这些示例使用一些JavaScript、Node.js、Express.js、HTML和CSS。 您可以在以下位置查看完整项目代码： [GitHub](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1).
+在本实际操作教程中，了解如何使用[Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html)显示网页中嵌入的PDF文档，该功能免费且易于使用。 这些示例使用一些JavaScript、Node.js、Express.js、HTML和CSS。 您可以在[GitHub](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1)上查看完整的项目代码。
 
 ## 相关的API和资源
 
-* [嵌入式APIPDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF的嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
-* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 * [项目代码](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1)
 
@@ -40,9 +40,9 @@ ht-degree: 0%
 
 首先，让我们使用Node.js和Express创建一个网站，该网站使用外观精美的PDF并提供多个下载模板。
 
-首先， [下载并安装Node.js](https://nodejs.org/en/download/).
+首先，[下载并安装Node.js](https://nodejs.org/en/download/)。
 
-要以最小的Web应用程序结构轻松创建Node.js项目，请安装应用程序生成器工具 `` `express-generator` ``.
+若要使用最小的Web应用程序结构轻松创建Node.js项目，请安装应用程序生成器工具`` `express-generator` ``。
 
 ```
 npm install express-generator -g
@@ -67,7 +67,7 @@ npm install
 npm start
 ```
 
-最后，打开网站： <http://localhost:3000>.
+最后，在<http://localhost:3000>打开网站。
 
 ![基本网站的屏幕截图](assets/ddp_1.png)
 
@@ -75,23 +75,23 @@ npm start
 
 ## 正在渲染白皮书数据
 
-为了向网站发布白皮书，在网站上定义并准备白皮书数据以显示这些文档。 首先，在项目根目录下创建一个新的\\data文件夹。 有关可用白皮书的信息来自名为 [data.json](https://github.com/marcelooliveira/EmbedPDF/blob/main/pdf-app/data/data.json)，该文件夹将被添加到data文件夹中。
+为了向网站发布白皮书，在网站上定义并准备白皮书数据以显示这些文档。 首先，在项目根目录下创建一个新的\\data文件夹。 有关可用白皮书的信息来自名为[data.json](https://github.com/marcelooliveira/EmbedPDF/blob/main/pdf-app/data/data.json)的新文件，该文件放在data文件夹中。
 
-要使Web应用程序具有优美精致的外观，请安装 [Bootstrap](https://getbootstrap.com/) 和 [字体棒极了](https://fontawesome.com/) 前端库。
+为了让Web应用程序具有优美的外观，请安装[Bootstrap](https://getbootstrap.com/)和[Font Awesome](https://fontawesome.com/)前端库。
 
 ```
 npm install bootstrap
 npm install font-awesome
 ```
 
-打开app.js文件并包括这些目录作为静态文件的源，将其放置在现有目录之后 `` `express.static` `` 行。
+打开app.js文件并将这些目录作为静态文件的源包括在内，将其放置在现有`` `express.static` ``行之后。
 
 ```
 app.use(express.static(path.join(__dirname, '/node_modules/bootstrap/dist')));
 app.use(express.static(path.join(__dirname, '/node_modules/font-awesome')));
 ```
 
-要包含PDF文档，请在项目的\\public文件夹下创建一个名为\\pdf的文件夹。 您可以从此处复制PDF和缩览图，而不是自己创建 [GitHub存储库文件夹](https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app/public) 到\\pdf和\\image文件夹。
+要包含PDF文档，请在项目的\\public文件夹下创建一个名为\\pdf的文件夹。 您可以将[GitHub存储库文件夹](https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app/public)中的PDF和缩览图复制到\\pdf和\\image文件夹，而不是自己创建云文档和缩览图。
 
 \\public\\pdf文件夹现在包含PDF文档：
 
@@ -101,7 +101,7 @@ app.use(express.static(path.join(__dirname, '/node_modules/font-awesome')));
 
 ![PDF缩略图的屏幕截图](assets/ddp_3.png)
 
-现在，打开\\routes\\index.js文件，其中包含用于路由主页的逻辑。 要使用data.json文件中的白皮书数据，必须加载负责访问文件系统并与之交互的Node.js模块。 然后，声明 `fs` 常量，如下所示：
+现在，打开\\routes\\index.js文件，其中包含用于路由主页的逻辑。 要使用data.json文件中的白皮书数据，必须加载负责访问文件系统并与之交互的Node.js模块。 然后，在\\routes\\index.js文件第一行中声明`fs`常量，如下所示：
 
 ```
 const fs = require('fs');
@@ -120,31 +120,31 @@ let papers = JSON.parse(rawdata);
 res.render('index', { title: 'Embedding PDF', papers: papers });
 ```
 
-要在主页上呈现白皮书集合，请打开\\views\\index.ejs文件，并将现有代码替换为您项目的 [索引文件](https://github.com/marcelooliveira/EmbedPDF/blob/main/pdf-app/views/index.ejs).
+要在主页上呈现白皮书集合，请打开\\views\\index.ejs文件，并用项目[索引文件](https://github.com/marcelooliveira/EmbedPDF/blob/main/pdf-app/views/index.ejs)中的代码替换现有代码。
 
-现在，重新运行npm start并打开 <http://localhost:3000> 查看可用的白皮书集合。
+现在，重新运行npm start并打开<http://localhost:3000>以查看可用的白皮书集合。
 
-![白皮书缩略图的屏幕截图](assets/ddp_4.png)
+![白皮书的缩览图屏幕截图](assets/ddp_4.png)
 
-接下来的部分将介绍如何增强网站功能并使用 [嵌入式APIPDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) 以在Web页上显示PDF文档。 PDFEmbed API可免费使用 — 您只需获取API凭据即可。
+接下来的部分将介绍如何增强网站并使用[PDF嵌入API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html)在网页中显示PDF文档。 PDFEmbed API可免费使用 — 您只需获取API凭据即可。
 
 ## 获取PDF的嵌入API凭据
 
-要获取免费PDF的Embed API凭据，请访问 [开始使用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 新帐户或登录到现有帐户后的页面。
+要获取免费的PDFEmbed API凭据，请在注册新帐户或登录到现有帐户后访问[开始使用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)页。
 
-点击 **创建新凭据** 然后 **开始使用：**
+单击&#x200B;**创建新凭据**，然后&#x200B;**开始使用：**
 
-![有关如何创建新凭据的屏幕截图](assets/ddp_5.png)
+![如何创建新凭据的屏幕截图](assets/ddp_5.png)
 
 此时，如果您没有免费帐户，则要求您注册一个。
 
-选择 **嵌入式APIPDF**，然后键入您的凭据名称和应用程序域。 使用 **本地主机** 域，因为正在本地测试Web应用程序。
+选择&#x200B;**PDF的嵌入API**，然后键入凭据名称和应用程序域。 使用&#x200B;**localhost**&#x200B;域，因为已在本地测试Web应用。
 
 ![为PDFEmbed API创建新凭据的屏幕截图](assets/ddp_6.png)
 
-单击 **创建凭据** 按钮以访问PDF凭据并获取客户端ID （API密钥）。
+单击&#x200B;**创建凭据**&#x200B;按钮以访问您的PDF凭据并获取客户端ID （API密钥）。
 
-![有关如何复制新凭据的屏幕截图](assets/ddp_7.png)
+![如何复制新凭据的屏幕截图](assets/ddp_7.png)
 
 在Node.js项目中，在应用程序的根文件夹中创建名为.ENV的文件，并使用上一步骤中的API KEY凭据值声明PDF嵌入客户端ID的环境变量。
 
@@ -166,17 +166,17 @@ require('dotenv').config();
 
 ## 在Web应用程序中显示PDF
 
-现在，使用PDFEmbed API在网站上显示PDF。 打开实时内容 [PDFEmbed API演示](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf).
+现在，使用PDFEmbed API在网站上显示PDF。 打开实时[PDFEmbed API演示](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf)。
 
 ![实时PDFEmbed API演示的屏幕截图](assets/ddp_8.png)
 
 在左侧面板上，您可以选择最适合您网站需求的嵌入模式：
 
-* **全窗口**：该PDF涵盖所有网页空间
+* **完整窗口**：PDF涵盖所有网页空间
 
 * **大小容器**：PDF以有限大小的div形式显示在网页内部，一次显示一页
 
-* **In-Line**：整个PDF在网页内部的div中显示
+* **In-Line**：整个PDF显示在网页内的div中
 
 * **Lightbox**：PDF在网页顶部显示为图层
 
@@ -293,15 +293,15 @@ res.render('in-line', { title: paper.title, paper: paper });
 module.exports = router;
 ```
 
-再看一次 [现场演示](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf) 以自动生成PDF的Embed API代码。 点击 **In-Line** 在左侧面板中：
+再次查看[实时演示](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf)，以自动生成PDF的Embed API代码。 单击左侧面板中的&#x200B;**In-Line**：
 
 ![实时PDFEmbed API演示的屏幕截图](assets/ddp_8.png)
 
-点击 **生成代码** 查看显示“大小为”的HTMLPDF查看器所需的容器代码。
+单击&#x200B;**生成代码**&#x200B;查看显示大小容器HTML查看器所需的PDF代码。
 
 ![代码预览的屏幕截图](assets/ddp_9.png)
 
-点击 **复制代码** 并将代码粘贴到in-line.ejs文件中。
+单击&#x200B;**复制代码**&#x200B;并将代码粘贴到in-line.ejs文件中。
 
 ```
 <div>
@@ -341,13 +341,13 @@ embedMode: "IN_LINE"
 </script>
 ```
 
-现在使用npm start命令运行应用程序并打开网站 <http://localhost:3000>.
+现在使用npm start命令运行应用程序并打开位于<http://localhost:3000>的网站。
 
-![PDF白皮书缩览图的屏幕快照](assets/ddp_10.png)
+![PDF白皮书缩览图的屏幕截图](assets/ddp_10.png)
 
-最后，选择一张白皮书并单击 **查看文档** 要打开包含内置嵌入PDF的新页面，请执行以下操作：
+最后，选择一张白皮书并单击&#x200B;**查看文档**&#x200B;以打开包含内置嵌入PDF的新页面：
 
-![PDF白皮书的屏幕截图 ](assets/ddp_11.png)
+![PDF白皮书](assets/ddp_11.png)的屏幕截图
 
 请注意下载PDF和打印PDF选项现在是如何显示的。
 
@@ -522,7 +522,7 @@ showFullScreen: <%= permissions.showFullScreen %>
 </html>
 ```
 
-![闸门内容的屏幕截图](assets/ddp_14.png)
+![门控内容的屏幕截图](assets/ddp_14.png)
 
 站点访问者现在只能在提交其信息后访问PDF：
 
@@ -545,18 +545,18 @@ console.log(event);
 
 现在，重新运行该应用程序，并打开Web浏览器的开发者工具以查看事件数据。
 
-![代码屏幕截图](assets/ddp_16.png)
+![代码的屏幕截图](assets/ddp_16.png)
 
-您可以将此数据发送到 [Adobe Analytics](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=view) 或其他分析工具。
+您可以将此数据发送到[Adobe Analytics](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=view)或其他分析工具。
 
 ## 后续步骤
 
-[!DNL Acrobat Services] API可帮助开发人员使用以PDF为中心的工作流程轻松解决数字发布难题。 您已了解如何创建示例Node Web应用程序以显示白皮书集合。 然后，获取 [免费API凭据](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 并构建对白皮书的有限访问权，这些白皮书的展示方式可以分为四种 [嵌入模式](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf).
+[!DNL Acrobat Services]个API可帮助开发人员使用以PDF为中心的工作流程轻松解决数字发布难题。 您已了解如何创建示例Node Web应用程序以显示白皮书集合。 然后，获取[免费API凭据](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)，并构建对白皮书的限制访问权限，这些白皮书可以在四种[嵌入模式](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf)的其中一种显示。
 
-将此工作流程整合在一起有助于 [虚拟营销人员](https://www.adobe.io/apis/documentcloud/dcsdk/digital-content-publishing.html) 收集潜在客户联系信息以交换白皮书下载情况，并查看与相关PDF交互的人员统计信息。 您可以将这些功能纳入您的网站，以推动和监控用户参与情况。
+将此工作流程放在一起有助于[虚拟营销人员](https://www.adobe.io/apis/documentcloud/dcsdk/digital-content-publishing.html)收集潜在客户联系信息，以交换白皮书下载情况并查看与PDF交互的人员的统计信息。 您可以将这些功能纳入您的网站，以推动和监控用户参与情况。
 
-如果您是Angular或React开发人员，您可能喜欢尝试 [其他样本](https://github.com/adobe/pdf-embed-api-samples) 介绍了如何将PDFEmbed API与React和Angular项目集成。
+如果您是Angular或React开发人员，您可能喜欢尝试[其他示例](https://github.com/adobe/pdf-embed-api-samples)，其中包含如何将PDFEmbed API与React和Angular项目集成。
 
-通过Adobe，您可以使用创新解决方案打造端到端客户体验。 签出 [Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/viesdk) 免费。 要探索您还能做什么，请试用具有以下功能的Adobe PDF Services API [gopr即付即用](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)[结冰](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html).
+通过Adobe，您可以使用创新解决方案打造端到端客户体验。 免费查看[Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/viesdk)。 要探索您还能做什么，请通过[pay-as-you-gopr](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)[icing](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)来试用Adobe PDF Services API。
 
-[开始使用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 与 [!DNL Adobe Acrobat Services] 今天的API。
+今天[开始使用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) [!DNL Adobe Acrobat Services] API。

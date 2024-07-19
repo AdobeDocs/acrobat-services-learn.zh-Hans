@@ -1,6 +1,6 @@
 ---
-user-guide-title: ”[!DNL Adobe Acrobat Services]”
-breadcrumb-title: ”[!DNL Acrobat Services]”
+user-guide-title: “[!DNL Adobe Acrobat Services]”
+breadcrumb-title: “[!DNL Acrobat Services]”
 user-guide-description: 详细了解 [!DNL Adobe Acrobat Services]
 solution: Acrobat Services
 feature-set: Acrobat Services
@@ -16,7 +16,7 @@ ht-degree: 3%
 ---
 
 
-# [!DNL Adobe Acrobat Services] APITUTORIALS {#tutorials}
+# [!DNL Adobe Acrobat Services]个APITutorials {#tutorials}
 
 + [概述](overview.md)
 + PDF服务API {#pdfservices}
@@ -31,7 +31,7 @@ ht-degree: 3%
 + Document Generation API {#docgen}
    + [概述](docgen/overview-docgen.md)
    + [自动化文档生成](docgen/automate-doc-gen.md)
-   + 创建模板 {#docgentemplates}
+   + 正在创建模板{#docgentemplates}
       + [AdobeDocument Generation标记器概述](docgen/taggeroverview.md)
       + [添加文本标记](docgen/taggeraddtexttags.md)
       + [添加图像标签](docgen/taggeraddimagetags.md)
@@ -47,19 +47,19 @@ ht-degree: 3%
 + PDF电子签章API {#eseal}
    + [概述](pdfelectronicseal/overview-electronic-seal.md)
    + [自动应用电子签章](pdfelectronicseal/automatically-apply-electronic-seal.md)
-+ 嵌入式APIPDF {#pdfembed}
++ PDF的嵌入API {#pdfembed}
    + [概述](pdfembed/overview-embed.md)
    + [控制您的PDF在线体验并收集分析](pdfembed/controlpdfexperience.md)
-+ ACROBAT SIGN API {#acrobatsign}
++ Acrobat Sign API {#acrobatsign}
    + [概述](acrobatsign/overview-sign.md)
    + [Adobe Sign API快速入门](acrobatsign/signapi.md)
-   + OEM/嵌入式合作伙伴 {#oem}
+   + OEM/嵌入式合作伙伴{#oem}
       + [注册开发人员帐户](acrobatsign/sign-up-developer-account.md)
       + [创建应用程序](acrobatsign/creating-your-application.md)
       + [创建嵌入链接](acrobatsign/creating-an-embed-link.md)
       + [生成访问令牌](acrobatsign/generating-an-access-token.md)
       + [创建临时文档](acrobatsign/creating-a-transient-document.md)
-+ 用例 {#usecases}
++ 用例{#usecases}
    + [概述](usecases/overview-usecases.md)
    + [自动化法律工作流程](usecases/automatelegalworkflows.md)
    + [更新员工入职培训](usecases/employeeonboarding.md)

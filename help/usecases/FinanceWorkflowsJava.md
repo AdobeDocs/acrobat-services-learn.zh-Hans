@@ -1,6 +1,6 @@
 ---
 title: 在Java中管理财务文档工作流
-description: ”[!DNL Adobe Acrobat Services] 提供所有必要的工具、服务和功能，以处理和提取PDF财务文档中的数据”
+description: “[!DNL Adobe Acrobat Services]提供了所有必要的工具、服务和功能，以处理和提取PDF财务文档中的数据”
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -21,23 +21,23 @@ ht-degree: 0%
 
 金融行业广泛使用PDF文件来交换数据，因为它有助于维护文件的格式、设计和结构。 这一稳健的模式让金融分析师和顾问能够帮助客户做出明智决策。
 
-但是，PDF格式在处理和自动化方面可能具有一定的难度，尤其是在合并多个数据源时 — 这是金融业的一个常见用例。 构建自定义解决方案以处理PDF文档是一个选项，但无需在软件和基础架构上投入太多时间和资金。 [!DNL Adobe Acrobat Services] 提供所有必要的工具、服务和功能，以处理和提取PDF文档中的数据。
+但是，PDF格式在处理和自动化方面可能具有一定的难度，尤其是在合并多个数据源时 — 这是金融业的一个常见用例。 构建自定义解决方案以处理PDF文档是一个选项，但无需在软件和基础架构上投入太多时间和资金。 [!DNL Adobe Acrobat Services]提供所有必要的工具、服务和功能，以便处理和提取PDF文档中的数据。
 
 ## 您可以学到的内容
 
-在本实际操作教程中，了解如何使用 [!DNL Adobe Acrobat Services] API [!DNL Java Spring Boot] 应用程序。 您可以构建模型 — 视图 — 控制器(MVC)应用程序，该应用程序可以从PDF文档提取内容，将其转换为其他数据格式（如Excel），合并多个PDF，并使用口令保护资源。 本教程介绍如何使用Adobe处理PDF文档并在网站上显示 [嵌入式APIPDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
+在本实际操作教程中，了解如何将[!DNL Adobe Acrobat Services] API用于[!DNL Java Spring Boot]个应用程序。 您可以构建模型 — 视图 — 控制器(MVC)应用程序，该应用程序可以从PDF文档提取内容，将其转换为其他数据格式（如Excel），合并多个PDF，并使用口令保护资源。 本教程介绍如何使用Adobe[PDF嵌入API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html)处理PDF文档并在您的网站上显示它们。
 
 ## 相关的API和资源
 
 * [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [嵌入式APIPDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF的嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [项目示例](https://github.com/adobe/pdftools-java-sdk-samples)
 
 ## 设置
 
-[!DNL Adobe Acrobat Services] 使用身份验证系统来控制资源访问。 要访问服务，您必须从Adobe为您的公司或应用程序申请API密钥。 如果您有API密钥，请继续阅读下一部分。 要创建新的API密钥，请访问 [快速入门](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 在 [!DNL Acrobat Services] 站点。 您可以使用其免费试用版创建密钥，该试用版提供1,000个文档事务，试用期最长6个月。
+[!DNL Adobe Acrobat Services]使用身份验证系统来控制资源访问。 要访问服务，您必须从Adobe为您的公司或应用程序申请API密钥。 如果您有API密钥，请继续阅读下一部分。 要创建新的API密钥，请访问[!DNL Acrobat Services]站点中的[入门](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)。 您可以使用其免费试用版创建密钥，该试用版提供1,000个文档事务，试用期最长6个月。
 
 要学习本教程，您需要两组API密钥：
 
@@ -45,21 +45,21 @@ ht-degree: 0%
 
 * Adobe PDF Embed API
 
-创建凭据后，将PDF服务API凭据和私钥复制到 [!DNL Spring Boot] 资源部分中的应用程序。 了解有关 [Maven和Gradle库及其依赖项](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=services) 在 [!DNL Adobe Acrobat Services] 网站。 在继续之前，请确保设置所有必需的包和库。
+创建凭据后，将PDF服务API凭据和私钥复制到资源部分中的[!DNL Spring Boot]应用程序。 在[!DNL Adobe Acrobat Services]网站上详细了解[Maven和Gradle库及依赖项](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=services)。 在继续之前，请确保设置所有必需的包和库。
 
 ![PDF服务API凭据的目录位置的屏幕截图](assets/FAWJ_1.png)
 
-要配置日志记录服务，请访问 [Adobe文档](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=services) 然后滚动到“记录”部分。
+要配置日志记录服务，请访问[Adobe文档](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=services)并滚动到“日志记录”部分。
 
 >[!NOTE]
 >
 > 在生产环境中，不要在版本控制中保存私钥。 请始终使用密钥保管库或密钥注入服务来防止未经授权使用凭据。
 
-现在，您的 [!DNL Spring Boot] ，您可以继续处理PDF并为客户生成报告。
+现在[!DNL Spring Boot]应用程序已配置，您可以继续处理PDF并为客户生成报告。
 
 ## 提交报告数据
 
-要使用Adobe PDF Services API，请首先设置 `ExecutionContext` 将使用您提供的凭据。 由于您的应用程序中有凭据，因此可从文件中读取这些凭据并创建上下文，如下所示：
+要使用Adobe PDF Services API，首先设置一个使用您提供的凭据的`ExecutionContext`。 由于您的应用程序中有凭据，因此可从文件中读取这些凭据并创建上下文，如下所示：
 
 ```
 Credentials credentials = Credentials.serviceAccountCredentialsBuilder()
@@ -81,9 +81,9 @@ ExecutionContext executionContext = ExecutionContext.create(credentials);
 
 * 优化要在网络上传递的PDF文档
 
-所有这些示例均可在以下位置获得： [GitHub示例](https://github.com/adobe/pdfservices-java-sdk-samples/tree/master/src/main/java/com/adobe/pdfservices/operation/samples) 存储库。
+所有这些示例在[GitHub示例](https://github.com/adobe/pdfservices-java-sdk-samples/tree/master/src/main/java/com/adobe/pdfservices/operation/samples)存储库中可用。
 
-接下来，在 [!DNL Spring Boot]，您可以使用字符串路径或正在上传文件的流获取文件。 必须初始化您执行的每个操作，并设置输入文件路径。 在本教程中，您将使用来自的公开PDF报告 [贝莱德](https://www.blackrock.com/us/individual/products/investment-funds). 您可以使用任何其他源，包括您自己的报告。
+接下来，在[!DNL Spring Boot]中，您可以使用字符串路径或正在上传文件的流获取文件。 必须初始化您执行的每个操作，并设置输入文件路径。 在本教程中，您将使用来自[Blackrock](https://www.blackrock.com/us/individual/products/investment-funds)的公开PDF报告。 您可以使用任何其他源，包括您自己的报告。
 
 首先从文件捕获FileRef对象。 为简单起见，请通过字符串路径重点分析文件。 在下面创建一个操作，以将路径中的文件从PDF转换为Excel：
 
@@ -111,9 +111,9 @@ try {
 
 ## 生成报告
 
-[!DNL Adobe Acrobat Services] 不支持处理现成的Excel文档，但是您仍然可以使用社区框架和库来处理内容。
+[!DNL Adobe Acrobat Services]不支持处理现成的Excel文档，但您仍然可以使用社区框架和库来处理内容。
 
-例如，您可以使用 [Apache POI](https://poi.apache.org/) 在中处理Excel(或其他Microsoft文档) [!DNL Java Spring Boot] 应用程序，或者您可能对Excel文件执行其他手动或自动任务。
+例如，您可以使用[Apache POI](https://poi.apache.org/)在[!DNL Java Spring Boot]应用程序中处理Excel(或其他Microsoft文档)，也可以对Excel文件执行其他手动或自动任务。
 
 在此示例中，从PDF文档开始，提取三个基金的资产净值并在表中显示。 您还可以根据您的要求和可用数据提取其他信息，如图表和表格。 甚至可以从其他来源导入数据。
 
@@ -139,7 +139,7 @@ try {
 
 >[!TIP]
 >
-> 为防止每次收到请求时都不得不重新创建对象，使用Spring的依赖关系注入来注入 `ExecutionContext` 对象。
+> 为防止每次收到请求时都必须重新创建对象，请使用Spring的依赖关系注入来注入`ExecutionContext`对象。
 
 此代码从Excel格式的报表生成PDF文档。
 
@@ -163,7 +163,7 @@ ProtectPDFOperation operation = ProtectPDFOperation.createNew(options);
 >
 > 此时，您需要第二个凭据令牌，即客户端ID。
 
-在您的 [!DNL Spring Boot] 应用程序，在要渲染HTML报告的位置添加以下PDF片段：
+在[!DNL Spring Boot]应用程序中，将以下HTML片段添加到要呈现PDF报告的位置：
 
 ```
 <div id="pdf-viewer"></div>
@@ -195,8 +195,8 @@ PDFEmbed API提供了预览PDF和批注报告所需的所有工具。
 
 ## 后续步骤
 
-本实际操作教程探讨了 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) API，并讨论了如何使用这些服务来处理PDF数据和生成财务决策报告。 它演示了如何使用将API集成到系统中 [!DNL Java Spring Boot] 作为示例框架，说明了快速处理PDF文档是多么的简单。
+此实际操作教程探讨了[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) API，并讨论了如何使用这些服务来处理PDF数据和生成财务决策报告。 它演示了如何使用[!DNL Java Spring Boot]作为示例框架将API集成到您的系统中，以展示快速处理PDF文档是多么简单。
 
-探索 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) 并了解Adobe PDF服务能够为您的业务带来哪些好处。 要了解SDK中可用的更多功能，请参阅 [GitHub存储库](https://github.com/adobe/pdftools-java-sdk-samples) ，并探索如何 [嵌入式APIPDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) 可以帮助您快速显示应用程序内的PDF。
+浏览[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/)并了解Adobe PDF Services可为您的企业提供哪些服务。 要了解SDK中可用的更多功能，请参阅[GitHub存储库](https://github.com/adobe/pdftools-java-sdk-samples)中的示例，并探索[PDFEmbed API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html)如何帮助您快速显示应用程序内的PDF。
 
-要轻松合并和处理文档，为金融客户创建有用的PDF报告，请先免费注册 [开发人员帐户Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/) 今天。
+要轻松合并和处理文档，为您的金融客户创建有用的PDF报告，请立即注册免费的[Adobe开发人员帐户](https://www.adobe.io/apis/documentcloud/dcsdk/)。

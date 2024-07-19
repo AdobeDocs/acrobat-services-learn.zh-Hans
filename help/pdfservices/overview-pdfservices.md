@@ -10,7 +10,7 @@ thumbnail: KT-8116.jpg
 exl-id: 81410fe4-7a2c-43a9-b497-b7423f9821ec
 source-git-commit: e2debb7ef139f890cdfc158f7634ee5c836fab32
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ ht-degree: 0%
       <img alt="获取Microsoft Power Automate的凭据" src="assets/createcredentials_1280.png" />
    </a>
     <div>
-   <a href="getting-credentials-power-automate.md"><strong>获取凭据 [!DNL Microsoft Power Automate]</strong></a>
+   <a href="getting-credentials-power-automate.md"><strong>正在获取[!DNL Microsoft Power Automate]</strong></a>的凭据
     </div>
-    <em>了解如何获取凭据以开始使用或试用 [!DNL Adobe PDF Services]</em>
+    <em>了解如何获取凭据以开始使用或试用[!DNL Adobe PDF Services]</em>
     <br>
   </td>
   <td>
@@ -44,9 +44,9 @@ ht-degree: 0%
       <img alt="在Microsoft Power Automate中创建您的第一个工作流" src="assets/firstflow_1280.png" />
    </a>
     <div>
-   <a href="create-workflow-power-automate.md"><strong>创建您的第一个工作流程 [!DNL Microsoft Power Automate]</strong></a>
+   <a href="create-workflow-power-automate.md"><strong>在[!DNL Microsoft Power Automate]</strong></a>中创建您的第一个工作流
     </div>
-    <em>了解如何使用 [!DNL Adobe PDF Services] 连接器 [!DNL Microsoft Power Automate]</em>
+    <em>了解如何在[!DNL Microsoft Power Automate]</em>中使用[!DNL Adobe PDF Services]连接器
     <br>
   </td>
   <td>
@@ -54,9 +54,9 @@ ht-degree: 0%
       <img alt="使用PDF服务API和Node.js，只需几分钟即可从HTML或MS Office创建PDF" src="assets/PDFServices_GettingStartedNode_thumb.jpg" />
    </a>
     <div>
-   <a href="createpdffromhtml.md"><strong>从HTML创建PDF或 [!DNL MS Office] 使用PDF服务API和Node.js只需短短几分钟</strong></a>
+   <a href="createpdffromhtml.md"><strong>使用PDF服务API和Node.js，在几分钟内从HTML或[!DNL MS Office]创建PDF</strong></a>
     </div>
-    <em>[!DNL Adobe PDF Services API] 这就为开发人员提供了自由选择的PDF操作服务，以满足复杂业务工作流程的需求</em>
+    <em>[!DNL Adobe PDF Services API]为开发人员提供了自由范围，可以在几个强大的PDF操作服务之间进行选择和选择，以满足复杂业务工作流程的需要</em>
     <br>
   </td>
 </tr>
@@ -66,9 +66,9 @@ ht-degree: 0%
       <img alt="使用PDF服务API将PDF导出到Word、PowerPoint等" src="assets/PDFServices_ExportPDF_thumb.jpg" />
    </a>
     <div>
-   <a href="exportpdf.md"><strong>利用 [!DNL PDF Services API] 要将PDF导出到 [!DNL Word]， [!DNL PowerPoint]，以及更多</strong></a>
+   <a href="exportpdf.md"><strong>利用[!DNL PDF Services API]将PDF导出到[!DNL Word]、[!DNL PowerPoint]等</strong></a>
     </div>
-    <em>了解如何运行 [!DNL PDF Services API] 使用Node.js、Java和.Net语言的示例文件执行导出操作</em>
+    <em>了解如何使用Node.js、Java和.Net语言的示例文件运行[!DNL PDF Services API]导出操作</em>
     <br>
   </td>
    <td>
@@ -76,9 +76,9 @@ ht-degree: 0%
       <img alt="Adobe PDF Services API和Java快速入门" src="assets/PDFServices_GettingStartedJAVA_thumb.jpg" />
    </a>
     <div>
-   <a href="gettingstartedjava.md"><strong>Adobe PDF Services API和Java快速入门</strong></a>
+   <a href="gettingstartedjava.md"><strong>开始使用Adobe PDF Services API和Java</strong></a>
     </div>
-    <em>开发人员只需几分钟即可开始使用，并准备好运行为访问所有可用Web服务而提供的示例文件</em>
+    <em>开发人员只需几分钟即可开始使用，并准备好运行为访问所有可用Web服务提供的示例文件</em>
     <br>
   </td>
    <td>
@@ -86,7 +86,7 @@ ht-degree: 0%
       <img alt="使用Adobe PDF Services API对PDF文件执行OCR" src="assets/PDFServices_OCR_Thumb.jpg" />
    </a>
     <div>
-   <a href="ocr.md"><strong>使用 [!DNL Adobe PDF Services API] 到OCRPDF文件</strong></a>
+   <a href="ocr.md"><strong>使用[!DNL Adobe PDF Services API]对PDF文件进行OCR</strong></a>
     </div>
     <em>借助OCR（光学字符识别），您可以解锁扫描的PDF以提取文本并创建可搜索的文件</em>
     <br>
@@ -96,9 +96,9 @@ ht-degree: 0%
       <img alt="Adobe PDF Services API和.Net快速入门" src="assets/PDFServices_GettingStartedNET_thumb.jpg" />
    </a>
     <div>
-   <a href="gettingstartednet.md"><strong>快速入门 [!DNL Adobe PDF Services API] 和.Net</strong></a>
+   <a href="gettingstartednet.md"><strong>开始使用[!DNL Adobe PDF Services API]和.Net</strong></a>
     </div>
-    <em>[!DNL Adobe PDF Services API] 这就为开发人员提供了自由选择的PDF操作服务，以满足复杂业务工作流程的需求</em>
+    <em>[!DNL Adobe PDF Services API]为开发人员提供了自由范围，可以在几个强大的PDF操作服务之间进行选择和选择，以满足复杂业务工作流程的需要</em>
     <br>
   </td>
 </tr>

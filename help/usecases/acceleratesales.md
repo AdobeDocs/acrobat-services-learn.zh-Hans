@@ -1,6 +1,6 @@
 ---
 title: 加快销售过程
-description: 了解如何将文档体验与集成，以加快销售速度 [!DNL Adobe Acrobat Services]
+description: 了解如何通过将文档体验与 [!DNL Adobe Acrobat Services]集成来加快销售速度
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -10,7 +10,7 @@ thumbnail: KT-10222.jpg
 exl-id: 9430748f-9e2a-405f-acac-94b08ad7a5e3
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '1755'
+source-wordcount: '1704'
 ht-degree: 0%
 
 ---
@@ -19,32 +19,32 @@ ht-degree: 0%
 
 ![用例主横幅](assets/UseCaseAccelerateSalesHero.jpg)
 
-从白皮书到合同和协议，在整个购买过程中都需要大量文档。 在本教程中，了解如何 [[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/) 可以在整个旅程中集成文档体验以帮助加快销售。
+从白皮书到合同和协议，在整个购买过程中都需要大量文档。 在本教程中，了解[[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/)如何在整个旅程中集成文档体验以帮助加快销售速度。
 
 ## 从数据生成协议和销售订单
 
 销售协议、合同和其他文档可能因具体条件而大不相同。 例如，销售协议可能仅包含基于唯一条件的特定条款，如位于特定国家或州，或将特定产品作为协议的一部分包括在内。 手动创建这些文档或维护许多不同的模板变体会显着增加与手动查看更改相关的法律成本。
 
-[Document Generation APIAdobe](https://developer.adobe.com/document-services/apis/doc-generation/) 允许您从CRM或其他数据系统中获取数据，以便根据该数据动态生成销售文档。
+[AdobeDocument Generation API](https://developer.adobe.com/document-services/apis/doc-generation/)允许您从CRM或其他数据系统中获取数据，以便根据该数据动态生成销售文档。
 
 ## 获取凭据
 
 首先注册免费的Adobe PDF Services凭据：
 
-1. 导航 [此处](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html) 注册您的凭据。
+1. 在[此处](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html)导航以注册您的凭据。
 1. 使用您的Adobe ID登录。
 1. 设置凭据名称（例如Sales Agreements Demo）。
 
    ![设置凭据名称的屏幕截图](assets/accsales_1.png)
 
 1. 选择一种语言以下载示例代码（例如，Node.js）。
-1. 选中以同意 **[!UICONTROL 开发人员条款]**.
-1. 选择 **[!UICONTROL 创建凭据]**.
+1. 检查以同意&#x200B;**[!UICONTROL 开发人员条款]**。
+1. 选择&#x200B;**[!UICONTROL 创建凭据]**。
 系统随即将一个文件下载到您的计算机，该ZIP文件包含用于身份验证的示例文件pdfservices-api-credentials.json和private.key。
 
    ![凭据的屏幕截图](assets/accsales_2.png)
 
-1. 选择 **[!UICONTROL 获取Microsoft Word插件]** 或转到 [AppSource](https://appsource.microsoft.com/en-cy/product/office/WA200002654) 以进行安装。
+1. 选择&#x200B;**[!UICONTROL 获取Microsoft Word插件]**&#x200B;或转到[AppSource](https://appsource.microsoft.com/en-cy/product/office/WA200002654)进行安装。
 
    >[!NOTE]
    >
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 ## 您的数据
 
-如果要从特定数据系统提取数据，必须将该数据输出为JSON数据或生成您自己的架构。 此方案使用以下预创建的示例数据集：
+如果要从特定数据系统提取数据，必须将数据输出为JSON数据或生成您自己的架构。 此方案使用以下预创建的示例数据集：
 
 ```
 {
@@ -110,27 +110,27 @@ ht-degree: 0%
 
 ## 将基本标签添加到文档
 
-此方案使用可以下载的销售订单文档 [此处](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/SalesOrder/Exercise/SalesOrder_Base.docx?raw=true).
+此方案使用的销售订单文档可在[此处](https://github.com/benvanderberg/adobe-document-generation-samples/blob/main/SalesOrder/Exercise/SalesOrder_Base.docx?raw=true)下载。
 
 ![示例销售订单文档的屏幕截图](assets/accsales_3.png)
 
-1. 打开 *SalesOrder.docx* Microsoft Word中的示例文档。
-1. 如果已安装Document Generation插件，请选择 **[!UICONTROL Document Generation]** 在“功能区”中。 如果在功能区中看不到Document Generation，请按照以下说明进行操作。
-1. 选择 **[!UICONTROL 开始使用]**.
-1. 将上面写入的JSON示例数据复制到 *JSON数据* 字段。
+1. 在Microsoft Word中打开&#x200B;*SalesOrder.docx*&#x200B;示例文档。
+1. 如果已安装Document Generation插件，请在功能区中选择&#x200B;**[!UICONTROL Document Generation]**。 如果在功能区中看不到Document Generation，请按照以下说明进行操作。
+1. 选择&#x200B;**[!UICONTROL 开始使用]**。
+1. 将上面写入的JSON示例数据复制到&#x200B;*JSON数据*&#x200B;字段中。
 
    ![复制JSON数据的屏幕截图](assets/accsales_4.png)
 
 接下来，导航到“Document Generation Tagger”面板，将标签置入文档中。
 
-1. 选择要替换的文本(例如， *公司名称*)。
-1. 在 *Document Generation Tagger* 面板中，搜索“名称”。
+1. 选择要替换的文本（例如，*公司名称*）。
+1. 在&#x200B;*Document Generation Tagger*&#x200B;面板中，搜索“名称”。
 1. 在标签列表中，选择“公司”下的“名称”。
-1. 选择 **[!UICONTROL 插入文本]**.
+1. 选择&#x200B;**[!UICONTROL 插入文本]**。
 
-   ![插入标签的屏幕截图](assets/accsales_5.png)
+   ![插入标记的屏幕截图](assets/accsales_5.png)
 
-   此过程会放置一个名为 {{company.name}} 因为标记位于JSON中的路径下方。
+   此过程放置了一个名为{{company.name}}的标记，因为该标记位于JSON中的路径下方。
 
    ```
    {
@@ -149,11 +149,11 @@ ht-degree: 0%
 
 您可以直接在Microsoft Word中根据示例JSON数据预览生成的文档。
 
-1. 在 *Document Generation Tagger* 面板，选择 **[!UICONTROL 生成文档]**. 系统首次可能会提示您使用Adobe ID登录。 选择 **[!UICONTROL 登录]** 并完成使用您的凭据登录的提示。
+1. 在&#x200B;*Document Generation Tagger*&#x200B;面板中，选择&#x200B;**[!UICONTROL 生成文档]**。 系统首次可能会提示您使用Adobe ID登录。 选择“**[!UICONTROL 登录]**”，并完成使用凭据登录的提示。
 
-   ![如何预览生成的文档的屏幕快照](assets/accsales_6.png)
+   ![如何预览生成的文档的屏幕截图](assets/accsales_6.png)
 
-1. 选择 **[!UICONTROL 查看文档]**.
+1. 选择&#x200B;**[!UICONTROL 查看文档]**。
 
    ![查看文档按钮的屏幕截图](assets/accsales_7.png)
 
@@ -163,18 +163,18 @@ ht-degree: 0%
 
 可以看到文档中的标签被原始样本数据中的数据替换。
 
-![替换为数据的标记的屏幕截图](assets/accsales_9.png)
+![用数据替换了标记的屏幕截图](assets/accsales_9.png)
 
 ## 将表添加到模板
 
 在此下一个方案中，向文档中的表添加产品列表。
 
 1. 在必须放置表的位置插入光标。
-1. 在 *Document Generation Tagger* 面板，选择 **[!UICONTROL 高级]**.
-1. 展开 **[!UICONTROL 表和列表]**.
-1. 在 *表记录* 字段，选择 *参考顺序*，它是一个列出所有产品项目的数组。
-1. 在选择列记录字段中，键入要包括的内容 *描述* 和 *totalPaymentDue.price* 字段。
-1. 选择 **[!UICONTROL 插入表]**.
+1. 在&#x200B;*Document Generation Tagger*&#x200B;面板中，选择&#x200B;**[!UICONTROL 高级]**。
+1. 展开&#x200B;**[!UICONTROL 表和列表]**。
+1. 在&#x200B;*表记录*&#x200B;字段中，选择&#x200B;*引用顺序*，该数组将列出所有产品项。
+1. 在“选择列记录”字段中，键入以包含&#x200B;*描述*&#x200B;和&#x200B;*totalPaymentDue.price*&#x200B;字段。
+1. 选择&#x200B;**[!UICONTROL 插入表]**。
 
    ![插入表的屏幕截图](assets/accsales_10.png)
 
@@ -184,13 +184,13 @@ ht-degree: 0%
 
 数值计算允许您根据数据集合（如数组）计算求和和其他计算。 在此方案中，添加一个字段以计算小计。
 
-1. 选择 *$0.00* 小计标题旁边。
-1. 在 *[!UICONTROL Document Generation Tagger]* 面板，展开 **[!UICONTROL 数值计算]**.
-1. 下 *[!UICONTROL 选择计算类型]*，选择 **[!UICONTROL 聚合]**.
-1. 下 *[!UICONTROL 选择类型]*，选择 **[!UICONTROL 求和]**.
-1. 下 *[!UICONTROL 选择记录]*，选择 **[!UICONTROL 参考顺序]**.
-1. 低于*[!UICONTROL 选择要执行汇总的物料]**，选择 **[!UICONTROL totalPaymentsDue.price]**.
-1. 选择 **[!UICONTROL 插入计算]**.
+1. 选择小计标题旁边的&#x200B;*$0.00*。
+1. 在&#x200B;*[!UICONTROL Document Generation Tagger]*&#x200B;面板中，展开&#x200B;**[!UICONTROL 数值计算]**。
+1. 在&#x200B;*[!UICONTROL 选择计算类型]*&#x200B;下，选择&#x200B;**[!UICONTROL 聚合]**。
+1. 在&#x200B;*[!UICONTROL 选择类型]*&#x200B;下，选择&#x200B;**[!UICONTROL 求和]**。
+1. 在&#x200B;*[!UICONTROL 选择记录]*&#x200B;下，选择&#x200B;**[!UICONTROL 引用顺序]**。
+1. 在*[!UICONTROL 选择要执行聚合]**的项目下，选择&#x200B;**[!UICONTROL totalPaymentsDue.price]**。
+1. 选择&#x200B;**[!UICONTROL 插入计算]**。
 
 此过程将插入一个计算标记，该标记提供值的总和。 可以使用JSONata计算进行更高级的计算。 例如：
 
@@ -207,17 +207,17 @@ ht-degree: 0%
 
 条件部分允许您仅在满足特定条件时包含句子或段落。 在此方案中，仅当节与特定状态匹配时，才会包含该节。
 
-1. 在文档中，找到名为的分区 *加利福尼亚州隐私声明*.
+1. 在文档中查找名为&#x200B;*加州隐私声明*&#x200B;的部分。
 1. 用光标选择部分。
 
    ![所选内容的屏幕截图](assets/accsales_11.png)
 
-1. 在 *[!UICONTROL Document Generation Tagger]*，选择 **[!UICONTROL 高级]**.
-1. 展开 **[!UICONTROL 条件内容]**.
-1. 在 *[!UICONTROL 选择记录]* 字段，搜索和选择 **[!UICONTROL customer.address.state]**.
-1. 在 *[!UICONTROL 选择运算符]* 字段，选择 **=**.
-1. 在 *[!UICONTROL 值字段]*，类型 *CA*.
-1. 选择 **[!UICONTROL 插入条件]**.
+1. 在&#x200B;*[!UICONTROL Document Generation标记]*&#x200B;中，选择&#x200B;**[!UICONTROL 高级]**。
+1. 展开&#x200B;**[!UICONTROL 条件内容]**。
+1. 在&#x200B;*[!UICONTROL 选择记录]*&#x200B;字段中，搜索并选择&#x200B;**[!UICONTROL customer.address.state]**。
+1. 在&#x200B;*[!UICONTROL 选择运算符]*&#x200B;字段中，选择&#x200B;**=**。
+1. 在&#x200B;*[!UICONTROL 值字段]*&#x200B;中，键入&#x200B;*CA*。
+1. 选择&#x200B;**[!UICONTROL 插入条件]**。
 
 仅当customer.address.state = CA时，生成的文档中才会显示California部分。
 
@@ -230,27 +230,27 @@ Document Generation API允许您从数据动态插入图像。 当您拥有不�
 图像可以通过数据或base64内容中的URL传递。 本示例使用URL。
 
 1. 将光标放在要包含图像的位置。
-1. 在 *[!UICONTROL Document Generation Tagger]* 面板，选择 **[!UICONTROL 高级]**.
-1. 展开 **[!UICONTROL 图像]**.
-1. 在 *[!UICONTROL 选择标签]* 字段，选择 **[!UICONTROL 徽标]**.
-1. 在 *[!UICONTROL 可选替代文本]* 字段，提供描述（即徽标）。 此过程将插入如下所示的图像占位符：
+1. 在&#x200B;*[!UICONTROL Document Generation Tagger]*&#x200B;面板中，选择&#x200B;**[!UICONTROL 高级]**。
+1. 展开&#x200B;**[!UICONTROL 图像]**。
+1. 在&#x200B;*[!UICONTROL 选择标签]*&#x200B;字段中，选择&#x200B;**[!UICONTROL 徽标]**。
+1. 在&#x200B;*[!UICONTROL 可选替代文本]*&#x200B;字段中，提供描述（即徽标）。 此过程将插入如下所示的图像占位符：
 
-   ![占位符图像的屏幕快照](assets/accsales_12.png)
+   ![占位符图像的屏幕截图](assets/accsales_12.png)
 
 但是，您需要在版面中的图像上动态设置图像，可以通过以下操作完成：
 
 1. 右键单击已插入的占位符图像。
 
-   ![占位符图像的屏幕快照](assets/accsales_13.png)
+   ![占位符图像的屏幕截图](assets/accsales_13.png)
 
-1. 选择 **[!UICONTROL 编辑替代文本]**.
+1. 选择&#x200B;**[!UICONTROL 编辑替代文本]**。
 1. 在面板中，复制如下所示的文本：
    `{ "location-path": "logo", "image-props": { "alt-text": "Logo" }}`
 1. 在文档中选择要动态的其他图像。
 
    ![文档中的新图像的屏幕截图](assets/accsales_14.png)
 
-1. 右键单击图像并选择 **[!UICONTROL 编辑替代文本]**.
+1. 右键单击图像并选择&#x200B;**[!UICONTROL 编辑替代文本]**。
 1. 将该值粘贴到面板中。
 
 此流程用数据中徽标变量内的图像替换图像。
@@ -261,20 +261,20 @@ Adobe Acrobat Sign允许您捕获文档上的电子签名。 Acrobat Sign提供�
 
 1. 导航到示例文档中需要签名的位置。
 1. 在需要签名的位置插入光标。
-1. 在 *[!UICONTROL AdobeDocument Generation标记器]* 面板，选择 **[!UICONTROL Adobe Sign]**.
-1. 在 *[!UICONTROL 指定收件人数]* 字段，设置收件人的数量（在本例中为1）。
-1. 在 *[!UICONTROL 收件人]* 字段，选择 **[!UICONTROL Signer-1]**.
-1. 在 *[!UICONTROL 字段]* 类型，选择 **[!UICONTROL 签名]**.
-1. 选择 **[!UICONTROL 插入Adobe Sign文本标记]**.
+1. 在&#x200B;*[!UICONTROL AdobeDocument Generation Tagger]*&#x200B;面板中，选择&#x200B;**[!UICONTROL Adobe Sign]**。
+1. 在&#x200B;*[!UICONTROL 指定收件人数量]*&#x200B;字段中，设置收件人数量（在本例中为1）。
+1. 在&#x200B;*[!UICONTROL 收件人]*&#x200B;字段中，选择&#x200B;**[!UICONTROL 签名者–1]**。
+1. 在&#x200B;*[!UICONTROL 字段]*&#x200B;类型中，选择&#x200B;**[!UICONTROL 签名]**。
+1. 选择&#x200B;**[!UICONTROL 插入Adobe Sign文本标记]**。
 
 将标签插入到文档中。
 
-![文档中的签名标签的屏幕截图](assets/accsales_15.png)
+![文档中的签名标记的屏幕截图](assets/accsales_15.png)
 
 Acrobat Sign提供了多种其他可以置入的字段类型，例如日期字段。
-1. 在 *字段* 类型，选择 **[!UICONTROL 日期]**.
+1. 在&#x200B;*字段*&#x200B;类型中，选择&#x200B;**[!UICONTROL 日期]**。
 1. 将光标移动到文档中的日期位置上方。
-1. 选择 **[!UICONTROL 插入Adobe Sign文本标记]**.
+1. 选择&#x200B;**[!UICONTROL 插入Adobe Sign文本标记]**。
 
 ![文档中的日期标记的屏幕截图](assets/accsales_16.png)
 
@@ -336,8 +336,8 @@ documentMergeOperation.execute(executionContext)
 });
 ```
 
-1. 替换 `<INSERT JSON FILE>` /resources中的JSON文件的名称。
-1. 替换 `<INSERT DOCX>` DOCX文件的名称。
+1. 将`<INSERT JSON FILE>`替换为/resources中的JSON文件的名称。
+1. 将`<INSERT DOCX>`替换为DOCX文件的名称。
 1. 要运行，请使用终端执行节点generate-salesOrder.js。
 
 输出文件应位于/output文件夹中，并且正确生成了文档。
@@ -354,7 +354,7 @@ documentMergeOperation.execute(executionContext)
 
 ## 其他用例
 
-[!DNL Adobe Acrobat Services] 可以通过数字文档工作流程帮助简化销售周期中的许多环节：
+[!DNL Adobe Acrobat Services]可以通过数字文档工作流程帮助简化销售周期中的许多环节：
 
 * 使用Adobe PDF Embed API在网站上嵌入白皮书和其他内容，同时还可度量和收集观众分析
 * 使用Acrobat Sign捕获所生成协议上的电子签名
@@ -362,15 +362,16 @@ documentMergeOperation.execute(executionContext)
 
 ## 进一步学习
 
-有兴趣了解更多信息？ 了解一些其他的使用方法 [!DNL Adobe Acrobat Services]：
+有兴趣了解更多信息？ 了解使用[!DNL Adobe Acrobat Services]的一些其他方法：
 
-* 了解更多来自 [文档](https://developer.adobe.com/cn/document-services/docs/overview/)
+* 从[文档](https://developer.adobe.com/cn/document-services/docs/overview/)中了解详情
 * 查看Adobe Experience League上的更多教程
 * 使用/src文件夹中的示例脚本了解如何利用PDF
-* 关注 [Adobe技术博客](https://medium.com/adobetech/tagged/adobe-document-cloud) 了解最新提示和技巧
-* 订阅 [纸质剪辑（每月实时流）](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) 了解如何使用 [!DNL Adobe Acrobat Services].=======
-* 了解更多来自 [文档](https://developer.adobe.com/cn/document-services/docs/overview/)
+* 有关最新的提示和技巧，请关注[Adobe技术博客](https://medium.com/adobetech/tagged/adobe-document-cloud)
+* 订阅[纸质剪辑（每月实时流）](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)以了解如何使用[!DNL Adobe Acrobat Services]实现自动化。
+=======
+* 从[文档](https://developer.adobe.com/cn/document-services/docs/overview/)中了解详情
 * 查看Adobe Experience League上的更多教程
 * 使用/src文件夹中的示例脚本了解如何利用PDF
-* 关注 [Adobe技术博客](https://medium.com/adobetech/tagged/adobe-document-cloud) 了解最新提示和技巧
-* 订阅 [纸质剪辑（每月实时流）](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF) 了解如何使用 [!DNL Adobe Acrobat Services]
+* 有关最新的提示和技巧，请关注[Adobe技术博客](https://medium.com/adobetech/tagged/adobe-document-cloud)
+* 订阅[纸质剪辑（每月实时流）](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)以了解如何使用[!DNL Adobe Acrobat Services]实现自动化

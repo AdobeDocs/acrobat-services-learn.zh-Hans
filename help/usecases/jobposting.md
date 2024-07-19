@@ -10,8 +10,8 @@ thumbnail: KT-8092.jpg
 exl-id: 0e24c8fd-7fda-452c-96f9-1e7ab1e06922
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 1%
+source-wordcount: '1448'
+ht-degree: 0%
 
 ---
 
@@ -21,25 +21,25 @@ ht-degree: 1%
 
 在操作具有多个用户的网站时，设计一种确保为每个人提供流畅体验的体验至关重要。
 
-想象一下以下场景：您有一个网站，允许雇主 [上载职位发布](https://www.adobe.io/apis/documentcloud/dcsdk/job-posting.html). 对于求职者来说，轻松查看与张贴相关的所有文档非常方便。 不过，雇主可以方便地以自己碰巧拥有的任何文件格式附加信息。 为了给这两种类型的用户带来方便，您可以自动将所有上传的文档转换为PDF，并将其内嵌到发布中。
+设想以下场景：您有一个网站，允许雇主[上传招聘信息](https://www.adobe.io/apis/documentcloud/dcsdk/job-posting.html)。 对于求职者来说，轻松查看与张贴相关的所有文档非常方便。 不过，雇主可以方便地以自己碰巧拥有的任何文件格式附加信息。 为了给这两种类型的用户带来方便，您可以自动将所有上传的文档转换为PDF，并将其内嵌到发布中。
 
 ## 您可以学到的内容
 
-本实操教程逐步演示了使用的Node.js示例 [!DNL Adobe Acrobat Services] 及其 [Node.js SDK](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk) 将这些权能添加到职位发布站点。 这创造了一个更容易使用的网站，对雇主和求职者都更具吸引力。 下面是 [完成](https://github.com/contentlab-io/adobe_job_posting) [项目代码](https://github.com/contentlab-io/adobe_job_posting)，以便您能够按照自己的想法继续阅读。
+此实操教程逐步演示一个使用[!DNL Adobe Acrobat Services]及其[Node.js SDK](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk)将这些功能添加到职位发布网站的Node.js示例。 这创造了一个更容易使用的网站，对雇主和求职者都更具吸引力。 这里是[完成](https://github.com/contentlab-io/adobe_job_posting) [项目代码](https://github.com/contentlab-io/adobe_job_posting)，供您随心所欲地阅读。
 
-首先，设置一个简单的基于Express的Node.js Web应用程序。 [Express](https://expressjs.com/) 是一个极简的Web应用程序框架，提供路由和模板等功能。 该应用程序的代码位于 [GitHub](https://github.com/contentlab-io/adobe_job_posting). 此外，请安装 [PostgreSQL数据库](https://www.postgresql.org/) 并设置它以存储PDF。
+首先，设置一个简单的基于Express的Node.js Web应用程序。 [Express](https://expressjs.com/)是一个极简的Web应用程序框架，提供了路由和模板等功能。 该应用程序的代码在[GitHub](https://github.com/contentlab-io/adobe_job_posting)上可用。 此外，请安装[PostgreSQL数据库](https://www.postgresql.org/)并将其设置为存储PDF。
 
-## 相关 [!DNL Acrobat Services] API
+## 相关的[!DNL Acrobat Services]个API
 
-* [嵌入式APIPDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF的嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
-* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 ## 创建AdobeAPI凭据
 
-首先，您必须 [创建凭据](https://www.adobe.com/go/dcsdks_credentials) 适用于Adobe PDF Embed API（免费使用）和Adobe PDF Services API（免费使用六个月） [即付即用](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) 每个文档事务仅需\$0.05)。 为PDF服务API创建凭据时，请选择“创建个性化代码示例”选项。 保存ZIP文件并将pdftools-api-credentials.json和private.key提取到Node.js Express项目的根目录中。
+首先，您必须[为Adobe PDF Embed API（免费使用）和Adobe PDF Services API创建凭据](https://www.adobe.com/go/dcsdks_credentials)（免费使用6个月，然后[即付即用](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)，每个文档交易仅需\$0.05）。 为PDF服务API创建凭据时，请选择“创建个性化代码示例”选项。 保存ZIP文件并将pdftools-api-credentials.json和private.key提取到Node.js Express项目的根目录中。
 
-您还需要免费提供的Embed API的API密钥。 发件人 [项目](https://console.adobe.io/projects)，转到您创建的项目。 然后，单击 **添加到项目** 并选择 **API**. 最后，单击 **嵌入式APIPDF**.
+您还需要免费提供的Embed API的API密钥。 从[项目](https://console.adobe.io/projects)，转到您创建的项目。 然后，单击&#x200B;**添加到项目**&#x200B;并选择&#x200B;**API**。 最后，单击&#x200B;**PDF嵌入API**。
 
 指定PDF嵌入式API的域。 API密钥必须是公共的（可在浏览器执行的代码中查找它）。 通过指定域，可确保其他域中的其他人无法使用API密钥。
 
@@ -84,7 +84,7 @@ router.post('/upload', async function (req, res, next) {
 
 函数是异步的，因此您可以在函数中使用await关键字，这在调用执行API调用的方法时非常方便。
 
-![招聘信息网站的屏幕截图](assets/jobs_1.png)
+![职位发布网站的屏幕截图](assets/jobs_1.png)
 
 ## 使用PDF服务API
 
@@ -95,7 +95,7 @@ const PDFToolsSdk = require('@adobe/documentservices-pdftools-node-sdk');
   const { Readable } = require('stream');
 ```
 
-在导入正下方，您可以加载API凭据并创建 [执行内容](https://www.javascripttutorial.net/javascript-execution-context/). 由于您可以针对不同的操作重复使用执行上下文，因此只执行一次是很有意义的。
+在导入正下方，您可以加载API凭据并创建[执行内容](https://www.javascripttutorial.net/javascript-execution-context/)。 由于您可以针对不同的操作重复使用执行上下文，因此只执行一次是很有意义的。
 
 ```
   const credentials = PDFToolsSdk.Credentials
@@ -106,7 +106,7 @@ const PDFToolsSdk = require('@adobe/documentservices-pdftools-node-sdk');
   const executionContext = PDFToolsSdk.ExecutionContext.create(credentials);
 ```
 
-现在，返回到在请求处理程序中的注释处编写代码 `router.post` 屏蔽。 首先将文档转换为PDF。
+现在，返回到`router.post`块中的注释处的请求处理程序中编写代码。 首先将文档转换为PDF。
 
 ```
   const createPdfOperation = PDFToolsSdk.CreatePDF.Operation.createNew();
@@ -128,7 +128,7 @@ const PDFToolsSdk = require('@adobe/documentservices-pdftools-node-sdk');
 
 ## 将图像转换为文本并压缩PDF
 
-现在，使用光学字符识别(OCR)将图像转换为文本，然后压缩结果。 这可以使用OCR和CompressPDF操作，与CreatePDF操作类似。 将以下内容添加到路由文件中，位于 `router.post`：
+现在，使用光学字符识别(OCR)将图像转换为文本，然后压缩结果。 这可以使用OCR和CompressPDF操作，与CreatePDF操作类似。 将以下内容添加到`router.post`中的路由文件：
 
 ```
   const name = req.body.name;
@@ -200,7 +200,7 @@ BYTEA NOT NULL);
   result.writeToStream(writableStream);
 ```
 
-要写入内容，请创建一个WritableStreamBuffer。 完成finish事件后，就是执行SQL查询的时候了。 node-postgres包自动将Buffer参数转换为BYTEA格式。 查询会将用户重定向到/job/{id}，随后创建了一个端点。
+要写入内容，请创建一个WritableStreamBuffer。 完成finish事件后，就是执行SQL查询的时候了。 node-postgres包自动将Buffer参数转换为BYTEA格式。 查询会将用户重定向到/job/{id}（稍后创建的端点）。
 
 对于PDFEmbed API，您还需要一个仅返回PDF内容的端点：
 
@@ -221,7 +221,7 @@ BYTEA NOT NULL);
 
 ## 嵌入PDF
 
-现在，创建/job/{id} 终结点，这将呈现一个模板，其中包含所请求的职位发布名称和嵌入的PDF。
+现在，创建/job/{id}终结点，该终结点将呈现一个模板，其中包含所请求的职位发布名称和嵌入的PDF。
 
 ```
 router.get('/job/:id', async function(req, res, next) {
@@ -270,16 +270,16 @@ router.get('/job/:id', async function(req, res, next) {
 
 ![测试已上传PDF文档的屏幕截图](assets/jobs_2.png)
 
-要查看内嵌的实际操作，请查看以下内容 [现场演示](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/IN_LINE/Bodea%20Brochure.pdf).
+要查看内嵌操作，请查看此[实时演示](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/IN_LINE/Bodea%20Brochure.pdf)。
 
 ## 后续步骤
 
-本实际操作教程逐步介绍了如何将Node.js与 [!DNL Acrobat Services] 转换已上传的 [职位发布](https://www.adobe.io/apis/documentcloud/dcsdk/job-posting.html) PDF的各种格式。 然后将生成的PDF嵌入到网页中。 现在，您可以将相同的功能添加到您的网站，让雇主可以更轻松地上传工作说明、手册以及更多内容，以供求职者查找。 这些功能可帮助每个人获得必要的信息以找到他们梦想的工作。
+此实操教程逐步介绍了如何将Node.js与[!DNL Acrobat Services]结合使用，将各种格式的上传的[职位发布](https://www.adobe.io/apis/documentcloud/dcsdk/job-posting.html)转换为PDF。 然后将生成的PDF嵌入到网页中。 现在，您可以将相同的功能添加到您的网站，让雇主可以更轻松地上传工作说明、手册以及更多内容，以供求职者查找。 这些功能可帮助每个人获得必要的信息以找到他们梦想的工作。
 
-[!DNL Acrobat Services] 帮助您将关键文档处理功能添加到您的网站或应用程序。 如果您想深入了解这些API的功能，请参阅以下快速入门文档：
+[!DNL Acrobat Services]帮助您将关键文档处理功能添加到您的网站或应用。 如果您想深入了解这些API的功能，请参阅以下快速入门文档：
 
-* [嵌入式APIPDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF的嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
-* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-要开始为您的网站添加用户友好的文档处理功能， [注册以免费试用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html). Adobe PDF Embed API始终可免费使用，而Adobe PDF Services API在六个月内可免费使用，那么只需每个文档事务\$0.05，您便可以 [即付即用](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) 随着您的业务增长。
+若要开始向网站添加用户友好的文档处理功能，请[注册免费试用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)。 Adobe PDF Embed API始终免费使用，而Adobe PDF Services API免费使用6个月，则每个文档事务仅需\ 0.05 USD，因此您可以随着业务的发展而[即用即付](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)。

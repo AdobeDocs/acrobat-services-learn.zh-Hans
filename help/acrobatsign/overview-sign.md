@@ -28,7 +28,7 @@ Acrobat Sign API 允许您创建应用程序，并将 Acrobat Sign UI 和功能�
       <img alt="开始使用" src="assets/GSASAPI_thumb.png" />
     </a>
     <div>
-    <a href="signapi.md"><strong>开始使用</strong></a>
+    <a href="signapi.md"><strong>快速入门</strong></a>
     </div>
     <em>了解如何在应用程序中包含Sign API以收集签名和其他信息</em>
     <br>
@@ -72,7 +72,7 @@ Acrobat Sign API 允许您创建应用程序，并将 Acrobat Sign UI 和功能�
       <img alt="创建应用程序" src="assets/Creatingyourapplication_1280.png" />
    </a>
     <div>
-   <a href="creating-your-application.md"><strong>创建应用程序</strong></a>
+   <a href="creating-your-application.md"><strong>正在创建您的应用程序</strong></a>
     </div>
     <em>了解如何在Acrobat Sign中创建应用程序</em>
     <br>
@@ -106,7 +106,7 @@ Acrobat Sign API 允许您创建应用程序，并将 Acrobat Sign UI 和功能�
     <div>
    <a href="creating-a-transient-document.md"><strong>创建临时文档</strong></a>
     </div>
-    <em>了解如何创建可与Acrobat Sign AP一起使用的临时文档</em>
+    <em>了解如何创建可用于Acrobat Sign AP的临时文档</em>
     <br>
   </td>
   <td>

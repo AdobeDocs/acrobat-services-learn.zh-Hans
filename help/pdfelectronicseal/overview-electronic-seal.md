@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Adobe PDF电子签章APITutorials
 
-Adobe PDF电子签章API使用某些TSP（信任服务提供商）在以下位置颁发的证书对文档进行大规模电子签章 [Adobe认可信任列表(AATL)](https://helpx.adobe.com/acrobat/kb/approved-trust-list1.html). 电子签章有助于验证文档的身份和完整性。 这可用于大规模地对文档进行电子签章，并包含在PDF服务API中。
+Adobe PDF电子签章API使用[Adobe的已批准信任列表(AATL)](https://helpx.adobe.com/acrobat/kb/approved-trust-list1.html)中的某些TSP（信任服务提供商）颁发的证书对文档大规模应用电子签章。 电子签章有助于验证文档的身份和完整性。 这可用于大规模地对文档进行电子签章，并包含在PDF服务API中。
 
 <table style="table-layout:fixed">
 <tr>

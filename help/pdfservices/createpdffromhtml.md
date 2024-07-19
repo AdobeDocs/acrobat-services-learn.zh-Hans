@@ -10,14 +10,14 @@ thumbnail: KT-6673.jpg
 exl-id: 1bd01bb8-ca5e-4a4a-8646-3d97113e2c51
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
 
 # 使用PDF服务API和Node.js，只需几分钟即可从HTML或MS Office创建PDF
 
-![创建PDF主页横幅](assets/createpdffromhtml_hero.jpg)
+![创建PDF主图](assets/createpdffromhtml_hero.jpg)
 
 新的Adobe PDF Services API为开发人员提供了多种强大的PDF操作服务供其自由选择和选择，以满足复杂业务工作流程的需求，让文档工作流数字化变得前所未有的简单。 借助这些现成的基于云的Web服务，可以简化复杂的体系结构、实施策略和技术提升。
 
@@ -36,9 +36,9 @@ ht-degree: 0%
 
 ## 获取凭据并下载示例文件
 
-第一步是获取用于解锁使用的凭据（API密钥）。 [在此处注册免费试用](https://www.adobe.com/go/dcsdks_credentials) 然后单击“开始使用”以创建新凭据。
+第一步是获取用于解锁使用的凭据（API密钥）。 [在此处注册免费试用](https://www.adobe.com/go/dcsdks_credentials)，然后单击“开始使用”以创建新凭据。
 
-![API 密钥](assets/apikey.png)
+![API密钥](assets/apikey.png)
 
 选择“个人帐户”以注册免费试用非常重要：
 
@@ -102,15 +102,15 @@ C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples>node src/createpdf/creat
 
 ## 资源和后续步骤
 
-* 如需其他帮助和支持，请访问该Adobe [[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all) 社区论坛
+* 如需其他帮助和支持，请访问Adobe[[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all)社区论坛
 
 PDF服务API [文档](https://www.adobe.com/go/pdftoolsapi_doc)
 
-* [常见问题解答](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197) 对于PDF服务API问题
+* 有关PDF服务API问题的[常见问题解答](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197)
 
-* [联系我们](https://www.adobe.com/go/pdftoolsapi_requestform) 有关许可和定价的问题
+* 有关许可和定价的问题，请[联系我们](https://www.adobe.com/go/pdftoolsapi_requestform)
 
-* 相关文章:
-  [新的PDF服务API为Document Workflows提供了更多功能](https://community.adobe.com/t5/document-services-apis/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
+* 相关文章：
+  [新的PDF服务API为文档工作流程提供了更多功能](https://community.adobe.com/t5/document-services-apis/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
 
-  [7月版 [!DNL Adobe Acrobat Services]：PDF嵌入和PDF服务](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)
+  [ 7月版 [!DNL Adobe Acrobat Services]：PDF嵌入和PDF服务](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)

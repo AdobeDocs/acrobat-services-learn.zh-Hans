@@ -10,8 +10,8 @@ thumbnail: KT-8098.jpg
 exl-id: f4ec0182-a46e-43aa-aea3-bf1d19f1a4ec
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 3%
+source-wordcount: '1072'
+ht-degree: 0%
 
 ---
 
@@ -25,21 +25,21 @@ ht-degree: 3%
 
 ## 您可以学到的内容
 
-本实际操作教程介绍如何为您的公司创建专门的Microsoft Word NDA模板。 适用于Microsoft Word的Adobe免费插件， [AdobeDocument Generation标记器](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)，插入“标记”以输入动态值。 了解如何将JSON数据传递到模板并创建动态PDF。 根据您的业务要求和目标，可以通过电子邮件将生成的PDF发送给协作者，或在其浏览器中向其显示文档。 只需对Node.js、JavaScript、Express.js、HTML和CSS有一些经验即可跟进。
+本实际操作教程介绍如何为您的公司创建专门的Microsoft Word NDA模板。 Microsoft Word的Adobe免费加载项[AdobeDocument Generation Tagger](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)插入“标记”以输入动态值。 了解如何将JSON数据传递到模板并创建动态PDF。 根据您的业务要求和目标，可以通过电子邮件将生成的PDF发送给协作者，或在其浏览器中向其显示文档。 只需对Node.js、JavaScript、Express.js、HTML和CSS有一些经验即可跟进。
 
 ## 相关的API和资源
 
-与 [!DNL Adobe Acrobat Services]，可以使用动态数据动态生成PDF文档。 [!DNL Acrobat Services] 提供了一套PDF工具，包括用于自动化的AdobeDocument Generation API [NDA创建](https://www.adobe.io/apis/documentcloud/dcsdk/nda-creation.html).
+借助[!DNL Adobe Acrobat Services]，您可以使用动态数据动态生成PDF文档。 [!DNL Acrobat Services]提供了一套PDF工具，包括可自动执行[NDA创建](https://www.adobe.io/apis/documentcloud/dcsdk/nda-creation.html)的AdobeDocument Generation API。
 
-* [Document Generation APIAdobe](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)
+* [Adobe的Document Generation API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)
 
 * [Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html)
 
-* [AdobeDocument Generation标记器](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)
+* [Adobe的Document Generation Tagger](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)
 
 * [项目代码](https://github.com/afzaal-ahmad-zeeshan/adobe-docugen-sample)
 
-* [[!DNL Acrobat Services] 键](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred)
+* [[!DNL Acrobat Services] 密钥](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred)
 
 ## 创建JSON模型
 
@@ -75,25 +75,25 @@ Microsoft Word模板依赖于JSON模型，因此您首先创建它。 在本教�
 
 在Microsoft Word文档中创建NDA模板。 Adobe PDF Services API要求Microsoft Word文档包含标签，服务可以从JSON文档注入值。 尽管模板对于所有Adobe请求都是相同的，但JSON中的动态数据会发生变化。 在这种情况下，这些标签有助于使用单个Microsoft WordPDF为各供应商创建模板文档，并通过自动化NDA文档生成来加快流程。
 
-您可以安装 [免费Document Generation Tagger插件](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo) 到Microsoft Word。 如果您是组织的成员，则可以请求您的Microsoft Office管理员为所有人安装免费插件。
+可将[免费的Document Generation Tagger插件](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)安装到Microsoft Word中。 如果您是组织的成员，则可以请求您的Microsoft Office管理员为所有人安装免费插件。
 
-安装了该加载项后，可以在“主页”选项卡中的“Adobe”类别下找到它。 要打开选项卡，请选择 **Document Generation**：
+安装了该加载项后，可以在“主页”选项卡中的“Adobe”类别下找到它。 要打开选项卡，请选择&#x200B;**Document Generation**：
 
 ![Word中Document Generation插件的屏幕截图](assets/nda_1.png)
 
 在该选项卡中，您可以上传示例JSON文档。 本文档可以是一个示例，因为您只能将其用于创建Microsoft Word模板。
 
-![Document Generation加载项中示例数据的屏幕截图](assets/nda_2.png)
+![Document Generation加载项中的示例数据的屏幕截图](assets/nda_2.png)
 
-选择 **生成标签** 查看可在模板中使用的项目。 以下是从JSON结构中提取的属性，可在模板中使用：
+选择&#x200B;**生成标签**&#x200B;以查看您可以在模板中使用的项目。 以下是从JSON结构中提取的属性，可在模板中使用：
 
 ![Document Generation加载项中文本标记的屏幕截图](assets/nda_3.png)
 
-这些是来自 `authorizedSigner` 字段。 其他字段将被折叠，您可以在Microsoft Word中展开视图。 该加载项还提供高级数据选项，如表、列表、计算值等。
+这些是`authorizedSigner`字段中的功能。 其他字段将被折叠，您可以在Microsoft Word中展开视图。 该加载项还提供高级数据选项，如表、列表、计算值等。
 
 ## 创建标签
 
-随时创建模板或导入 [现有模板](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade) 导入Microsoft Word。 设置文档后，通过单击加载项中的相应标记，将标记添加到每个字段。
+随时创建模板或将[现有模板](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade)导入Microsoft Word。 设置文档后，通过单击加载项中的相应标记，将标记添加到每个字段。
 
 Microsoft Word文件中的以下模板：
 
@@ -123,7 +123,7 @@ Document Generation Tagger与Adobe Sign API集成。 由于这种集成，您可
 
 此代码在浏览器中生成以下用户界面(UI)：
 
-![“创建NDA”用户界面的屏幕快照](assets/nda_5.png)
+![创建NDA用户界面的屏幕截图](assets/nda_5.png)
 
 当管理员选择某人时，该应用程序将使用Adobe PDF服务随时随地生成NDA。
 
@@ -171,23 +171,23 @@ res.status(500).render("crash", { error: error });
 }
 ```
 
-您可以查看 [完整示例代码](https://github.com/afzaal-ahmad-zeeshan/adobe-docugen-sample) 在GitHub上。
+您可以在GitHub上查看[完整的示例代码](https://github.com/afzaal-ahmad-zeeshan/adobe-docugen-sample)。
 
-此代码在对的API调用中使用JSON文档和Microsoft Word模板 [!DNL Adobe Acrobat Services] SDK。 在响应中，您将收到输出并将其保存到应用程序的文件系统中。 您可以使用免费工具，通过电子邮件将生成的文档转发给客户，或在浏览器中向客户显示预览 [Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
+此代码在对[!DNL Adobe Acrobat Services] SDK的API调用中使用JSON文档和Microsoft Word模板。 在响应中，您将收到输出并将其保存到应用程序的文件系统中。 您可以使用免费的[Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html)，通过电子邮件将生成的文档转发给您的客户，或在浏览器中向他们显示预览。
 
 此调用将创建以下NDA文档：
 
-![NDA文档预览的屏幕快照](assets/nda_6.png)
+![NDA文档预览的屏幕截图](assets/nda_6.png)
 
-[!DNL Adobe Acrobat Services] API插入内容以创建PDF文档。 如果没有这些工具，您可能必须编写代码来处理Office文档并使用原始PDF文件格式。 在Adobe PDF服务的帮助下，您只需调用一个API即可完成所有这些步骤。
+[!DNL Adobe Acrobat Services]个API插入内容以创建PDF文档。 如果没有这些工具，您可能必须编写代码来处理Office文档并使用原始PDF文件格式。 在Adobe PDF服务的帮助下，您只需调用一个API即可完成所有这些步骤。
 
-现在使用 [ADOBE SIGN API](https://www.adobe.io/apis/documentcloud/sign.html) 以请求签署NDA，并将最终签署的文档发送给所有各方。 Adobe Sign通知您 [使用Webhook](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/webhooks.md). 侦听此Webhook，您可以获取NDA的状态。
+现在，使用[Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html)请求对NDA进行签名，并将最终的已签名文档发送给所有各方。 Adobe Sign使用Webhook](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/webhooks.md)通知您[。 侦听此Webhook，您可以获取NDA的状态。
 
-要更深入地解释Adobe Sign流程， [查阅文档](https://www.adobe.io/apis/documentcloud/sign/docs.html) 或阅读此深入博文。
+有关Adobe Sign过程的更深入解释，请[查阅文档](https://www.adobe.io/apis/documentcloud/sign/docs.html)或阅读此深入博客帖子。
 
 ## 后续步骤
 
-在本实际操作教程中，我们将使用AdobeDocument Generation Tagger通过Microsoft Word模板和JSON数据文件动态生成PDF文档。 此加载项帮助 [自动创建NDA](https://www.adobe.io/apis/documentcloud/dcsdk/nda-creation.html) 针对各方进行自定义，然后使用Sign API收集签名。
+在本实际操作教程中，我们将使用AdobeDocument Generation Tagger通过Microsoft Word模板和JSON数据文件动态生成PDF文档。 此加载项帮助[自动为每个参与方创建NDA](https://www.adobe.io/apis/documentcloud/dcsdk/nda-creation.html)，然后使用Sign API收集签名。
 
-您可以使用这些技巧动态创建您自己的NDA或其他文档，从而腾出团队的时间专注于高效工作。 探索 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html) 查找适合您选择的语言和运行时的API和SDK，以便您可以将PDF函数直接添加到应用程序中以快速创建PDF文档。 [开始使用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) 免费试用6个月
-[即付即用](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html) 每个单据交易只需$0.05。
+您可以使用这些技巧动态创建您自己的NDA或其他文档，从而腾出团队的时间专注于高效工作。 浏览[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html)以查找适用于所选语言和运行时的API和SDK，以便您可以将PDF函数直接添加到应用程序中以快速创建PDF文档。 开始[](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)，免费试用6个月
+[即付即用](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)，每笔文档交易仅需0.05 USD。

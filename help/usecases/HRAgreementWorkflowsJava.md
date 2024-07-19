@@ -1,6 +1,6 @@
 ---
 title: Java中的HR文档工作流
-description: ”[!DNL Adobe Acrobat Services] API可以轻松地将PDF功能整合到您的HR Web应用程序中”
+description: “[!DNL Adobe Acrobat Services] API可轻松地将PDF功能合并到您的HR Web应用程序中”
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -10,8 +10,8 @@ thumbnail: KT-7474.jpg
 exl-id: add4cc5c-06e3-4ceb-930b-e8c9eda5ca1f
 source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 2%
+source-wordcount: '1777'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 ## 相关的API和资源
 
-* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 * [Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html)
 
@@ -35,21 +35,21 @@ ht-degree: 2%
 
 ## 生成API凭据
 
-首先注册Adobe PDF Services API免费试用版。 转至 [Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) [网站](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) 然后点击 *开始使用* 下的按钮 *创建新凭据*. 免费试用版提供了1,000个文档事务，可在六个月内使用。 在下一页（请参阅下文）上，选择服务(PDF服务API)，设置凭据名称（例如，HRDocumentWFCredentials），然后输入说明。
+首先注册Adobe PDF Services API免费试用版。 转到[Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) [网站](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK)，然后单击&#x200B;*创建新凭据*&#x200B;下的&#x200B;*开始使用*&#x200B;按钮。 免费试用版提供了1,000个文档事务，可在六个月内使用。 在下一页（请参阅下文）上，选择服务(PDF服务API)，设置凭据名称（例如，HRDocumentWFCredentials），然后输入说明。
 
-选择语言（本示例为Java）并检查 *创建个性化代码示例*. 最后一步确保代码示例已包含预填充的pdftools-api-credentials.json文件，以及用于在API中对应用程序进行身份验证的私钥。
+选择语言（本示例为Java）并选中&#x200B;*创建个性化代码示例*。 最后一步确保代码示例已包含预填充的pdftools-api-credentials.json文件，以及用于在API中对应用程序进行身份验证的私钥。
 
-最后，单击 *创建凭据* 按钮。 这将生成凭据，并自动开始下载示例。
+最后，单击&#x200B;*创建凭据*&#x200B;按钮。 这将生成凭据，并自动开始下载示例。
 
 ![创建新凭据屏幕截图](assets/HRWJ_1.png)
 
 为确保凭据有效，请打开下载的示例。 您正在使用IntelliJ IDEA。 打开源代码时，集成开发环境(IDE)会要求生成引擎。 此示例中使用了Maven，但您也可以根据自己的喜好使用Gradle。
 
-接下来，执行 `mvn clean install` 生成jar文件的Maven目标。
+接下来，执行`mvn clean install` Maven目标以生成jar文件。
 
 最后，运行CombinePDF示例，如下所示。 代码在输出文件夹中生成PDF。
 
-![用于运行“合并PDF”示例屏幕截图的菜单](assets/HRWJ_2.png)
+![用于运行CombinePDF示例屏幕截图的菜单](assets/HRWJ_2.png)
 
 ## 创建Spring MVC应用程序
 
@@ -57,11 +57,11 @@ ht-degree: 2%
 
 首先，配置项目设置以使用Java 8语言和Jar打包（请参见下面的屏幕截图）。
 
-![春季初始化的屏幕截图](assets/HRWJ_3.png)
+![弹簧初始化的屏幕截图](assets/HRWJ_3.png)
 
 其次，添加Spring Web（来自Web）和Thymeleaf（来自模板引擎）：
 
-![用于广告Spring Web和Thymeleaf的屏幕截图](assets/HRWJ_4.png)
+![广告春网和百里菜的屏幕截图](assets/HRWJ_4.png)
 
 创建项目后，转到pom.xml文件，然后使用pdftools-sdk和log4j-slf4j-impl补充依赖关系部分：
 
@@ -132,7 +132,7 @@ public class PersonForm {
 }
 ```
 
-此类包含两个属性： `firstName` 和 `lastName`. 此外，使用此简单验证可检查字符数是否介于2到30个字符之间。
+此类包含两个属性： `firstName`和`lastName`。 此外，使用此简单验证可检查字符数是否介于2到30个字符之间。
 
 给定模型类，您可以创建控制器（请参阅伴随代码中的PersonController.java）：
 
@@ -202,9 +202,9 @@ public class PersonController {
 
 现在，在呈现个人数据表单后，通过动态填充选定字段来生成包含虚拟合同的PDF文档。 具体来说，您必须在预先创建的合同中填充人员数据。
 
-在此，为简单起见，您只有一个标题、一个子标题和一个字符串常量，内容为：“此合同是为\&lt;full name=&quot;&quot; of=&quot;&quot; the=&quot;&quot; person=&quot;&quot;>”。
+为简单起见，此处您只有一个标题、一个子标题和一个字符串常量，内容为：“此合同是为\&lt;人员的全名\>准备的”。
 
-为了实现这一目标，从Adobe的 [从动态HTML创建PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-dynamic-html) 示例。 通过分析示例代码，可以看到动态HTML字段填充的过程如下。
+为了实现此目标，请从Adobe的[从动态HTML创建PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-dynamic-html)示例开始。 通过分析示例代码，可以看到动态HTML字段填充的过程如下。
 
 首先，您必须准备包含静态和动态内容的HTML页。 使用JavaScript更新动态部件。 即，PDF服务API会将JSON对象注入您的HTML。
 
@@ -242,7 +242,7 @@ public class PersonController {
 
 然后，您必须将HTML与所有依赖的JavaScript和CSS文件一起压缩。 PDF服务API不接受HTML文件。 相反，它需要zip文件作为输入。 在本例中，您将压缩文件存储在src\\main\\resources\\contract\\index.zip中。
 
-之后，您可以补充 `PersonController` 用于处理POST请求的另一种方法：
+然后，您可以使用处理POST请求的另一个方法补充`PersonController`：
 
 ```
 @PostMapping("/")
@@ -260,15 +260,15 @@ public String checkPersonInfo(@Valid PersonForm personForm,
 
 上述方法使用提供的个人数据创建PDF合同并呈现合同 — 操作视图。 后者提供指向所生成PDF的链接和用于签署PDF。
 
-现在，我们来看看 `CreateContract` 方法有效（完整列表如下所示）。 该方法依赖于两个字段：
+现在，让我们看看`CreateContract`方法的工作方式（下面是完整列表）。 该方法依赖于两个字段：
 
 * `LOGGER`，从log4j调试有关任何异常的信息
 
-* `contractFilePath`，其中包含所生成PDF的文件路径
+* `contractFilePath`，包含所生成PDF的文件路径
 
-该 `CreateContract` 方法设置凭据并从HTML创建PDF。 要在合同中传递和填充人员的数据，请使用 `setCustomOptionsAndPersonData` 帮助程序。 此方法从表单中检索人员数据，然后通过上述JSON对象将其发送到生成的PDF。
+`CreateContract`方法设置凭据并从HTML创建PDF。 要在合同中传递和填充人员的数据，请使用`setCustomOptionsAndPersonData`帮助程序。 此方法从表单中检索人员数据，然后通过上述JSON对象将其发送到生成的PDF。
 
-此外， `setCustomOptionsAndPersonData` 显示如何通过禁用页眉和页脚来控制PDF外观。 完成这些步骤后，将PDF文件保存到output/contract.pdf，并最终删除以前生成的文件。
+此外，`setCustomOptionsAndPersonData`还显示如何通过禁用页眉和页脚来控制PDF外观。 完成这些步骤后，将PDF文件保存到output/contract.pdf，并最终删除以前生成的文件。
 
 ```
 private static final Logger LOGGER = LoggerFactory.getLogger(PersonController.class);
@@ -325,7 +325,7 @@ private static void setCustomOptionsAndPersonData(
 }
 ```
 
-在生成合同时，您还可以将特定于人员的动态数据与固定合同条款合并。 为此，请按照 [从静态HTML创建PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-dynamic-html) 示例。 或者，您可以 [合并两个PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-static-html).
+在生成合同时，您还可以将特定于人员的动态数据与固定合同条款合并。 为此，请遵循[从静态HTML创建PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-dynamic-html)示例。 或者，您可以[合并两个PDF](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf-from-static-html)。
 
 ## 正在演示要下载的PDF文件
 
@@ -348,7 +348,7 @@ private static void setCustomOptionsAndPersonData(
 </html>
 ```
 
-然后，您实施 `downloadContract` 方法内部 `PersonController` 类，如下所示：
+然后，在`PersonController`类中实现`downloadContract`方法，如下所示：
 
 ```
 @RequestMapping("/pdf")
@@ -374,15 +374,15 @@ public void downloadContract(HttpServletResponse response)
 
 运行应用程序后，您将获得以下流程。 第一个屏幕显示个人数据表单。 要进行测试，请用介于2到30个字符之间的任何值填充它：
 
-![数据值的屏幕快照](assets/HRWJ_6.png)
+![数据值的屏幕截图](assets/HRWJ_6.png)
 
-单击 *提交* 按钮，则表单会验证，并且PDF会根据HTML生成(resources/contract/index.html)。 应用产品将显示另一个视图（合同详细信息），您可以在其中下载PDF：
+单击“*提交*”按钮后，表单将验证，并且PDF将根据HTML(resources/contract/index.html)生成。 应用产品将显示另一个视图（合同详细信息），您可以在其中下载PDF：
 
 ![您可以在其中下载PDF的屏幕截图](assets/HRWJ_7.png)
 
 在Web浏览器中渲染后，PDF如下所示。 即，您输入的个人数据将传播到PDF：
 
-![使用个人数据渲染的PDF的屏幕截图](assets/HRWJ_8.png)
+![使用个人数据渲染PDF的屏幕截图](assets/HRWJ_8.png)
 
 ## 启用签名和安全性
 
@@ -390,11 +390,11 @@ public void downloadContract(HttpServletResponse response)
 
 要获取授权令牌，您必须执行若干步骤：
 
-首先，注册一个 [开发人员帐户](https://acrobat.adobe.com/cn/zh-Hans/sign/developer-form.html).
+首先，注册[开发人员帐户](https://acrobat.adobe.com/cn/zh-Hans/sign/developer-form.html)。
 
-在 [Adobe Sign门户](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
+在[Adobe Sign门户](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md)中创建CLIENT应用程序。
 
-按所述为应用程序配置OAuth [此处](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) 和 [此处](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp). 请注意您的客户端标识符和客户端密钥。 然后，您可以使用 `https://www.google.com` 作为重定向URI和以下范围：
+按照[此处](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)和[此处](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp)所述为应用程序配置OAuth。 请注意您的客户端标识符和客户端密钥。 然后，您可以使用`https://www.google.com`作为重定向URI和以下作用域：
 
 * user_login： self
 
@@ -404,7 +404,7 @@ public void downloadContract(HttpServletResponse response)
 
 * agreement_send：帐户
 
-按如下方式准备一个URL，使用您的客户端ID代替\&lt;client_id>：
+按如下所述使用客户端ID代替\&lt;CLIENT_ID\>准备URL：
 
 ```
 https://secure.eu1.adobesign.com/public/oauth?redirect_uri=https://www.google.com
@@ -413,15 +413,16 @@ https://secure.eu1.adobesign.com/public/oauth?redirect_uri=https://www.google.co
 &scope=user_login:self+agreement_read:account+agreement_write:account+agreement_send:account
 ```
 
-在Web浏览器中键入上述URL。 您将被重定向到google.com ，并且代码在地址栏中显示为code=\&lt;your_code>，例如：
+在Web浏览器中键入上述URL。 您将被重定向到google.com，并且代码在地址栏中显示为code=\&lt;YOUR_CODE\>，用于
+示例：
 
 ```
 https://www.google.com/?code=<YOUR_CODE>&api_access_point=https://api.eu1.adobesign.com/&web_access_point=https://secure.eu1.adobesign.com%2F
 ```
 
-请注意为\提供的值&lt;your_code> 和api_access_point。
+请注意为\&lt;YOUR_CODE\>和api_access_point提供的值。
 
-要发送为您提供访问令牌的HTTPPOST请求，请使用客户端ID\&lt;your_code>和api_access_point值。 您可以使用 [Postman](https://helpx.adobe.com/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html) 或cURL：
+要发送提供访问令牌的HTTPPOST请求，请使用客户端ID、\&lt;YOUR_CODE\>和api_access_point值。 您可以使用[Postman](https://helpx.adobe.com/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html)或cURL：
 
 ```
 curl --location --request POST "https://**api.eu1.adobesign.com**/oauth/token"
@@ -453,7 +454,7 @@ curl --location --request POST "https://**api.eu1.adobesign.com**/oauth/token"
 
 ## 使用Adobe Sign Java SDK
 
-获取访问令牌后，您可以将REST API调用发送到Adobe Sign。 要简化此过程，请使用Adobe Sign Java SDK。 源代码位于 [AdobeGitHub存储库](https://github.com/adobe-sign/AdobeSignJavaSdk).
+获取访问令牌后，您可以将REST API调用发送到Adobe Sign。 要简化此过程，请使用Adobe Sign Java SDK。 源代码在[Adobe的GitHub存储库](https://github.com/adobe-sign/AdobeSignJavaSdk)中可用。
 
 要将此包与应用程序集成，必须克隆代码。 然后，创建Maven包（mvn包），并将以下文件安装到项目中（您可以在adobe-sign-sdk文件夹的伴随代码中找到它们）：
 
@@ -475,7 +476,7 @@ curl --location --request POST "https://**api.eu1.adobesign.com**/oauth/token"
 
 * target/lib/swagger-annotations-1.5.15.jar
 
-在IntelliJ IDEA中，您可以使用 *项目结构* （文件/项目结构）。
+在IntelliJ IDEA中，您可以使用&#x200B;*项目结构*（文件/项目结构）将这些文件添加为依赖项。
 
 ## 发送PDF以供签名
 
@@ -500,9 +501,9 @@ curl --location --request POST "https://**api.eu1.adobesign.com**/oauth/token"
 </html>
 ```
 
-然后，再添加另一个控制器， `AdobeSignController`，您可在其中实施 `sendContractMethod` （请参阅伴随代码）。 该方法的工作原理如下：
+然后，添加另一个控制器`AdobeSignController`，在其中实现`sendContractMethod`（请参见伴随代码）。 该方法的工作原理如下：
 
-首先，它使用 `ApiClient` 以获取API终结点。
+首先，它使用`ApiClient`获取API终结点。
 
 ```
 ApiClient apiClient = new ApiClient();
@@ -578,7 +579,7 @@ participantSetInfo.setRole(ParticipantSetInfo.RoleEnum.SIGNER);
 agreementCreationInfo.addParticipantSetsInfoItem(participantSetInfo);
 ```
 
-最后，使用 `createAgreement` 来自Adobe Sign Java SDK的方法：
+最后，使用`createAgreement`方法从Adobe Sign Java SDK发送协议：
 
 ```
 // Create agreement using the transient document.
@@ -589,9 +590,9 @@ AgreementCreationResponse agreementCreationResponse = agreementsApi.createAgreem
 System.out.println("Agreement sent, ID: " + agreementCreationResponse.getId());
 ```
 
-运行此代码后，您会收到一封电子邮件（发送到代码中指定的地址）， `<email_address>)` 使用协议签名请求。 电子邮件包含超链接，该链接会将收件人引导至Adobe Sign门户以执行签名。 您可以在Adobe Sign开发人员门户中看到此文档（请参阅下图），并且还可以使用 [getAgreementInfo](https://github.com/adobe-sign/AdobeSignJavaSdk/blob/master/docs/AgreementsApi.md#getAgreementInfo) 方法。
+运行此代码后，您会收到一封包含协议签名请求的电子邮件（发送到代码中指定为`<email_address>)`的地址）。 电子邮件包含超链接，该链接会将收件人引导至Adobe Sign门户以执行签名。 您会在Adobe Sign开发人员门户中看到此文档（请参阅下图），并且还可以使用[getAgreementInfo](https://github.com/adobe-sign/AdobeSignJavaSdk/blob/master/docs/AgreementsApi.md#getAgreementInfo)方法以编程方式跟踪签名过程。
 
-最后，您还可以使用PDF服务API对PDF进行密码保护，如以下所示 [示例](https://github.com/adobe/pdfservices-java-sdk-samples/tree/master/src/main/java/com/adobe/pdfservices/operation/samples/protectpdf).
+最后，您还可以使用PDF服务API对PDF进行密码保护，如以下[示例](https://github.com/adobe/pdfservices-java-sdk-samples/tree/master/src/main/java/com/adobe/pdfservices/operation/samples/protectpdf)所示。
 
 ![合同详细信息的屏幕截图](assets/HRWJ_9.png)
 
@@ -599,6 +600,6 @@ System.out.println("Agreement sent, ID: " + agreementCreationResponse.getId());
 
 如您所见，通过利用快速启动，您可以实施一个简单的Web表单，使用Adobe PDF Services API在Java中创建经过审批的PDF。 Adobe PDF API可无缝集成到现有客户端应用程序中。
 
-再进一步了解一下，您可以创建表单，方便收件人远程安全地签名。 当您需要多个签名时，您甚至可以自动将表单发送给工作流程中的一系列人员。 您的员工入职培训已得到改进，人力资源部也将爱您。
+再进一步了解一下，您可以创建表单，方便收件人远程安全地签名。 当您需要多个签名时，您甚至可以自动将表单发送给工作流程中的一系列人员。 您的员工入职培训已得到改进，并且人力资源部会喜欢您。
 
-签出 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/) 立即为您的应用程序添加多种PDF功能。
+请查看[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/)，以立即为您的应用程序添加多种PDF功能。
