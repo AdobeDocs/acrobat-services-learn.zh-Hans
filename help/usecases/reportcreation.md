@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8093
 thumbnail: KT-8093.jpg
 exl-id: 2f2bf1c2-1b33-4eee-9fd2-5d0b77e6b0a9
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c74a36116349490af29e66fd81ad59c93174c258
 workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 0%
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 要保持简单，只需在此处使用基于文件系统的上传和处理。 在Express.js中，可以使用fs模块列出目录下的所有可用文件。
 
-在同一页面上，允许管理员将报告文件上传到服务器以供客户查看。 这些文件可以有很多种格式，例如Microsoft Word、Microsoft Excel、HTML和[其他数据格式]https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf)，包括图形文件。 管理员页面如下所示：
+在同一页面上，允许管理员将报告文件上传到服务器以供客户查看。 这些文件可以有很多种格式，例如Microsoft Word、Microsoft Excel、HTML和[其他数据格式](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf)（包括图形文件）。 管理员页面如下所示：
 
 ![管理员功能的屏幕截图](assets/report_2.png)
 
