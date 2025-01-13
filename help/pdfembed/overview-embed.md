@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-8117
 thumbnail: KT-8117.jpg
 exl-id: 2fef89cf-640d-4ff4-9282-070bce8bba78
-source-git-commit: 5b505cc0dfb066e1b5c95698cc10a0b68086f015
+source-git-commit: 794a87a86a5e75803f86faa5db3fcdce2bcec79a
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '160'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,6 @@ ht-degree: 0%
 # Adobe PDF Embed API教程
 
 PDFEmbed API是一个免费的JavaScript API，用于嵌入高保真PDF、启用协作和查看分析。
-
 
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -40,7 +39,7 @@ PDFEmbed API是一个免费的JavaScript API，用于嵌入高保真PDF、启用
                     <p class="is-size-6">了解如何使用Adobe PDF Embed API控制外观、启用协作以及收集有关用户如何与PDF交互的分析（包括花费在页面和搜索上的时间）</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">观看</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">阅读</span>
                 </a>
             </div>
         </div>
@@ -49,9 +48,8 @@ PDFEmbed API是一个免费的JavaScript API，用于嵌入高保真PDF、启用
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-embed-api"
-target = "_self" title="像专业人士一样在Web上摆动PDF" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/media_17a03bc364d9d4b68dc970c4d1680c81f187acfb0.png?width=400&format=webply&optimize=medium" alt="像专业人士一样在Web上摆动PDF"
+                    <a href="https://experienceleague.adobe.com/en/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-embed-api" title="像专业人士一样在Web上摆动PDF" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/337602/?quality=12&hidetitle=true&format=jpeg&nocache=1736799089651" alt="像专业人士一样在Web上摆动PDF"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -59,13 +57,11 @@ target = "_self" title="像专业人士一样在Web上摆动PDF" target="_blank"
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-embed-api"
-target = "_self" target="_blank" rel="referrer" title="像专业人士一样在Web上摆动PDF">像专业人士一样在Web上摆动PDF</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-embed-api" target="_self" rel="referrer" title="像专业人士一样在Web上摆动PDF">像专业人士一样在Web上摆动PDF</a>
                     </p>
-                    <p class="is-size-6">了解如何使用免费的Adobe PDF Embed API更轻松地在网站中使用PDF</p>
+                    <p class="is-size-6">了解如何使用免费的Adobe PDF Embed API来更轻松地在网站中使用PDF</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-embed-api"
-target = "_self" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/en/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-embed-api" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">观看</span>
                 </a>
             </div>
