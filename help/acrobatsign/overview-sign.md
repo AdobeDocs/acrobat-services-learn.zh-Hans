@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-11079
 thumbnail: KT-11079.jpg
 exl-id: 79603883-26cd-439c-9cfd-6178c4544b93
-source-git-commit: 63c4b6979a4aaa6698ee00264c4ef59ed6b16148
+source-git-commit: 3df27690c677d8ad51e8f26ea95b5da12694f89a
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '305'
 ht-degree: 6%
 
 ---
@@ -53,7 +53,7 @@ Acrobat Sign API 允许您创建应用程序，并将 Acrobat Sign UI 和功能�
 
 ## Acrobat Sign Embed快速入门指南
 
-了解如何开始将Acrobat Sign OEM版本嵌入您的应用程序。 本指南专为在其应用程序中构建并嵌入签名流程的OEM合作伙伴而设计。
+了解如何开始将Acrobat Sign的OEM版本嵌入您的应用程序。 本指南专为在其应用程序中构建并嵌入签名流程的OEM合作伙伴而设计。
 
 
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
