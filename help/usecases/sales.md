@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8099
 thumbnail: KT-8099.jpg
 exl-id: 219c70de-fec1-4946-b10e-8ab5812562ef
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 销售提案是企业争取客户的第一步。 就跟所有事物一样，第一印象是最后的。 因此，您与客户的第一次互动设定了他们对您的业务的期望。 建议书必须简洁、准确、方便。
 
-合同和建议书的文件结构中包含不同类型的数据。 它们同时包含动态数据（客户名称、报价金额等）和静态数据（样板文本，例如公司功能、团队配置文件和标准SOW条款）。 创建模板文档（如销售提案）通常涉及单调的任务，如在样板模板中手动替换项目详细信息。 在本教程中，您将使用动态数据和工作流为[创建销售提案](https://www.adobe.io/apis/documentcloud/dcsdk/sales-proposals-and-contracts.html)构建一个高效的流程。
+合同和建议书的文件结构中包含不同类型的数据。 它们同时包含动态数据（客户名称、报价金额等）和静态数据（样板文本，例如公司功能、团队配置文件和标准SOW条款）。 创建模板文档（如销售提案）通常涉及单调的任务，如在样板模板中手动替换项目详细信息。 在本教程中，您将使用动态数据和工作流为[创建销售提案](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/sales-proposals-and-contracts)构建一个高效的流程。
 
 ## 您可以学到的内容
 
@@ -35,11 +35,11 @@ ht-degree: 0%
 
 * [npm](https://www.npmjs.com/get-npm)
 
-* [[!DNL Acrobat Services] 个API](https://www.adobe.io/apis/documentcloud/dcsdk/)
+* [[!DNL Acrobat Services] 个API](https://developer.adobe.com/document-services/homepage/)
 
-* [Adobe的Document Generation API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)
+* [Adobe的Document Generation API](https://developer.adobe.com/document-services/apis/doc-generation)
 
-* [Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html)
+* [Adobe Sign API](https://developer.adobe.com/adobesign-api/)
 
 * [Adobe的Document Generation Tagger](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)
 
@@ -47,11 +47,11 @@ ht-degree: 0%
 
 安装好工具后，您就可以开始解决问题了。 这些建议具有每个客户端特有的静态内容和动态内容。 出现瓶颈的原因是，每次提出建议书时都需要这两种类型的数据。 输入静态文本非常耗时，因此您要将其自动化，并且只能手动处理来自每个客户端的动态数据。
 
-首先，在[Microsoft Forms](https://www.office.com/launch/forms?auth=1)（或您首选的表单生成器）中创建数据捕获表单。 此表单用于来自添加到销售提案中的客户机的动态数据。 填写此表单并提出问题，从客户那里获取所需的详细信息 — 例如，公司名称、日期、地址、项目范围、定价以及其他评论。 要构建您自己的表单，请使用此[表单](https://forms.office.com/Pages/ShareFormPage.aspx id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAN__rtiGj5UNElTR0pCQ09ZNkJRUlowSjVQWDNYUEg2RC4u&amp;sharetoken=1AJeMavBAzzxuISRKm是的)。 目标是让潜在客户填写表单，然后将他们的响应导出为JSON文件，这些文件将传递到您工作流程的下一个部分。
+首先，在[Microsoft Forms](https://www.office.com/launch/forms?auth=1)（或您首选的表单生成器）中创建数据捕获表单。 此表单用于来自添加到销售提案中的客户机的动态数据。 填写此表单并提出问题，从客户那里获取所需的详细信息 — 例如，公司名称、日期、地址、项目范围、定价以及其他评论。 要构建您自己的表单，请使用此[表单]&#x200B;(https://forms.office.com/Pages/ShareFormPage.aspx id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAN__rtiGj5UNElTR0pCQ09ZNkJRUlowSjVQWDNYUEg2RC4u&amp;sharetoken=1AJeMavBAzzzxuISRK嗯)。 目标是让潜在客户填写表单，然后将他们的响应导出为JSON文件，这些文件将传递到您工作流程的下一个部分。
 
 某些表单构建者仅允许您将数据导出为CSV文件。 因此，您可能会发现将生成的CSV文件[转换](http://csvjson.com/csv2json)为JSON文件十分有用。
 
-每个销售计划书都会重复使用静态数据。 因此，您可以使用Microsoft Word中的销售提案模板来提供静态文本。 您可以使用此[模板](https://1drv.ms/w/s!AiqaN2pp7giKkmhVu2_2pId9MiPa?e=oeqoQ2)，但您可以创建自己的模板或使用[Adobe模板](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)。
+每个销售计划书都会重复使用静态数据。 因此，您可以使用Microsoft Word中的销售提案模板来提供静态文本。 您可以使用此[模板](https://1drv.ms/w/s!AiqaN2pp7giKkmhVu2_2pId9MiPa?e=oeqoQ2)，但您可以创建自己的模板或使用[Adobe模板](https://developer.adobe.com/document-services/apis/doc-generation)。
 
 现在，您需要一些功能来同时获取客户的JSON格式动态数据和Microsoft Word模板中的静态文本，以便为客户制作独一无二的销售提案。 [!DNL Acrobat Services]个API用于合并这两者并生成可签名的PDF。
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 ## 使用API
 
-转到[!DNL Acrobat Services] API [主页](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)。 若要开始使用[!DNL Acrobat Services] API，您需要应用程序的凭据。 一直向下滚动，然后选择&#x200B;**开始免费试用**&#x200B;以创建凭据。 您可以[免费使用这些服务六个月，然后按需付费](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)，每笔文档交易仅需0.05 USD，因此您只需支付所需的费用。
+转到[!DNL Acrobat Services] API [主页](https://developer.adobe.com/document-services/apis/doc-generation)。 若要开始使用[!DNL Acrobat Services] API，您需要应用程序的凭据。 一直向下滚动，然后选择&#x200B;**开始免费试用**&#x200B;以创建凭据。 您可以[免费使用这些服务六个月，然后按需付费](https://developer.adobe.com/document-services/pricing/main)，每笔文档交易仅需0.05 USD，因此您只需支付所需的费用。
 
 选择&#x200B;**PDF服务API**&#x200B;作为您选择的服务，并填写如下所示的其他详细信息。
 
@@ -137,12 +137,12 @@ console.log('Exception encountered while executing operation', err);
 
 此代码借助您使用[!DNL Acrobat Services]创建的标签，从Microsoft表单获取您的JSON文件。 然后，它会将数据与您在Microsoft Word中创建的销售提案模板合并，以生成一个全新的PDF。 PDF将保存在新创建的中。/output文件夹。
 
-此外，该代码使用[Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html)让两家公司签署生成的销售提案。 有关此API的详细说明，请参阅此博客文章。
+此外，该代码使用[Adobe Sign API](https://developer.adobe.com/adobesign-api/)让两家公司签署生成的销售提案。 有关此API的详细说明，请参阅此博客文章。
 
 ## 后续步骤
 
-一开始您有一个需要自动化的低效、繁琐的流程。 您从为每个客户端手动创建文档一直到创建简化的工作流程来自动执行[销售提案流程](https://www.adobe.io/apis/documentcloud/dcsdk/sales-proposals-and-contracts.html)。
+一开始您有一个需要自动化的低效、繁琐的流程。 您从为每个客户端手动创建文档一直到创建简化的工作流程来自动执行[销售提案流程](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/sales-proposals-and-contracts)。
 
 使用Microsoft Forms，您可以从客户那里获得关键数据，这些数据将纳入客户独特的建议中。 您已在Microsoft Word中创建了一个销售提案模板，用于提供您每次都不想重新创建的静态文本。 然后，您使用[!DNL Acrobat Services]个API合并表单和模板中的数据，以便更高效地为您的客户创建销售提案PDF。
 
-本实际操作教程只是对这些API可行性的一个大概了解。 要发现更多解决方案，请访问[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) API页面。 所有这些工具均可免费使用6个月。 然后，对于[即用即付](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)计划，只需为每个文档交易支付0.05 USD，因此您只需在团队为您的销售渠道添加更多潜在客户时支付。
+本实际操作教程只是对这些API可行性的一个大概了解。 要发现更多解决方案，请访问[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) API页面。 所有这些工具均可免费使用6个月。 然后，对于[即用即付](https://developer.adobe.com/document-services/pricing/main)计划，只需为每个文档交易支付0.05 USD，因此您只需在团队为您的销售渠道添加更多潜在客户时支付。

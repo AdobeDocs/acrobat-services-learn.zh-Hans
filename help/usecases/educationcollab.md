@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8091
 thumbnail: KT-8091.jpg
 exl-id: 570a635c-e539-4afc-a475-ecf576415217
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1385'
 ht-degree: 0%
@@ -21,14 +21,14 @@ ht-degree: 0%
 
 教育机构使用PDF文档与学生共享学习材料。 PDF为教师提供了一种可互换的文件格式。
 
-将[Adobe PDF Services API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html)和[Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html)集成到应用程序中可为教师和学生提供单个教学平台。 例如，学生可以利用您的应用程序就作业和报告卡片提出问题，并协作完成组作业。
+将[Adobe PDF Services API](https://developer.adobe.com/document-services/apis/pdf-services)和[Adobe PDF Embed API](https://developer.adobe.com/document-services/apis/pdf-embed)集成到应用程序中可为教师和学生提供单个教学平台。 例如，学生可以利用您的应用程序就作业和报告卡片提出问题，并协作完成组作业。
 
 有一个官方的SDK，用于Node.jsPDF访问Node Services API。 这样您就可以将Microsoft Word或Microsoft Excel等文档转换为
-PDF。 此外，您还可以执行更高级的操作，如合并多个报告、重新排列页面以及保护PDF。 有关更多详细信息，请查看[产品文档](https://www.adobe.io/apis/documentcloud/dcsdk/)。
+PDF。 此外，您还可以执行更高级的操作，如合并多个报告、重新排列页面以及保护PDF。 有关更多详细信息，请查看[产品文档](https://developer.adobe.com/document-services/homepage/)。
 
 ## 您可以学到的内容
 
-在本实际操作教程中，学习创建在线学习平台，[使教师和学生能够轻松地PDF共享资源](https://www.adobe.io/apis/documentcloud/dcsdk/student-teacher-collaboration.html)。 本教程使用通过Node.js JavaScript运行时(Node.js)和PDF服务创建的[学习门户](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers)。
+在本实际操作教程中，学习创建在线学习平台，[使教师和学生能够轻松地PDF共享资源](https://developer.adobe.com/document-services/use-cases/collaboration/student-teacher-collaboration)。 本教程使用通过Node.js JavaScript运行时(Node.js)和PDF服务创建的[学习门户](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-tools-for-teachers)。
 
 学习门户具有以下功能：
 
@@ -67,7 +67,7 @@ PDF。 此外，您还可以执行更高级的操作，如合并多个报告、�
 学生可以将任意类型的单个或多个文档转换为PDF，如Microsoft Word、Excel和PowerPoint，以及其他常用的文本和图像文件类型。 学习门户使用“PDF服务”将文件转换为PDF。
 
 要创建自己的学习门户，您必须先创建自己的凭据。 [注册](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
-免费使用PDF服务API 6个月，最多1,000次文档事务。 之后，[即付即用](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)只需每个文档事务\ 0.05 USD，因为类会增加其作业。
+免费使用PDF服务API 6个月，最多1,000次文档事务。 之后，[即付即用](https://developer.adobe.com/document-services/pricing/main)只需每个文档事务\ 0.05 USD，因为类会增加其作业。
 
 当学生从信息板中选择文档时，他们会看到以下内容：
 
@@ -171,7 +171,7 @@ PDFEmbed API使用的凭据不是PDF服务API，因此您必须[创建凭据](ht
 
 教师和学校了解学生如何使用在线平台很重要。 这有助于教师为学生提供资源，帮助他们更好地完成任务。 PDFEmbed API与Analytics集成，后者可用于测量发生的所有事件，例如，用户打开、阅读和关闭文档时。 使用PDF服务API，教师还可以禁用打印、下载和文件修改功能，以帮助维护学术完整性。
 
-如果您有[Adobe Analytics](https://www.adobe.io/apis/experiencecloud/analytics.html)许可证，则可以使用其[开箱即用的集成](https://experienceleague.adobe.com/docs/document-services/tutorials/pdfembed/controlpdfexperience.html?lang=en#adobe-analytics)。 否则，请使用回调将PDF服务与其他分析提供程序(如[Google](https://experienceleague.adobe.com/docs/document-services/tutorials/pdfembed/controlpdfexperience.html?lang=en#google-analytics))集成。
+如果您有[Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/)许可证，则可以使用其[开箱即用的集成](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#adobe-analytics)。 否则，请使用回调将PDF服务与其他分析提供程序(如[Google](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#google-analytics))集成。
 
 要启用文档事件的测量，请使用`registerCallback`方法和AdobeDC视图实例附加事件处理程序。 您可以在控制台上显示基本度量，如打开文档或读取页面。 您还可以将度量保存在日志中，或在其他分析存储中发布它们。
 
@@ -197,7 +197,7 @@ adobeDCView.registerCallback(
 
 屏幕截图显示学生打开了任务文件，阅读了第一页 — 他们要么没有滚动到其他页面，要么文档只有一个页面 — 然后他们下载了文件。 您可以收集这些指标以执行分析并研究学生的行为。
 
-此外，[Adobe Analytics](https://business.adobe.com/products/analytics/adobe-analytics.html)已与PDFEmbed API集成，因此如果您订阅了Adobe Analytics套件，则可以在订阅中发布您的指标。 要在Adobe Analytics中发布度量，您只需将套件ID传递给PDFEmbed API构造函数。 (请注意，您必须使用PDFEmbed API凭据，而不是PDF服务API凭据)。
+此外，[Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html)已与PDFEmbed API集成，因此如果您订阅了Adobe Analytics套件，则可以在订阅中发布您的指标。 要在Adobe Analytics中发布度量，您只需将套件ID传递给PDFEmbed API构造函数。 (请注意，您必须使用PDFEmbed API凭据，而不是PDF服务API凭据)。
 
 以下示例代码演示了如何将Suite ID传递给PDFEmbed API构造函数：
 
@@ -211,8 +211,8 @@ var adobeDCView = new AdobeDC.View({
 
 ## 后续步骤
 
-本实践教程介绍了如何使用PDF服务API和PDFEmbed API创建学习门户，以促进[学生与教师之间的有效协作](https://www.adobe.io/apis/documentcloud/dcsdk/student-teacher-collaboration.html)。 教师可通过此门户上传任何格式的学习材料，并使用PDF服务API将其转换为PDF。 然后，学生可以使用PDFEmbed API预览这些PDF。
+本实践教程介绍了如何使用PDF服务API和PDFEmbed API创建学习门户，以促进[学生与教师之间的有效协作](https://developer.adobe.com/document-services/use-cases/collaboration/student-teacher-collaboration)。 教师可通过此门户上传任何格式的学习材料，并使用PDF服务API将其转换为PDF。 然后，学生可以使用PDFEmbed API预览这些PDF。
 
 现在您已了解如何注释PDF报告、存档注释和跟踪PDF报告的使用，您可以开始在自己的项目中实施这些解决方案。
 
-您可以使用[!DNL Adobe Acrobat Services]个API在您的网站上创建用户友好的交互式PDF体验。 享受6个月的免费使用Adobe PDF Services API的乐趣，之后只需支付[即付即用](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)(通过AWS或直接协议)，每笔文档交易仅需\$0.05。 免费使用Adobe PDF Embed，无时间限制。 创建免费帐户以立即[开始使用](https://www.adobe.com/go/dcsdks_credentials)。
+您可以使用[!DNL Adobe Acrobat Services]个API在您的网站上创建用户友好的交互式PDF体验。 享受6个月的免费使用Adobe PDF Services API的乐趣，之后只需支付[即付即用](https://developer.adobe.com/document-services/pricing/main)&#x200B;(通过AWS或直接协议)，每笔文档交易仅需\$0.05。 免费使用Adobe PDF Embed，无时间限制。 创建免费帐户以立即[开始使用](https://www.adobe.com/go/dcsdks_credentials)。

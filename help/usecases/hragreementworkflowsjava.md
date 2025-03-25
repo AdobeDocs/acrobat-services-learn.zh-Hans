@@ -1,6 +1,6 @@
 ---
 title: Java中的HR文档工作流
-description: “[!DNL Adobe Acrobat Services] API可轻松地将PDF功能合并到您的HR Web应用程序中”
+description: '[!DNL Adobe Acrobat Services] API可轻松地将PDF功能合并到您的HR Web应用程序中'
 feature: Use Cases
 role: Developer
 level: Intermediate
@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-7474
 thumbnail: KT-7474.jpg
 exl-id: add4cc5c-06e3-4ceb-930b-e8c9eda5ca1f
-source-git-commit: ad13c28a0c218fc0027afc02445e5ed532c2340d
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1777'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 * [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html)
+* [Adobe Sign API](https://developer.adobe.com/adobesign-api/)
 
 * [项目代码](https://github.com/dawidborycki/adobe-sign)
 
@@ -392,9 +392,9 @@ public void downloadContract(HttpServletResponse response)
 
 首先，注册[开发人员帐户](https://acrobat.adobe.com/cn/zh-Hans/sign/developer-form.html)。
 
-在[Adobe Sign门户](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md)中创建CLIENT应用程序。
+在[Adobe Sign门户](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md)中创建CLIENT应用程序。
 
-按照[此处](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)和[此处](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp)所述为应用程序配置OAuth。 请注意您的客户端标识符和客户端密钥。 然后，您可以使用`https://www.google.com`作为重定向URI和以下作用域：
+按照[此处](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md)和[此处](https://secure.eu1.adobesign.com/public/static/oauthDoc.jsp)所述为应用程序配置OAuth。 请注意您的客户端标识符和客户端密钥。 然后，您可以使用`https://www.google.com`作为重定向URI和以下作用域：
 
 * user_login： self
 
@@ -602,4 +602,4 @@ System.out.println("Agreement sent, ID: " + agreementCreationResponse.getId());
 
 再进一步了解一下，您可以创建表单，方便收件人远程安全地签名。 当您需要多个签名时，您甚至可以自动将表单发送给工作流程中的一系列人员。 您的员工入职培训已得到改进，并且人力资源部会喜欢您。
 
-请查看[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/)，以立即为您的应用程序添加多种PDF功能。
+请查看[[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/)，以立即为您的应用程序添加多种PDF功能。

@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10203
 thumbnail: KT-10203.jpg
 exl-id: 0186b3ee-4915-4edd-8c05-1cbf65648239
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1434'
 ht-degree: 0%
@@ -35,9 +35,9 @@ ht-degree: 0%
 
 ## 什么是Acrobat Sign？
 
-[Acrobat Sign](https://www.adobe.com/cn/sign.html)是电子签名服务领域的全球领先者。 您可以使用各种不同的工作流程（包括多个签名）发送文档以供签名。 Acrobat Sign还支持需要签名和其他信息的工作流程。 功能强大的仪表板以及灵活的创作系统支持所有这些功能。
+[Acrobat Sign](https://www.adobe.com/acrobat/business/sign.html)是电子签名服务领域的全球领先者。 您可以使用各种不同的工作流程（包括多个签名）发送文档以供签名。 Acrobat Sign还支持需要签名和其他信息的工作流程。 功能强大的仪表板以及灵活的创作系统支持所有这些功能。
 
-与[!DNL Acrobat Services]一样，Acrobat Sign提供了[免费试用版](https://www.adobe.com/sign.html#sign_free_trial)，开发人员可通过仪表板和使用易于使用的基于REST的API来测试签名过程。
+与[!DNL Acrobat Services]一样，Acrobat Sign提供了[免费试用版](https://www.adobe.com/acrobat/business/sign.html#sign_free_trial)，开发人员可通过仪表板和使用易于使用的基于REST的API来测试签名过程。
 
 ## 入门场景
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ![初始文档的屏幕截图](assets/onboarding_1.png)
 
-Document Generation的工作原理是向Word文档添加“标记”，这些标记将被您的数据替换。 虽然可以手动输入这些令牌，但有一个[Microsoft Word加载项](https://developer.adobe.com/cn/document-services/docs/overview/document-generation-api/wordaddin/)，可以更轻松地执行此操作。 打开文档为作者提供了一个工具，让他们可以定义可在文档中使用的标签或数据集。
+Document Generation的工作原理是向Word文档添加“标记”，这些标记将被您的数据替换。 虽然可以手动输入这些令牌，但有一个[Microsoft Word加载项](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin/)，可以更轻松地执行此操作。 打开文档为作者提供了一个工具，让他们可以定义可在文档中使用的标签或数据集。
 
 ![文档标记器的屏幕截图](assets/onboarding_2.png)
 
@@ -192,7 +192,7 @@ combineFilesOperation.execute(executionContext)
 
 ## 签名过程
 
-在登入过程的最后一站，员工必须签署一份协议，声明他们已阅读并同意内定义的所有策略。 [Acrobat Sign](https://www.adobe.com/cn/sign.html)支持许多不同的工作流和集成，包括通过[API](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html)的自动工作流和集成。 从广义上讲，方案的最后一部分可以如下完成：
+在登入过程的最后一站，员工必须签署一份协议，声明他们已阅读并同意内定义的所有策略。 [Acrobat Sign](https://www.adobe.com/acrobat/business/sign.html)支持许多不同的工作流和集成，包括通过[API](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html)的自动工作流和集成。 从广义上讲，方案的最后一部分可以如下完成：
 
 首先，设计包含需要签名的表单的文档。 可以通过多种方式做到这一点，包括在Adobe Sign用户信息板中设计的视觉效果。 另一种方法是使用Document Generation Word插件为您插入标签。 此示例请求签名和日期。
 
@@ -206,6 +206,6 @@ combineFilesOperation.execute(executionContext)
 
 ## 亲自体验
 
-本文中描述的所有内容现在都可以进行测试。 [!DNL Adobe Acrobat Services] API [免费试用](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html)当前在六个月内为您提供了1,000个免费请求。 通过Acrobat Sign的[免费试用](https://www.adobe.com/sign.html#sign_free_trial)，可发送带有水印的协议以进行测试。
+本文中描述的所有内容现在都可以进行测试。 [!DNL Adobe Acrobat Services] API [免费试用](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html)当前在六个月内为您提供了1,000个免费请求。 通过Acrobat Sign的[免费试用](https://www.adobe.com/acrobat/business/sign.html#sign_free_trial)，可发送带有水印的协议以进行测试。
 
-有问题？[支持论坛](https://community.adobe.com/t5/document-services-apis/ct-p/ct-Document-Cloud-SDK)每天都由Adobe开发人员和支持人员监视。 最后，为了获取更多灵感，请确保拍摄下一个[纸剪辑](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)集。 定期与客户举行现场会议，包括新闻、演示和谈话。
+有问题？[支持论坛](https://community.adobe.com/t5/acrobat-services-api/ct-p/ct-Document-Cloud-SDK)每天都由Adobe开发人员和支持人员监视。 最后，为了获取更多灵感，请确保拍摄下一个[纸剪辑](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)集。 定期与客户举行现场会议，包括新闻、演示和谈话。

@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8093
 thumbnail: KT-8093.jpg
 exl-id: 2f2bf1c2-1b33-4eee-9fd2-5d0b77e6b0a9
-source-git-commit: c74a36116349490af29e66fd81ad59c93174c258
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 0%
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 金融、教育、营销和其他行业使用PDF与客户和利益相关者共享数据。 使用PDF，可以轻松共享包含表格、图形和交互式内容的丰富文档，并且格式每个人都可以查看。 [!DNL Adobe Acrobat Services]个API可帮助这些公司从Microsoft Word、Microsoft Excel、图形和其他多种文档格式生成可共享的PDF报告。
 
-假设您[运行社交媒体跟踪公司](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html)。 您的客户登录到您的站点受密码保护的部分，以查看其营销活动分析。 通常，他们想要与他们的执行官、股东、捐赠者或其他利益相关者共享这些数据。 可下载的PDF文档非常适合您的客户分享数字、图表等。
+假设您[运行社交媒体跟踪公司](https://developer.adobe.com/document-services/use-cases/content-publishing/on-demand-report-creation)。 您的客户登录到您的站点受密码保护的部分，以查看其营销活动分析。 通常，他们想要与他们的执行官、股东、捐赠者或其他利益相关者共享这些数据。 可下载的PDF文档非常适合您的客户分享数字、图表等。
 
-通过将[PDF服务API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html)合并到您的网站，您可以随时为每个客户生成PDF报告。 您可以创建PDF，然后将其合并到一个方便客户下载并传递给其利益干系人的报告中。
+通过将[PDF服务API](https://developer.adobe.com/document-services/apis/pdf-services)合并到您的网站，您可以随时为每个客户生成PDF报告。 您可以创建PDF，然后将其合并到一个方便客户下载并传递给其利益干系人的报告中。
 
 ## 您可以学到的内容
 
@@ -92,7 +92,7 @@ res.status(500).render("crash", { error: error });
 $ npm install --save @adobe/documentservices-pdftools-node-sdk
 ```
 
-在开始之前，您必须具有API凭据，[免费Adobe](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred)。 使用您的[!DNL Acrobat Services]帐户[可免费使用六个月，然后即可即付即用](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)，每笔文档交易仅需\$0.05。
+在开始之前，您必须具有API凭据，[免费Adobe](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getcred)。 使用您的[!DNL Acrobat Services]帐户[可免费使用六个月，然后即可即付即用](https://developer.adobe.com/document-services/pricing/main)，每笔文档交易仅需\$0.05。
 
 下载存档文件并解压缩JSON文件以获取凭据和私钥。 在示例项目中，将该文件放在src目录中。
 
@@ -217,6 +217,6 @@ res.status(500).render("crash", { error: error });
 
 本实际操作教程逐步介绍了如何使用PDF服务API帮助客户将相关报告下载为易于共享的PDF。 您创建了一个Node.js应用程序，以展示PDF服务API对PDF报告和阅读服务的强大功能。 该应用程序演示了您的客户如何下载单个报告PDF或将多个文档合并为单个文档报告。
 
-此Adobe支持的应用程序可帮助您的[社交媒体仪表板客户](https://www.adobe.io/apis/documentcloud/dcsdk/on-demand-report-creation.html)获取和共享他们所需的报告，而无需担心收件人的设备上是否都安装了Microsoft Office或其他软件。 您可以在自己的应用程序中使用相同的技巧来帮助用户查看、合并和下载文档。 或者，查看Adobe的许多其他API，以添加和跟踪签名等。
+此Adobe支持的应用程序可帮助您的[社交媒体仪表板客户](https://developer.adobe.com/document-services/use-cases/content-publishing/on-demand-report-creation)获取和共享他们所需的报告，而无需担心收件人的设备上是否都安装了Microsoft Office或其他软件。 您可以在自己的应用程序中使用相同的技巧来帮助用户查看、合并和下载文档。 或者，查看Adobe的许多其他API，以添加和跟踪签名等。
 
-若要开始，请申请您的免费[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)帐户，然后为您的员工和客户创建引人入胜的报告体验。 在您的营销活动扩展过程中，免费使用您的帐户6个月，然后[即付即用](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)，每次文档交易仅需\ 0.05美元。
+若要开始，请申请您的免费[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)帐户，然后为您的员工和客户创建引人入胜的报告体验。 在您的营销活动扩展过程中，免费使用您的帐户6个月，然后[即付即用](https://developer.adobe.com/document-services/pricing/main)，每次文档交易仅需\ 0.05美元。

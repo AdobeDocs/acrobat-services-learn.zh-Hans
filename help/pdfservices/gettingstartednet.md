@@ -9,7 +9,7 @@ jira: KT-6675
 thumbnail: KT-6675.jpg
 keywords: 精选
 exl-id: 22c59c75-fd99-4467-a6f6-917fb246469a
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 0%
@@ -75,12 +75,12 @@ PDF服务API可通过自动化常见工作流程并将处理负担转移到云�
 
 * PDF服务API [文档](https://www.adobe.com/go/pdftoolsapi_doc)
 
-* 有关PDF服务API问题的[常见问题解答](https://community.adobe.com/t5/document-cloud-sdk/faq-for-document-services-pdf-tools-api/m-p/10726197)
+* 有关PDF服务API问题的[常见问题解答](https://community.adobe.com/t5/contentarchivals/contentarchivedpage/message-uid/10726197)
 
 * 有关许可和定价的问题，请[联系我们](https://www.adobe.com/go/pdftoolsapi_requestform)
 
 * 相关文章
 
-  [新的PDF服务API为文档工作流程提供了更多功能](https://community.adobe.com/t5/document-services-apis/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
+  [新的PDF服务API为文档工作流程提供了更多功能](https://community.adobe.com/t5/acrobat-services-api-discussions/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
 
   [ 7月版 [!DNL Adobe Acrobat Services]：PDF嵌入和PDF服务](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)

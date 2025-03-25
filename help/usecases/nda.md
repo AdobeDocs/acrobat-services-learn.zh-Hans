@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8098
 thumbnail: KT-8098.jpg
 exl-id: f4ec0182-a46e-43aa-aea3-bf1d19f1a4ec
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 0%
@@ -29,11 +29,11 @@ ht-degree: 0%
 
 ## 相关的API和资源
 
-借助[!DNL Adobe Acrobat Services]，您可以使用动态数据动态生成PDF文档。 [!DNL Acrobat Services]提供了一套PDF工具，包括可自动执行[NDA创建](https://www.adobe.io/apis/documentcloud/dcsdk/nda-creation.html)的AdobeDocument Generation API。
+借助[!DNL Adobe Acrobat Services]，您可以使用动态数据动态生成PDF文档。 [!DNL Acrobat Services]提供了一套PDF工具，包括可自动执行[NDA创建](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/nda-creation)的AdobeDocument Generation API。
 
-* [Adobe的Document Generation API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)
+* [Adobe的Document Generation API](https://developer.adobe.com/document-services/apis/doc-generation)
 
-* [Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html)
+* [Adobe Sign API](https://developer.adobe.com/adobesign-api/)
 
 * [Adobe的Document Generation Tagger](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)
 
@@ -93,7 +93,7 @@ Microsoft Word模板依赖于JSON模型，因此您首先创建它。 在本教�
 
 ## 创建标签
 
-随时创建模板或将[现有模板](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade)导入Microsoft Word。 设置文档后，通过单击加载项中的相应标记，将标记添加到每个字段。
+随时创建模板或将[现有模板](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade)导入Microsoft Word。 设置文档后，通过单击加载项中的相应标记，将标记添加到每个字段。
 
 Microsoft Word文件中的以下模板：
 
@@ -173,7 +173,7 @@ res.status(500).render("crash", { error: error });
 
 您可以在GitHub上查看[完整的示例代码](https://github.com/afzaal-ahmad-zeeshan/adobe-docugen-sample)。
 
-此代码在对[!DNL Adobe Acrobat Services] SDK的API调用中使用JSON文档和Microsoft Word模板。 在响应中，您将收到输出并将其保存到应用程序的文件系统中。 您可以使用免费的[Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html)，通过电子邮件将生成的文档转发给您的客户，或在浏览器中向他们显示预览。
+此代码在对[!DNL Adobe Acrobat Services] SDK的API调用中使用JSON文档和Microsoft Word模板。 在响应中，您将收到输出并将其保存到应用程序的文件系统中。 您可以使用免费的[Adobe PDF Embed API](https://developer.adobe.com/document-services/apis/pdf-embed)，通过电子邮件将生成的文档转发给您的客户，或在浏览器中向他们显示预览。
 
 此调用将创建以下NDA文档：
 
@@ -181,13 +181,13 @@ res.status(500).render("crash", { error: error });
 
 [!DNL Adobe Acrobat Services]个API插入内容以创建PDF文档。 如果没有这些工具，您可能必须编写代码来处理Office文档并使用原始PDF文件格式。 在Adobe PDF服务的帮助下，您只需调用一个API即可完成所有这些步骤。
 
-现在，使用[Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html)请求对NDA进行签名，并将最终的已签名文档发送给所有各方。 Adobe Sign使用Webhook](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/webhooks.md)通知您[。 侦听此Webhook，您可以获取NDA的状态。
+现在，使用[Adobe Sign API](https://developer.adobe.com/adobesign-api/)请求对NDA进行签名，并将最终的已签名文档发送给所有各方。 Adobe Sign使用Webhook](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/webhooks.md)通知您[。 侦听此Webhook，您可以获取NDA的状态。
 
-有关Adobe Sign过程的更深入解释，请[查阅文档](https://www.adobe.io/apis/documentcloud/sign/docs.html)或阅读此深入博客帖子。
+有关Adobe Sign过程的更深入解释，请[查阅文档](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html)或阅读此深入博客帖子。
 
 ## 后续步骤
 
-在本实际操作教程中，我们将使用AdobeDocument Generation Tagger通过Microsoft Word模板和JSON数据文件动态生成PDF文档。 此加载项帮助[自动为每个参与方创建NDA](https://www.adobe.io/apis/documentcloud/dcsdk/nda-creation.html)，然后使用Sign API收集签名。
+在本实际操作教程中，我们将使用AdobeDocument Generation Tagger通过Microsoft Word模板和JSON数据文件动态生成PDF文档。 此加载项帮助[自动为每个参与方创建NDA](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/nda-creation)，然后使用Sign API收集签名。
 
-您可以使用这些技巧动态创建您自己的NDA或其他文档，从而腾出团队的时间专注于高效工作。 浏览[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html)以查找适用于所选语言和运行时的API和SDK，以便您可以将PDF函数直接添加到应用程序中以快速创建PDF文档。 开始[](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)，免费试用6个月
-[即付即用](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)，每笔文档交易仅需0.05 USD。
+您可以使用这些技巧动态创建您自己的NDA或其他文档，从而腾出团队的时间专注于高效工作。 浏览[[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/apis/pdf-services)以查找适用于所选语言和运行时的API和SDK，以便您可以将PDF函数直接添加到应用程序中以快速创建PDF文档。 开始[](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)，免费试用6个月
+[即付即用](https://developer.adobe.com/document-services/pricing/main)，每笔文档交易仅需0.05 USD。

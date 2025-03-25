@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8090
 thumbnail: KT-8090.jpg
 exl-id: 3aa9aa40-a23c-409c-bc0b-31645fa01b40
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1722'
 ht-degree: 0%
@@ -21,12 +21,12 @@ ht-degree: 0%
 
 电子文档无处不在 — 事实上，全球大概有[万亿个PDF](https://itextpdf.com/en/blog/technical-notes/do-you-know-how-many-pdf-documents-exist-world)，这个数字每天都在上升。 通过在网页中嵌入PDF查看器，用户可以查看文档，而无需重新设计HTML和CSS或阻止访问您的网站。
 
-让我们来了解一个大众情景。 一家公司在其网站上发布了[白皮书](https://www.adobe.io/apis/documentcloud/dcsdk/digital-content-publishing.html)
+让我们来了解一个大众情景。 一家公司在其网站上发布了[白皮书](https://developer.adobe.com/document-services/use-cases/content-publishing/digital-content-publishing)
 为其应用程序和服务提供上下文。 该网站的营销人员希望更好地了解用户如何与基于PDF的内容进行交互，并将其与网页和品牌相结合。 他们已决定将白皮书作为[门禁内容](https://whatis.techtarget.com/definition/gated-content-ungated-content#:~:text=Gated%20content%20is%20online%20materials,about%20their%20jobs%20and%20organizations.)发布，并控制谁可以下载这些白皮书。
 
 ## 您可以学到的内容
 
-在本实际操作教程中，了解如何使用[Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html)显示网页中嵌入的PDF文档，该功能免费且易于使用。 这些示例使用一些JavaScript、Node.js、Express.js、HTML和CSS。 您可以在[GitHub](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1)上查看完整的项目代码。
+在本实际操作教程中，了解如何使用[Adobe PDF Embed API](https://developer.adobe.com/document-services/apis/pdf-embed)显示网页中嵌入的PDF文档，该功能免费且易于使用。 这些示例使用一些JavaScript、Node.js、Express.js、HTML和CSS。 您可以在[GitHub](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1)上查看完整的项目代码。
 
 ## 相关的API和资源
 
@@ -126,7 +126,7 @@ res.render('index', { title: 'Embedding PDF', papers: papers });
 
 ![白皮书的缩览图屏幕截图](assets/ddp_4.png)
 
-接下来的部分将介绍如何增强网站并使用[PDF嵌入API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html)在网页中显示PDF文档。 PDFEmbed API可免费使用 — 您只需获取API凭据即可。
+接下来的部分将介绍如何增强网站并使用[PDF嵌入API](https://developer.adobe.com/document-services/apis/pdf-embed)在网页中显示PDF文档。 PDFEmbed API可免费使用 — 您只需获取API凭据即可。
 
 ## 获取PDF的嵌入API凭据
 
@@ -547,16 +547,16 @@ console.log(event);
 
 ![代码的屏幕截图](assets/ddp_16.png)
 
-您可以将此数据发送到[Adobe Analytics](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=view)或其他分析工具。
+您可以将此数据发送到[Adobe Analytics](https://developer.adobe.com/document-services/docs/overview/pdf-embed-api)或其他分析工具。
 
 ## 后续步骤
 
 [!DNL Acrobat Services]个API可帮助开发人员使用以PDF为中心的工作流程轻松解决数字发布难题。 您已了解如何创建示例Node Web应用程序以显示白皮书集合。 然后，获取[免费API凭据](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)，并构建对白皮书的限制访问权限，这些白皮书可以在四种[嵌入模式](https://documentcloud.adobe.com/view-sdk-demo/index.html#/view/FULL_WINDOW/Bodea%20Brochure.pdf)的其中一种显示。
 
-将此工作流程放在一起有助于[虚拟营销人员](https://www.adobe.io/apis/documentcloud/dcsdk/digital-content-publishing.html)收集潜在客户联系信息，以交换白皮书下载情况并查看与PDF交互的人员的统计信息。 您可以将这些功能纳入您的网站，以推动和监控用户参与情况。
+将此工作流程放在一起有助于[虚拟营销人员](https://developer.adobe.com/document-services/use-cases/content-publishing/digital-content-publishing)收集潜在客户联系信息，以交换白皮书下载情况并查看与PDF交互的人员的统计信息。 您可以将这些功能纳入您的网站，以推动和监控用户参与情况。
 
 如果您是Angular或React开发人员，您可能喜欢尝试[其他示例](https://github.com/adobe/pdf-embed-api-samples)，其中包含如何将PDFEmbed API与React和Angular项目集成。
 
-通过Adobe，您可以使用创新解决方案打造端到端客户体验。 免费查看[Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/viesdk)。 要探索您还能做什么，请通过[pay-as-you-gopr](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)[icing](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)来试用Adobe PDF Services API。
+通过Adobe，您可以使用创新解决方案打造端到端客户体验。 免费查看[Adobe PDF Embed API](https://developer.adobe.com/document-services/apis/pdf-embed/)。 要探索您还能做什么，请通过[pay-as-you-gopr](https://developer.adobe.com/document-services/pricing/main)[icing](https://developer.adobe.com/document-services/pricing/main)来试用Adobe PDF Services API。
 
 今天[开始使用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) [!DNL Adobe Acrobat Services] API。

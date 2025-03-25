@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8094
 thumbnail: KT-8094.jpg
 exl-id: d704620f-d06a-4714-9d09-3624ac0fcd3a
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![用例主横幅](assets/UseCaseReviewsHero.jpg)
 
-在COVID-19疫情期间，许多公司需要远程跨团队协作，[共享和审阅数字文档](https://www.adobe.io/apis/documentcloud/dcsdk/review-and-approval.html)为团队和跨职能资源带来了一系列挑战。
+在COVID-19疫情期间，许多公司需要远程跨团队协作，[共享和审阅数字文档](https://developer.adobe.com/document-services/use-cases/collaboration/review-and-approval)为团队和跨职能资源带来了一系列挑战。
 
 这些挑战包括共享不同文件格式的文档、有效审阅和评论内容以及与最新编辑同步。 [!DNL Adobe Acrobat Services]个API旨在使应用程序开发人员能够为其用户解决这些难题。
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## 创建AdobeAPI凭据
 
-在启动代码之前，您必须[为Adobe PDF Embed API和Adobe PDF Services API创建凭据](https://www.adobe.com/go/dcsdks_credentials)。 PDFEmbed API可免费使用。 PDF服务API免费使用六个月，然后您就可以切换到[即用即付计划](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)，每个文档交易只需\$0.05。
+在启动代码之前，您必须[为Adobe PDF Embed API和Adobe PDF Services API创建凭据](https://www.adobe.com/go/dcsdks_credentials)。 PDFEmbed API可免费使用。 PDF服务API免费使用六个月，然后您就可以切换到[即用即付计划](https://developer.adobe.com/document-services/pricing/main)，每个文档交易只需\$0.05。
 
 为PDF服务API创建凭据时，请选择&#x200B;**创建个性化代码示例**&#x200B;选项，然后选择语言的Node.js。 保存ZIP文件并将pdftools-api-credentials.json和private.key提取到Node.js Express项目的根目录中。
 
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 对于文档工作流程的第一部分，最终用户必须上传要共享的文档。 要启用此功能，您可以添加上传功能，并将各种文档文件格式合并到PDF中，为审阅过程做好准备。
 
-首先根据[PDF服务API示例片段](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-tools.html)创建一个将文档转换为PDF的函数。 此示例还显示了许多其他重要功能的片段，包括光学字符识别(OCR)、密码保护和移除以及压缩。
+首先根据[PDF服务API示例片段](https://developer.adobe.com/document-services/apis/pdf-services)创建一个将文档转换为PDF的函数。 此示例还显示了许多其他重要功能的片段，包括光学字符识别(OCR)、密码保护和移除以及压缩。
 
 ```
 function fileToPDF( filename, outputFilename, callback ) {
@@ -443,8 +443,8 @@ PDF组合代码类似于PDF创建代码，但使用CombineFiles操作并将每�
 
 ## 后续步骤
 
-此实际操作教程演示了[!DNL Acrobat Services] API如何将[文档共享和审阅工作流程](https://www.adobe.io/apis/documentcloud/dcsdk/review-and-approval.html)集成到Web应用程序中。 该应用程序允许远程员工共享文件并与队友协作，这对在家工作的员工和承包商尤其有帮助。
+此实际操作教程演示了[!DNL Acrobat Services] API如何将[文档共享和审阅工作流程](https://developer.adobe.com/document-services/use-cases/collaboration/review-and-approval)集成到Web应用程序中。 该应用程序允许远程员工共享文件并与队友协作，这对在家工作的员工和承包商尤其有帮助。
 
 您可以使用这些技巧在应用程序中启用协作，或者在GitHub上探索[PDF服务PDFSDK示例](https://github.com/adobe/pdftools-node-sdk-samples)和[节点嵌入API示例](https://github.com/adobe/pdf-embed-api-samples)，以获取有关如何使用AdobeAPI的灵感。
 
-准备好在自己的应用程序中启用文档共享和审阅了吗？ 注册您的[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)开发人员帐户。 免费访问Adobe PDF Embed，并享受其他API的6个月免费试用期。 试用结束后，随着业务增长，您可以[即用即付](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)，而每个文档交易只需\ 0.05 USD。
+准备好在自己的应用程序中启用文档共享和审阅了吗？ 注册您的[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)开发人员帐户。 免费访问Adobe PDF Embed，并享受其他API的6个月免费试用期。 试用结束后，随着业务增长，您可以[即用即付](https://developer.adobe.com/document-services/pricing/main)，而每个文档交易只需\ 0.05 USD。

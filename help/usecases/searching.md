@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8095
 thumbnail: KT-8095.jpg
 exl-id: a22230b5-1ff2-4870-84da-f06a904c99e1
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1298'
 ht-degree: 0%
@@ -135,7 +135,7 @@ Ensure that the content of your package.json file is similar to this code snippe
 
 这些API通过一组基于云的Web服务自动生成、操作和转换PDF内容。
 
-要获取凭据，您需要[注册](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK)并完成工作流。 PDFEmbed API可免费使用。 PDF服务API和Document Generation API免费提供六个月。 试用结束后，您可以[即用即付](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)，每个文档交易只需$0.05。 您只需随着公司发展和处理更多合同付费。
+要获取凭据，您需要[注册](https://www.adobe.com/go/dcsdks_credentials?ref=getStartedWithServicesSDK)并完成工作流。 PDFEmbed API可免费使用。 PDF服务API和Document Generation API免费提供六个月。 试用结束后，您可以[即用即付](https://developer.adobe.com/document-services/pricing/main)，每个文档交易只需$0.05。 您只需随着公司发展和处理更多合同付费。
 
 ![创建凭据的屏幕截图](assets/searching_1.png)
 
@@ -145,7 +145,7 @@ Ensure that the content of your package.json file is similar to this code snippe
 
 ## 创建PDF
 
-[!DNL Acrobat Services]支持从Microsoft OfficePDF（Word、Excel和PowerPoint）和其他[支持的文件格式](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf)(如.txt、.rtf、.bmp、.jpg、.gif、.tiff和.png)创建文档。
+[!DNL Acrobat Services]支持从Microsoft OfficePDF（Word、Excel和PowerPoint）和其他[支持的文件格式](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/howtos.html#create-a-pdf)&#x200B;(如.txt、.rtf、.bmp、.jpg、.gif、.tiff和.png)创建文档。
 
 要从支持的文件格式创建PDF文档，请使用此表单上传文档。 您可以在[GitHub](https://github.com/agavitalis/AdobeDocumentServicesAPIs.git)上访问表单的HTML和CSS文件。
 
@@ -431,4 +431,4 @@ res.download(download.link);
 现在，您已深入了解如何使用[!DNL Acrobat Services] API，您可以通过练习来进一步提升技能。 您可以克隆本教程中使用的存储库，并尝试您刚刚学到的一些技能。 更棒的是，您可以尝试在探索[!DNL Acrobat Services] API的无限可能性的同时重建此应用程序。
 
 准备好在自己的应用程序中启用文档共享和审阅了吗？ 注册您的[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
-开发人员帐户。 享受6个月的免费试用，然后随着您的业务增长，[即用即付](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)只需\0.05 USD即可完成每个文档交易。
+开发人员帐户。 享受6个月的免费试用，然后随着您的业务增长，[即用即付](https://developer.adobe.com/document-services/pricing/main)只需\0.05 USD即可完成每个文档交易。

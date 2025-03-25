@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10382
 thumbnail: KT-10382.jpg
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 2%
@@ -116,7 +116,7 @@ ht-degree: 2%
 
 如上面的屏幕截图所示，您可以切换到工作帐户，也可以设置新的组织帐户。 完成此操作后，您便可以添加Adobe PDF服务操作。
 
-有关使用[!DNL Adobe Acrobat Services]创建第一个Microsoft Power Automate工作流的更深入的信息，请参阅[在Microsoft Power Automate中创建您的第一个工作流程](https://experienceleague.adobe.com/docs/document-services/tutorials/pdfservices/create-workflow-power-automate.html)。
+有关使用[!DNL Adobe Acrobat Services]创建第一个Microsoft Power Automate工作流的更深入的信息，请参阅[在Microsoft Power Automate中创建您的第一个工作流程](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate)。
 
 ## 其他资源
 
@@ -126,4 +126,4 @@ ht-degree: 2%
 * 需要示例？ 您可以找到大量演示PDF服务的[Power Automate模板](https://powerautomate.microsoft.com/en-us/connectors/details/shared_adobepdftools/adobe-pdf-services/)。
 * 我们的实时视频内容[纸质剪辑](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)还包含演示Power Automate用法的视频。
 * [Adobe技术博客](https://medium.com/adobetech/tagged/microsoft-power-automate)包含许多关于使用Power Automate的文章。
-* 最后，请务必同时查阅核心[PDF服务](https://developer.adobe.com/cn/document-services/docs/overview/)文档。
+* 最后，请务必同时查阅核心[PDF服务](https://developer.adobe.com/document-services/docs/overview/)文档。

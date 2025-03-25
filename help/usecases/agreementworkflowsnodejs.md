@@ -1,6 +1,6 @@
 ---
 title: Node.js中的协议工作流
-description: “[!DNL Adobe Acrobat Services] API可轻松地将PDF功能合并到您的Web应用程序中”
+description: '[!DNL Adobe Acrobat Services] API可轻松地将PDF功能合并到您的Web应用程序中'
 feature: Use Cases
 role: Developer
 level: Beginner
@@ -9,7 +9,7 @@ jira: KT-7473
 thumbnail: KT-7473.jpg
 keywords: 精选
 exl-id: 44a03420-e963-472b-aeb8-290422c8d767
-source-git-commit: f8a31b8f98d99bf1f3787e0f0f19cc9f26e24d8d
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 * [PDF的嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
-* [Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html)
+* [Adobe Sign API](https://developer.adobe.com/adobesign-api/)
 
 * [项目代码](https://github.com/adobe/pdftools-node-sdk-samples)
 
@@ -294,7 +294,7 @@ combineOperation.execute(executionContext)
 <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 ```
 
-所需的最后一位代码是一个函数，它在加载Adobe PDF Embed API JavaScript后显示文档。 当您收到脚本通过adobe_dc_view\_sdk.ready事件加载的通知时，请创建一个新的AdobeDC.View对象。 此对象需要您的客户端ID和之前创建的元素的ID。 在[Adobe Developer Console](https://console.adobe.io/)中查找您的客户端ID。 当您查看之前生成凭据时创建的应用程序的设置时，客户端ID将显示在此处。
+所需的最后一位代码是一个函数，它在加载Adobe PDF Embed API JavaScript后显示文档。 当您收到脚本通过adobe_dc_view\_sdk.ready事件加载的通知时，请创建一个新的AdobeDC.View对象。 此对象需要您的客户端ID和之前创建的元素的ID。 在[Adobe Developer Console](https://developer.adobe.com/console/)中查找您的客户端ID。 当您查看之前生成凭据时创建的应用程序的设置时，客户端ID将显示在此处。
 
 API客户端密钥的![图像](assets/AWNjs_6.png)
 
@@ -312,7 +312,7 @@ API客户端密钥的![图像](assets/AWNjs_6.png)
 
 文档准备就绪后，您可以使用Adobe Sign添加数字签名以供审批。 此功能与迄今为止使用的功能稍有不同。 对于数字签名，应用程序必须配置为使用OAuth进行用户身份验证。
 
-设置应用程序的第一步是[注册应用程序](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md)以使用Adobe Sign的OAuth。 登录后，导航到用于通过单击&#x200B;*帐户*&#x200B;创建应用程序的屏幕，然后打开&#x200B;*Adobe Sign API*&#x200B;部分，并单击&#x200B;*API应用程序*&#x200B;以打开已注册的应用程序列表。
+设置应用程序的第一步是[注册应用程序](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md)以使用Adobe Sign的OAuth。 登录后，导航到用于通过单击&#x200B;*帐户*&#x200B;创建应用程序的屏幕，然后打开&#x200B;*Adobe Sign API*&#x200B;部分，并单击&#x200B;*API应用程序*&#x200B;以打开已注册的应用程序列表。
 
 ![注册应用程序第一步的图像](assets/AWNjs_9.png)
 
@@ -519,4 +519,4 @@ request(createWebFormRequest, function (error, response) {
 
 要发现调用的所需范围或查看如何生成调用，可从[Rest API文档](https://secure.na4.adobesign.com/public/docs/restapi/v6)中生成示例调用。 [Quickstarts](https://github.com/adobe/pdftools-node-sdk-samples)还演示了[!DNL Adobe Acrobat Services] API进程的其他功能和文件格式。
 
-您可以向应用程序添加多种PDF功能，让用户能够快速、轻松地查看和签署他们的文档等等。 若要开始，请今天查看[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/)。
+您可以向应用程序添加多种PDF功能，让用户能够快速、轻松地查看和签署他们的文档等等。 若要开始，请今天查看[[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/)。

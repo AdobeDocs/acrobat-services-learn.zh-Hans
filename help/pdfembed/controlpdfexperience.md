@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-7487
 thumbnail: KT-7487.jpg
 exl-id: 64ffdacb-d6cb-43e7-ad10-bbd8afc0dbf4
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1489'
 ht-degree: 0%
@@ -63,7 +63,7 @@ ht-degree: 0%
 **您需要**
 
 * 教程资源[下载](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial)
-* Adobe ID [在此处获取一个](https://accounts.adobe.com/cn/)
+* Adobe ID [在此处获取一个](https://account.adobe.com/zh-Hans/)
 * Web服务器（节点JS、PHP等）
 * HTML/JavaScript/CSS工作知识
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 ### 获取凭据
 
-1. 转到[Adobe.io网站](https://www.adobe.io/)。
+1. 转到[Adobe.io网站](https://developer.adobe.com/)。
 1. 在“构建引人入胜的文档体验”下单击&#x200B;**[!UICONTROL 了解详情]**。
 
    ![“了解更多”按钮的屏幕截图](assets/ControlPDF_1.png)
@@ -114,7 +114,7 @@ ht-degree: 0%
 
 我们创建了代码供您使用。 虽然您可以使用自己的代码，但演示将在教程资源的上下文中进行。 在[此处](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial)下载示例代码。
 
-1. 转到[[!DNL Adobe Acrobat Services] 网站](https://www.adobe.io/apis/documentcloud/dcsdk/)。
+1. 转到[[!DNL Adobe Acrobat Services] 网站](https://developer.adobe.com/document-services/homepage/)。
 
    ![[!DNL Adobe Acrobat Services]网站的屏幕截图](assets/ControlPDF_6.png)
 
@@ -218,7 +218,7 @@ ht-degree: 0%
 
 作为PDFEmbed API的一部分，还有许多不同的JavaScript事件。 您可以从[!DNL Adobe Acrobat Services]文档访问它们。
 
-1. 导航到[文档](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html)站点。
+1. 导航到[文档](https://developer.adobe.com/document-services/docs/overview)站点。
 1. 查看作为API的一部分提供的不同事件类型。 这些对于参考很有帮助，对您未来的项目也很有帮助。
 
    ![参考指南的屏幕截图](assets/ControlPDF_17.png)
@@ -326,4 +326,4 @@ Adobe PDF Embed API提供与Adobe Analytics的开箱即用集成。 但是，由
 
 ## 其他资源
 
-可在[此处](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html)找到其他资源。
+可在[此处](https://developer.adobe.com/document-services/docs/overview)找到其他资源。

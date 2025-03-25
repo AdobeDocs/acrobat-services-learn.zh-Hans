@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8145
 thumbnail: KT-8145.jpg
 exl-id: 5871ef8d-be9c-459f-9660-e2c9230a6ceb
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 当业务蓬勃发展时，这是件好事，但当需要准备所有这些发票时，生产率就会受损。 手动生成发票非常耗时，并且您可能面临出错的风险，从而有可能赔钱或因金额不正确而激怒客户。
 
-例如，想想Danielle在一家医疗供应公司](https://www.adobe.io/apis/documentcloud/dcsdk/invoices.html)的[会计部门](https://www.adobe.io/apis/documentcloud/dcsdk/invoices.html)[工作。 月底的时候，她从几个不同的系统中提取信息，再次检查信息的准确性，并格式化发票。 在完成所有这些工作后，她终于准备好将文档转换为PDF（以便任何人都可以查看，而无需购买特定软件），并向每个客户发送其个性化发票。
+例如，想想Danielle在一家医疗供应公司](https://developer.adobe.com/document-services/use-cases/financial/invoices)的[会计部门](https://developer.adobe.com/document-services/use-cases/financial/invoices)[工作。 月底的时候，她从几个不同的系统中提取信息，再次检查信息的准确性，并格式化发票。 在完成所有这些工作后，她终于准备好将文档转换为PDF（以便任何人都可以查看，而无需购买特定软件），并向每个客户发送其个性化发票。
 
 即使每月的发票开完了，Danielle也逃不掉这些发票。 一些客户有非月度计费周期，因此她始终为某人创建发票。 有时，客户会编辑其发票并支付不足的金额。 然后Danielle将花时间解决此发票不匹配问题。 按照这个速度，她需要雇个助理来做所有工作！
 
@@ -37,9 +37,9 @@ Danielle需要一种快速、准确地生成发票的方法，既可以在月底
 
 * [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [Adobe的Document Generation API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)
+* [Adobe的Document Generation API](https://developer.adobe.com/document-services/apis/doc-generation)
 
-* [Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html)
+* [Adobe Sign API](https://developer.adobe.com/adobesign-api/)
 
 * [项目代码](https://github.com/afzaal-ahmad-zeeshan/adobe-pdf-invoice-generation)
 
@@ -107,7 +107,7 @@ Document Generation API还可以执行复杂的操作，如聚合数组内的元
 
 使用Adobe PDF Services Node.js软件开发工具包(SDK)合并Microsoft Word和JSON文档。 构建Node.js应用程序，以使用Document Generation API创建发票。
 
-PDF服务API包含Document Generation Service，因此您可以对两者使用相同的凭据。 享受[六个月的免费试用](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)，然后只需为每个文档交易支付0.05 USD。
+PDF服务API包含Document Generation Service，因此您可以对两者使用相同的凭据。 享受[六个月的免费试用](https://developer.adobe.com/document-services/pricing/main)，然后只需为每个文档交易支付0.05 USD。
 
 以下是合并PDF的代码：
 
@@ -224,11 +224,11 @@ async function applyPassword(password, inputFile, outputFile) {
 
 ## 后续步骤
 
-在本实际操作教程中，您创建了一个简单的应用程序来帮助Danielle处理[账单](https://www.adobe.io/apis/documentcloud/dcsdk/invoices.html)。 使用PDF服务API和Document Generation SDK，您使用JSON文档中的客户订单信息填充了Microsoft Word模板，并创建了PDF发票。 然后，使用[PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)提供的密码保护服务对每个文档进行密码保护。
+在本实际操作教程中，您创建了一个简单的应用程序来帮助Danielle处理[账单](https://developer.adobe.com/document-services/use-cases/financial/invoices)。 使用PDF服务API和Document Generation SDK，您使用JSON文档中的客户订单信息填充了Microsoft Word模板，并创建了PDF发票。 然后，使用[PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)提供的密码保护服务对每个文档进行密码保护。
 
 由于Danielle可以自动生成发票，并且不必担心客户编辑其发票，因此她不需要雇用助理来帮助完成所有手动工作。 她可以利用这段额外的时间，在应付帐款文件中找到节省下来的费用。
 
-现在您已经了解了它是多么简单，您可以使用其他Adobe工具扩展这个简单的应用程序，以在您的网站上嵌入发票。 例如，客户可以随时查看其发票或余额。 [Adobe PDF Embed API](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html)可免费使用。 您甚至可以转到人力资源或销售部门，帮助实现协议自动化并收集电子签名。
+现在您已经了解了它是多么简单，您可以使用其他Adobe工具扩展这个简单的应用程序，以在您的网站上嵌入发票。 例如，客户可以随时查看其发票或余额。 [Adobe PDF Embed API](https://developer.adobe.com/document-services/apis/pdf-embed)可免费使用。 您甚至可以转到人力资源或销售部门，帮助实现协议自动化并收集电子签名。
 
-要探索所有可能性并开始构建您自己的便捷应用程序，请创建一个免费的[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)帐户以立即开始。 享受6个月的免费试用，然后[即付即用](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)
+要探索所有可能性并开始构建您自己的便捷应用程序，请创建一个免费的[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)帐户以立即开始。 享受6个月的免费试用，然后[即付即用](https://developer.adobe.com/document-services/pricing/main)
 随着您的业务扩展，每个文档交易仅需0.05 USD。

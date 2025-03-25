@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8096
 thumbnail: KT-8096.jpg
 exl-id: 92f955f0-add5-4570-aa3a-ea63055dadb2
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '1714'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![用例主横幅](assets/UseCaseOfferHero.jpg)
 
-员工工作邀请函是员工最初在公司中获得的体验之一。 因此，要确保优惠字母符合品牌标准，但您不必每次都从头开始在文字处理器中构建字母。 [!DNL Adobe Acrobat Services] API提供了一种快速、轻松且有效的方法来处理[生成优惠信函并向新员工提供优惠信函](https://www.adobe.io/apis/documentcloud/dcsdk/employee-offer-letters.html)中的关键部分。
+员工工作邀请函是员工最初在公司中获得的体验之一。 因此，要确保优惠字母符合品牌标准，但您不必每次都从头开始在文字处理器中构建字母。 [!DNL Adobe Acrobat Services] API提供了一种快速、轻松且有效的方法来处理[生成优惠信函并向新员工提供优惠信函](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters)中的关键部分。
 
 ## 您可以学到的内容
 
@@ -29,21 +29,21 @@ ht-degree: 0%
 
 * [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [Adobe的Document Generation API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)
+* [Adobe的Document Generation API](https://developer.adobe.com/document-services/apis/doc-generation)
 
-* [Adobe Sign API](https://www.adobe.io/apis/documentcloud/sign.html)
+* [Adobe Sign API](https://developer.adobe.com/adobesign-api/)
 
-* [Document Generation Tagger Word加载项](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=docgen-addin)
+* [Document Generation Tagger Word加载项](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin)
 
-* [项目示例](https://www.adobe.io/apis/documentcloud/dcsdk/employee-offer-letters.html)
+* [项目示例](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters)
 
 ## 开始使用
 
 [Node.js](https://nodejs.org/)是编程平台。 它随附了大量的库，如Express Web服务器。 [下载Node.js](https://nodejs.org/en/download/)并按照步骤安装这个出色的开源开发环境。
 
-要在Node.js中使用Adobe的Document Generation API，请转到[Document Generation API](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html)站点以访问您的帐户或注册新帐户。 您的帐户[可免费使用六个月，之后即可即用即付](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)，每笔文档交易只需支付0.05美元，因此您可以试用该帐户，无需承担任何风险，之后只需随着公司发展支付费用即可。
+要在Node.js中使用Adobe的Document Generation API，请转到[Document Generation API](https://developer.adobe.com/document-services/apis/doc-generation)站点以访问您的帐户或注册新帐户。 您的帐户[可免费使用六个月，之后即可即用即付](https://developer.adobe.com/document-services/pricing/main)，每笔文档交易只需支付0.05美元，因此您可以试用该帐户，无需承担任何风险，之后只需随着公司发展支付费用即可。
 
-登录[Adobe Developer Console](https://console.adobe.io/)后，单击&#x200B;**[!UICONTROL 创建新项目]**。 默认情况下，项目被命名为“项目1”。 单击&#x200B;**[!UICONTROL 编辑项目]**&#x200B;按钮并将名称更改为“聘用信函生成器”。 屏幕中央是&#x200B;**[!UICONTROL 开始使用新项目]**&#x200B;部分。 要为项目启用安全性，请执行以下步骤：
+登录[Adobe Developer Console](https://developer.adobe.com/console/)后，单击&#x200B;**[!UICONTROL 创建新项目]**。 默认情况下，项目被命名为“项目1”。 单击&#x200B;**[!UICONTROL 编辑项目]**&#x200B;按钮并将名称更改为“聘用信函生成器”。 屏幕中央是&#x200B;**[!UICONTROL 开始使用新项目]**&#x200B;部分。 要为项目启用安全性，请执行以下步骤：
 
 单击&#x200B;**添加API**。 您会看到一些API可供选择。 在&#x200B;**[!UICONTROL 按产品筛选]**&#x200B;部分中，选择&#x200B;**[!UICONTROL Document Cloud]**，然后单击&#x200B;**[!UICONTROL 下一步]**。
 
@@ -239,7 +239,7 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-那里有很多代码要解压缩 我们先来了解一下主要部分：`documentMergeOperation`。 在此部分中，您可以获取JSON数据并将其与Word文档模板合并。 您可以使用Adobe站点](https://www.adobe.io/apis/documentcloud/dcsdk/doc-generation.html#sample-blade)上的[示例作为参考，但让我们创建您自己的简单示例。 打开Word并创建一个新的空白文档。 你可以随意进行自定义，但至少有以下特点：
+那里有很多代码要解压缩 我们先来了解一下主要部分：`documentMergeOperation`。 在此部分中，您可以获取JSON数据并将其与Word文档模板合并。 您可以使用Adobe站点](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade)上的[示例作为参考，但让我们创建您自己的简单示例。 打开Word并创建一个新的空白文档。 你可以随意进行自定义，但至少有以下特点：
 
 尊敬的X：
 
@@ -247,7 +247,7 @@ console.log('Exception encountered while executing operation', err);
 
 欢迎
 
-将文档作为“OfferLetter-Template.docx”保存在项目根目录下名为“resources”的文件夹中。 请注意文档中的三个X。 这些X是您的JSON信息的临时占位符。 虽然可以使用特殊语法替换这些占位符，但Adobe提供了一个简化此任务的Word插件。 要安装加载项，请转到Adobe[Document Generation Tagger Word加载项](https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=docgen-addin)站点。
+将文档作为“OfferLetter-Template.docx”保存在项目根目录下名为“resources”的文件夹中。 请注意文档中的三个X。 这些X是您的JSON信息的临时占位符。 虽然可以使用特殊语法替换这些占位符，但Adobe提供了一个简化此任务的Word插件。 要安装加载项，请转到Adobe[Document Generation Tagger Word加载项](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin)站点。
 
 在您的OfferLetter-Template中，单击新的&#x200B;**Document Generation**&#x200B;按钮。 侧面板随即打开。 单击&#x200B;**开始使用**。 为您提供了要在示例JSON数据中粘贴的文本区域。 将JSON的“offer-data”片段从上方复制到文本区域。 它应该如下所示：
 
@@ -263,7 +263,7 @@ console.log('Exception encountered while executing operation', err);
 
 现在，Word模板具有与JSON格式匹配的标记。 例如，将Word文档开头的```{{`offer_letter`.`firstname`}}```替换为JSON数据“firstname”部分中的值。
 
-返回到您的`generateLetter`函数。 要保护REST调用的安全，请在项目根目录中创建一个名为pdftools-api-credentials.json的新文件。 粘贴以下JSON数据，并使用[开发人员控制台](https://console.adobe.io/)的“服务帐户(JWT)”部分中的详细信息调整该数据。
+返回到您的`generateLetter`函数。 要保护REST调用的安全，请在项目根目录中创建一个名为pdftools-api-credentials.json的新文件。 粘贴以下JSON数据，并使用[开发人员控制台](https://developer.adobe.com/console/)的“服务帐户(JWT)”部分中的详细信息调整该数据。
 
 ```
 {
@@ -290,9 +290,9 @@ pdftools-api-credentials.json文件。 如果您愿意，可以将私钥文件�
 
 ## 后续步骤
 
-就是这样！ 这只是开始。 如果您学习了Word插件的“Document Generation”选项卡的“高级”部分，则会注意到并非所有占位符标记都来自关联的JSON数据。 您还可以添加签名标签。 这些标记允许您获取生成的文档，并将其上传到[Adobe Sign](https://acrobat.adobe.com/ca/en/sign.html)以进行传递并签名给新员工。 请阅读Adobe Sign API快速入门以了解如何执行该操作。 此过程与此类似，因为您使用的是使用JWT令牌保护的REST调用。
+就是这样！ 这只是开始。 如果您学习了Word插件的“Document Generation”选项卡的“高级”部分，则会注意到并非所有占位符标记都来自关联的JSON数据。 您还可以添加签名标签。 这些标记允许您获取生成的文档，并将其上传到[Adobe Sign](https://www.adobe.com/ca/sign.html)以进行传递并签名给新员工。 请阅读Adobe Sign API快速入门以了解如何执行该操作。 此过程与此类似，因为您使用的是使用JWT令牌保护的REST调用。
 
-当组织必须[增加跨多个地点的季节性雇用](https://www.adobe.io/apis/documentcloud/dcsdk/employee-offer-letters.html)员工时，上面提供的单个文档示例可用作申请的基础。 如图所示，主要流程是通过在线应用程序从候选者那里获取数据。 数据用于填充聘用信的字段，并将其发送以供电子签名。
+当组织必须[增加跨多个地点的季节性雇用](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters)员工时，上面提供的单个文档示例可用作申请的基础。 如图所示，主要流程是通过在线应用程序从候选者那里获取数据。 数据用于填充聘用信的字段，并将其发送以供电子签名。
 
-[!DNL Adobe Acrobat Services]可免费使用六个月，然后[即付即用](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)，每个文档交易仅需0.05 USD，因此您可以试用它并根据业务增长扩展您的优惠信工作流程。 [开始使用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
-要构建您自己的模板，请[注册您的开发人员帐户](https://www.adobe.io/)。
+[!DNL Adobe Acrobat Services]可免费使用六个月，然后[即付即用](https://developer.adobe.com/document-services/pricing/main)，每个文档交易仅需0.05 USD，因此您可以试用它并根据业务增长扩展您的优惠信工作流程。 [开始使用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
+要构建您自己的模板，请[注册您的开发人员帐户](https://developer.adobe.com/)。

@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10202
 thumbnail: KT-10202.jpg
 exl-id: 2a1752b8-9641-40cc-a0af-1dce6cf49346
-source-git-commit: c74a36116349490af29e66fd81ad59c93174c258
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
 source-wordcount: '2826'
 ht-degree: 0%
@@ -362,7 +362,7 @@ var outputFileName = path.join('output', 'salesOrder_'+Date.now()+".docx");
 
 ## 发送协议以供签名
 
-[Adobe Acrobat Sign](https://www.adobe.com/cn/sign.html)允许您将协议发送给一个或多个收件人，供其查看和签署文档。 除了易于使用的发送文档以供签名的用户体验之外，您还可以使用REST API来接受Word、PDF、HTML和其他格式并发送它们以供签名。
+[Adobe Acrobat Sign](https://www.adobe.com/acrobat/business/sign.html)允许您将协议发送给一个或多个收件人，供其查看和签署文档。 除了易于使用的发送文档以供签名的用户体验之外，您还可以使用REST API来接受Word、PDF、HTML和其他格式并发送它们以供签名。
 
 以下示例逐步说明如何使用REST API文档页面来获取以前生成的文档并发送它以供签名。 首先，了解如何通过Acrobat Sign Web界面执行此操作，然后了解如何使用REST API执行此操作。
 
@@ -587,7 +587,7 @@ var outputFileName = path.join('output', 'salesOrder_'+Date.now()+".docx");
 
 有兴趣了解更多信息？ 了解使用[!DNL Adobe Acrobat Services]的一些其他方法：
 
-* 从[文档](https://developer.adobe.com/cn/document-services/docs/overview/)中了解详情
+* 从[文档](https://developer.adobe.com/document-services/docs/overview/)中了解详情
 * 查看Adobe Experience League上的更多教程
 * 使用/src文件夹中的示例脚本查看如何使用PDF
 * 有关最新的提示和技巧，请关注[Adobe技术博客](https://medium.com/adobetech/tagged/adobe-document-cloud)

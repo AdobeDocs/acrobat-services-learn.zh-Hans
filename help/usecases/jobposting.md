@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-8092
 thumbnail: KT-8092.jpg
 exl-id: 0e24c8fd-7fda-452c-96f9-1e7ab1e06922
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1447'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 在操作具有多个用户的网站时，设计一种确保为每个人提供流畅体验的体验至关重要。
 
-设想以下场景：您有一个网站，允许雇主[上传招聘信息](https://www.adobe.io/apis/documentcloud/dcsdk/job-posting.html)。 对于求职者来说，轻松查看与张贴相关的所有文档非常方便。 不过，雇主可以方便地以自己碰巧拥有的任何文件格式附加信息。 为了给这两种类型的用户带来方便，您可以自动将所有上传的文档转换为PDF，并将其内嵌到发布中。
+设想以下场景：您有一个网站，允许雇主[上传招聘信息](https://developer.adobe.com/document-services/use-cases/content-publishing/job-posting)。 对于求职者来说，轻松查看与张贴相关的所有文档非常方便。 不过，雇主可以方便地以自己碰巧拥有的任何文件格式附加信息。 为了给这两种类型的用户带来方便，您可以自动将所有上传的文档转换为PDF，并将其内嵌到发布中。
 
 ## 您可以学到的内容
 
@@ -37,13 +37,13 @@ ht-degree: 0%
 
 ## 创建AdobeAPI凭据
 
-首先，您必须[为Adobe PDF Embed API（免费使用）和Adobe PDF Services API创建凭据](https://www.adobe.com/go/dcsdks_credentials)（免费使用6个月，然后[即付即用](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)，每个文档交易仅需\$0.05）。 为PDF服务API创建凭据时，请选择“创建个性化代码示例”选项。 保存ZIP文件并将pdftools-api-credentials.json和private.key提取到Node.js Express项目的根目录中。
+首先，您必须[为Adobe PDF Embed API（免费使用）和Adobe PDF Services API创建凭据](https://www.adobe.com/go/dcsdks_credentials)（免费使用6个月，然后[即付即用](https://developer.adobe.com/document-services/pricing/main)，每个文档交易仅需\$0.05）。 为PDF服务API创建凭据时，请选择“创建个性化代码示例”选项。 保存ZIP文件并将pdftools-api-credentials.json和private.key提取到Node.js Express项目的根目录中。
 
-您还需要免费提供的Embed API的API密钥。 从[项目](https://console.adobe.io/projects)，转到您创建的项目。 然后，单击&#x200B;**添加到项目**&#x200B;并选择&#x200B;**API**。 最后，单击&#x200B;**PDF嵌入API**。
+您还需要免费提供的Embed API的API密钥。 从[项目](https://developer.adobe.com/console/projects)，转到您创建的项目。 然后，单击&#x200B;**添加到项目**&#x200B;并选择&#x200B;**API**。 最后，单击&#x200B;**PDF嵌入API**。
 
 指定PDF嵌入式API的域。 API密钥必须是公共的（可在浏览器执行的代码中查找它）。 通过指定域，可确保其他域中的其他人无法使用API密钥。
 
-您不能使用“localhost”作为域。 指定域（如“testing.local”），并编辑计算机上的hosts文件以将该域重定向到127.0.0.1，即您的计算机。 然后，您可以在testing.local：3000上测试应用程序，而不是在localhost：3000上测试应用程序。 完成后，在项目页面上找到PDFEmbed API的API密钥。
+您不能使用“localhost”作为域。 指定域（如“testing.local”），然后编辑计算机上的hosts文件以将该域重定向到您的计算机127.0.0.1。 然后，您可以在testing.local：3000上测试应用程序，而不是在localhost：3000上测试应用程序。 完成后，在项目页面上找到PDFEmbed API的API密钥。
 
 ## 添加上载表单和处理程序
 
@@ -274,7 +274,7 @@ router.get('/job/:id', async function(req, res, next) {
 
 ## 后续步骤
 
-此实操教程逐步介绍了如何将Node.js与[!DNL Acrobat Services]结合使用，将各种格式的上传的[职位发布](https://www.adobe.io/apis/documentcloud/dcsdk/job-posting.html)转换为PDF。 然后将生成的PDF嵌入到网页中。 现在，您可以将相同的功能添加到您的网站，让雇主可以更轻松地上传工作说明、手册以及更多内容，以供求职者查找。 这些功能可帮助每个人获得必要的信息以找到他们梦想的工作。
+此实操教程逐步介绍了如何将Node.js与[!DNL Acrobat Services]结合使用，将各种格式的上传的[职位发布](https://developer.adobe.com/document-services/use-cases/content-publishing/job-posting)转换为PDF。 然后将生成的PDF嵌入到网页中。 现在，您可以将相同的功能添加到您的网站，让雇主可以更轻松地上传工作说明、手册以及更多内容，以供求职者查找。 这些功能可帮助每个人获得必要的信息以找到他们梦想的工作。
 
 [!DNL Acrobat Services]帮助您将关键文档处理功能添加到您的网站或应用。 如果您想深入了解这些API的功能，请参阅以下快速入门文档：
 
@@ -282,4 +282,4 @@ router.get('/job/:id', async function(req, res, next) {
 
 * [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-若要开始向网站添加用户友好的文档处理功能，请[注册免费试用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)。 Adobe PDF Embed API始终免费使用，而Adobe PDF Services API免费使用6个月，则每个文档事务仅需\ 0.05 USD，因此您可以随着业务的发展而[即用即付](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-pricing.html)。
+若要开始向网站添加用户友好的文档处理功能，请[注册免费试用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)。 Adobe PDF Embed API始终免费使用，而Adobe PDF Services API免费使用6个月，则每个文档事务仅需\ 0.05 USD，因此您可以随着业务的发展而[即用即付](https://developer.adobe.com/document-services/pricing/main)。
