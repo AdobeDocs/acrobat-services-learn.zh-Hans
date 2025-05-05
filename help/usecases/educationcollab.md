@@ -171,7 +171,7 @@ PDFEmbed API使用的凭据不是PDF服务API，因此您必须[创建凭据](ht
 
 教师和学校了解学生如何使用在线平台很重要。 这有助于教师为学生提供资源，帮助他们更好地完成任务。 PDFEmbed API与Analytics集成，后者可用于测量发生的所有事件，例如，用户打开、阅读和关闭文档时。 使用PDF服务API，教师还可以禁用打印、下载和文件修改功能，以帮助维护学术完整性。
 
-如果您有[Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/)许可证，则可以使用其[开箱即用的集成](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#adobe-analytics)。 否则，请使用回调将PDF服务与其他分析提供程序(如[Google](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#google-analytics))集成。
+如果您有[Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/)许可证，则可以使用其[开箱即用的集成](https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#adobe-analytics)。 否则，请使用回调将PDF服务与其他分析提供程序(如[Google](https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#google-analytics))集成。
 
 要启用文档事件的测量，请使用`registerCallback`方法和AdobeDC视图实例附加事件处理程序。 您可以在控制台上显示基本度量，如打开文档或读取页面。 您还可以将度量保存在日志中，或在其他分析存储中发布它们。
 
