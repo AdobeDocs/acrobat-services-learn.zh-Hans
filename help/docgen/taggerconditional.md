@@ -18,4 +18,4 @@ ht-degree: 0%
 
 了解如何使用AdobeDocument Generation Tagger在Microsoft Word模板中设置章节，以使用AdobeDocument Generation API根据数据动态包含或排除文档章节。
 
->[!VIDEO](https://video.tv.adobe.com/v/332117?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3411735?hidetitle=true&captions=chi_hans)

@@ -17,4 +17,4 @@ ht-degree: 0%
 
 了解如何使用AdobeDocument Generation Tagger在Microsoft Word模板中设置数值计算标签，以便使用AdobeDocument Generation API计算数据值的聚合或算法。
 
->[!VIDEO](https://video.tv.adobe.com/v/332118?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3411742?hidetitle=true&captions=chi_hans)

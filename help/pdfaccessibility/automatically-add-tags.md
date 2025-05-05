@@ -18,4 +18,4 @@ ht-degree: 0%
 
 了解如何使用AI自动为大规模辅助功能添加标签。 自动标记功能减少了实现法规遵从性所需的时间和成本。
 
->[!VIDEO](https://video.tv.adobe.com/v/3428310?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3446269?hidetitle=true&captions=chi_hans)

@@ -18,4 +18,4 @@ ht-degree: 0%
 
 了解如何使用AdobeDocument Generation Tagger将图像标签添加到Microsoft Word模板，以使用AdobeDocument Generation API将图像动态推送至文档。
 
->[!VIDEO](https://video.tv.adobe.com/v/332114?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3411729?hidetitle=true&captions=chi_hans)

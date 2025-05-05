@@ -23,4 +23,4 @@ ht-degree: 0%
 >
 >本教程专为在其应用程序中构建并嵌入签名流程的OEM合作伙伴而设计。
 
->[!VIDEO](https://video.tv.adobe.com/v/347349?hidetitle=true){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3445418?hidetitle=true&captions=chi_hans){transcript=true}

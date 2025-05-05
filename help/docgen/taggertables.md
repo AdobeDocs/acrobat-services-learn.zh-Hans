@@ -17,4 +17,4 @@ ht-degree: 0%
 
 了解如何使用AdobeDocument Generation Tagger将表和列表标记添加到Microsoft Word模板，以使用AdobeDocument Generation API根据数据动态添加表或列表行。
 
->[!VIDEO](https://video.tv.adobe.com/v/332115?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3411723?hidetitle=true&captions=chi_hans)

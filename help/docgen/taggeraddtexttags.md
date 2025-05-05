@@ -18,4 +18,4 @@ ht-degree: 0%
 
 了解如何使用AdobeDocument Generation Tagger将文本标记添加到Microsoft Word模板，以便与AdobeDocument Generation API配合使用。
 
->[!VIDEO](https://video.tv.adobe.com/v/332116?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3409656?hidetitle=true&captions=chi_hans)
