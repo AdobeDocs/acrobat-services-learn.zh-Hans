@@ -21,7 +21,7 @@ ht-degree: 0%
 
 当业务蓬勃发展时，这是件好事，但当需要准备所有这些发票时，生产率就会受损。 手动生成发票非常耗时，并且您可能面临出错的风险，从而有可能赔钱或因金额不正确而激怒客户。
 
-例如，想想Danielle在一家医疗供应公司](https://developer.adobe.com/document-services/use-cases/financial/invoices)的[会计部门](https://developer.adobe.com/document-services/use-cases/financial/invoices)[工作。 月底的时候，她从几个不同的系统中提取信息，再次检查信息的准确性，并格式化发票。 在完成所有这些工作后，她终于准备好将文档转换为PDF（以便任何人都可以查看，而无需购买特定软件），并向每个客户发送其个性化发票。
+例如，想想Danielle在一家医疗供应公司[&#128279;](https://developer.adobe.com/document-services/use-cases/financial/invoices)的[会计部门](https://developer.adobe.com/document-services/use-cases/financial/invoices)工作。 月底的时候，她从几个不同的系统中提取信息，再次检查信息的准确性，并格式化发票。 在完成所有这些工作后，她终于准备好将文档转换为PDF（以便任何人都可以查看，而无需购买特定软件），并向每个客户发送其个性化发票。
 
 即使每月的发票开完了，Danielle也逃不掉这些发票。 一些客户有非月度计费周期，因此她始终为某人创建发票。 有时，客户会编辑其发票并支付不足的金额。 然后Danielle将花时间解决此发票不匹配问题。 按照这个速度，她需要雇个助理来做所有工作！
 

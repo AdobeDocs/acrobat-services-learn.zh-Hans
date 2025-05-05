@@ -181,7 +181,7 @@ res.status(500).render("crash", { error: error });
 
 [!DNL Adobe Acrobat Services]个API插入内容以创建PDF文档。 如果没有这些工具，您可能必须编写代码来处理Office文档并使用原始PDF文件格式。 在Adobe PDF服务的帮助下，您只需调用一个API即可完成所有这些步骤。
 
-现在，使用[Adobe Sign API](https://developer.adobe.com/adobesign-api/)请求对NDA进行签名，并将最终的已签名文档发送给所有各方。 Adobe Sign使用Webhook](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/webhooks.md)通知您[。 侦听此Webhook，您可以获取NDA的状态。
+现在，使用[Adobe Sign API](https://developer.adobe.com/adobesign-api/)请求对NDA进行签名，并将最终的已签名文档发送给所有各方。 Adobe Sign使用Webhook[&#128279;](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/webhooks.md)通知您。 侦听此Webhook，您可以获取NDA的状态。
 
 有关Adobe Sign过程的更深入解释，请[查阅文档](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html)或阅读此深入博客帖子。
 
@@ -189,5 +189,5 @@ res.status(500).render("crash", { error: error });
 
 在本实际操作教程中，我们将使用AdobeDocument Generation Tagger通过Microsoft Word模板和JSON数据文件动态生成PDF文档。 此加载项帮助[自动为每个参与方创建NDA](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/nda-creation)，然后使用Sign API收集签名。
 
-您可以使用这些技巧动态创建您自己的NDA或其他文档，从而腾出团队的时间专注于高效工作。 浏览[[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/apis/pdf-services)以查找适用于所选语言和运行时的API和SDK，以便您可以将PDF函数直接添加到应用程序中以快速创建PDF文档。 开始[](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)，免费试用6个月
+您可以使用这些技巧动态创建您自己的NDA或其他文档，从而腾出团队的时间专注于高效工作。 浏览[[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/apis/pdf-services)以查找适用于所选语言和运行时的API和SDK，以便您可以将PDF函数直接添加到应用程序中以快速创建PDF文档。 开始[&#128279;](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)，免费试用6个月
 [即付即用](https://developer.adobe.com/document-services/pricing/main)，每笔文档交易仅需0.05 USD。

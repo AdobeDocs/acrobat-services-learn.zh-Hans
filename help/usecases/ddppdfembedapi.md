@@ -557,6 +557,6 @@ console.log(event);
 
 如果您是Angular或React开发人员，您可能喜欢尝试[其他示例](https://github.com/adobe/pdf-embed-api-samples)，其中包含如何将PDFEmbed API与React和Angular项目集成。
 
-通过Adobe，您可以使用创新解决方案打造端到端客户体验。 免费查看[Adobe PDF Embed API](https://developer.adobe.com/document-services/apis/pdf-embed/)。 要探索您还能做什么，请通过[pay-as-you-gopr](https://developer.adobe.com/document-services/pricing/main)[icing](https://developer.adobe.com/document-services/pricing/main)来试用Adobe PDF Services API。
+通过Adobe，您可以使用创新解决方案打造端到端客户体验。 免费查看[Adobe PDF Embed API](https://developer.adobe.com/document-services/apis/pdf-embed/)。 要探索您还能做什么，请通过[pay-as-you-gopr](https://developer.adobe.com/document-services/pricing/main) [icing](https://developer.adobe.com/document-services/pricing/main)来试用Adobe PDF Services API。
 
 今天[开始使用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) [!DNL Adobe Acrobat Services] API。

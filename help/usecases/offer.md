@@ -239,7 +239,7 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-那里有很多代码要解压缩 我们先来了解一下主要部分：`documentMergeOperation`。 在此部分中，您可以获取JSON数据并将其与Word文档模板合并。 您可以使用Adobe站点](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade)上的[示例作为参考，但让我们创建您自己的简单示例。 打开Word并创建一个新的空白文档。 你可以随意进行自定义，但至少有以下特点：
+那里有很多代码要解压缩 我们先来了解一下主要部分：`documentMergeOperation`。 在此部分中，您可以获取JSON数据并将其与Word文档模板合并。 您可以使用Adobe站点[&#128279;](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade)上的示例作为参考，但让我们创建您自己的简单示例。 打开Word并创建一个新的空白文档。 你可以随意进行自定义，但至少有以下特点：
 
 尊敬的X：
 
