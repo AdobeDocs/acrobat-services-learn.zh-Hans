@@ -188,7 +188,7 @@ Web表单（以前称为签名构件）是任何有权访问的人都可以签�
 
 上面的文档尚未显示字段。 在定义哪些字段收集签名者信息以及其大小和位置时，会添加这些字段。
 
-现在，转到“您的协议”页面上的[ Web表单](https://secure.na4.adobesign.com/public/agreements/#agreement_type=webform)选项卡，并查找您创建的表单。
+现在，转到“您的协议”页面上的[&#x200B; Web表单](https://secure.na4.adobesign.com/public/agreements/#agreement_type=webform)选项卡，并查找您创建的表单。
 
 ![“Acrobat Sign管理”选项卡的屏幕截图](assets/GSASAPI_2.png)
 

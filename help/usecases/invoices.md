@@ -79,11 +79,11 @@ JSON文档包含客户详细信息和订单信息。 使用此结构化文档来
 
 AdobeDocument Generation API需要基于Microsoft Word的模板和JSON文档来创建动态PDF或Word文档。 为您的发票应用程序创建一个Microsoft Word模板，并使用[免费的Document Generation Tagger插件](https://opensource.adobe.com/pdftools-sdk-docs/docgen/latest/wordaddin.html#add-in-demo)来生成模板标记。 安装该插件，然后在Microsoft Word中打开选项卡。
 
-![ Document Generation Tagger加载项的屏幕截图](assets/invoices_1.png)
+![&#x200B; Document Generation Tagger加载项的屏幕截图](assets/invoices_1.png)
 
 将JSON内容粘贴到加载项后，如上图所示，单击“生成标签”。 现在，此增效工具将显示您的对象的格式。 您的基本模板可使用客户的姓名和电子邮件，但不显示订单信息。 本教程稍后会讨论订单信息。
 
-![ Document Generation Tagger作者模板的屏幕截图](assets/invoices_2.png)
+![&#x200B; Document Generation Tagger作者模板的屏幕截图](assets/invoices_2.png)
 
 在Microsoft Word文档中，开始编写发票模板。 将光标停留在必须插入动态数据的位置，然后从Adobe插件窗口中选择标签。 单击“**插入文本**”，以便AdobeDocument Generation Tagger加载项可以生成和插入标签。 要进行个性化，让我们插入客户的姓名和电子邮件。
 
@@ -95,7 +95,7 @@ AdobeDocument Generation API需要基于Microsoft Word的模板和JSON文档来�
 
 Document Generation API还可以执行复杂的操作，如聚合数组内的元素。 在&#x200B;**高级**&#x200B;选项卡中，选择&#x200B;**数值计算**，然后在&#x200B;**聚合**&#x200B;选项卡中，选择要应用计算的字段。
 
-![ Document Generation Tagger数值计算的屏幕截图](assets/invoices_4.png)
+![&#x200B; Document Generation Tagger数值计算的屏幕截图](assets/invoices_4.png)
 
 单击&#x200B;**插入计算**&#x200B;按钮，将此标记插入到文档中的所需位置。 以下文本现在显示在您的Microsoft Word文件中：
 

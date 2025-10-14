@@ -68,7 +68,7 @@ ht-degree: 2%
 
 1. 在侧边栏菜单中，打开&#x200B;**[!UICONTROL 数据]**&#x200B;菜单并选择&#x200B;**连接**：
 
-   ![ Microsoft Power Automate站点中的“连接”菜单](assets/credentials_4.png)
+   ![&#x200B; Microsoft Power Automate站点中的“连接”菜单](assets/credentials_4.png)
 
 1. 选择&#x200B;**+ [!UICONTROL 新建连接]**。
 

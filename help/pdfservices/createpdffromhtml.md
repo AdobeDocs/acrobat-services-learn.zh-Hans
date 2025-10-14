@@ -102,7 +102,7 @@ C:\Temp\PDFToolsAPI\adobe-dc-pdf-tools-sdk-node-samples>node src/createpdf/creat
 
 ## 资源和后续步骤
 
-* 如需其他帮助和支持，请访问Adobe[[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all)社区论坛
+* 如需其他帮助和支持，请访问Adobe[[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&sort=latest_replies&filter=all)社区论坛
 
 PDF服务API [文档](https://www.adobe.com/go/pdftoolsapi_doc)
 
@@ -113,4 +113,4 @@ PDF服务API [文档](https://www.adobe.com/go/pdftoolsapi_doc)
 * 相关文章：
   [新的PDF服务API为文档工作流程提供了更多功能](https://community.adobe.com/t5/acrobat-services-api-discussions/new-pdf-tools-api-brings-more-capabilities-for-document-services/m-p/11294170)
 
-  [ 7月版 [!DNL Adobe Acrobat Services]：PDF嵌入和PDF服务](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)
+  [&#x200B; 7月版 [!DNL Adobe Acrobat Services]：PDF嵌入和PDF服务](https://medium.com/adobetech/july-release-of-adobe-document-services-pdf-embed-and-pdf-tools-17211bf7776d)

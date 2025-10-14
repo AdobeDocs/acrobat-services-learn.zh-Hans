@@ -99,7 +99,7 @@ ht-degree: 0%
 
 ## 资源和后续步骤
 
-* 如需其他帮助和支持，请访问Adobe[[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&amp;sort=latest_replies&amp;filter=all)社区论坛
+* 如需其他帮助和支持，请访问Adobe[[!DNL Acrobat Services] API](https://community.adobe.com/t5/document-cloud-sdk/bd-p/Document-Cloud-SDK?page=1&sort=latest_replies&filter=all)社区论坛
 
 * PDF服务API [文档](https://www.adobe.com/go/pdftoolsapi_doc)
 

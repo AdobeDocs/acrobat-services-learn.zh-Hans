@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## 您可以学到的内容
 
-在本实际操作教程中，了解如何使用[Adobe PDF Embed API](https://developer.adobe.com/document-services/apis/pdf-embed)显示网页中嵌入的PDF文档，该功能免费且易于使用。 这些示例使用一些JavaScript、Node.js、Express.js、HTML和CSS。 您可以在[GitHub](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1)上查看完整的项目代码。
+在本实际操作教程中，了解如何使用[Adobe PDF Embed API](https://developer.adobe.com/document-services/apis/pdf-embed)显示网页中嵌入的PDF文档，该功能免费且易于使用。 这些示例使用一些JavaScript、Node.js、Express.js、HTML和CSS。 您可以在[GitHub](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&sa=D&source=editors&ust=1617129543031000&usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1)上查看完整的项目代码。
 
 ## 相关的API和资源
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 * [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [项目代码](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&amp;sa=D&amp;source=editors&amp;ust=1617129543031000&amp;usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1)
+* [项目代码](https://www.google.com/url?q=https://github.com/marcelooliveira/EmbedPDF/tree/main/pdf-app&sa=D&source=editors&ust=1617129543031000&usg=AOvVaw2rzSwYuJ_JI7biVIgbNMw1)
 
 ## 创建节点Web应用程序
 
