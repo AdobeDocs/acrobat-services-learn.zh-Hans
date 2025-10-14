@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8094
 thumbnail: KT-8094.jpg
 exl-id: d704620f-d06a-4714-9d09-3624ac0fcd3a
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: b7a20f30a2eb175053c7a25be0411f80dd88899f
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 0%
@@ -136,7 +136,7 @@ const fileUpload = require( "express-fileupload" );
 app.use( fileUpload() );
 ```
 
-现在，添加一个`/upload `终结点，并使用相同的文件名将上传的文件保存在“草稿”文件夹中。 然后，调用您之前编写的函数以创建同一PDF的PDF文件（如果文档格式尚不是）。 您可以根据原始上传PDF的名称为新的文档文件生成文件名：
+现在，添加一个`/upload`终结点，并使用相同的文件名将上传的文件保存在草稿文件夹中。 然后，调用您之前编写的函数以创建同一PDF的PDF文件（如果文档格式尚不是）。 您可以根据原始上传PDF的名称为新的文档文件生成文件名：
 
 ```
 // Create a PDF file from an uploaded file

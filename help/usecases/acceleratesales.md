@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10222
 thumbnail: KT-10222.jpg
 exl-id: 9430748f-9e2a-405f-acac-94b08ad7a5e3
-source-git-commit: 5222e1626f4e79c02298e81d621216469753ca72
+source-git-commit: b7a20f30a2eb175053c7a25be0411f80dd88899f
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 0%
@@ -130,7 +130,7 @@ ht-degree: 0%
 
    ![插入标记的屏幕截图](assets/accsales_5.png)
 
-   此过程放置了一个名为{{company.name}}的标记，因为该标记位于JSON中的路径下方。
+   此过程放置了一个名为`{{company.name}}`的标记，因为该标记位于JSON中的路径下方。
 
    ```
    {
@@ -189,7 +189,7 @@ ht-degree: 0%
 1. 在&#x200B;*[!UICONTROL 选择计算类型]*&#x200B;下，选择&#x200B;**[!UICONTROL 聚合]**。
 1. 在&#x200B;*[!UICONTROL 选择类型]*&#x200B;下，选择&#x200B;**[!UICONTROL 求和]**。
 1. 在&#x200B;*[!UICONTROL 选择记录]*&#x200B;下，选择&#x200B;**[!UICONTROL 引用顺序]**。
-1. 在&#x200B;*[!UICONTROL 选择要执行聚合]&#x200B;**的项目下，选择&#x200B;**&#x200B;[!UICONTROL totalPaymentsDue.price]**。
+1. 在*[!UICONTROL 选择要执行聚合]**的项目下，选择&#x200B;**[!UICONTROL totalPaymentsDue.price]**。
 1. 选择&#x200B;**[!UICONTROL 插入计算]**。
 
 此过程将插入一个计算标记，该标记提供值的总和。 可以使用JSONata计算进行更高级的计算。 例如：
@@ -272,6 +272,7 @@ Adobe Acrobat Sign允许您捕获文档上的电子签名。 Acrobat Sign提供�
 ![文档中的签名标记的屏幕截图](assets/accsales_15.png)
 
 Acrobat Sign提供了多种其他可以置入的字段类型，例如日期字段。
+
 1. 在&#x200B;*字段*&#x200B;类型中，选择&#x200B;**[!UICONTROL 日期]**。
 1. 将光标移动到文档中的日期位置上方。
 1. 选择&#x200B;**[!UICONTROL 插入Adobe Sign文本标记]**。
@@ -364,13 +365,13 @@ documentMergeOperation.execute(executionContext)
 
 有兴趣了解更多信息？ 了解使用[!DNL Adobe Acrobat Services]的一些其他方法：
 
-* 从[文档](https://developer.adobe.com/cn/document-services/docs/overview/)中了解详情
+* 从[文档](https://developer.adobe.com/document-services/docs/overview/)中了解详情
 * 查看Adobe Experience League上的更多教程
 * 使用/src文件夹中的示例脚本了解如何利用PDF
 * 有关最新的提示和技巧，请关注[Adobe技术博客](https://medium.com/adobetech/tagged/adobe-document-cloud)
 * 订阅[纸质剪辑（每月实时流）](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)以了解如何使用[!DNL Adobe Acrobat Services]实现自动化。
 =======
-* 从[文档](https://developer.adobe.com/cn/document-services/docs/overview/)中了解详情
+* 从[文档](https://developer.adobe.com/document-services/docs/overview/)中了解详情
 * 查看Adobe Experience League上的更多教程
 * 使用/src文件夹中的示例脚本了解如何利用PDF
 * 有关最新的提示和技巧，请关注[Adobe技术博客](https://medium.com/adobetech/tagged/adobe-document-cloud)
