@@ -197,7 +197,7 @@ adobeDCView.registerCallback(
 
 屏幕截图显示学生打开了任务文件，阅读了第一页 — 他们要么没有滚动到其他页面，要么文档只有一个页面 — 然后他们下载了文件。 您可以收集这些指标以执行分析并研究学生的行为。
 
-此外，[Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html)已与PDFEmbed API集成，因此如果您订阅了Adobe Analytics套件，则可以在订阅中发布您的指标。 要在Adobe Analytics中发布度量，您只需将套件ID传递给PDFEmbed API构造函数。 (请注意，您必须使用PDFEmbed API凭据，而不是PDF服务API凭据)。
+此外，[Adobe Analytics](https://business.adobe.com/cn/products/adobe-analytics.html)已与PDFEmbed API集成，因此如果您订阅了Adobe Analytics套件，则可以在订阅中发布您的指标。 要在Adobe Analytics中发布度量，您只需将套件ID传递给PDFEmbed API构造函数。 (请注意，您必须使用PDFEmbed API凭据，而不是PDF服务API凭据)。
 
 以下示例代码演示了如何将Suite ID传递给PDFEmbed API构造函数：
 
