@@ -276,7 +276,7 @@ Company Name","","","2021-03-07 19:32:59"
 
 将文档发送给指定的收件人以供签名或审批会创建协议。 您可以使用API跟踪协议的状态和完成情况。
 
-您可以使用[临时文档](https://helpx.adobe.com/sign/kb/how-to-send-an-agreement-through-REST-API.html)、[库文档](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md)或URL创建协议。 在此示例中，协议基于`transientDocumentId`，就像之前创建的Web表单一样。
+您可以使用[临时文档](https://helpx.adobe.com/cn/sign/kb/how-to-send-an-agreement-through-REST-API.html)、[库文档](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/samples/send_using_library_doc.md)或URL创建协议。 在此示例中，协议基于`transientDocumentId`，就像之前创建的Web表单一样。
 
 ```
 POST /api/rest/v6/agreements HTTP/1.1
