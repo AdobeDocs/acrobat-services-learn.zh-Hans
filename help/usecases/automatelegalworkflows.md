@@ -205,7 +205,7 @@ AdobeDocument Generation API还允许您在页眉和页脚中添加标签，并�
 
 1. 在&#x200B;*Document Generation标记*&#x200B;中，选择&#x200B;**[!UICONTROL 编辑输入数据]**。
 
-   ![ Document Generation Tagger的屏幕截图](assets/automatelegal_20.png)
+   ![&#x200B; Document Generation Tagger的屏幕截图](assets/automatelegal_20.png)
 
 1. 选择&#x200B;**[!UICONTROL 编辑]**。
 
