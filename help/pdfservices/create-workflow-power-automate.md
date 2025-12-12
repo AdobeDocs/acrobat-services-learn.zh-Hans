@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10379
 thumbnail: KT-10379.jpg
 exl-id: 095b705f-c380-42cc-9329-44ef7de655ee
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '1955'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # 在Microsoft Power Automate中创建您的第一个工作流
 
-了解如何使用[Microsoft Services](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/)连接器在[Adobe PDF Power Automate](https://flow.microsoft.com/zh-cn/)中创建您的第一个工作流。
+了解如何使用[Microsoft Services](https://flow.microsoft.com/zh-cn/)连接器在[Adobe PDF Power Automate](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/)中创建您的第一个工作流。
 
 在本实际操作教程中，学习如何：
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 ### 您需要的
 
 * **Adobe PDF Services的试用或生产凭据**
-在[此处](https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)详细了解如何在Microsoft Power Automate中获取和配置凭据。
+在[此处](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)详细了解如何在Microsoft Power Automate中获取和配置凭据。
 * **具有高级连接器的Microsoft Power Automate**
 了解如何在[此处](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types)检查Power Automate的许可级别。
 * **OneDrive**
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 ### 获取凭据
 
-要完成本教程，您需要已在Microsoft Power Automate for Adobe PDF Services中配置您的凭据。 如果您尚未完成此步骤，请参阅[此处](https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)的说明。
+要完成本教程，您需要已在Microsoft Power Automate for Adobe PDF Services中配置您的凭据。 如果您尚未完成此步骤，请参阅[此处](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)的说明。
 
 ## 第1部分：创建新流并将Word转换为PDF
 
@@ -186,7 +186,7 @@ ht-degree: 1%
    ![使用JSON中的数据标记生成文档](assets/generateDocumentJSONAction.png)
 
 1. 对&#x200B;**[!UICONTROL LastName]**&#x200B;和&#x200B;**[!UICONTROL Salary]**&#x200B;字段重复步骤7-8。
-1. 在“**[!UICONTROL 模板文件内容]**”字段中，使用“**[!UICONTROL 动态内容]**”面板从“*获取文件内容*”步骤插入“**[!UICONTROL 文件内容]**”值。
+1. 在“**[!UICONTROL 模板文件内容]**”字段中，使用“**[!UICONTROL 动态内容]**”面板从“**[!UICONTROL 获取文件内容]**”步骤插入“*文件内容*”值。
 
 ![从Power Automate中的Word模板操作生成文档，所有值均已完成](assets/generateDocumentJSONActionCompleted.png)
 
@@ -240,9 +240,9 @@ ht-degree: 1%
 1. 选择&#x200B;**[!UICONTROL Adobe PDF服务]**。
 1. 选择&#x200B;**[!UICONTROL 合并PDF]**&#x200B;操作。
 1. 在&#x200B;**[!UICONTROL 合并PDF文件名]**&#x200B;字段中，输入所需的文件名（即&#x200B;*CombinedDocument.pdf*）。
-1. 在&#x200B;**[!UICONTROL 文件内容–1]**&#x200B;字段中，使用&#x200B;**[!UICONTROL 动态内容]**&#x200B;面板从&#x200B;**[!UICONTROL 将Word转换为PDF]**&#x200B;步骤中插入&#x200B;*PDF文件内容*&#x200B;值。
+1. 在&#x200B;**[!UICONTROL 文件内容–1]**&#x200B;字段中，使用&#x200B;**[!UICONTROL 动态内容]**&#x200B;面板从&#x200B;*将Word转换为PDF*&#x200B;步骤中插入&#x200B;**[!UICONTROL PDF文件内容]**&#x200B;值。
 1. 要添加下一个文档，请选择&#x200B;**+ [!UICONTROL 添加新项]**。
-1. 在&#x200B;**[!UICONTROL 文件内容 — 2]**&#x200B;字段中，使用&#x200B;**[!UICONTROL 动态内容]**&#x200B;面板插入&#x200B;*从Word模板生成文档*&#x200B;步骤中的&#x200B;**[!UICONTROL 输出文件内容]**&#x200B;值。
+1. 在&#x200B;**[!UICONTROL 文件内容 — 2]**&#x200B;字段中，使用&#x200B;**[!UICONTROL 动态内容]**&#x200B;面板插入&#x200B;**[!UICONTROL 从Word模板生成文档]**&#x200B;步骤中的&#x200B;*输出文件内容*&#x200B;值。
 
 ![Microsoft Power Automate中的合并PDF操作](assets/mergePDFAction.png)
 
@@ -257,7 +257,7 @@ ht-degree: 1%
 1. 选择&#x200B;**[!UICONTROL 创建文件]**。
 1. 在&#x200B;**[!UICONTROL 文件夹路径]**&#x200B;字段中，选择文件夹图标以指定将文件保存在OneDrive中的位置。
 1. 在&#x200B;**[!UICONTROL 文件名]**&#x200B;字段中，设置文件名。 由于输出为PDF，因此您的文件名必须以.pdf结尾。
-1. 在&#x200B;**[!UICONTROL 文件内容]**&#x200B;字段中，使用&#x200B;**[!UICONTROL 动态内容]**&#x200B;面板插入&#x200B;**[!UICONTROL 合并PDF]**&#x200B;步骤中的&#x200B;*PDF文件内容*&#x200B;值。
+1. 在&#x200B;**[!UICONTROL 文件内容]**&#x200B;字段中，使用&#x200B;**[!UICONTROL 动态内容]**&#x200B;面板插入&#x200B;*合并PDF*&#x200B;步骤中的&#x200B;**[!UICONTROL PDF文件内容]**&#x200B;值。
 
    ![Microsoft Power Automate中的流概述](assets/flowOverviewSavedMergedDocument.png)
 
@@ -278,7 +278,7 @@ ht-degree: 1%
 
 ### 保护 PDF
 
-1. 在Power Automate中编辑工作流时，在&#x200B;**[!UICONTROL 合并PDF]**&#x200B;操作和&#x200B;**[!UICONTROL 创建文件3]**&#x200B;操作之间选择&#x200B;**+**。
+1. 在Power Automate中编辑工作流时，在&#x200B;**合并PDF**&#x200B;操作和&#x200B;**[!UICONTROL 创建文件3]**&#x200B;操作之间选择&#x200B;**[!UICONTROL +]**。
 
    ![两个动作之间加号以添加新动作](assets/addActionToProtect.png)
 
@@ -288,14 +288,14 @@ ht-degree: 1%
 1. 选择&#x200B;**[!UICONTROL 从查看中选择ProtectPDF]**&#x200B;操作。
 1. 在&#x200B;**[!UICONTROL 文件名]**&#x200B;字段中，将名称设置为所需的名称（只要它以.pdf扩展名结尾即可）。
 1. 将&#x200B;**[!UICONTROL 密码]**&#x200B;字段设置为您指定的密码以打开文档。
-1. 在&#x200B;**[!UICONTROL 文件内容]**&#x200B;字段中，使用&#x200B;**[!UICONTROL 动态内容]**&#x200B;面板从&#x200B;**[!UICONTROL 合并PDF]**&#x200B;步骤插入&#x200B;*PDF文件内容*&#x200B;值。
+1. 在&#x200B;**[!UICONTROL 文件内容]**&#x200B;字段中，使用&#x200B;**[!UICONTROL 动态内容]**&#x200B;面板从&#x200B;*合并PDF*&#x200B;步骤插入&#x200B;**[!UICONTROL PDF文件内容]**&#x200B;值。
 
 ### 更新保存到OneDrive
 
-文档受到保护后，您可以将文件保存回OneDrive中。 在此示例中，您将使用新的&#x200B;*文件内容*&#x200B;值更新先前存在的&#x200B;**创建文件3**&#x200B;操作。
+文档受到保护后，您可以将文件保存回OneDrive中。 在此示例中，您将使用新的&#x200B;**文件内容**&#x200B;值更新先前存在的&#x200B;*创建文件3*&#x200B;操作。
 
 1. 在&#x200B;**[!UICONTROL 创建文件3]**&#x200B;操作的&#x200B;**[!UICONTROL 文件内容]**&#x200B;字段中选择光标。
-1. 使用“**[!UICONTROL 动态内容]**”面板从&#x200B;**从查看的ProtectPDF**&#x200B;步骤插入&#x200B;*PDF文件内容*&#x200B;值。
+1. 使用“**[!UICONTROL 动态内容]**”面板从&#x200B;*从查看的ProtectPDF*&#x200B;步骤插入&#x200B;**PDF文件内容**&#x200B;值。
 
 ### Try流
 
@@ -315,3 +315,4 @@ ht-degree: 1%
 * 查看Microsoft Power Automate中可用的预创建模板。
 * 了解Adobe技术博客上的[文章](https://medium.com/adobetech/tagged/microsoft-power-automate)。
 * 查看[文档](https://developer.adobe.com/document-services/docs/overview/document-generation-api/)以了解Document Generation APIAdobe。
+

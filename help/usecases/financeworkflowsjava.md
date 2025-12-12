@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-7482
 thumbnail: KT-7482.jpg
 exl-id: 3bdc2610-d497-4a54-afc0-8b8baa234960
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 0%
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ## 设置
 
-[!DNL Adobe Acrobat Services]使用身份验证系统来控制资源访问。 要访问服务，您必须从Adobe为您的公司或应用程序申请API密钥。 如果您有API密钥，请继续阅读下一部分。 要创建新的API密钥，请访问[!DNL Acrobat Services]站点中的[入门](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)。 您可以使用其免费试用版创建密钥，该试用版提供1,000个文档事务，试用期最长6个月。
+[!DNL Adobe Acrobat Services]使用身份验证系统来控制资源访问。 要访问服务，您必须从Adobe为您的公司或应用程序申请API密钥。 如果您有API密钥，请继续阅读下一部分。 要创建新的API密钥，请访问[站点中的](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)入门[!DNL Acrobat Services]。 您可以使用其免费试用版创建密钥，该试用版提供1,000个文档事务，试用期最长6个月。
 
 要学习本教程，您需要两组API密钥：
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 * Adobe PDF Embed API
 
-创建凭据后，将PDF服务API凭据和私钥复制到资源部分中的[!DNL Spring Boot]应用程序。 在[!DNL Adobe Acrobat Services]网站上详细了解[Maven和Gradle库及依赖项](https://developer.adobe.com/document-services/docs/overview/pdf-services-api)。 在继续之前，请确保设置所有必需的包和库。
+创建凭据后，将PDF服务API凭据和私钥复制到资源部分中的[!DNL Spring Boot]应用程序。 在[网站上详细了解](https://developer.adobe.com/document-services/docs/overview/pdf-services-api)Maven和Gradle库及依赖项[!DNL Adobe Acrobat Services]。 在继续之前，请确保设置所有必需的包和库。
 
 ![PDF服务API凭据的目录位置的屏幕截图](assets/FAWJ_1.png)
 
@@ -200,3 +200,4 @@ PDFEmbed API提供了预览PDF和批注报告所需的所有工具。
 浏览[[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/)并了解Adobe PDF Services可为您的企业提供哪些服务。 要了解SDK中可用的更多功能，请参阅[GitHub存储库](https://github.com/adobe/pdftools-java-sdk-samples)中的示例，并探索[PDFEmbed API](https://developer.adobe.com/document-services/apis/pdf-embed)如何帮助您快速显示应用程序内的PDF。
 
 要轻松合并和处理文档，为您的金融客户创建有用的PDF报告，请立即注册免费的[Adobe开发人员帐户](https://developer.adobe.com/document-services/homepage/)。
+

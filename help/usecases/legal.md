@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8097
 thumbnail: KT-8097.jpg
 exl-id: e0c32082-4f8f-4d8b-ab12-55d95b5974c5
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '1890'
 ht-degree: 0%
@@ -429,3 +429,4 @@ module.exports = {listFiles, previewPDF, downloadPDF };
 组织使用[!DNL Adobe Acrobat Services]个API来保证其完整性和易用性。 最棒的是，您可以享受[6个月的免费试用，然后按需付费](https://developer.adobe.com/document-services/pricing/main)。 您只需为使用的内容付费。 此外，PDFEmbed API始终免费。
 
 是否准备好通过改进文档流提高工作效率？ 今天[开始使用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)。
+

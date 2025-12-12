@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-8092
 thumbnail: KT-8092.jpg
 exl-id: 0e24c8fd-7fda-452c-96f9-1e7ab1e06922
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1443'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 指定PDF嵌入式API的域。 API密钥必须是公共的（可在浏览器执行的代码中查找它）。 通过指定域，可确保其他域中的其他人无法使用API密钥。
 
-您不能使用“localhost”作为域。 指定域（如“testing.local”），然后编辑计算机上的hosts文件以将该域重定向到您的计算机127.0.0.1。 然后，您可以在testing.local：3000上测试应用程序，而不是在localhost：3000上测试应用程序。 完成后，在项目页面上找到PDFEmbed API的API密钥。
+您不能使用“localhost”作为域。 指定域（如“testing.local”），然后编辑计算机上的hosts文件以将该域重定向到您的计算机127.0.0.1。 然后，您可以在testing.local:3000上测试应用程序，而不是在localhost:3000上测试应用程序。 完成后，在项目页面上找到PDFEmbed API的API密钥。
 
 ## 添加上载表单和处理程序
 
@@ -283,3 +283,4 @@ router.get('/job/:id', async function(req, res, next) {
 * [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 若要开始向网站添加用户友好的文档处理功能，请[注册免费试用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)。 Adobe PDF Embed API始终免费使用，而Adobe PDF Services API免费使用6个月，则每个文档事务仅需\ 0.05 USD，因此您可以随着业务的发展而[即用即付](https://developer.adobe.com/document-services/pricing/main)。
+

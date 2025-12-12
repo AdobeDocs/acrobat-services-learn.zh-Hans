@@ -9,7 +9,7 @@ jira: KT-7473
 thumbnail: KT-7473.jpg
 keywords: 精选
 exl-id: 44a03420-e963-472b-aeb8-290422c8d767
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 0%
@@ -351,7 +351,7 @@ https://secure.adobesign.com/public/oauth?
 
 如果用户单击重定向URL上的&#x200B;*允许访问*，则名为code的查询参数将传递授权代码：
 
-https://YourServer.com/?code=**\&lt;authorization_code\>**\&amp;api_access_point=https://api.adobesign.com&amp;web_access_point=https://secure.adobesign.com
+https://YourServer.com/?code=**\<authorization_code\>**\&api_access_point=https://api.adobesign.com&web_access_point=https://secure.adobesign.com
 
 将此代码与客户端ID和客户端密钥一起发布到Adobe Sign服务器，将提供访问该服务的访问令牌。 保存参数`api_access_point`和`web_access_point`中的值。 这些值用于进一步的请求。
 
@@ -520,3 +520,5 @@ request(createWebFormRequest, function (error, response) {
 要发现调用的所需范围或查看如何生成调用，可从[Rest API文档](https://secure.na4.adobesign.com/public/docs/restapi/v6)中生成示例调用。 [Quickstarts](https://github.com/adobe/pdftools-node-sdk-samples)还演示了[!DNL Adobe Acrobat Services] API进程的其他功能和文件格式。
 
 您可以向应用程序添加多种PDF功能，让用户能够快速、轻松地查看和签署他们的文档等等。 若要开始，请今天查看[[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/)。
+
+

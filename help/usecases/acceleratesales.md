@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10222
 thumbnail: KT-10222.jpg
 exl-id: 9430748f-9e2a-405f-acac-94b08ad7a5e3
-source-git-commit: b7a20f30a2eb175053c7a25be0411f80dd88899f
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 0%
@@ -189,7 +189,7 @@ ht-degree: 0%
 1. 在&#x200B;*[!UICONTROL 选择计算类型]*&#x200B;下，选择&#x200B;**[!UICONTROL 聚合]**。
 1. 在&#x200B;*[!UICONTROL 选择类型]*&#x200B;下，选择&#x200B;**[!UICONTROL 求和]**。
 1. 在&#x200B;*[!UICONTROL 选择记录]*&#x200B;下，选择&#x200B;**[!UICONTROL 引用顺序]**。
-1. 在&#x200B;*[!UICONTROL 选择要执行聚合]&#x200B;**的项目下，选择&#x200B;**&#x200B;[!UICONTROL totalPaymentsDue.price]**。
+1. 在*[!UICONTROL 选择要执行聚合]**的项目下，选择&#x200B;**[!UICONTROL totalPaymentsDue.price]**。
 1. 选择&#x200B;**[!UICONTROL 插入计算]**。
 
 此过程将插入一个计算标记，该标记提供值的总和。 可以使用JSONata计算进行更高级的计算。 例如：
@@ -376,3 +376,4 @@ documentMergeOperation.execute(executionContext)
 * 使用/src文件夹中的示例脚本了解如何利用PDF
 * 有关最新的提示和技巧，请关注[Adobe技术博客](https://medium.com/adobetech/tagged/adobe-document-cloud)
 * 订阅[纸质剪辑（每月实时流）](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)以了解如何使用[!DNL Adobe Acrobat Services]实现自动化
+

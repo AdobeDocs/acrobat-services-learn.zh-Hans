@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-7487
 thumbnail: KT-7487.jpg
 exl-id: 64ffdacb-d6cb-43e7-ad10-bbd8afc0dbf4
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '1489'
 ht-degree: 0%
@@ -63,7 +63,7 @@ ht-degree: 0%
 **您需要**
 
 * 教程资源[下载](https://github.com/benvanderberg/adobe-pdf-embed-api-tutorial)
-* Adobe ID [在此处获取一个](https://account.adobe.com/zh-Hans/)
+* Adobe ID [在此处获取一个](https://account.adobe.com/)
 * Web服务器（节点JS、PHP等）
 * HTML/JavaScript/CSS工作知识
 
@@ -327,3 +327,4 @@ Adobe PDF Embed API提供与Adobe Analytics的开箱即用集成。 但是，由
 ## 其他资源
 
 可在[此处](https://developer.adobe.com/document-services/docs/overview)找到其他资源。
+

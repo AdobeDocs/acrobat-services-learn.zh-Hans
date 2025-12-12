@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-7474
 thumbnail: KT-7474.jpg
 exl-id: add4cc5c-06e3-4ceb-930b-e8c9eda5ca1f
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '1777'
 ht-degree: 0%
@@ -348,7 +348,7 @@ private static void setCustomOptionsAndPersonData(
 </html>
 ```
 
-然后，在`PersonController`类中实现`downloadContract`方法，如下所示：
+然后，在`downloadContract`类中实现`PersonController`方法，如下所示：
 
 ```
 @RequestMapping("/pdf")
@@ -422,7 +422,7 @@ https://www.google.com/?code=<YOUR_CODE>&api_access_point=https://api.eu1.adobes
 
 请注意为\&lt;YOUR_CODE\>和api_access_point提供的值。
 
-要发送提供访问令牌的HTTPPOST请求，请使用客户端ID、\&lt;YOUR_CODE\>和api_access_point值。 您可以使用[Postman](https://helpx.adobe.com/cn/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html)或cURL：
+要发送提供访问令牌的HTTPPOST请求，请使用客户端ID、\&lt;YOUR_CODE\>和api_access_point值。 您可以使用[Postman](https://helpx.adobe.com/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html)或cURL：
 
 ```
 curl --location --request POST "https://**api.eu1.adobesign.com**/oauth/token"
@@ -603,3 +603,4 @@ System.out.println("Agreement sent, ID: " + agreementCreationResponse.getId());
 再进一步了解一下，您可以创建表单，方便收件人远程安全地签名。 当您需要多个签名时，您甚至可以自动将表单发送给工作流程中的一系列人员。 您的员工入职培训已得到改进，并且人力资源部会喜欢您。
 
 请查看[[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/)，以立即为您的应用程序添加多种PDF功能。
+

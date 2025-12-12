@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8095
 thumbnail: KT-8095.jpg
 exl-id: a22230b5-1ff2-4870-84da-f06a904c99e1
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '1298'
 ht-degree: 0%
@@ -141,7 +141,7 @@ Ensure that the content of your package.json file is similar to this code snippe
 
 完成注册后，代码示例将下载到包含您的API凭据的电脑。 提取此代码示例，并将private.key和pdftools-api-credentials.json文件放在应用程序的根目录中。
 
-现在，通过使用应用程序根目录中的终端运行` npm install --save @adobe/documentservices-pdftools-node-sdk `命令来安装[PDF服务Node.js SDK](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk)。
+现在，通过使用应用程序根目录中的终端运行[命令来安装](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk)PDF服务Node.js SDK` npm install --save @adobe/documentservices-pdftools-node-sdk `。
 
 ## 创建PDF
 
@@ -432,3 +432,4 @@ res.download(download.link);
 
 准备好在自己的应用程序中启用文档共享和审阅了吗？ 注册您的[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
 开发人员帐户。 享受6个月的免费试用，然后随着您的业务增长，[即用即付](https://developer.adobe.com/document-services/pricing/main)只需\0.05 USD即可完成每个文档交易。
+

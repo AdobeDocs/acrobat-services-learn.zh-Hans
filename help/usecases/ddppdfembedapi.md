@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8090
 thumbnail: KT-8090.jpg
 exl-id: 3aa9aa40-a23c-409c-bc0b-31645fa01b40
-source-git-commit: c6272ee4ec33f89f5db27023d78d1f08005b04ef
+source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
 workflow-type: tm+mt
 source-wordcount: '1722'
 ht-degree: 0%
@@ -557,6 +557,7 @@ console.log(event);
 
 如果您是Angular或React开发人员，您可能喜欢尝试[其他示例](https://github.com/adobe/pdf-embed-api-samples)，其中包含如何将PDFEmbed API与React和Angular项目集成。
 
-通过Adobe，您可以使用创新解决方案打造端到端客户体验。 免费查看[Adobe PDF Embed API](https://developer.adobe.com/document-services/apis/pdf-embed/)。 要探索您还能做什么，请通过[pay-as-you-gopr](https://developer.adobe.com/document-services/pricing/main) [icing](https://developer.adobe.com/document-services/pricing/main)来试用Adobe PDF Services API。
+通过Adobe，您可以使用创新解决方案打造端到端客户体验。 免费查看[Adobe PDF Embed API](https://developer.adobe.com/document-services/apis/pdf-embed/)。 要探索您还能做什么，请通过[pay-as-you-gopr](https://developer.adobe.com/document-services/pricing/main)[icing](https://developer.adobe.com/document-services/pricing/main)来试用Adobe PDF Services API。
 
 今天[开始使用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html) [!DNL Adobe Acrobat Services] API。
+
