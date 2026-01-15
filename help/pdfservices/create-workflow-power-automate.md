@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10379
 thumbnail: KT-10379.jpg
 exl-id: 095b705f-c380-42cc-9329-44ef7de655ee
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1955'
 ht-degree: 1%
@@ -315,4 +315,3 @@ ht-degree: 1%
 * 查看Microsoft Power Automate中可用的预创建模板。
 * 了解Adobe技术博客上的[文章](https://medium.com/adobetech/tagged/microsoft-power-automate)。
 * 查看[文档](https://developer.adobe.com/document-services/docs/overview/document-generation-api/)以了解Document Generation APIAdobe。
-

@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10202
 thumbnail: KT-10202.jpg
 exl-id: 2a1752b8-9641-40cc-a0af-1dce6cf49346
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '2824'
 ht-degree: 0%
@@ -592,4 +592,5 @@ var outputFileName = path.join('output', 'salesOrder_'+Date.now()+".docx");
 * 使用/src文件夹中的示例脚本查看如何使用PDF
 * 有关最新的提示和技巧，请关注[Adobe技术博客](https://medium.com/adobetech/tagged/adobe-document-cloud)
 * 订阅[纸质剪辑（每月实时流）](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)以了解如何使用[!DNL Adobe Acrobat Services]实现自动化。
+
 

@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10382
 thumbnail: KT-10382.jpg
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 2%
@@ -127,4 +127,3 @@ ht-degree: 2%
 * 我们的实时视频内容[纸质剪辑](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)还包含演示Power Automate用法的视频。
 * [Adobe技术博客](https://medium.com/adobetech/tagged/microsoft-power-automate)包含许多关于使用Power Automate的文章。
 * 最后，请务必同时查阅核心[PDF服务](https://developer.adobe.com/document-services/docs/overview/)文档。
-

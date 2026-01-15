@@ -7,7 +7,7 @@ level: Beginner
 type: Tutorial
 thumbnail: 332116.jpg
 exl-id: 59a0c912-9965-4bf9-8834-28d1dff91055
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '51'
 ht-degree: 0%
@@ -19,5 +19,3 @@ ht-degree: 0%
 了解如何使用AdobeDocument Generation Tagger将文本标记添加到Microsoft Word模板，以便与AdobeDocument Generation API配合使用。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409656?captions=chi_hans&hidetitle=true)
-
-

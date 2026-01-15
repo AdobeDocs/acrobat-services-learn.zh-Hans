@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-6677
 thumbnail: KT-6677.jpg
 exl-id: 61a9a2d1-94c3-41c2-8f90-a56a938ef245
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -106,4 +106,3 @@ ht-degree: 0%
 * 有关PDF服务API问题的[常见问题解答](https://community.adobe.com/t5/contentarchivals/contentarchivedpage/message-uid/10726197)
 
 * 有关许可和定价的问题，请[联系我们](https://www.adobe.com/go/pdftoolsapi_requestform)
-

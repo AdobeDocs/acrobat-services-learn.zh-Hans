@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8091
 thumbnail: KT-8091.jpg
 exl-id: 570a635c-e539-4afc-a475-ecf576415217
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1385'
 ht-degree: 0%
@@ -216,4 +216,3 @@ var adobeDCView = new AdobeDC.View({
 现在您已了解如何注释PDF报告、存档注释和跟踪PDF报告的使用，您可以开始在自己的项目中实施这些解决方案。
 
 您可以使用[!DNL Adobe Acrobat Services]个API在您的网站上创建用户友好的交互式PDF体验。 享受6个月的免费使用Adobe PDF Services API的乐趣，之后只需支付[即付即用](https://developer.adobe.com/document-services/pricing/main)&#x200B;(通过AWS或直接协议)，每笔文档交易仅需\$0.05。 免费使用Adobe PDF Embed，无时间限制。 创建免费帐户以立即[开始使用](https://www.adobe.com/go/dcsdks_credentials)。
-

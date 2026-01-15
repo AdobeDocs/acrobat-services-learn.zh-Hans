@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8095
 thumbnail: KT-8095.jpg
 exl-id: a22230b5-1ff2-4870-84da-f06a904c99e1
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1298'
 ht-degree: 0%
@@ -432,4 +432,3 @@ res.download(download.link);
 
 准备好在自己的应用程序中启用文档共享和审阅了吗？ 注册您的[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
 开发人员帐户。 享受6个月的免费试用，然后随着您的业务增长，[即用即付](https://developer.adobe.com/document-services/pricing/main)只需\0.05 USD即可完成每个文档交易。
-

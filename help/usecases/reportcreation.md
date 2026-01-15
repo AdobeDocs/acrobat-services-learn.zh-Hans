@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8093
 thumbnail: KT-8093.jpg
 exl-id: 2f2bf1c2-1b33-4eee-9fd2-5d0b77e6b0a9
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 0%
@@ -220,4 +220,3 @@ res.status(500).render("crash", { error: error });
 此Adobe支持的应用程序可帮助您的[社交媒体仪表板客户](https://developer.adobe.com/document-services/use-cases/content-publishing/on-demand-report-creation)获取和共享他们所需的报告，而无需担心收件人的设备上是否都安装了Microsoft Office或其他软件。 您可以在自己的应用程序中使用相同的技巧来帮助用户查看、合并和下载文档。 或者，查看Adobe的许多其他API，以添加和跟踪签名等。
 
 若要开始，请申请您的免费[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)帐户，然后为您的员工和客户创建引人入胜的报告体验。 在您的营销活动扩展过程中，免费使用您的帐户6个月，然后[即付即用](https://developer.adobe.com/document-services/pricing/main)，每次文档交易仅需\ 0.05美元。
-

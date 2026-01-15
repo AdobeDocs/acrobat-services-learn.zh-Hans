@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8089
 thumbnail: KT-8089.jpg
 exl-id: ae1cd9db-9f00-4129-a2a1-ceff1c899a83
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1905'
 ht-degree: 0%
@@ -441,4 +441,3 @@ Acrobat Sign API可通过多层的[单用户和多用户电子签名计划](http
 请查看[即付即用定价](https://developer.adobe.com/document-services/pricing/main)&#x200B;(在您的六个月免费Adobe PDF Services API试用结束时)和免费的Adobe PDF Embed API。
 
 若要向应用程序添加自动文档创建和文档签名等新功能，请开始使用[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)。
-
