@@ -8,16 +8,16 @@ type: Tutorial
 jira: KT-9247
 thumbnail: KT-9247.jpg
 exl-id: db340959-e7dc-4e46-939d-3b8c29749ebd
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: fdcaee94634220a662949252460c40a3f27bbdcc
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '78'
 ht-degree: 0%
 
 ---
 
 # Adobe PDF Extract API教程
 
-使用由Adobe Sensei机器学习提供支持的Web服务，解锁任何PDF的结构和内容元素。
+使用由AdobeAI提供支持的Web服务，解锁任何PDF的结构和内容元素。
 
 >[!NOTE]
 >
