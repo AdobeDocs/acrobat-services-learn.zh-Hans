@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # 获取Microsoft Power Automate的凭据
 
-[Microsoft Power Automate](https://powerautomate.microsoft.com/)为公民开发人员和开发人员提供了一种强大的自动化流程来改进其业务，而无需编写代码。 作为[](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/)的一部分，[[!DNL Adobe Acrobat Services]Adobe PDF Services](https://developer.adobe.com/document-services)连接器允许用户在Microsoft Power Automate中执行Adobe PDF Services API中的任何可用操作。
+[Microsoft Power Automate](https://powerautomate.microsoft.com/)为公民开发人员和开发人员提供了一种强大的自动化流程来改进其业务，而无需编写代码。 作为[&#128279;](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/)的一部分，[[!DNL Adobe Acrobat Services]Adobe PDF Services](https://developer.adobe.com/document-services)连接器允许用户在Microsoft Power Automate中执行Adobe PDF Services API中的任何可用操作。
 
 在本教程中，了解如何获取凭据以开始使用或试用Adobe PDF服务。 根据您是试用用户还是现有客户，本教程将逐步引导您完成获取凭据的相应步骤。
 
@@ -68,7 +68,7 @@ ht-degree: 2%
 
 1. 在侧边栏菜单中，打开&#x200B;**[!UICONTROL 数据]**&#x200B;菜单并选择&#x200B;**连接**：
 
-   ![ Microsoft Power Automate站点中的“连接”菜单](assets/credentials_4.png)
+   ![&#x200B; Microsoft Power Automate站点中的“连接”菜单](assets/credentials_4.png)
 
 1. 选择&#x200B;**+ [!UICONTROL 新建连接]**。
 

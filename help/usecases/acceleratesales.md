@@ -189,7 +189,7 @@ ht-degree: 0%
 1. 在&#x200B;*[!UICONTROL 选择计算类型]*&#x200B;下，选择&#x200B;**[!UICONTROL 聚合]**。
 1. 在&#x200B;*[!UICONTROL 选择类型]*&#x200B;下，选择&#x200B;**[!UICONTROL 求和]**。
 1. 在&#x200B;*[!UICONTROL 选择记录]*&#x200B;下，选择&#x200B;**[!UICONTROL 引用顺序]**。
-1. 在*[!UICONTROL 选择要执行聚合]**的项目下，选择&#x200B;**[!UICONTROL totalPaymentsDue.price]**。
+1. 在&#x200B;*[!UICONTROL 选择要执行聚合]&#x200B;**的项目下，选择&#x200B;**&#x200B;[!UICONTROL totalPaymentsDue.price]**。
 1. 选择&#x200B;**[!UICONTROL 插入计算]**。
 
 此过程将插入一个计算标记，该标记提供值的总和。 可以使用JSONata计算进行更高级的计算。 例如：
