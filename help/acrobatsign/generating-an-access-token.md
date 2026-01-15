@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-11075
 thumbnail: KT-11075.jpg
 exl-id: c68afd4b-4143-4ea5-ad44-de1fa46e3f30
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 0%
@@ -23,5 +23,4 @@ ht-degree: 0%
 >
 >本教程专为在其应用程序中构建并嵌入签名流程的OEM合作伙伴而设计。
 
->[!VIDEO](https://video.tv.adobe.com/v/3444199?captions=chi_hans&hidetitle=true)
-
+>[!VIDEO](https://video.tv.adobe.com/v/347350?hidetitle=true)

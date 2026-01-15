@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-7482
 thumbnail: KT-7482.jpg
 exl-id: 3bdc2610-d497-4a54-afc0-8b8baa234960
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 0%
@@ -200,4 +200,3 @@ PDFEmbed API提供了预览PDF和批注报告所需的所有工具。
 浏览[[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/)并了解Adobe PDF Services可为您的企业提供哪些服务。 要了解SDK中可用的更多功能，请参阅[GitHub存储库](https://github.com/adobe/pdftools-java-sdk-samples)中的示例，并探索[PDFEmbed API](https://developer.adobe.com/document-services/apis/pdf-embed)如何帮助您快速显示应用程序内的PDF。
 
 要轻松合并和处理文档，为您的金融客户创建有用的PDF报告，请立即注册免费的[Adobe开发人员帐户](https://developer.adobe.com/document-services/homepage/)。
-

@@ -9,7 +9,7 @@ jira: KT-7473
 thumbnail: KT-7473.jpg
 keywords: 精选
 exl-id: 44a03420-e963-472b-aeb8-290422c8d767
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 0%
@@ -520,5 +520,3 @@ request(createWebFormRequest, function (error, response) {
 要发现调用的所需范围或查看如何生成调用，可从[Rest API文档](https://secure.na4.adobesign.com/public/docs/restapi/v6)中生成示例调用。 [Quickstarts](https://github.com/adobe/pdftools-node-sdk-samples)还演示了[!DNL Adobe Acrobat Services] API进程的其他功能和文件格式。
 
 您可以向应用程序添加多种PDF功能，让用户能够快速、轻松地查看和签署他们的文档等等。 若要开始，请今天查看[[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage/)。
-
-

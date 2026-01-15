@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-8092
 thumbnail: KT-8092.jpg
 exl-id: 0e24c8fd-7fda-452c-96f9-1e7ab1e06922
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 0%
@@ -283,4 +283,3 @@ router.get('/job/:id', async function(req, res, next) {
 * [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 若要开始向网站添加用户友好的文档处理功能，请[注册免费试用](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)。 Adobe PDF Embed API始终免费使用，而Adobe PDF Services API免费使用6个月，则每个文档事务仅需\ 0.05 USD，因此您可以随着业务的发展而[即用即付](https://developer.adobe.com/document-services/pricing/main)。
-

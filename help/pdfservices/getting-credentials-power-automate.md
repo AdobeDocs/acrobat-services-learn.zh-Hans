@@ -8,7 +8,7 @@ type: Tutorial
 jira: KT-10382
 thumbnail: KT-10382.jpg
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-source-git-commit: bd53d86abb0e5f9ee302c39e07c00101e5a1f8ed
+source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # 获取Microsoft Power Automate的凭据
 
-[Microsoft Power Automate](https://powerautomate.microsoft.com/)为公民开发人员和开发人员提供了一种强大的自动化流程来改进其业务，而无需编写代码。 作为[&#128279;](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/)的一部分，[[!DNL Adobe Acrobat Services]Adobe PDF Services](https://developer.adobe.com/document-services)连接器允许用户在Microsoft Power Automate中执行Adobe PDF Services API中的任何可用操作。
+[Microsoft Power Automate](https://powerautomate.microsoft.com/)为公民开发人员和开发人员提供了一种强大的自动化流程来改进其业务，而无需编写代码。 作为[](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/)的一部分，[[!DNL Adobe Acrobat Services]Adobe PDF Services](https://developer.adobe.com/document-services)连接器允许用户在Microsoft Power Automate中执行Adobe PDF Services API中的任何可用操作。
 
 在本教程中，了解如何获取凭据以开始使用或试用Adobe PDF服务。 根据您是试用用户还是现有客户，本教程将逐步引导您完成获取凭据的相应步骤。
 
@@ -68,7 +68,7 @@ ht-degree: 2%
 
 1. 在侧边栏菜单中，打开&#x200B;**[!UICONTROL 数据]**&#x200B;菜单并选择&#x200B;**连接**：
 
-   ![&#x200B; Microsoft Power Automate站点中的“连接”菜单](assets/credentials_4.png)
+   ![ Microsoft Power Automate站点中的“连接”菜单](assets/credentials_4.png)
 
 1. 选择&#x200B;**+ [!UICONTROL 新建连接]**。
 
@@ -116,7 +116,7 @@ ht-degree: 2%
 
 如上面的屏幕截图所示，您可以切换到工作帐户，也可以设置新的组织帐户。 完成此操作后，您便可以添加Adobe PDF服务操作。
 
-有关使用[!DNL Adobe Acrobat Services]创建第一个Microsoft Power Automate工作流的更深入的信息，请参阅[在Microsoft Power Automate中创建您的第一个工作流程](https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate)。
+有关使用[!DNL Adobe Acrobat Services]创建第一个Microsoft Power Automate工作流的更深入的信息，请参阅[在Microsoft Power Automate中创建您的第一个工作流程](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate)。
 
 ## 其他资源
 
@@ -127,4 +127,3 @@ ht-degree: 2%
 * 我们的实时视频内容[纸质剪辑](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)还包含演示Power Automate用法的视频。
 * [Adobe技术博客](https://medium.com/adobetech/tagged/microsoft-power-automate)包含许多关于使用Power Automate的文章。
 * 最后，请务必同时查阅核心[PDF服务](https://developer.adobe.com/document-services/docs/overview/)文档。
-
