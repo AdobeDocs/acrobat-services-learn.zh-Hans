@@ -422,7 +422,7 @@ https://www.google.com/?code=<YOUR_CODE>&api_access_point=https://api.eu1.adobes
 
 请注意为\&lt;YOUR_CODE\>和api_access_point提供的值。
 
-要发送提供访问令牌的HTTPPOST请求，请使用客户端ID、\&lt;YOUR_CODE\>和api_access_point值。 您可以使用[Postman](https://helpx.adobe.com/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html)或cURL：
+要发送提供访问令牌的HTTPPOST请求，请使用客户端ID、\&lt;YOUR_CODE\>和api_access_point值。 您可以使用[Postman](https://helpx.adobe.com/cn/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html)或cURL：
 
 ```
 curl --location --request POST "https://**api.eu1.adobesign.com**/oauth/token"

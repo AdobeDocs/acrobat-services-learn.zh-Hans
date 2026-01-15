@@ -116,7 +116,7 @@ ht-degree: 2%
 
 如上面的屏幕截图所示，您可以切换到工作帐户，也可以设置新的组织帐户。 完成此操作后，您便可以添加Adobe PDF服务操作。
 
-有关使用[!DNL Adobe Acrobat Services]创建第一个Microsoft Power Automate工作流的更深入的信息，请参阅[在Microsoft Power Automate中创建您的第一个工作流程](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate)。
+有关使用[!DNL Adobe Acrobat Services]创建第一个Microsoft Power Automate工作流的更深入的信息，请参阅[在Microsoft Power Automate中创建您的第一个工作流程](https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate)。
 
 ## 其他资源
 
