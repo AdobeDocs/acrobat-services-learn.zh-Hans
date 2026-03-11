@@ -7,10 +7,10 @@ level: Beginner, Intermediate, Experienced
 type: Tutorial
 jira: KT-15330
 exl-id: 74198c86-505b-4321-923e-0079e3d767cd
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+source-git-commit: 4d076f7a05fd20b7e864929e74885957f42c5728
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 0%
+source-wordcount: '160'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +19,8 @@ ht-degree: 0%
 Adobe PDF电子签章API使用[Adobe的已批准信任列表(AATL)](https://helpx.adobe.com/cn/acrobat/kb/approved-trust-list1.html)中的某些TSP（信任服务提供商）颁发的证书对文档大规模应用电子签章。 电子签章有助于验证文档的身份和完整性。 这可用于大规模地对文档进行电子签章，并包含在PDF服务API中。
 
 <!-- Comment -->
-<!-- CARDS
+<!--
+CARDS
 
 * https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/eseal/automatically-apply-electronic-seal
   {target = _self}

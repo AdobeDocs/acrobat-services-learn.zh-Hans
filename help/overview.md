@@ -8,10 +8,10 @@ jira: KT-7463
 type: Tutorial
 thumbnail: KT-7463.jpg
 exl-id: c73feb77-4057-42fd-831c-a5004c7637c1
-source-git-commit: 91af98e26fdbc89574e4df7ecadaea9e30584aaf
+source-git-commit: 4d076f7a05fd20b7e864929e74885957f42c5728
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 5%
+source-wordcount: '607'
+ht-degree: 2%
 
 ---
 
@@ -26,10 +26,11 @@ ht-degree: 5%
 * [!DNL Adobe PDF Extract API]
 * [!DNL Adobe PDF Accessibility Auto-Tag API]
 
-后两个API及其SDK作为付费产品的一部分捆绑到[!DNL Adobe PDF Services API]。 [!DNL PDF Embed API]是免费产品。 这些API通过一组现代的基于云的Web服务自动生成、操作和转换文档内容。 它们可帮助您提供更简单、更快和品牌化的体验，以便您控制用户与文档的交互，简化PDF工作流程并提高使用率和保留率。 这些教程可帮助您了解如何使用[!DNL Adobe Acrobat Services] API提供更简单、更快的品牌化体验。
+后两个API及其SDK作为付费产品的一部分捆绑到[!DNL Adobe PDF Services API]。[!DNL PDF Embed API] 是免费产品。 这些API通过一组现代的基于云的Web服务自动生成、操作和转换文档内容。 它们可帮助您提供更简单、更快和品牌化的体验，以便您控制用户与文档的交互，简化PDF工作流程并提高使用率和保留率。 这些教程可帮助您了解如何使用[!DNL Adobe Acrobat Services] API提供更简单、更快的品牌化体验。
 
 <!-- Comment -->
-<!-- CARDS
+<!--
+CARDS
 
 * https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/pdfservices/overview-pdfservices
   {target = _self}
@@ -89,8 +90,8 @@ ht-degree: 5%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/pdfservices/overview-pdfservices" title="PDF服务API" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/media_1a7b3ae4fc2b8c33c920f81a3eee05dc358108a74.png?width=400&format=webply&optimize=medium" alt="PDF服务API"
+                    <a href="https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/pdfservices/overview-pdfservices" title="PDF Services API" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/media_1a7b3ae4fc2b8c33c920f81a3eee05dc358108a74.png?width=400&format=webply&optimize=medium" alt="PDF Services API"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -98,7 +99,7 @@ ht-degree: 5%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/pdfservices/overview-pdfservices" target="_self" rel="referrer" title="PDF服务API">PDF服务API</a>
+                        <a href="https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/pdfservices/overview-pdfservices" target="_self" rel="referrer" title="PDF Services API">PDF服务API</a>
                     </p>
                     <p class="is-size-6">使用SDK为node.js、.Net和JavaPDFAPI以创建、转换、OCRPDF等</p>
                 </div>
@@ -204,8 +205,8 @@ ht-degree: 5%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/pdfembed/overview-embed" title="PDF Embed API" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/media_100c64db6899f092f8a30e0d153091398242f8abc.png?width=400&format=webply&optimize=medium" alt="PDF Embed API"
+                    <a href="https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/pdfembed/overview-embed" title="嵌入式APIPDF" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/media_100c64db6899f092f8a30e0d153091398242f8abc.png?width=400&format=webply&optimize=medium" alt="嵌入式APIPDF"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -213,7 +214,7 @@ ht-degree: 5%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/pdfembed/overview-embed" target="_self" rel="referrer" title="PDF Embed API">PDF的嵌入API</a>
+                        <a href="https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/pdfembed/overview-embed" target="_self" rel="referrer" title="嵌入式APIPDF">PDF的嵌入API</a>
                     </p>
                     <p class="is-size-6">免费的Javascript API可嵌入高保真PDF、启用协作和查看分析</p>
                 </div>

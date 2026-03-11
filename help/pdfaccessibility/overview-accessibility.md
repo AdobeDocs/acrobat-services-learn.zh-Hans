@@ -7,9 +7,9 @@ level: Beginner, Intermediate, Experienced
 type: Tutorial
 jira: KT-15327
 exl-id: dfd018a7-8e1f-4c00-9e1f-6b7b8435fbfa
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+source-git-commit: 4d076f7a05fd20b7e864929e74885957f42c5728
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,8 @@ ht-degree: 0%
 此AI支持的API可自动标记表格、段落、列表、标题等，从而使用辅助技术改善本机或扫描PDF的阅读体验。 它还标识了阅读顺序，以确保跨页的多列或多元素信息的逻辑流动。 将此选项应用于文档积压或新文档工作流，并更轻松地实现法规遵从性。
 
 <!-- Comment -->
-<!-- CARDS
+<!--
+CARDS
 
 * https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/pdfaccessibility/automatically-add-tags
   {target = _self}

@@ -8,9 +8,9 @@ type: Tutorial
 jira: KT-7480
 thumbnail: KT-7480.jpg
 exl-id: 519a41a2-33af-4022-8919-2cb69995c46c
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+source-git-commit: 4d076f7a05fd20b7e864929e74885957f42c5728
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,8 @@ Document Generation API可从WordPDF和JSON数据中创建模板和Word文档。
 ## 生成文档
 
 <!-- Comment -->
-<!-- CARDS
+<!--
+CARDS
 
 * https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/docgen/automate-doc-gen
   {target = _self}
