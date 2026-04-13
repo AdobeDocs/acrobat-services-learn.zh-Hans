@@ -8,10 +8,10 @@ feature: Acrobat Sign API, PDF Services API, PDF Embed API, Document Generation 
 role: Developer
 level: Beginner, Intermediate, Experienced
 auto-video-transcripts: true
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+source-git-commit: 2b989e4de21881476330b8085636d8335f34f172
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 7%
+source-wordcount: '246'
+ht-degree: 6%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 7%
 # [!DNL Adobe Acrobat Services]个APITutorials {#tutorials}
 
 + [概述](/help/overview.md)
-+ PDF服务API {#pdfservices}
++ PDF Services API {#pdfservices}
    + [概述](/help/pdfservices/overview-pdfservices.md)
    + [获取Microsoft Power Automate的凭据](/help/pdfservices/getting-credentials-power-automate.md)
    + [在Microsoft Power Automate中创建您的第一个工作流](/help/pdfservices/create-workflow-power-automate.md)
@@ -47,7 +47,7 @@ ht-degree: 7%
 + PDF电子签章API {#eseal}
    + [概述](/help/pdfelectronicseal/overview-electronic-seal.md)
    + [自动应用电子签章](/help/pdfelectronicseal/automatically-apply-electronic-seal.md)
-+ PDF Embed API {#pdfembed}
++ 嵌入式APIPDF {#pdfembed}
    + [概述](/help/pdfembed/overview-embed.md)
    + [控制您的PDF在线体验并收集分析](/help/pdfembed/controlpdfexperience.md)
 + Acrobat Sign API {#acrobatsign}
@@ -78,5 +78,5 @@ ht-degree: 7%
    + [在Java中管理财务文档工作流](/help/usecases/financeworkflowsjava.md)
    + [处理发票](/help/usecases/invoices.md)
    + [数字文档发布](/help/usecases/ddppdfembedapi.md)
-+ [隐藏的文件以供测试](/help/hidden-file.md)
++ {hide-from-toc}[隐藏的文件以供测试](/help/hidden-file.md)
 
