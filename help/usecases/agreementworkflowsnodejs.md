@@ -9,9 +9,25 @@ jira: KT-7473
 thumbnail: KT-7473.jpg
 keywords: 精选
 exl-id: 44a03420-e963-472b-aeb8-290422c8d767
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/8SQivYwIRQxLqcHWCvrZ7b4t2BOqGyWKZvvNSpomrlo
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '2094'
+source-wordcount: 2187
 ht-degree: 0%
 
 ---
@@ -20,7 +36,7 @@ ht-degree: 0%
 
 ![用例主横幅](assets/UseCaseAgreementHero.jpg)
 
-许多业务应用程序和流程都需要文档，如提议和协议。 PDF文档可确保文件更安全，更不易修改。 它们还提供数字签名支持，因此您的客户可以快速而轻松地填写其文档。 [!DNL Adobe Acrobat Services] API可轻松地将PDF功能合并到您的Web应用程序中。
+许多业务应用程序和流程都需要文档，如提议和协议。 PDF文档可确保文件更安全，更不易修改。 它们还提供数字签名支持，因此您的客户可以快速而轻松地填写其文档。[!DNL Adobe Acrobat Services] API可轻松地将PDF功能合并到您的Web应用程序中。
 
 ## 您可以学到的内容
 
@@ -28,7 +44,7 @@ ht-degree: 0%
 
 ## 相关的API和资源
 
-* [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 * [PDF的嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
@@ -100,11 +116,11 @@ logger.level = 'info';
 logger.info('Application started')
 ```
 
-上述代码将记录的数据写入中的文件。/logs/applicationlog.txt. 如果希望它写入控制台，可以注释掉对log4js.configure的调用。
+上述代码将记录的数据写入./logs/applicationlog.txt中的文件。 如果希望它写入控制台，可以注释掉对log4js.configure的调用。
 
 ## 将Word文件转换为PDF
 
-协议和建议通常是在工作效率应用程序(如Microsoft Word)中编写的。 要接受此格式的文档并将文档转换为PDF，您可以为应用程序添加功能。 让我们看看如何在Express应用程序中上传并保存文档，然后将其保存到文件系统。
+协议和建议通常是在工作效率应用程序（如Microsoft Word）中编写的。 要接受此格式的文档并将文档转换为PDF，您可以为应用程序添加功能。 让我们看看如何在Express应用程序中上传并保存文档，然后将其保存到文件系统。
 
 在应用程序的HTML中，添加一个文件元素和一个用于开始上传的按钮：
 
@@ -213,7 +229,7 @@ logger.info('converting to ${destinationName}')
 
 文档工具包将其他格式转换为PDF，如静态HTML（另一种常用文档类型）。 该工具包接受将文档打包为.zip文件的HTML文档，并在同一.zip文件中包含该文档引用的所有资源（CSS文件、图像和其他文件）。 HTML文档本身必须命名为index.html并放置在.zip文件的根目录下。
 
-要转换包含HTML的.zip文件，请使用以下代码：
+要转换包含ip文件，请使用以下代码：
 
 ```
 //Create an HTML to PDF operation and provide the source file to it

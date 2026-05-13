@@ -8,9 +8,25 @@ type: Tutorial
 jira: KT-8093
 thumbnail: KT-8093.jpg
 exl-id: 2f2bf1c2-1b33-4eee-9fd2-5d0b77e6b0a9
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/E6grXk4Sptkhetpgt-MoDndf-Ezm97qnutLbUqD-a20
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: 1391
 ht-degree: 0%
 
 ---
@@ -19,7 +35,7 @@ ht-degree: 0%
 
 ![用例主横幅](assets/UseCaseReportHero.jpg)
 
-金融、教育、营销和其他行业使用PDF与客户和利益相关者共享数据。 使用PDF，可以轻松共享包含表格、图形和交互式内容的丰富文档，并且格式每个人都可以查看。 [!DNL Adobe Acrobat Services]个API可帮助这些公司从Microsoft Word、Microsoft Excel、图形和其他多种文档格式生成可共享的PDF报告。
+金融、教育、营销和其他行业使用PDF与客户和利益相关者共享数据。 使用PDF，可以轻松共享包含表格、图形和交互式内容的丰富文档，并且格式每个人都可以查看。[!DNL Adobe Acrobat Services] API可帮助这些公司从Microsoft Word、Microsoft Excel、图形和其他多种文档格式生成可共享的PDF报告。
 
 假设您[运行社交媒体跟踪公司](https://developer.adobe.com/document-services/use-cases/content-publishing/on-demand-report-creation)。 您的客户登录到您的站点受密码保护的部分，以查看其营销活动分析。 通常，他们想要与他们的执行官、股东、捐赠者或其他利益相关者共享这些数据。 可下载的PDF文档非常适合您的客户分享数字、图表等。
 
@@ -27,11 +43,11 @@ ht-degree: 0%
 
 ## 您可以学到的内容
 
-在本实际操作教程中，了解如何在Node.js和Express.js环境(仅包含一些JavaScript、HTML和CSS)中使用PDF服务SDK，快速轻松地向现有网站添加面向PDF的功能。 此网站包含管理员上传报告的页面、客户查看可用报告列表并选择要转换为PDF的文档的区域，以及下载系统生成的PDF的有用端点。
+在本实际操作教程中，了解如何在Node.js和Express.js环境（仅包含一些JavaScript、HTML和CSS）中使用PDF服务SDK，快速轻松地向现有网站添加面向PDF的功能。 此网站包含管理员上传报告的页面、客户查看可用报告列表并选择要转换为PDF的文档的区域，以及下载系统生成的PDF的有用端点。
 
 ## 相关的API和资源
 
-* [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 * [PDF的嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 

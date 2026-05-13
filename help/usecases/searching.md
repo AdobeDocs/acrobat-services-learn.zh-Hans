@@ -8,9 +8,25 @@ type: Tutorial
 jira: KT-8095
 thumbnail: KT-8095.jpg
 exl-id: a22230b5-1ff2-4870-84da-f06a904c99e1
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/ceJsh2lv-S4b6mScT7DF83x1C85BAu-bPa5ju4JcYu4
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: b4b3dc0f-b1be-46b4-b8ca-134a4629084a
+  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: 1389
 ht-degree: 0%
 
 ---
@@ -31,7 +47,7 @@ ht-degree: 0%
 
 ## 相关的API和资源
 
-* [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 * [项目代码](https://github.com/agavitalis/AdobeDocumentServicesAPIs.git)
 
@@ -141,7 +157,7 @@ Ensure that the content of your package.json file is similar to this code snippe
 
 完成注册后，代码示例将下载到包含您的API凭据的电脑。 提取此代码示例，并将private.key和pdftools-api-credentials.json文件放在应用程序的根目录中。
 
-现在，通过使用应用程序根目录中的终端运行[命令来安装](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk)PDF服务Node.js SDK` npm install --save @adobe/documentservices-pdftools-node-sdk `。
+现在，通过使用应用程序根目录中的终端运行` npm install --save @adobe/documentservices-pdftools-node-sdk `命令来安装[PDF服务Node.js SDK](https://www.npmjs.com/package/@adobe/documentservices-pdftools-node-sdk)。
 
 ## 创建PDF
 
@@ -430,5 +446,5 @@ res.download(download.link);
 
 现在，您已深入了解如何使用[!DNL Acrobat Services] API，您可以通过练习来进一步提升技能。 您可以克隆本教程中使用的存储库，并尝试您刚刚学到的一些技能。 更棒的是，您可以尝试在探索[!DNL Acrobat Services] API的无限可能性的同时重建此应用程序。
 
-准备好在自己的应用程序中启用文档共享和审阅了吗？ 注册您的[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
+准备好在自己的应用程序中启用文档共享和审阅了吗？ 注册您的 [[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)
 开发人员帐户。 享受6个月的免费试用，然后随着您的业务增长，[即用即付](https://developer.adobe.com/document-services/pricing/main)只需\0.05 USD即可完成每个文档交易。

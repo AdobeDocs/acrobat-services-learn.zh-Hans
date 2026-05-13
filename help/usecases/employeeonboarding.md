@@ -8,10 +8,23 @@ type: Tutorial
 jira: KT-10203
 thumbnail: KT-10203.jpg
 exl-id: 0186b3ee-4915-4edd-8c05-1cbf65648239
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/cyfUGCD0CzmV6M4TiC9ZpYBrOpqHGgmwK8ByVYqSDbE
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 0%
+source-wordcount: 1564
+ht-degree: 1%
 
 ---
 
@@ -23,11 +36,11 @@ ht-degree: 0%
 
 ## 什么是[!DNL Adobe Acrobat Services]？
 
-[[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage)是一组与处理文档(而不仅仅是PDF)相关的API。 从广义上讲，这套服务可分为三大类：
+[[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services/homepage)是一组与处理文档（而不仅仅是PDF）相关的API。 从广义上讲，这套服务可分为三大类：
 
 * 首先是[PDF服务](https://developer.adobe.com/document-services/apis/pdf-services/)工具集。 这些是处理PDF和其他文档的“实用”方法。 这些服务包括与PDF之间的转换、执行OCR和优化、合并和拆分PDF等。 它是文档处理功能的工具箱。
 * [PDF提取API](https://developer.adobe.com/document-services/apis/pdf-extract/)使用强大的AI/ML技术来分析PDF，并返回大量有关内容的细节。 其中包括文本、样式和位置信息，还可以返回CSV/XLS格式的表格数据以及检索图像。
-* 最后，[Document Generation API](https://developer.adobe.com/document-services/apis/doc-generation/)允许开发人员将Microsoft Word用作“模板”，混合其数据（来自任何源），并生成动态的个性化文档(PDF和Word)。
+* 最后，[Document Generation API](https://developer.adobe.com/document-services/apis/doc-generation/)允许开发人员将Microsoft Word用作“模板”，混合其数据（来自任何源），并生成动态的个性化文档（PDF和Word）。
 
 开发人员可以[注册](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html)并通过免费试用试用所有这些服务。 [!DNL Acrobat Services]平台使用基于REST的API，但还支持Node、Java、.NET和Python的SDK（目前仅支持Extract）。
 
@@ -208,4 +221,4 @@ combineFilesOperation.execute(executionContext)
 
 本文中描述的所有内容现在都可以进行测试。 [!DNL Adobe Acrobat Services] API [免费试用](https://documentcloud.adobe.com/dc-integration-creation-app-cdn/main.html)当前在六个月内为您提供了1,000个免费请求。 通过Acrobat Sign的[免费试用](https://www.adobe.com/acrobat/business/sign.html#sign_free_trial)，可发送带有水印的协议以进行测试。
 
-有问题？[支持论坛](https://community.adobe.com/t5/acrobat-services-api/ct-p/ct-Document-Cloud-SDK)每天都由Adobe开发人员和支持人员监视。 最后，为了获取更多灵感，请确保拍摄下一个[纸剪辑](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)集。 定期与客户举行现场会议，包括新闻、演示和谈话。
+有问题？ [支持论坛](https://community.adobe.com/t5/acrobat-services-api/ct-p/ct-Document-Cloud-SDK)每天都由Adobe开发人员和支持人员监视。 最后，为了获取更多灵感，请确保拍摄下一个[纸剪辑](https://www.youtube.com/playlist?list=PLcVEYUqU7VRe4sT-Bf8flvRz1XXUyGmtF)集。 定期与客户举行现场会议，包括新闻、演示和谈话。

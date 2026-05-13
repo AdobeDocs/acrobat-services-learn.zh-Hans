@@ -8,9 +8,25 @@ type: Tutorial
 jira: KT-8094
 thumbnail: KT-8094.jpg
 exl-id: d704620f-d06a-4714-9d09-3624ac0fcd3a
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/Y9rEEmFRErrNRz8lwG2ertPmm95ScYCigzepibfBoB0
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: 1654
 ht-degree: 0%
 
 ---
@@ -21,7 +37,7 @@ ht-degree: 0%
 
 在COVID-19疫情期间，许多公司需要远程跨团队协作，[共享和审阅数字文档](https://developer.adobe.com/document-services/use-cases/collaboration/review-and-approval)为团队和跨职能资源带来了一系列挑战。
 
-这些挑战包括共享不同文件格式的文档、有效审阅和评论内容以及与最新编辑同步。 [!DNL Adobe Acrobat Services]个API旨在使应用程序开发人员能够为其用户解决这些难题。
+这些挑战包括共享不同文件格式的文档、有效审阅和评论内容以及与最新编辑同步。[!DNL Adobe Acrobat Services] API旨在使应用程序开发人员能够为其用户解决这些难题。
 
 ## 您可以学到的内容
 
@@ -43,7 +59,7 @@ ht-degree: 0%
 
 ## 相关的API和资源
 
-* [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 * [PDF的嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
@@ -330,7 +346,7 @@ app.get( "/download/:file", function( req, res ){
 
 ## 保存文档反馈
 
-用户评论文档后，单击“**保存”。**&#x200B;默认情况下，单击&#x200B;**保存**&#x200B;可下载更新的PDF文件。 更改此操作以更新服务器上的当前PDF文件。
+用户评论文档后，单击&#x200B;**保存。** 默认情况下，单击&#x200B;**保存**&#x200B;将下载更新的PDF文件。 更改此操作以更新服务器上的当前PDF文件。
 
 将`/save`端点添加到服务器代码，以覆盖uploads/draft文件夹中的PDF文件：
 

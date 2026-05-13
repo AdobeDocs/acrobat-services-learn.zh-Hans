@@ -8,10 +8,26 @@ type: Tutorial
 jira: KT-8096
 thumbnail: KT-8096.jpg
 exl-id: 92f955f0-add5-4570-aa3a-ea63055dadb2
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/ZfvtA3o-CQ28V-HdyzMR2TWgw-DpddXoh3zMOAUAqhY
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2:
+  - id: b4b3dc0f-b1be-46b4-b8ca-134a4629084a
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 0%
+source-wordcount: 1851
+ht-degree: 1%
 
 ---
 
@@ -19,7 +35,7 @@ ht-degree: 0%
 
 ![用例主横幅](assets/UseCaseOfferHero.jpg)
 
-员工工作邀请函是员工最初在公司中获得的体验之一。 因此，要确保优惠字母符合品牌标准，但您不必每次都从头开始在文字处理器中构建字母。 [!DNL Adobe Acrobat Services] API提供了一种快速、轻松且有效的方法来处理[生成优惠信函并向新员工提供优惠信函](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters)中的关键部分。
+员工工作邀请函是员工最初在公司中获得的体验之一。 因此，要确保优惠字母符合品牌标准，但您不必每次都从头开始在文字处理器中构建字母。[!DNL Adobe Acrobat Services] API提供了一种快速、轻松且有效的方法来处理[生成优惠信函并向新员工提供优惠信函](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters)中的关键部分。
 
 ## 您可以学到的内容
 
@@ -27,13 +43,13 @@ ht-degree: 0%
 
 ## 相关的API和资源
 
-* [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [Adobe的Document Generation API](https://developer.adobe.com/document-services/apis/doc-generation)
+* [Document Generation APIAdobe](https://developer.adobe.com/document-services/apis/doc-generation)
 
 * [Adobe Sign API](https://developer.adobe.com/adobesign-api/)
 
-* [Document Generation Tagger Word加载项](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin)
+* [Document Generation Tagger Word插件](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin)
 
 * [项目示例](https://developer.adobe.com/document-services/use-cases/agreements-and-contracts/employee-offer-letters)
 
@@ -53,7 +69,7 @@ ht-degree: 0%
 
 单击&#x200B;**[!UICONTROL 生成密钥对]**&#x200B;按钮。 您将获得要下载的config.zip文件。 解压缩存档文件。 它包含两个文件：certificate_pub.crt和private.key。 确保后者是安全的，因为它包含您的私人凭据，并且在您控制之外可用于生成虚假文档。
 
-单击&#x200B;**[!UICONTROL 下一步]**。否，启用对PDF生成API的访问。 在&#x200B;**[!UICONTROL 选择产品配置文件]**&#x200B;屏幕上，选中&#x200B;**[!UICONTROL 企业PDF服务开发人员]**，然后单击&#x200B;**[!UICONTROL 保存配置的API]**&#x200B;按钮。 现在，您可以开始使用API了。
+单击&#x200B;**[!UICONTROL 下一步]**。 否，启用对PDF生成API的访问。 在&#x200B;**[!UICONTROL 选择产品配置文件]**&#x200B;屏幕上，选中&#x200B;**[!UICONTROL 企业PDF服务开发人员]**，然后单击&#x200B;**[!UICONTROL 保存配置的API]**&#x200B;按钮。 现在，您可以开始使用API了。
 
 ## 设置项目
 
@@ -239,7 +255,7 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-那里有很多代码要解压缩 我们先来了解一下主要部分：`documentMergeOperation`。 在此部分中，您可以获取JSON数据并将其与Word文档模板合并。 您可以使用Adobe站点[上的](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade)示例作为参考，但让我们创建您自己的简单示例。 打开Word并创建一个新的空白文档。 你可以随意进行自定义，但至少有以下特点：
+那里有很多代码要解压缩 我们先来了解一下主要部分：`documentMergeOperation`。 在此部分中，您可以获取JSON数据并将其与Word文档模板合并。 您可以使用Adobe站点[&#128279;](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade)上的示例作为参考，但让我们创建您自己的简单示例。 打开Word并创建一个新的空白文档。 你可以随意进行自定义，但至少有以下特点：
 
 尊敬的X：
 
@@ -249,7 +265,7 @@ console.log('Exception encountered while executing operation', err);
 
 将文档作为“OfferLetter-Template.docx”保存在项目根目录下名为“resources”的文件夹中。 请注意文档中的三个X。 这些X是您的JSON信息的临时占位符。 虽然可以使用特殊语法替换这些占位符，但Adobe提供了一个简化此任务的Word插件。 要安装加载项，请转到Adobe[Document Generation Tagger Word加载项](https://developer.adobe.com/document-services/docs/overview/document-generation-api/wordaddin)站点。
 
-在您的OfferLetter-Template中，单击新的&#x200B;**Document Generation**&#x200B;按钮。 侧面板随即打开。 单击&#x200B;**开始使用**。 为您提供了要在示例JSON数据中粘贴的文本区域。 将JSON的“offer-data”片段从上方复制到文本区域。 它应该如下所示：
+在您的OfferLetter-Template中，单击新的&#x200B;**Document Generation**&#x200B;按钮。 侧面板随即打开。 单击&#x200B;**开始**。 为您提供了要在示例JSON数据中粘贴的文本区域。 将JSON的“offer-data”片段从上方复制到文本区域。 它应该如下所示：
 
 ![字母和代码的屏幕截图](assets/offer_3.png)
 

@@ -8,9 +8,22 @@ type: Tutorial
 jira: KT-8145
 thumbnail: KT-8145.jpg
 exl-id: 5871ef8d-be9c-459f-9660-e2c9230a6ceb
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/cRSC1vIKbwdoQhwz8HkU-L6sO7ENukJhOqgw2C1O-6Y
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: c4d07275-6387-4756-8bf7-681e581ffd27
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: 1487
 ht-degree: 0%
 
 ---
@@ -21,7 +34,7 @@ ht-degree: 0%
 
 当业务蓬勃发展时，这是件好事，但当需要准备所有这些发票时，生产率就会受损。 手动生成发票非常耗时，并且您可能面临出错的风险，从而有可能赔钱或因金额不正确而激怒客户。
 
-例如，想想Danielle在一家医疗供应公司[的](https://developer.adobe.com/document-services/use-cases/financial/invoices)会计部门[&#128279;](https://developer.adobe.com/document-services/use-cases/financial/invoices)工作。 月底的时候，她从几个不同的系统中提取信息，再次检查信息的准确性，并格式化发票。 在完成所有这些工作后，她终于准备好将文档转换为PDF（以便任何人都可以查看，而无需购买特定软件），并向每个客户发送其个性化发票。
+例如，想想Danielle在一家医疗供应公司[&#128279;](https://developer.adobe.com/document-services/use-cases/financial/invoices)的[会计部门](https://developer.adobe.com/document-services/use-cases/financial/invoices)工作。 月底的时候，她从几个不同的系统中提取信息，再次检查信息的准确性，并格式化发票。 在完成所有这些工作后，她终于准备好将文档转换为PDF（以便任何人都可以查看，而无需购买特定软件），并向每个客户发送其个性化发票。
 
 即使每月的发票开完了，Danielle也逃不掉这些发票。 一些客户有非月度计费周期，因此她始终为某人创建发票。 有时，客户会编辑其发票并支付不足的金额。 然后Danielle将花时间解决此发票不匹配问题。 按照这个速度，她需要雇个助理来做所有工作！
 
@@ -35,9 +48,9 @@ Danielle需要一种快速、准确地生成发票的方法，既可以在月底
 
 ## 相关的API和资源
 
-* [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [Adobe的Document Generation API](https://developer.adobe.com/document-services/apis/doc-generation)
+* [Document Generation APIAdobe](https://developer.adobe.com/document-services/apis/doc-generation)
 
 * [Adobe Sign API](https://developer.adobe.com/adobesign-api/)
 
@@ -143,7 +156,7 @@ async function compileDocFile(json, inputFile, outputPdf) {
 } 
 ```
 
-此代码从输入JSON文档和输入模板文件中获取信息。 然后，它会创建一个文档合并操作，以将文件合并为单个PDF报表。 最后，它使用您的API凭据执行该操作。 如果您还没有凭据，请[创建凭据](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getting-credentials) (Document Generation和PDF服务API使用相同的凭据)。
+此代码从输入JSON文档和输入模板文件中获取信息。 然后，它会创建一个文档合并操作，以将文件合并为单个PDF报表。 最后，它使用您的API凭据执行该操作。 如果您还没有凭据，请[创建凭据](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html#getting-credentials) （Document Generation和PDF服务API使用相同的凭据）。
 
 在Express路由器内使用此代码处理文档请求：
 

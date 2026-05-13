@@ -8,23 +8,31 @@ type: Tutorial
 jira: KT-10379
 thumbnail: KT-10379.jpg
 exl-id: 095b705f-c380-42cc-9329-44ef7de655ee
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/xltwAkEl5vPjcTGB1YX1VSC02fIVDWK7nElLTbiMkHo
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: 2046
 ht-degree: 1%
 
 ---
 
-
 # 在Microsoft Power Automate中创建您的第一个工作流
 
-了解如何使用[Microsoft Services](https://flow.microsoft.com/zh-cn/)连接器在[Adobe PDF Power Automate](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/)中创建您的第一个工作流。
+了解如何使用[Microsoft Services](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/)连接器在[Adobe PDF Power Automate](https://flow.microsoft.com/zh-cn/)中创建您的第一个工作流。
 
 在本实际操作教程中，学习如何：
 
 * 将Word文档转换为PDF
 * 将PDF文档合并为一个PDF
-* 使用密码ProtectPDF文档
+* 使用密码PDF文档
 
 ## 准备工作
 
@@ -186,7 +194,7 @@ ht-degree: 1%
    ![使用JSON中的数据标记生成文档](assets/generateDocumentJSONAction.png)
 
 1. 对&#x200B;**[!UICONTROL LastName]**&#x200B;和&#x200B;**[!UICONTROL Salary]**&#x200B;字段重复步骤7-8。
-1. 在“**[!UICONTROL 模板文件内容]**”字段中，使用“**[!UICONTROL 动态内容]**”面板从“**[!UICONTROL 获取文件内容]**”步骤插入“*文件内容*”值。
+1. 在“**[!UICONTROL 模板文件内容]**”字段中，使用“**[!UICONTROL 动态内容]**”面板从“*获取文件内容*”步骤插入“**[!UICONTROL 文件内容]**”值。
 
 ![从Power Automate中的Word模板操作生成文档，所有值均已完成](assets/generateDocumentJSONActionCompleted.png)
 
@@ -240,9 +248,9 @@ ht-degree: 1%
 1. 选择&#x200B;**[!UICONTROL Adobe PDF服务]**。
 1. 选择&#x200B;**[!UICONTROL 合并PDF]**&#x200B;操作。
 1. 在&#x200B;**[!UICONTROL 合并PDF文件名]**&#x200B;字段中，输入所需的文件名（即&#x200B;*CombinedDocument.pdf*）。
-1. 在&#x200B;**[!UICONTROL 文件内容–1]**&#x200B;字段中，使用&#x200B;**[!UICONTROL 动态内容]**&#x200B;面板从&#x200B;*将Word转换为PDF*&#x200B;步骤中插入&#x200B;**[!UICONTROL PDF文件内容]**&#x200B;值。
+1. 在&#x200B;**[!UICONTROL 文件内容–1]**&#x200B;字段中，使用&#x200B;**[!UICONTROL 动态内容]**&#x200B;面板从&#x200B;**[!UICONTROL 将Word转换为PDF]**&#x200B;步骤中插入&#x200B;*PDF文件内容*&#x200B;值。
 1. 要添加下一个文档，请选择&#x200B;**+ [!UICONTROL 添加新项]**。
-1. 在&#x200B;**[!UICONTROL 文件内容 — 2]**&#x200B;字段中，使用&#x200B;**[!UICONTROL 动态内容]**&#x200B;面板插入&#x200B;**[!UICONTROL 从Word模板生成文档]**&#x200B;步骤中的&#x200B;*输出文件内容*&#x200B;值。
+1. 在&#x200B;**[!UICONTROL 文件内容 — 2]**&#x200B;字段中，使用&#x200B;**[!UICONTROL 动态内容]**&#x200B;面板插入&#x200B;*从Word模板生成文档*&#x200B;步骤中的&#x200B;**[!UICONTROL 输出文件内容]**&#x200B;值。
 
 ![Microsoft Power Automate中的合并PDF操作](assets/mergePDFAction.png)
 
@@ -257,7 +265,7 @@ ht-degree: 1%
 1. 选择&#x200B;**[!UICONTROL 创建文件]**。
 1. 在&#x200B;**[!UICONTROL 文件夹路径]**&#x200B;字段中，选择文件夹图标以指定将文件保存在OneDrive中的位置。
 1. 在&#x200B;**[!UICONTROL 文件名]**&#x200B;字段中，设置文件名。 由于输出为PDF，因此您的文件名必须以.pdf结尾。
-1. 在&#x200B;**[!UICONTROL 文件内容]**&#x200B;字段中，使用&#x200B;**[!UICONTROL 动态内容]**&#x200B;面板插入&#x200B;*合并PDF*&#x200B;步骤中的&#x200B;**[!UICONTROL PDF文件内容]**&#x200B;值。
+1. 在&#x200B;**[!UICONTROL 文件内容]**&#x200B;字段中，使用&#x200B;**[!UICONTROL 动态内容]**&#x200B;面板插入&#x200B;**[!UICONTROL 合并PDF]**&#x200B;步骤中的&#x200B;*PDF文件内容*&#x200B;值。
 
    ![Microsoft Power Automate中的流概述](assets/flowOverviewSavedMergedDocument.png)
 
@@ -272,30 +280,30 @@ ht-degree: 1%
 
 在OneDrive文件夹中，您将看到合并后的PDF，其中包含来自第一个和第二个文档的页面。
 
-## 第4部分：ProtectPDF文档
+## 第4部分：PDF文档
 
 生成文档后，可在保存到OneDrive之前执行额外步骤，以保护文档免受编辑。
 
 ### 保护 PDF
 
-1. 在Power Automate中编辑工作流时，在&#x200B;**合并PDF**&#x200B;操作和&#x200B;**[!UICONTROL 创建文件3]**&#x200B;操作之间选择&#x200B;**[!UICONTROL +]**。
+1. 在Power Automate中编辑工作流时，在&#x200B;**[!UICONTROL 合并PDF]**&#x200B;操作和&#x200B;**[!UICONTROL 创建文件3]**&#x200B;操作之间选择&#x200B;**+**。
 
    ![两个动作之间加号以添加新动作](assets/addActionToProtect.png)
 
 1. 选择&#x200B;**[!UICONTROL 添加操作]**。
 1. 在搜索栏中搜索&#x200B;*Adobe PDF服务*。
 1. 选择&#x200B;**[!UICONTROL Adobe PDF服务]**。
-1. 选择&#x200B;**[!UICONTROL 从查看中选择ProtectPDF]**&#x200B;操作。
+1. 选择&#x200B;**[!UICONTROL 从查看中选择PDF]**&#x200B;操作。
 1. 在&#x200B;**[!UICONTROL 文件名]**&#x200B;字段中，将名称设置为所需的名称（只要它以.pdf扩展名结尾即可）。
 1. 将&#x200B;**[!UICONTROL 密码]**&#x200B;字段设置为您指定的密码以打开文档。
-1. 在&#x200B;**[!UICONTROL 文件内容]**&#x200B;字段中，使用&#x200B;**[!UICONTROL 动态内容]**&#x200B;面板从&#x200B;*合并PDF*&#x200B;步骤插入&#x200B;**[!UICONTROL PDF文件内容]**&#x200B;值。
+1. 在&#x200B;**[!UICONTROL 文件内容]**&#x200B;字段中，使用&#x200B;**[!UICONTROL 动态内容]**&#x200B;面板从&#x200B;**[!UICONTROL 合并PDF]**&#x200B;步骤插入&#x200B;*PDF文件内容*&#x200B;值。
 
 ### 更新保存到OneDrive
 
-文档受到保护后，您可以将文件保存回OneDrive中。 在此示例中，您将使用新的&#x200B;**文件内容**&#x200B;值更新先前存在的&#x200B;*创建文件3*&#x200B;操作。
+文档受到保护后，您可以将文件保存回OneDrive中。 在此示例中，您将使用新的&#x200B;*文件内容*&#x200B;值更新先前存在的&#x200B;**创建文件3**&#x200B;操作。
 
 1. 在&#x200B;**[!UICONTROL 创建文件3]**&#x200B;操作的&#x200B;**[!UICONTROL 文件内容]**&#x200B;字段中选择光标。
-1. 使用“**[!UICONTROL 动态内容]**”面板从&#x200B;*从查看的ProtectPDF*&#x200B;步骤插入&#x200B;**PDF文件内容**&#x200B;值。
+1. 使用“**[!UICONTROL 动态内容]**”面板从&#x200B;**从查看的PDF**&#x200B;步骤插入&#x200B;*PDF文件内容*&#x200B;值。
 
 ### Try流
 

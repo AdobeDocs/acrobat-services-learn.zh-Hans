@@ -8,9 +8,26 @@ type: Tutorial
 jira: KT-8089
 thumbnail: KT-8089.jpg
 exl-id: ae1cd9db-9f00-4129-a2a1-ceff1c899a83
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/yISuOQpA5-SuOKdpAoXEAgJXzQwqHwAkgHHW4kdItgQ
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+subfeature_v2:
+  - id: aba8c493-b814-4c59-a60d-4962bc4c8ada
+  - id: b4b3dc0f-b1be-46b4-b8ca-134a4629084a
+  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1905'
+source-wordcount: 2064
 ht-degree: 0%
 
 ---
@@ -438,6 +455,6 @@ Company Name","CBJCHBCAABAA5Z84zy69q_Ilpuy5DzUAahVfcNZillDt"
 
 Acrobat Sign API可通过多层的[单用户和多用户电子签名计划](https://acrobat.adobe.com/cn/zh-Hans/sign/pricing/plans.html)提供，因此您可以选择最适合您需求的定价模型。 现在，您了解了将Sign API集成到应用程序中的过程有多么简单，接下来您可能感兴趣的是其他功能，例如[Acrobat Sign Webhook](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/webhooks.md)，一种基于推送的编程模型。 Webhook并不要求您的应用程序在Acrobat Sign事件中执行频繁检查，而是允许您注册一个HTTP URL，以便在每次事件发生时Sign API都会为其执行POST回调请求。 Webhook可为您的应用程序提供实时和即时更新，从而实现强大的编程。
 
-请查看[即付即用定价](https://developer.adobe.com/document-services/pricing/main)&#x200B;(在您的六个月免费Adobe PDF Services API试用结束时)和免费的Adobe PDF Embed API。
+请查看[即付即用定价](https://developer.adobe.com/document-services/pricing/main)（在您的六个月免费Adobe PDF Services API试用结束时）和免费的Adobe PDF Embed API。
 
 若要向应用程序添加自动文档创建和文档签名等新功能，请开始使用[[!DNL Adobe Acrobat Services]](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)。

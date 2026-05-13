@@ -8,16 +8,23 @@ type: Tutorial
 jira: KT-10382
 thumbnail: KT-10382.jpg
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/NagNLc23IZyxJtLrW-Ig3-r38gqNECoQq2Pn2ZdxKC8
+product_v2:
+  - id: acdc2bde-2937-4877-90d9-031dd66278c9
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 2%
+source-wordcount: 930
+ht-degree: 3%
 
 ---
 
 # 获取Microsoft Power Automate的凭据
 
-[Microsoft Power Automate](https://powerautomate.microsoft.com/)为公民开发人员和开发人员提供了一种强大的自动化流程来改进其业务，而无需编写代码。 作为[&#128279;](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/)的一部分，[[!DNL Adobe Acrobat Services]Adobe PDF Services](https://developer.adobe.com/document-services)连接器允许用户在Microsoft Power Automate中执行Adobe PDF Services API中的任何可用操作。
+[Microsoft Power Automate](https://powerautomate.microsoft.com/)为公民开发人员和开发人员提供了一种强大的自动化流程来改进其业务，而无需编写代码。 作为[[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services)的一部分，[Adobe PDF Services](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/)连接器允许用户在Microsoft Power Automate中执行Adobe PDF Services API中的任何可用操作。
 
 在本教程中，了解如何获取凭据以开始使用或试用Adobe PDF服务。 根据您是试用用户还是现有客户，本教程将逐步引导您完成获取凭据的相应步骤。
 
