@@ -8,9 +8,16 @@ type: Tutorial
 jira: KT-7482
 thumbnail: KT-7482.jpg
 exl-id: 3bdc2610-d497-4a54-afc0-8b8baa234960
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/In-JxFG4Fe8Ui-BBgqChVNfr4-MsagnLlMAQYQVfiZM
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2: id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: 1302
 ht-degree: 0%
 
 ---
@@ -29,7 +36,7 @@ ht-degree: 0%
 
 ## 相关的API和资源
 
-* [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 * [PDF的嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
 
@@ -37,7 +44,7 @@ ht-degree: 0%
 
 ## 设置
 
-[!DNL Adobe Acrobat Services]使用身份验证系统来控制资源访问。 要访问服务，您必须从Adobe为您的公司或应用程序申请API密钥。 如果您有API密钥，请继续阅读下一部分。 要创建新的API密钥，请访问[站点中的](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)入门[!DNL Acrobat Services]。 您可以使用其免费试用版创建密钥，该试用版提供1,000个文档事务，试用期最长6个月。
+[!DNL Adobe Acrobat Services]使用身份验证系统来控制资源访问。 要访问服务，您必须从Adobe为您的公司或应用程序申请API密钥。 如果您有API密钥，请继续阅读下一部分。 要创建新的API密钥，请访问[!DNL Acrobat Services]站点中的[入门](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html)。 您可以使用其免费试用版创建密钥，该试用版提供1,000个文档事务，试用期最长6个月。
 
 要学习本教程，您需要两组API密钥：
 
@@ -45,7 +52,7 @@ ht-degree: 0%
 
 * Adobe PDF Embed API
 
-创建凭据后，将PDF服务API凭据和私钥复制到资源部分中的[!DNL Spring Boot]应用程序。 在[网站上详细了解](https://developer.adobe.com/document-services/docs/overview/pdf-services-api)Maven和Gradle库及依赖项[!DNL Adobe Acrobat Services]。 在继续之前，请确保设置所有必需的包和库。
+创建凭据后，将PDF服务API凭据和私钥复制到资源部分中的[!DNL Spring Boot]应用程序。 在[!DNL Adobe Acrobat Services]网站上详细了解[Maven和Gradle库及依赖项](https://developer.adobe.com/document-services/docs/overview/pdf-services-api)。 在继续之前，请确保设置所有必需的包和库。
 
 ![PDF服务API凭据的目录位置的屏幕截图](assets/FAWJ_1.png)
 
@@ -73,7 +80,7 @@ ExecutionContext executionContext = ExecutionContext.create(credentials);
 
 * 转换PDF文档（为Excel、Word或图形类型）
 
-* 创建PDF文档(从HTML、Excel、Word等)
+* 创建PDF文档（从HTML、Excel、Word等）
 
 * 合并多个PDF文档
 
@@ -113,7 +120,7 @@ try {
 
 [!DNL Adobe Acrobat Services]不支持处理现成的Excel文档，但您仍然可以使用社区框架和库来处理内容。
 
-例如，您可以使用[Apache POI](https://poi.apache.org/)在[!DNL Java Spring Boot]应用程序中处理Excel(或其他Microsoft文档)，也可以对Excel文件执行其他手动或自动任务。
+例如，您可以使用[Apache POI](https://poi.apache.org/)在[!DNL Java Spring Boot]应用程序中处理Excel（或其他Microsoft文档），也可以对Excel文件执行其他手动或自动任务。
 
 在此示例中，从PDF文档开始，提取三个基金的资产净值并在表中显示。 您还可以根据您的要求和可用数据提取其他信息，如图表和表格。 甚至可以从其他来源导入数据。
 

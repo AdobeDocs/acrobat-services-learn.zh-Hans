@@ -8,9 +8,15 @@ type: Tutorial
 jira: KT-10222
 thumbnail: KT-10222.jpg
 exl-id: 9430748f-9e2a-405f-acac-94b08ad7a5e3
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/xZ2TGxtFDXGq33Zcr1BvJ2V0v7goacfO8Z62mGINeTk
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: c4d07275-6387-4756-8bf7-681e581ffd27
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: 1789
 ht-degree: 0%
 
 ---
@@ -189,7 +195,7 @@ ht-degree: 0%
 1. 在&#x200B;*[!UICONTROL 选择计算类型]*&#x200B;下，选择&#x200B;**[!UICONTROL 聚合]**。
 1. 在&#x200B;*[!UICONTROL 选择类型]*&#x200B;下，选择&#x200B;**[!UICONTROL 求和]**。
 1. 在&#x200B;*[!UICONTROL 选择记录]*&#x200B;下，选择&#x200B;**[!UICONTROL 引用顺序]**。
-1. 在&#x200B;*[!UICONTROL 选择要执行聚合]&#x200B;**的项目下，选择&#x200B;**&#x200B;[!UICONTROL totalPaymentsDue.price]**。
+1. 在*[!UICONTROL 选择要执行聚合]**的项目下，选择&#x200B;**[!UICONTROL totalPaymentsDue.price]**。
 1. 选择&#x200B;**[!UICONTROL 插入计算]**。
 
 此过程将插入一个计算标记，该标记提供值的总和。 可以使用JSONata计算进行更高级的计算。 例如：

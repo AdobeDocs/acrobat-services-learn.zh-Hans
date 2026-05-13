@@ -8,10 +8,16 @@ type: Tutorial
 jira: KT-7474
 thumbnail: KT-7474.jpg
 exl-id: add4cc5c-06e3-4ceb-930b-e8c9eda5ca1f
-source-git-commit: ba73105ecf0bd27b7445ec4388fc4009eec273b8
+TQID: https://experienceleague.adobe.com/3XG9hVuP8EXiHP19m-werP4yFx8ae-VIPuS7N0V2jpQ
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
-source-wordcount: '1777'
-ht-degree: 0%
+source-wordcount: 1960
+ht-degree: 1%
 
 ---
 
@@ -27,7 +33,7 @@ ht-degree: 0%
 
 ## 相关的API和资源
 
-* [PDF服务API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
+* [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
 * [Adobe Sign API](https://developer.adobe.com/adobesign-api/)
 
@@ -35,7 +41,7 @@ ht-degree: 0%
 
 ## 生成API凭据
 
-首先注册Adobe PDF Services API免费试用版。 转到[Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) [网站](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK)，然后单击&#x200B;*创建新凭据*&#x200B;下的&#x200B;*开始使用*&#x200B;按钮。 免费试用版提供了1,000个文档事务，可在六个月内使用。 在下一页（请参阅下文）上，选择服务(PDF服务API)，设置凭据名称（例如，HRDocumentWFCredentials），然后输入说明。
+首先注册Adobe PDF Services API免费试用版。 转到[Adobe](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK) [网站](https://www.adobe.io/apis/documentcloud/dcsdk/gettingstarted.html?ref=getStartedWithServicesSDK)，然后单击&#x200B;*创建新凭据*&#x200B;下的&#x200B;*开始使用*&#x200B;按钮。 免费试用版提供了1,000个文档事务，可在六个月内使用。 在下一页（请参阅下文）上，选择服务（PDF服务API），设置凭据名称（例如，HRDocumentWFCredentials），然后输入说明。
 
 选择语言（本示例为Java）并选中&#x200B;*创建个性化代码示例*。 最后一步确保代码示例已包含预填充的pdftools-api-credentials.json文件，以及用于在API中对应用程序进行身份验证的私钥。
 
@@ -208,7 +214,7 @@ public class PersonController {
 
 首先，您必须准备包含静态和动态内容的HTML页。 使用JavaScript更新动态部件。 即，PDF服务API会将JSON对象注入您的HTML。
 
-然后，使用加载HTML文档时调用的JavaScript函数获取JSON属性。 此JavaScript函数更新选定的DOM元素。 以下是填充范围元素的示例，其中保存了人员的数据(请参阅伴随代码的src\\main\\resources\\contract\\index.html)：
+然后，使用加载HTML文档时调用的JavaScript函数获取JSON属性。 此JavaScript函数更新选定的DOM元素。 以下是填充范围元素的示例，其中保存了人员的数据（请参阅伴随代码的src\\main\\resources\\contract\\index.html）：
 
 ```
 <html>
@@ -348,7 +354,7 @@ private static void setCustomOptionsAndPersonData(
 </html>
 ```
 
-然后，在`downloadContract`类中实现`PersonController`方法，如下所示：
+然后，在`PersonController`类中实现`downloadContract`方法，如下所示：
 
 ```
 @RequestMapping("/pdf")
@@ -414,7 +420,7 @@ https://secure.eu1.adobesign.com/public/oauth?redirect_uri=https://www.google.co
 ```
 
 在Web浏览器中键入上述URL。 您将被重定向到google.com，并且代码在地址栏中显示为code=\&lt;YOUR_CODE\>，用于
-示例：
+例：
 
 ```
 https://www.google.com/?code=<YOUR_CODE>&api_access_point=https://api.eu1.adobesign.com/&web_access_point=https://secure.eu1.adobesign.com%2F
@@ -422,7 +428,7 @@ https://www.google.com/?code=<YOUR_CODE>&api_access_point=https://api.eu1.adobes
 
 请注意为\&lt;YOUR_CODE\>和api_access_point提供的值。
 
-要发送提供访问令牌的HTTPPOST请求，请使用客户端ID、\&lt;YOUR_CODE\>和api_access_point值。 您可以使用[Postman](https://helpx.adobe.com/cn/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html)或cURL：
+要发送提供访问令牌的HTTPPOST请求，请使用客户端ID、\&lt;YOUR_CODE\>和api_access_point值。 您可以使用[Postman](https://helpx.adobe.com/sign/kb/how-to-create-access-token-using-postman-adobe-sign.html)或cURL：
 
 ```
 curl --location --request POST "https://**api.eu1.adobesign.com**/oauth/token"
