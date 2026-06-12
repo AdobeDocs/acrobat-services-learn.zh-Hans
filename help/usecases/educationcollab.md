@@ -9,21 +9,12 @@ jira: KT-8091
 thumbnail: KT-8091.jpg
 exl-id: 570a635c-e539-4afc-a475-ecf576415217
 TQID: https://experienceleague.adobe.com/POsohxFP16AENPclwoaNwxcW0xmPP0iWmGUaKX4H0P4
-product_v2:
-  - id: acdc2bde-2937-4877-90d9-031dd66278c9
-feature_v2:
-  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
-  - id: c4d07275-6387-4756-8bf7-681e581ffd27
-subfeature_v2:
-  - id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028
-  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2: id: c4b1e8f2-d9a8-4792-b5e4-be52bd870028id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
 workflow-type: tm+mt
 source-wordcount: 1543
@@ -187,7 +178,7 @@ PDFEmbed API使用的凭据与PDF服务API不同，因此您必须[创建凭据]
 
 教师和学校了解学生如何使用在线平台很重要。 这有助于教师为学生提供资源，帮助他们更好地完成任务。 PDFEmbed API与Analytics集成，后者可用于测量发生的所有事件，例如，用户打开、阅读和关闭文档时。 使用PDF服务API，教师还可以禁用打印、下载和文件修改功能，以帮助维护学术完整性。
 
-如果您有[Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/)许可证，则可以使用其[开箱即用的集成](https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#adobe-analytics)。 否则，请使用回调将PDF服务与其他分析提供程序（如[Google](https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#google-analytics)）集成。
+如果您有[Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/)许可证，则可以使用其[开箱即用的集成](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#adobe-analytics)。 否则，请使用回调将PDF服务与其他分析提供程序（如[Google](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfembed/controlpdfexperience#google-analytics)）集成。
 
 要启用文档事件的测量，请使用`registerCallback`方法和AdobeDC视图实例附加事件处理程序。 您可以在控制台上显示基本度量，如打开文档或读取页面。 您还可以将度量保存在日志中，或在其他分析存储中发布它们。
 
@@ -213,7 +204,7 @@ adobeDCView.registerCallback(
 
 屏幕截图显示学生打开了任务文件，阅读了第一页 — 他们要么没有滚动到其他页面，要么文档只有一个页面 — 然后他们下载了文件。 您可以收集这些指标以执行分析并研究学生的行为。
 
-此外，[Adobe Analytics](https://business.adobe.com/cn/products/adobe-analytics.html)已与PDFEmbed API集成，因此如果您订阅了Adobe Analytics套件，则可以在订阅中发布您的指标。 要在Adobe Analytics中发布度量，您只需将套件ID传递给PDFEmbed API构造函数。 （请注意，您必须使用PDFEmbed API凭据，而不是PDF服务API凭据）。
+此外，[Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html)已与PDFEmbed API集成，因此如果您订阅了Adobe Analytics套件，则可以在订阅中发布您的指标。 要在Adobe Analytics中发布度量，您只需将套件ID传递给PDFEmbed API构造函数。 （请注意，您必须使用PDFEmbed API凭据，而不是PDF服务API凭据）。
 
 以下示例代码演示了如何将Suite ID传递给PDFEmbed API构造函数：
 
