@@ -9,22 +9,13 @@ jira: KT-8096
 thumbnail: KT-8096.jpg
 exl-id: 92f955f0-add5-4570-aa3a-ea63055dadb2
 TQID: https://experienceleague.adobe.com/ZfvtA3o-CQ28V-HdyzMR2TWgw-DpddXoh3zMOAUAqhY
-product_v2:
-  - id: acdc2bde-2937-4877-90d9-031dd66278c9
-feature_v2:
-  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
-  - id: c4d07275-6387-4756-8bf7-681e581ffd27
-subfeature_v2:
-  - id: b4b3dc0f-b1be-46b4-b8ca-134a4629084a
-  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+product_v2: id: acdc2bde-2937-4877-90d9-031dd66278c9
+feature_v2: id: b1809bd0-a86b-4991-8083-2e3b517fc3b8id: c4d07275-6387-4756-8bf7-681e581ffd27
+subfeature_v2: id: b4b3dc0f-b1be-46b4-b8ca-134a4629084aid: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 613f10928c919ed475347a894af97f692ed233bb
 workflow-type: tm+mt
 source-wordcount: 1851
 ht-degree: 1%
@@ -255,7 +246,7 @@ console.log('Exception encountered while executing operation', err);
 }
 ```
 
-那里有很多代码要解压缩 我们先来了解一下主要部分：`documentMergeOperation`。 在此部分中，您可以获取JSON数据并将其与Word文档模板合并。 您可以使用Adobe站点[&#128279;](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade)上的示例作为参考，但让我们创建您自己的简单示例。 打开Word并创建一个新的空白文档。 你可以随意进行自定义，但至少有以下特点：
+那里有很多代码要解压缩 我们先来了解一下主要部分：`documentMergeOperation`。 在此部分中，您可以获取JSON数据并将其与Word文档模板合并。 您可以使用Adobe站点](https://developer.adobe.com/document-services/apis/doc-generation#sample-blade)上的[示例作为参考，但让我们创建您自己的简单示例。 打开Word并创建一个新的空白文档。 你可以随意进行自定义，但至少有以下特点：
 
 尊敬的X：
 
@@ -269,15 +260,15 @@ console.log('Exception encountered while executing operation', err);
 
 ![字母和代码的屏幕截图](assets/offer_3.png)
 
-单击&#x200B;**生成标签**&#x200B;按钮。 此时会显示一个标签下拉菜单，可将其插入到文档中的相应点上。 突出显示文档中的第一个X并选择&#x200B;**[!UICONTROL firstname]**。 单击&#x200B;**[!UICONTROL 插入文本]**，“尊敬的X，”已更改为“尊敬的```{{`offer_letter`.firstname}}```”。 此标记是`documentMergeOperation`的正确格式。 请继续操作，将其余三个标签添加到相应的X。 不要忘记保存OfferLetter-template.docx。 它应该如下所示：
+单击&#x200B;**生成标签**&#x200B;按钮。 此时会显示一个标签下拉菜单，可将其插入到文档中的相应点上。 突出显示文档中的第一个X并选择&#x200B;**[!UICONTROL firstname]**。 单击&#x200B;**[!UICONTROL 插入文本]**，“尊敬的X，”已更改为“尊敬的``{{`offer_letter`.firstname}}``”。 此标记是`documentMergeOperation`的正确格式。 请继续操作，将其余三个标签添加到相应的X。 不要忘记保存OfferLetter-template.docx。 它应该如下所示：
 
-尊敬的 ```{{`offer_letter`.firstname}} {{`offer_letter`.lastname}}```，
+尊敬的 ``{{`offer_letter`.firstname}} {{`offer_letter`.lastname}}``，
 
-我们很荣幸为您提供每年$ ```{{`offer_letter`.salary}}```的职位。 您的开始日期将是```{{`offer_letter`.startdate}}```。
+我们很荣幸为您提供每年$ ``{{`offer_letter`.salary}}``的职位。 您的开始日期将是``{{`offer_letter`.startdate}}``。
 
 欢迎
 
-现在，Word模板具有与JSON格式匹配的标记。 例如，将Word文档开头的```{{`offer_letter`.`firstname`}}```替换为JSON数据“firstname”部分中的值。
+现在，Word模板具有与JSON格式匹配的标记。 例如，将Word文档开头的``{{`offer_letter`.`firstname`}}``替换为JSON数据“firstname”部分中的值。
 
 返回到您的`generateLetter`函数。 要保护REST调用的安全，请在项目根目录中创建一个名为pdftools-api-credentials.json的新文件。 粘贴以下JSON数据，并使用[开发人员控制台](https://developer.adobe.com/console/)的“服务帐户(JWT)”部分中的详细信息调整该数据。
 
