@@ -24,7 +24,7 @@ level_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+source-git-commit: 613f10928c919ed475347a894af97f692ed233bb
 workflow-type: tm+mt
 source-wordcount: 1851
 ht-degree: 1%
@@ -269,15 +269,15 @@ console.log('Exception encountered while executing operation', err);
 
 ![字母和代码的屏幕截图](assets/offer_3.png)
 
-单击&#x200B;**生成标签**&#x200B;按钮。 此时会显示一个标签下拉菜单，可将其插入到文档中的相应点上。 突出显示文档中的第一个X并选择&#x200B;**[!UICONTROL firstname]**。 单击&#x200B;**[!UICONTROL 插入文本]**，“尊敬的X，”已更改为“尊敬的```{{`offer_letter`.firstname}}```”。 此标记是`documentMergeOperation`的正确格式。 请继续操作，将其余三个标签添加到相应的X。 不要忘记保存OfferLetter-template.docx。 它应该如下所示：
+单击&#x200B;**生成标签**&#x200B;按钮。 此时会显示一个标签下拉菜单，可将其插入到文档中的相应点上。 突出显示文档中的第一个X并选择&#x200B;**[!UICONTROL firstname]**。 单击&#x200B;**[!UICONTROL 插入文本]**，“尊敬的X，”已更改为“尊敬的``{{`offer_letter`.firstname}}``”。 此标记是`documentMergeOperation`的正确格式。 请继续操作，将其余三个标签添加到相应的X。 不要忘记保存OfferLetter-template.docx。 它应该如下所示：
 
-尊敬的 ```{{`offer_letter`.firstname}} {{`offer_letter`.lastname}}```，
+尊敬的 ``{{`offer_letter`.firstname}} {{`offer_letter`.lastname}}``，
 
-我们很荣幸为您提供每年$ ```{{`offer_letter`.salary}}```的职位。 您的开始日期将是```{{`offer_letter`.startdate}}```。
+我们很荣幸为您提供每年$ ``{{`offer_letter`.salary}}``的职位。 您的开始日期将是``{{`offer_letter`.startdate}}``。
 
 欢迎
 
-现在，Word模板具有与JSON格式匹配的标记。 例如，将Word文档开头的```{{`offer_letter`.`firstname`}}```替换为JSON数据“firstname”部分中的值。
+现在，Word模板具有与JSON格式匹配的标记。 例如，将Word文档开头的``{{`offer_letter`.`firstname`}}``替换为JSON数据“firstname”部分中的值。
 
 返回到您的`generateLetter`函数。 要保护REST调用的安全，请在项目根目录中创建一个名为pdftools-api-credentials.json的新文件。 粘贴以下JSON数据，并使用[开发人员控制台](https://developer.adobe.com/console/)的“服务帐户(JWT)”部分中的详细信息调整该数据。
 
