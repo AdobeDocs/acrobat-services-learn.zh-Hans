@@ -27,4 +27,4 @@ ht-degree: 0%
 
 了解如何使用PDF提取API自动从PDF文档中提取内容。 提取PDF内容有助于解锁关键业务数据，然后这些数据可用于各种下游流程。
 
->[!VIDEO](https://video.tv.adobe.com/v/3428294?hidetitle=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3446688?captions=chi_hans&hidetitle=true)
