@@ -57,7 +57,7 @@ PDFEmbed API是一个免费的JavaScript API，用于嵌入高保真PDF、启用
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/zh-hans/docs/events/adobe-developers-live-recordings/2021/oct2021/pdf-embed-api" title="像专业人士一样在Web上摆动PDF" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/337602/?quality=12&hidetitle=true&format=jpeg&nocache=1736799089651" alt="像专业人士一样在Web上摆动PDF"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3456151/?captions=chi_hans&quality=12&hidetitle=true&format=jpeg&nocache=1736799089651" alt="像专业人士一样在Web上摆动PDF"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
