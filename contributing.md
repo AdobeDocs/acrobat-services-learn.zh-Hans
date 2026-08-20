@@ -57,4 +57,4 @@ submitting a pull request!
 
 ## 安全问题
 
-不应在此问题跟踪器上报告安全问题。 而是要[向我们的安全专家提交问题](https://helpx.adobe.com/security/alertus.html)
+不应在此问题跟踪器上报告安全问题。 而是要[向我们的安全专家提交问题](https://helpx.adobe.com/cn/security/alertus.html)
