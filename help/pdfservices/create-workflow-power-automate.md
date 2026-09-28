@@ -1,6 +1,6 @@
 ---
 title: 在Microsoft Power Automate中创建您的第一个工作流
-description: 了解如何在Microsoft Power Automate中使用Adobe PDF Services连接器
+description: 了解如何在Microsoft Power Automate中使用Adobe PDF服务连接器
 feature: PDF Services API
 role: Developer
 level: Beginner
@@ -8,25 +8,33 @@ type: Tutorial
 jira: KT-10379
 thumbnail: KT-10379.jpg
 exl-id: 095b705f-c380-42cc-9329-44ef7de655ee
-TQID: https://experienceleague.adobe.com/xltwAkEl5vPjcTGB1YX1VSC02fIVDWK7nElLTbiMkHo
+TQID: 'https://experienceleague.adobe.com/xltwAkEl5vPjcTGB1YX1VSC02fIVDWK7nElLTbiMkHo'
 product_v2:
   - id: acdc2bde-2937-4877-90d9-031dd66278c9
+    internal-label: Acrobat Services
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+    internal-label: Acrobat Services APIs
+subfeature_v2:
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+    internal-label: PDF Services API
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+    internal-label: Customer experience
+source-git-commit: 48c04e921143cde1421215096e1e02fd5e24b6e2
 workflow-type: tm+mt
-source-wordcount: 2046
+source-wordcount: '2046'
 ht-degree: 1%
-
 ---
-
 # 在Microsoft Power Automate中创建您的第一个工作流
 
-了解如何使用[Microsoft Services](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/)连接器在[Adobe PDF Power Automate](https://flow.microsoft.com/zh-cn/)中创建您的第一个工作流。
+了解如何使用[Microsoft Services](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/)连接器在[Adobe PDF Power Automate](https://flow.microsoft.com/zh-cn/)中创建您的第一个流。
 
 在本实际操作教程中，学习如何：
 
@@ -39,11 +47,11 @@ ht-degree: 1%
 ### 您需要的
 
 * **Adobe PDF Services的试用或生产凭据**
-在[此处](https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)详细了解如何在Microsoft Power Automate中获取和配置凭据。
+在[此处](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)详细了解如何在Microsoft Power Automate中获取和配置凭据。
 * **具有高级连接器的Microsoft Power Automate**
 了解如何在[此处](https://docs.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types)检查Power Automate的许可级别。
 * **OneDrive**
-本教程中使用了OneDrive存储连接器，但可使用任何存储连接器替代。
+在本教程中使用OneDrive存储连接器，但任何存储连接器都可以替换。
 
 ### 范例文件
 
@@ -54,7 +62,7 @@ ht-degree: 1%
 
 ### 获取凭据
 
-要完成本教程，您需要已在Microsoft Power Automate for Adobe PDF Services中配置您的凭据。 如果您尚未完成此步骤，请参阅[此处](https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)的说明。
+要完成本教程，您需要已在Microsoft Power Automate for Adobe PDF Services中配置您的凭据。 如果您尚未完成此步骤，请参阅[此处](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/getting-credentials-power-automate)的说明。
 
 ## 第1部分：创建新流并将Word转换为PDF
 
@@ -318,7 +326,7 @@ ht-degree: 1%
 
 ## 后续步骤
 
-在本教程中，您将Word文档转换为PDF，基于数据生成文档，将文档合并在一起，并使用密码保护。 要了解更多信息，请浏览Microsoft Power Automate中Adobe PDF Services连接器中提供的一些其他操作：
+在本教程中，您将Word文档转换为PDF，基于数据生成文档，将文档合并在一起，并使用密码保护。 要了解更多信息，请浏览Microsoft Power Automate中Adobe PDF服务连接器中的一些其他可用操作：
 
 * 查看Microsoft Power Automate中可用的预创建模板。
 * 了解Adobe技术博客上的[文章](https://medium.com/adobetech/tagged/microsoft-power-automate)。

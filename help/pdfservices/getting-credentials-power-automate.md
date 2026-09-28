@@ -8,27 +8,34 @@ type: Tutorial
 jira: KT-10382
 thumbnail: KT-10382.jpg
 exl-id: 68ec654f-74aa-41b7-9103-44df13402032
-TQID: https://experienceleague.adobe.com/NagNLc23IZyxJtLrW-Ig3-r38gqNECoQq2Pn2ZdxKC8
+TQID: 'https://experienceleague.adobe.com/NagNLc23IZyxJtLrW-Ig3-r38gqNECoQq2Pn2ZdxKC8'
 product_v2:
   - id: acdc2bde-2937-4877-90d9-031dd66278c9
+    internal-label: Acrobat Services
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+    internal-label: Acrobat Services APIs
+subfeature_v2:
+  - id: c6f72a9c-54c4-4933-93c9-d7c656ff1f14
+    internal-label: PDF Services API
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+    internal-label: Beginner
+source-git-commit: 48c04e921143cde1421215096e1e02fd5e24b6e2
 workflow-type: tm+mt
-source-wordcount: 930
+source-wordcount: '930'
 ht-degree: 3%
-
 ---
-
 # 获取Microsoft Power Automate的凭据
 
 [Microsoft Power Automate](https://powerautomate.microsoft.com/)为公民开发人员和开发人员提供了一种强大的自动化流程来改进其业务，而无需编写代码。 作为[[!DNL Adobe Acrobat Services]](https://developer.adobe.com/document-services)的一部分，[Adobe PDF Services](https://us.flow.microsoft.com/en-us/connectors/shared_adobepdftools/adobe-pdf-services/)连接器允许用户在Microsoft Power Automate中执行Adobe PDF Services API中的任何可用操作。
 
 在本教程中，了解如何获取凭据以开始使用或试用Adobe PDF服务。 根据您是试用用户还是现有客户，本教程将逐步引导您完成获取凭据的相应步骤。
 
-## Microsoft Power Automate用户如何开始使用Adobe PDF Services连接器？
+## Microsoft Power Automate用户如何开始使用Adobe PDF服务连接器？
 
 现有Microsoft Power Automate用户可以[获取Adobe PDF Services的试用凭据](https://www.adobe.com/go/powerautomate_getstarted_cn)。 上面的链接是一个特殊的注册链接，用于专门为Microsoft Power Automate用户帮助完成此流程。
 
@@ -55,7 +62,7 @@ ht-degree: 3%
 
 ![新凭据](assets/credentials_3.png)
 
-包含所有这些值的JSON文件也会自动下载到您的系统。 此文件名为`pdfservices-api-pa-credentials.json`，其外观类似于：
+包含所有这些值的JSON 文件也会自动下载到您的系统。 此文件名为`pdfservices-api-pa-credentials.json`，其外观类似于：
 
 ```json
 {
@@ -75,7 +82,7 @@ ht-degree: 3%
 
 1. 在侧边栏菜单中，打开&#x200B;**[!UICONTROL 数据]**&#x200B;菜单并选择&#x200B;**连接**：
 
-   ![&#x200B; Microsoft Power Automate站点中的“连接”菜单](assets/credentials_4.png)
+   ![ Microsoft Power Automate站点中的“连接”菜单](assets/credentials_4.png)
 
 1. 选择&#x200B;**+ [!UICONTROL 新建连接]**。
 
@@ -105,7 +112,7 @@ ht-degree: 3%
 
 ## 使用现有Adobe PDF Services凭据
 
-如果您具有从[!DNL Adobe Acrobat Services]网站生成的现有Adobe PDF Services API凭据，则可以将其与Microsoft Power Automate结合使用。 如果您在注册时下载了SDK，则您的现有凭据采用JSON文件的形式，很可能名为`pdfservices-api-credentials.json`。 该JSON文件包含创建连接凭据时所需的五个密钥。 将JSON文件中的每个值复制到相应的连接字段中。
+如果您具有从[!DNL Adobe Acrobat Services]网站生成的现有Adobe PDF Services API凭据，则可以将其与Microsoft Power Automate结合使用。 如果您在注册时下载了SDK，则您的现有凭据采用最有可能名为`pdfservices-api-credentials.json`的JSON 文件的形式。 该JSON 文件包含创建连接凭据时所需的五个密钥。 将每个值从JSON 文件复制到相应的连接字段。
 
 您的私钥值来自名为`private.key`的第二个文件。
 
@@ -123,7 +130,7 @@ ht-degree: 3%
 
 如上面的屏幕截图所示，您可以切换到工作帐户，也可以设置新的组织帐户。 完成此操作后，您便可以添加Adobe PDF服务操作。
 
-有关使用[!DNL Adobe Acrobat Services]创建第一个Microsoft Power Automate工作流的更深入的信息，请参阅[在Microsoft Power Automate中创建您的第一个工作流程](https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate)。
+有关使用[!DNL Adobe Acrobat Services]创建第一个Microsoft Power Automate工作流的更深入的信息，请参阅[在Microsoft Power Automate中创建您的第一个工作流程](https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/pdfservices/create-workflow-power-automate)。
 
 ## 其他资源
 
