@@ -7,23 +7,34 @@ level: Beginner, Intermediate, Experienced
 type: Tutorial
 jira: KT-15327
 exl-id: dfd018a7-8e1f-4c00-9e1f-6b7b8435fbfa
-TQID: https://experienceleague.adobe.com/eK2v077dMeTRJXYLL521ige-4KKTP9SNQCqg4rHH-sg
+TQID: 'https://experienceleague.adobe.com/eK2v077dMeTRJXYLL521ige-4KKTP9SNQCqg4rHH-sg'
 product_v2:
   - id: acdc2bde-2937-4877-90d9-031dd66278c9
+    internal-label: Acrobat Services
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+    internal-label: Acrobat Services APIs
+subfeature_v2:
+  - id: fde59d58-a58c-4d69-bee2-f561e5c503e3
+    internal-label: PDF Accessibility AutoTag API
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+    internal-label: Accessibility
+source-git-commit: 48c04e921143cde1421215096e1e02fd5e24b6e2
 workflow-type: tm+mt
-source-wordcount: 148
+source-wordcount: '188'
 ht-degree: 0%
-
 ---
-
 # Adobe PDF辅助功能自动标记API教程
 
 此AI支持的API可自动标记表格、段落、列表、标题等，从而使用辅助技术改善本机或扫描PDF的阅读体验。 它还标识了阅读顺序，以确保跨页的多列或多元素信息的逻辑流动。 将此选项应用于文档积压或新文档工作流，并更轻松地实现法规遵从性。

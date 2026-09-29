@@ -7,21 +7,31 @@ level: Beginner, Intermediate, Experienced
 type: Tutorial
 jira: KT-15330
 exl-id: 74198c86-505b-4321-923e-0079e3d767cd
-TQID: https://experienceleague.adobe.com/3mvPlRUXeXjNdJxWjfvxgnP1EIQXWfXiyXxeXy-v0SQ
+TQID: 'https://experienceleague.adobe.com/3mvPlRUXeXjNdJxWjfvxgnP1EIQXWfXiyXxeXy-v0SQ'
 product_v2:
   - id: acdc2bde-2937-4877-90d9-031dd66278c9
+    internal-label: Acrobat Services
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+    internal-label: Acrobat Services APIs
+subfeature_v2:
+  - id: e9471a2b-a51d-459f-8642-038a8fd76a8b
+    internal-label: PDF Electronic Seal API
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+    internal-label: Beginner
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 48c04e921143cde1421215096e1e02fd5e24b6e2
 workflow-type: tm+mt
-source-wordcount: 159
-ht-degree: 5%
-
+source-wordcount: '199'
+ht-degree: 4%
 ---
-
 # Adobe PDF电子签章APITutorials
 
 Adobe PDF电子签章API使用[Adobe的已批准信任列表(AATL)](https://helpx.adobe.com/cn/acrobat/kb/approved-trust-list1.html)中的某些TSP（信任服务提供商）颁发的证书对文档大规模应用电子签章。 电子签章有助于验证文档的身份和完整性。 这可用于大规模地对文档进行电子签章，并包含在PDF服务API中。

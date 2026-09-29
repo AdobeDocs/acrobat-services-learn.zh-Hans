@@ -8,21 +8,31 @@ type: Tutorial
 jira: KT-11079
 thumbnail: KT-11079.jpg
 exl-id: 79603883-26cd-439c-9cfd-6178c4544b93
-TQID: https://experienceleague.adobe.com/-qlkAgnMNI53vizzSYk-qtl-N0V8wxXcGSB3M6rvTmo
+TQID: 'https://experienceleague.adobe.com/-qlkAgnMNI53vizzSYk-qtl-N0V8wxXcGSB3M6rvTmo'
 product_v2:
   - id: acdc2bde-2937-4877-90d9-031dd66278c9
+    internal-label: Acrobat Services
+feature_v2:
+  - id: b1809bd0-a86b-4991-8083-2e3b517fc3b8
+    internal-label: Acrobat Services APIs
+subfeature_v2:
+  - id: aba8c493-b814-4c59-a60d-4962bc4c8ada
+    internal-label: Acrobat Sign API
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 0110d2606056220c4236fe2f0e3afbfc112746e7
+    internal-label: Beginner
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 48c04e921143cde1421215096e1e02fd5e24b6e2
 workflow-type: tm+mt
-source-wordcount: 518
-ht-degree: 4%
-
+source-wordcount: '758'
+ht-degree: 2%
 ---
-
 # Acrobat Sign API教程
 
 Acrobat Sign API 允许您创建应用程序，并将 Acrobat Sign UI 和功能嵌入到应用程序中。
@@ -71,7 +81,7 @@ Acrobat Sign API 允许您创建应用程序，并将 Acrobat Sign UI 和功能�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/acrobatsign/oem/sign-up-developer-account" title="注册开发人员帐户" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/acrobatsign/media_14431a4ca78c0891ef03c73c0b0bbc329f0365efa.png?width=400&format=webply&optimize=medium" alt="注册开发人员帐户"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/media_14431a4ca78c0891ef03c73c0b0bbc329f0365efa.png?width=400&format=webply&optimize=medium" alt="注册开发人员帐户"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
