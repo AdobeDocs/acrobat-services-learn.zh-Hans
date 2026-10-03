@@ -285,7 +285,7 @@ ht-degree: 0%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/usecases/financeworkflowsjava" title="在Java中管理财务文档工作流" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/usecases/media_14763e77cca336e72797a4b6964a94311623df148.png?width=400&format=webply&optimize=medium" alt="在Java中管理财务文档工作流"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/usecases/media_14763e77cca336e72797a4b6964a94311623df148.png?width=400&format=webply&optimize=medium" alt="在Java中管理财务文档工作流"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

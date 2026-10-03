@@ -81,7 +81,7 @@ Acrobat Sign API 允许您创建应用程序，并将 Acrobat Sign UI 和功能�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/acrobatsign/oem/sign-up-developer-account" title="注册开发人员帐户" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/acrobat-services-learn/tutorials/acrobatsign/media_14431a4ca78c0891ef03c73c0b0bbc329f0365efa.png?width=400&format=webply&optimize=medium" alt="注册开发人员帐户"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hans/docs/acrobat-services-learn/tutorials/acrobatsign/media_14431a4ca78c0891ef03c73c0b0bbc329f0365efa.png?width=400&format=webply&optimize=medium" alt="注册开发人员帐户"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
