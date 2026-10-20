@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ## 相关的API和资源
 
-* [嵌入式APIPDF](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [嵌入式APIPDF](https://www.adobe.com/cn/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 

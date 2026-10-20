@@ -292,7 +292,7 @@ ht-degree: 0%
 >
 >您的网页需要在页眉的页面上加载Adobe Analytics。
 
-导航到[Adobe Analytics文档](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtodata.html#adobe-analytics)，并检查您的网页上是否已启用Adobe Analytics。 按照说明设置报告包。
+导航到[Adobe Analytics文档](https://www.adobe.com/cn/devnet-docs/dcsdk_io/viewSDK/howtodata.html#adobe-analytics)，并检查您的网页上是否已启用Adobe Analytics。 按照说明设置报告包。
 
 ### Google Analytics
 
