@@ -375,7 +375,7 @@ var outputFileName = path.join('output', 'salesOrder_'+Date.now()+".docx");
 
 ## 发送协议以供签名
 
-[Adobe Acrobat Sign](https://www.adobe.com/acrobat/business/sign.html)允许您将协议发送给一个或多个收件人，供其查看和签署文档。 除了易于使用的发送文档以供签名的用户体验之外，您还可以使用REST API来接受Word、PDF、HTML和其他格式并发送它们以供签名。
+[Adobe Acrobat Sign](https://www.adobe.com/cn/acrobat/business/sign.html)允许您将协议发送给一个或多个收件人，供其查看和签署文档。 除了易于使用的发送文档以供签名的用户体验之外，您还可以使用REST API来接受Word、PDF、HTML和其他格式并发送它们以供签名。
 
 以下示例逐步说明如何使用REST API文档页面来获取以前生成的文档并发送它以供签名。 首先，了解如何通过Acrobat Sign Web界面执行此操作，然后了解如何使用REST API执行此操作。
 

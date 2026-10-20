@@ -61,7 +61,7 @@ ht-degree: 0%
 
 * [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [PDF的嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF的嵌入API](https://www.adobe.com/cn/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [项目代码](https://github.com/contentlab-io/adobe_reviews_and_approvals)
 
@@ -399,7 +399,7 @@ app.get( "/download/:file", function( req, res ){
   );
 ```
 
-现在，草稿文档上的注释和批注会保存在服务器上。 您可以[进一步了解回电](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows)如何适合您的工作流程。 例如，如果多人希望同时审阅和评论同一文档，[状态回调](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback)可帮助处理文件冲突。
+现在，草稿文档上的注释和批注会保存在服务器上。 您可以[进一步了解回电](https://www.adobe.com/cn/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#callbacks-workflows)如何适合您的工作流程。 例如，如果多人希望同时审阅和评论同一文档，[状态回调](https://www.adobe.com/cn/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#status-callback)可帮助处理文件冲突。
 
 最后，使用PDF服务API将所有编辑的文档合并为一个PDF文件。
 

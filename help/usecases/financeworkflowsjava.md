@@ -47,7 +47,7 @@ ht-degree: 0%
 
 * [PDF Services API](https://opensource.adobe.com/pdftools-sdk-docs/release/latest/index.html)
 
-* [PDF的嵌入API](https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/index.html)
+* [PDF的嵌入API](https://www.adobe.com/cn/devnet-docs/dcsdk_io/viewSDK/index.html)
 
 * [项目示例](https://github.com/adobe/pdftools-java-sdk-samples)
 
